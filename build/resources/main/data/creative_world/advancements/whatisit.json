@@ -1,0 +1,39 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "creative_world:sdfghn"
+    },
+    "title": {
+      "translate": "advancements.whatisit.title"
+    },
+    "description": {
+      "translate": "advancements.whatisit.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "whatisit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "creative_world:sdfghn"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  }
+}

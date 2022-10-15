@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:compositeplate"
+    },
+    "2": {
+      "item": "creative_world:compositeplate"
+    },
+    "3": {
+      "item": "creative_world:compositeplate"
+    },
+    "5": {
+      "item": "creative_world:compositeplate"
+    }
+  },
+  "result": {
+    "item": "creative_world:composite_plate_armor_armor_boots",
+    "count": 1
+  }
+}

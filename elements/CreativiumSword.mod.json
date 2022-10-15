@@ -1,0 +1,31 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "creativium_sword",
+    "customModelName": "Normal",
+    "name": "Creativium Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:CreativeWor1d"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 16,
+    "efficiency": 21.0,
+    "attackSpeed": 1.0,
+    "enchantability": 112,
+    "damageVsEntity": 48.0,
+    "usageCount": 4595,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:CreativiumIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

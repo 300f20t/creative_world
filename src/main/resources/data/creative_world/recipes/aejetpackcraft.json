@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "1": {
+      "item": "creative_world:creatingcore"
+    },
+    "2": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "3": {
+      "item": "creative_world:accumulatium_ingot"
+    },
+    "4": {
+      "item": "creative_world:electricjetpack_chestplate"
+    },
+    "5": {
+      "item": "creative_world:accumulatium_ingot"
+    },
+    "6": {
+      "item": "creative_world:creativium_ingot"
+    },
+    "7": {
+      "item": "minecraft:nether_star"
+    },
+    "8": {
+      "item": "creative_world:creativium_ingot"
+    }
+  },
+  "result": {
+    "item": "creative_world:advancedelectricjetpack_chestplate",
+    "count": 1
+  }
+}

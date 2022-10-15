@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Carbonplate"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Carbonplate"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Particlebinder"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Carbonplate"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Carbonplate"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Stationaryparticlebinder"
+    },
+    "name": "stationaryparticlebindercraft",
+    "namespace": "mod"
+  }
+}

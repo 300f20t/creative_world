@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "creative_world:carbonplate"
+    },
+    "2": {
+      "item": "creative_world:accumulatiumnugget"
+    },
+    "3": {
+      "item": "creative_world:carbonplate"
+    },
+    "4": {
+      "item": "creative_world:carbonplate"
+    },
+    "5": {
+      "item": "creative_world:carbonplate"
+    },
+    "6": {
+      "item": "creative_world:creativiumnugget"
+    },
+    "7": {
+      "item": "creative_world:carbonplate"
+    }
+  },
+  "result": {
+    "item": "creative_world:particlebinder",
+    "count": 1
+  }
+}

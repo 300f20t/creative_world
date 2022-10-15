@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "1": {
+      "item": "minecraft:diamond_block"
+    },
+    "2": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "3": {
+      "item": "minecraft:iron_block"
+    },
+    "4": {
+      "item": "creative_world:endlesswatersource"
+    },
+    "5": {
+      "item": "minecraft:iron_block"
+    },
+    "6": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "7": {
+      "item": "minecraft:diamond_block"
+    },
+    "8": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "creative_world:thecoreofmatter",
+    "count": 1
+  }
+}

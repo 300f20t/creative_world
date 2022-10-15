@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:compositeplate"
+    },
+    "1": {
+      "item": "creative_world:compositeplate"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "creative_world:composite_plate_tool_sword",
+    "count": 1
+  }
+}

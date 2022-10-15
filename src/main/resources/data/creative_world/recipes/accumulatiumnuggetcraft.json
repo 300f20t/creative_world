@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "creative_world:accumulatium_ingot"
+    }
+  ],
+  "result": {
+    "item": "creative_world:accumulatiumnugget",
+    "count": 9
+  }
+}

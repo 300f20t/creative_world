@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "1": {
+      "item": "minecraft:nether_star"
+    },
+    "2": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "3": {
+      "item": "minecraft:diamond"
+    },
+    "4": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "5": {
+      "item": "minecraft:diamond"
+    },
+    "7": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "creative_world:bedrockbreacker",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:bronze_ingot"
+    },
+    "2": {
+      "item": "creative_world:bronze_ingot"
+    },
+    "3": {
+      "item": "creative_world:bronze_ingot"
+    },
+    "5": {
+      "item": "creative_world:bronze_ingot"
+    }
+  },
+  "result": {
+    "item": "creative_world:bronze_armor_boots",
+    "count": 1
+  }
+}

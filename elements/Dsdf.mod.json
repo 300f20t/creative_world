@@ -1,0 +1,15 @@
+{
+  "_fv": 34,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:Thecoreofmatter"
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 1.0E9
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 1.0
+  }
+}

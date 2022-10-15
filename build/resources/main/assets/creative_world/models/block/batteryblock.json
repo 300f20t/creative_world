@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "creative_world:blocks/hjfg",
+    "up": "creative_world:blocks/hjfg",
+    "north": "creative_world:blocks/hjfg",
+    "east": "creative_world:blocks/hjfg",
+    "south": "creative_world:blocks/hjfg",
+    "west": "creative_world:blocks/hjfg",
+    "particle": "creative_world:blocks/hjfg"
+  },
+  "render_type": "solid"
+}

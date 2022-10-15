@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:copper_block"
+    },
+    "1": {
+      "item": "creative_world:creativium_block"
+    },
+    "2": {
+      "item": "minecraft:copper_block"
+    },
+    "3": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "4": {
+      "item": "creative_world:creatingcore"
+    },
+    "5": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "6": {
+      "item": "minecraft:copper_block"
+    },
+    "7": {
+      "item": "creative_world:accumulatium_block"
+    },
+    "8": {
+      "item": "minecraft:copper_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:command_block",
+    "count": 1
+  }
+}

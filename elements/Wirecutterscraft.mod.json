@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Tinplate"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Tinplate"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Tinplate"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Wirecutters"
+    },
+    "name": "wirecutterscraft",
+    "namespace": "mod"
+  }
+}

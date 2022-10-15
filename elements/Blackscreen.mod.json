@@ -1,0 +1,31 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "black_screen_texture.png",
+          "use1Xscale": false,
+          "name": "black_screen_texture.png",
+          "x": -44,
+          "y": -131
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "BlackscreenOtobrazhatOvierlieiVIghrie"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

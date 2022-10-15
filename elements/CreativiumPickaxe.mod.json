@@ -1,0 +1,31 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "creativium_pickaxe",
+    "customModelName": "Normal",
+    "name": "Creativium Pickaxe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:CreativeWor1d"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 16,
+    "efficiency": 21.0,
+    "attackSpeed": 1.2000000000000002,
+    "enchantability": 110,
+    "damageVsEntity": 16.0,
+    "usageCount": 4595,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:CreativiumIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

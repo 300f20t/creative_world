@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:creativiumnugget"
+    },
+    "1": {
+      "item": "creative_world:creativiumnugget"
+    },
+    "2": {
+      "item": "creative_world:creativiumnugget"
+    },
+    "3": {
+      "item": "creative_world:creativiumnugget"
+    },
+    "4": {
+      "item": "creative_world:creativiumnugget"
+    },
+    "5": {
+      "item": "creative_world:creativiumnugget"
+    },
+    "6": {
+      "item": "creative_world:creativiumnugget"
+    },
+    "7": {
+      "item": "creative_world:creativiumnugget"
+    },
+    "8": {
+      "item": "creative_world:creativiumnugget"
+    }
+  },
+  "result": {
+    "item": "creative_world:creativium_ingot",
+    "count": 1
+  }
+}

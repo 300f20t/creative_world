@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "creative_world:blocks/tffyuiui",
+    "up": "creative_world:blocks/jghguy",
+    "north": "creative_world:blocks/tffyuiui",
+    "east": "creative_world:blocks/tffyuiui",
+    "south": "creative_world:blocks/tffyuiui",
+    "west": "creative_world:blocks/tffyuiui",
+    "particle": "creative_world:blocks/tffyuiui"
+  },
+  "render_type": "solid"
+}

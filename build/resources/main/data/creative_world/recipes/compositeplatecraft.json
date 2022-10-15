@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:bronzeplate"
+    },
+    "1": {
+      "item": "creative_world:bronzeplate"
+    },
+    "2": {
+      "item": "creative_world:bronzeplate"
+    },
+    "3": {
+      "item": "creative_world:carbonplate"
+    },
+    "4": {
+      "item": "creative_world:carbonplate"
+    },
+    "5": {
+      "item": "creative_world:carbonplate"
+    },
+    "6": {
+      "item": "creative_world:ironplate"
+    },
+    "7": {
+      "item": "creative_world:ironplate"
+    },
+    "8": {
+      "item": "creative_world:ironplate"
+    }
+  },
+  "result": {
+    "item": "creative_world:compositeplate",
+    "count": 1
+  }
+}

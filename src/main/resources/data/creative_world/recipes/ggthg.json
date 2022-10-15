@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "creative_world:ironhammer"
+    },
+    {
+      "item": "minecraft:raw_copper"
+    }
+  ],
+  "result": {
+    "item": "creative_world:crushedcopperore",
+    "count": 1
+  }
+}

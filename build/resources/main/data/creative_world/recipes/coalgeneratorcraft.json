@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:battery"
+    },
+    "1": {
+      "item": "creative_world:machinecase"
+    },
+    "2": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "creative_world:coalgenerator",
+    "count": 1
+  }
+}

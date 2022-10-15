@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Tinwirewithrubber"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Tincover"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:Tincover"
+      },
+      {
+        "value": "CUSTOM:Tincover"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:Tincover"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Battery"
+    },
+    "name": "vhgfhjk",
+    "namespace": "mod"
+  }
+}

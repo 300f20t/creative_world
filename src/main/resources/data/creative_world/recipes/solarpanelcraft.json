@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:coaldust"
+    },
+    "1": {
+      "item": "minecraft:glass"
+    },
+    "2": {
+      "item": "creative_world:coaldust"
+    },
+    "3": {
+      "item": "minecraft:glass"
+    },
+    "4": {
+      "item": "creative_world:coaldust"
+    },
+    "5": {
+      "item": "minecraft:glass"
+    },
+    "6": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "7": {
+      "item": "creative_world:coalgenerator"
+    },
+    "8": {
+      "item": "creative_world:electricalcircuit"
+    }
+  },
+  "result": {
+    "item": "creative_world:solarpanel",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:accumulatium_ingot"
+    },
+    "2": {
+      "item": "creative_world:accumulatium_ingot"
+    },
+    "3": {
+      "item": "creative_world:accumulatium_ingot"
+    },
+    "5": {
+      "item": "creative_world:accumulatium_ingot"
+    }
+  },
+  "result": {
+    "item": "creative_world:accumulatium_armor_boots",
+    "count": 1
+  }
+}

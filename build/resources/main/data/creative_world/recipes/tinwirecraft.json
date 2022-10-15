@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "creative_world:tinplate"
+    },
+    {
+      "item": "creative_world:wirecutters"
+    }
+  ],
+  "result": {
+    "item": "creative_world:tinwire",
+    "count": 3
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "creative_world:blocks/resin_planks",
+    "particle": "creative_world:blocks/resin_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,15 @@
+{
+  "_fv": 34,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:Oil"
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 100000.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
+  }
+}

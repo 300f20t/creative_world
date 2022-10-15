@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    " 4 ",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:tinplate"
+    },
+    "2": {
+      "item": "creative_world:tinplate"
+    },
+    "4": {
+      "item": "creative_world:tinplate"
+    },
+    "6": {
+      "item": "minecraft:stick"
+    },
+    "8": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "creative_world:wirecutters",
+    "count": 1
+  }
+}

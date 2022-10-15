@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:resin_log"
+    },
+    "1": {
+      "item": "creative_world:resin_log"
+    },
+    "2": {
+      "item": "creative_world:resin_log"
+    },
+    "3": {
+      "item": "creative_world:resin_log"
+    }
+  },
+  "result": {
+    "item": "creative_world:resin_wood",
+    "count": 3
+  }
+}

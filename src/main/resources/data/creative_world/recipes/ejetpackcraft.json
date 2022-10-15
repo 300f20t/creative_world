@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:ironplate"
+    },
+    "1": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "2": {
+      "item": "creative_world:ironplate"
+    },
+    "3": {
+      "item": "creative_world:ironplate"
+    },
+    "4": {
+      "item": "creative_world:batteryblock"
+    },
+    "5": {
+      "item": "creative_world:ironplate"
+    },
+    "6": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "8": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "creative_world:electricjetpack_chestplate",
+    "count": 1
+  }
+}

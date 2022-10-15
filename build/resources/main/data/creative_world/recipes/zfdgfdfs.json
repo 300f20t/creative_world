@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:coppernugget"
+    },
+    "1": {
+      "item": "creative_world:coppernugget"
+    },
+    "2": {
+      "item": "creative_world:coppernugget"
+    },
+    "3": {
+      "item": "creative_world:coppernugget"
+    },
+    "4": {
+      "item": "creative_world:coppernugget"
+    },
+    "5": {
+      "item": "creative_world:coppernugget"
+    },
+    "6": {
+      "item": "creative_world:coppernugget"
+    },
+    "7": {
+      "item": "creative_world:coppernugget"
+    },
+    "8": {
+      "item": "creative_world:coppernugget"
+    }
+  },
+  "result": {
+    "item": "minecraft:copper_ingot",
+    "count": 1
+  }
+}

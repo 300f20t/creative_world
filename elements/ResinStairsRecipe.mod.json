@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ResinPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ResinPlanks"
+      },
+      {
+        "value": "CUSTOM:ResinPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ResinPlanks"
+      },
+      {
+        "value": "CUSTOM:ResinPlanks"
+      },
+      {
+        "value": "CUSTOM:ResinPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ResinStairs"
+    },
+    "name": "resin_stairs_recipe",
+    "namespace": "mod"
+  }
+}

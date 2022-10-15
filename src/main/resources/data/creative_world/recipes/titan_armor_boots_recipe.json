@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "creative_world:titan_ingot"
+    },
+    "2": {
+      "item": "creative_world:titan_ingot"
+    },
+    "3": {
+      "item": "creative_world:titan_ingot"
+    },
+    "5": {
+      "item": "creative_world:titan_ingot"
+    }
+  },
+  "result": {
+    "item": "creative_world:titan_armor_boots",
+    "count": 1
+  }
+}

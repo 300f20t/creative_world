@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bedrock"
+    },
+    "title": {
+      "translate": "advancements.bedrock.title"
+    },
+    "description": {
+      "translate": "advancements.bedrock.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "bedrock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bedrock"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "creative_world:infinity"
+}

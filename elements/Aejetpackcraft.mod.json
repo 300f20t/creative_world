@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Electricalcircuit"
+      },
+      {
+        "value": "CUSTOM:Creatingcore"
+      },
+      {
+        "value": "CUSTOM:Electricalcircuit"
+      },
+      {
+        "value": "CUSTOM:AccumulatiumIngot"
+      },
+      {
+        "value": "CUSTOM:Electricjetpack.body"
+      },
+      {
+        "value": "CUSTOM:AccumulatiumIngot"
+      },
+      {
+        "value": "CUSTOM:CreativiumIngot"
+      },
+      {
+        "value": "Items.NETHER_STAR"
+      },
+      {
+        "value": "CUSTOM:CreativiumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Advancedelectricjetpack.body"
+    },
+    "name": "aejetpackcraft",
+    "namespace": "mod"
+  }
+}

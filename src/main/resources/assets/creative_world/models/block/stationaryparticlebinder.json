@@ -1,0 +1,9 @@
+{
+  "parent": "creative_world:custom/stationary_particle_binder",
+  "textures": {
+    "all": "creative_world:blocks/stationary_particle_binder",
+    "particle": "creative_world:blocks/stationary_particle_binder",
+    "0": "creative_world:blocks/stationary_particle_binder"
+  },
+  "render_type": "solid"
+}

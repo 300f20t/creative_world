@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "edge": "creative_core_:blocks/fsf",
+    "pane": "creative_core_:blocks/fsf"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "accumulatium_axe",
+    "customModelName": "Normal",
+    "name": "Accumulatium Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:CreativeWor1d"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 12,
+    "efficiency": 18.0,
+    "attackSpeed": 1.0999999999999999,
+    "enchantability": 84,
+    "damageVsEntity": 48.0,
+    "usageCount": 1675,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:AccumulatiumIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

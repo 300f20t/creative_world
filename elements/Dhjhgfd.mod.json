@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.COPPER_BLOCK"
+      },
+      {
+        "value": "CUSTOM:CreativiumBlock"
+      },
+      {
+        "value": "Blocks.COPPER_BLOCK"
+      },
+      {
+        "value": "CUSTOM:Electricalcircuit"
+      },
+      {
+        "value": "CUSTOM:Creatingcore"
+      },
+      {
+        "value": "CUSTOM:Electricalcircuit"
+      },
+      {
+        "value": "Blocks.COPPER_BLOCK"
+      },
+      {
+        "value": "CUSTOM:AccumulatiumBlock"
+      },
+      {
+        "value": "Blocks.COPPER_BLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Blocks.COMMAND_BLOCK"
+    },
+    "name": "dhjhgfd",
+    "namespace": "mod"
+  }
+}

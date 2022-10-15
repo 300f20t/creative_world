@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "missing": "w_w_r_1"
+      },
+      "name": "default"
+    }
+  }
+}
