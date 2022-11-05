@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Quantumteleporterblock"
+      },
+      {
+        "value": "CUSTOM:Quantumteleporterblock"
+      },
+      {
+        "value": "CUSTOM:Quantumteleporterblock"
+      },
+      {
+        "value": "CUSTOM:Quantumteleporterblock"
+      },
+      {
+        "value": "CUSTOM:AccumulatiumIngot"
+      },
+      {
+        "value": "CUSTOM:Quantumteleporterblock"
+      },
+      {
+        "value": "CUSTOM:Quantumteleporterblock"
+      },
+      {
+        "value": "CUSTOM:Quantumteleporterblock"
+      },
+      {
+        "value": "CUSTOM:Quantumteleporterblock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Quantumteleporterblock2"
+    },
+    "name": "quantumteleporterblock_2craft",
+    "namespace": "mod"
+  }
+}

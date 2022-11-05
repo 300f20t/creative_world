@@ -36,6 +36,6 @@ public class CreativiumHoeItem extends HoeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(CreativeWorldModItems.CREATIVIUM_INGOT.get()));
 			}
-		}, 0, 12f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).fireResistant());
+		}, 0, 12f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).fireResistant());
 	}
 }

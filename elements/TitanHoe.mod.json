@@ -8,7 +8,7 @@
     "name": "Titan Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Creativeworldtools"
     },
     "toolType": "Hoe",
     "harvestLevel": 10,

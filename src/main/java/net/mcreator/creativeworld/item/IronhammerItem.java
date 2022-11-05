@@ -21,7 +21,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class IronhammerItem extends Item {
 	public IronhammerItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).durability(80));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).durability(80));
 	}
 
 	@Override

@@ -8,7 +8,7 @@
     "name": "Creativium",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Creativeworlditems"
     },
     "stackSize": 64,
     "enchantability": 0,

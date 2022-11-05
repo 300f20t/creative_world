@@ -15,6 +15,6 @@ import net.mcreator.creativeworld.CreativeWorldMod;
 
 public class CreativeWorldModFluidTypes {
 	public static final DeferredRegister<FluidType> REGISTRY = DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, CreativeWorldMod.MODID);
-	public static final RegistryObject<FluidType> OIL_TYPE = REGISTRY.register("oil", () -> new OilFluidType());
 	public static final RegistryObject<FluidType> GAS_TYPE = REGISTRY.register("gas", () -> new GasFluidType());
+	public static final RegistryObject<FluidType> OIL_TYPE = REGISTRY.register("oil", () -> new OilFluidType());
 }

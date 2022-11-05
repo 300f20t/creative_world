@@ -21,7 +21,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class WirecuttersItem extends Item {
 	public WirecuttersItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).durability(100));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).durability(100));
 	}
 
 	@Override

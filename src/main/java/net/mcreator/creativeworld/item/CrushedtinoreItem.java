@@ -13,7 +13,7 @@ import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 
 public class CrushedtinoreItem extends Item {
 	public CrushedtinoreItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

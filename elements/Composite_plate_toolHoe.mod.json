@@ -8,7 +8,7 @@
     "name": "Composite_plate_tool Hoe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Creativeworldtools"
     },
     "toolType": "Hoe",
     "harvestLevel": 6,

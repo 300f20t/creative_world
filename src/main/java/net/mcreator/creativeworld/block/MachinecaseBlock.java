@@ -16,7 +16,7 @@ import java.util.Collections;
 
 public class MachinecaseBlock extends Block {
 	public MachinecaseBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(1f, 10f));
 	}
 
 	@Override

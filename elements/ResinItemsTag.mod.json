@@ -14,6 +14,7 @@
     "blocks": [],
     "functions": [],
     "entities": [],
+    "biomes": [],
     "name": "resin_log",
     "namespace": "forge"
   }

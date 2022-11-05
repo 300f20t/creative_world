@@ -8,7 +8,7 @@
     "name": "Titan Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Creativeworldtools"
     },
     "toolType": "Axe",
     "harvestLevel": 10,

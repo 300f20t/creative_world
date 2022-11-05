@@ -1,0 +1,27 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "creative_drill",
+    "customModelName": "Normal",
+    "name": "Creative drill",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Creativeworldtools"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 16,
+    "efficiency": 25.0,
+    "attackSpeed": 1.4000000000000001,
+    "enchantability": 30,
+    "damageVsEntity": 20.0,
+    "usageCount": 8192,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

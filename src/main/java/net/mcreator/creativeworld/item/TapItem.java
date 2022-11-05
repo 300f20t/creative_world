@@ -24,7 +24,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class TapItem extends Item {
 	public TapItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).durability(100));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).durability(100));
 	}
 
 	@Override

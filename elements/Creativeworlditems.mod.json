@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "Creative world: items",
+    "icon": {
+      "value": "CUSTOM:Carbonplate"
+    },
+    "showSearch": false
+  }
+}

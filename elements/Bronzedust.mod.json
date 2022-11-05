@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "q2eqwr",
+    "texture": "bronze_dust",
     "customModelName": "Normal",
     "name": "Bronz edust",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:CreativeWor1d"
+      "value": "CUSTOM:Creativeworlditems"
     },
     "stackSize": 64,
     "enchantability": 0,

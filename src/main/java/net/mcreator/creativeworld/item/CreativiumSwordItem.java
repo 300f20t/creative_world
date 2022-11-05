@@ -36,6 +36,6 @@ public class CreativiumSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(CreativeWorldModItems.CREATIVIUM_INGOT.get()));
 			}
-		}, 3, -3f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).fireResistant());
+		}, 3, -3f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT).fireResistant());
 	}
 }

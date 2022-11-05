@@ -13,7 +13,7 @@ import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 
 public class EnergydetectorItem extends Item {
 	public EnergydetectorItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

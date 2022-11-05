@@ -8,7 +8,7 @@
     "name": "Composite_plate_tool Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Creativeworldtools"
     },
     "toolType": "Spade",
     "harvestLevel": 6,

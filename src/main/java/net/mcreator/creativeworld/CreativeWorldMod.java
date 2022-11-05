@@ -27,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.creativeworld.init.CreativeWorldModTabs;
+import net.mcreator.creativeworld.init.CreativeWorldModSounds;
 import net.mcreator.creativeworld.init.CreativeWorldModMenus;
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
 import net.mcreator.creativeworld.init.CreativeWorldModFluids;
@@ -51,7 +52,7 @@ public class CreativeWorldMod {
 	public CreativeWorldMod() {
 		CreativeWorldModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		CreativeWorldModSounds.REGISTRY.register(bus);
 		CreativeWorldModBlocks.REGISTRY.register(bus);
 		CreativeWorldModItems.REGISTRY.register(bus);
 

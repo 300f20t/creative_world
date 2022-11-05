@@ -8,7 +8,7 @@
     "name": "Copper Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:CreativeWor1d"
+      "value": "CUSTOM:Creativeworldtools"
     },
     "toolType": "Axe",
     "harvestLevel": 2,

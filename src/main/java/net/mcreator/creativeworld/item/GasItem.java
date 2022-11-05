@@ -11,7 +11,7 @@ import net.mcreator.creativeworld.init.CreativeWorldModFluids;
 
 public class GasItem extends BucketItem {
 	public GasItem() {
-		super(CreativeWorldModFluids.GAS,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D));
+		super(CreativeWorldModFluids.GAS, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON)
+				.tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS));
 	}
 }

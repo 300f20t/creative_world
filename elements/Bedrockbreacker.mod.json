@@ -10,7 +10,7 @@
       "destroy bedrock"
     ],
     "creativeTab": {
-      "value": "CUSTOM:CreativeWor1d"
+      "value": "CUSTOM:Creativeworldtools"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 4,

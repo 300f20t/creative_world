@@ -3,6 +3,5 @@
   "textures": {
     "all": "creative_world:blocks/new_leaves",
     "particle": "creative_world:blocks/new_leaves"
-  },
-  "render_type": "solid"
+  }
 }

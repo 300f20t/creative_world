@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "bronze_boots",
     "creativeTab": {
-      "value": "CUSTOM:CreativeWor1d"
+      "value": "CUSTOM:Creativeworldcombat"
     },
     "armorTextureFile": "bronze",
     "helmetName": "Bronze Helmet",

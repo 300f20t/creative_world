@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "creativium_boots",
     "creativeTab": {
-      "value": "CUSTOM:CreativeWor1d"
+      "value": "CUSTOM:Creativeworldcombat"
     },
     "armorTextureFile": "creativium",
     "helmetName": "Creativium Helmet",
@@ -42,11 +42,11 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
-    "maxDamage": 125,
-    "damageValueHelmet": 16,
-    "damageValueBody": 40,
+    "maxDamage": 128,
+    "damageValueHelmet": 32,
+    "damageValueBody": 64,
     "damageValueLeggings": 48,
-    "damageValueBoots": 16,
+    "damageValueBoots": 32,
     "enchantability": 72,
     "toughness": 4.0,
     "knockbackResistance": 1.0,

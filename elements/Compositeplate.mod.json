@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "composite_plate",
+    "texture": "composite_plate_2",
     "customModelName": "Normal",
     "name": "Composite plate",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Creativeworlditems"
     },
     "stackSize": 64,
     "enchantability": 0,

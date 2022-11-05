@@ -1,0 +1,27 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "advanced_drill",
+    "customModelName": "Normal",
+    "name": "Advanced drill",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Creativeworldtools"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 3,
+    "efficiency": 11.0,
+    "attackSpeed": 1.2,
+    "enchantability": 5,
+    "damageVsEntity": 9.0,
+    "usageCount": 2048,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

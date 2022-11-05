@@ -8,7 +8,7 @@
     "name": "Titan Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Creativeworldtools"
     },
     "toolType": "Spade",
     "harvestLevel": 10,

@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "carbon_plate",
     "customModelName": "Normal",
-    "name": "Carbonplate",
+    "name": "Carbon plate",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Creativeworlditems"
     },
     "stackSize": 64,
     "enchantability": 0,

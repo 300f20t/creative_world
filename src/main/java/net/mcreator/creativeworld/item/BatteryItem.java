@@ -13,7 +13,7 @@ import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 
 public class BatteryItem extends Item {
 	public BatteryItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).durability(1001).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).durability(1001).rarity(Rarity.COMMON));
 	}
 
 	@Override

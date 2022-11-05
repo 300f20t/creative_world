@@ -26,12 +26,12 @@ import net.mcreator.creativeworld.CreativeWorldMod;
 public class CreativeWorldModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, CreativeWorldMod.MODID);
 	public static final RegistryObject<Feature<?>> TIN_ORE = REGISTRY.register("tin_ore", TinOreFeature::feature);
+	public static final RegistryObject<Feature<?>> TITAN_ORE = REGISTRY.register("titan_ore", TitanOreFeature::feature);
+	public static final RegistryObject<Feature<?>> ACCUMULATIUM_ORE = REGISTRY.register("accumulatium_ore", AccumulatiumOreFeature::feature);
+	public static final RegistryObject<Feature<?>> CREATIVIUM_ORE = REGISTRY.register("creativium_ore", CreativiumOreFeature::feature);
 	public static final RegistryObject<Feature<?>> RUBBERTREE = REGISTRY.register("rubbertree", RubbertreeFeature::feature);
 	public static final RegistryObject<Feature<?>> LITTLEOILMINE = REGISTRY.register("littleoilmine", LittleoilmineFeature::feature);
 	public static final RegistryObject<Feature<?>> MEDIUMOILMINE = REGISTRY.register("mediumoilmine", MediumoilmineFeature::feature);
 	public static final RegistryObject<Feature<?>> LITTLEGASMINE = REGISTRY.register("littlegasmine", LittlegasmineFeature::feature);
 	public static final RegistryObject<Feature<?>> MEDIUMGASMINE = REGISTRY.register("mediumgasmine", MediumgasmineFeature::feature);
-	public static final RegistryObject<Feature<?>> CREATIVIUM_ORE = REGISTRY.register("creativium_ore", CreativiumOreFeature::feature);
-	public static final RegistryObject<Feature<?>> ACCUMULATIUM_ORE = REGISTRY.register("accumulatium_ore", AccumulatiumOreFeature::feature);
-	public static final RegistryObject<Feature<?>> TITAN_ORE = REGISTRY.register("titan_ore", TitanOreFeature::feature);
 }

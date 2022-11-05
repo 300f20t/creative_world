@@ -36,6 +36,6 @@ public class CreativiumShovelItem extends ShovelItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(CreativeWorldModItems.CREATIVIUM_INGOT.get()));
 			}
-		}, 1, -2.9f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).fireResistant());
+		}, 1, -2.9f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).fireResistant());
 	}
 }

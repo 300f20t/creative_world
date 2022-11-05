@@ -8,7 +8,7 @@
     "name": "Particle binder",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Creativeworldtools"
     },
     "stackSize": 64,
     "enchantability": 0,

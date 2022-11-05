@@ -10,7 +10,7 @@ import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 
 public class CreatingcoreItem extends Item {
 	public CreatingcoreItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).stacksTo(64).rarity(Rarity.RARE));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).stacksTo(64).rarity(Rarity.RARE));
 	}
 
 	@Override

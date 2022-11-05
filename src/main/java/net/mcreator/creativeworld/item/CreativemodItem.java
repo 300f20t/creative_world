@@ -18,7 +18,7 @@ import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 
 public class CreativemodItem extends Item {
 	public CreativemodItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).stacksTo(64).rarity(Rarity.EPIC));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).stacksTo(64).rarity(Rarity.EPIC));
 	}
 
 	@Override
@@ -40,7 +40,7 @@ public class CreativemodItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		RtyuklProcedure.execute(entity);
+		RtyuklProcedure.execute(world, entity);
 		return ar;
 	}
 }

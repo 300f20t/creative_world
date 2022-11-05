@@ -63,7 +63,7 @@ public abstract class TinArmorItem extends ArmorItem {
 
 	public static class Helmet extends TinArmorItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT));
 		}
 
 		@Override
@@ -74,7 +74,7 @@ public abstract class TinArmorItem extends ArmorItem {
 
 	public static class Chestplate extends TinArmorItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT));
 		}
 
 		@Override
@@ -85,7 +85,7 @@ public abstract class TinArmorItem extends ArmorItem {
 
 	public static class Leggings extends TinArmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT));
 		}
 
 		@Override
@@ -96,7 +96,7 @@ public abstract class TinArmorItem extends ArmorItem {
 
 	public static class Boots extends TinArmorItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT));
 		}
 
 		@Override

@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "Creative world: combat",
+    "icon": {
+      "value": "CUSTOM:CreativiumSword"
+    },
+    "showSearch": false
+  }
+}

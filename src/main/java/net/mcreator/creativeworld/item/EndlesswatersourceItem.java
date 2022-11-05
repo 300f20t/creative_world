@@ -17,7 +17,7 @@ import java.util.List;
 
 public class EndlesswatersourceItem extends Item {
 	public EndlesswatersourceItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

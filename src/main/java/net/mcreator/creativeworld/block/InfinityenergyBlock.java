@@ -27,7 +27,7 @@ public class InfinityenergyBlock extends Block
 
 			EntityBlock {
 	public InfinityenergyBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.GRAVEL).strength(1f, 10f).hasPostProcess((bs, br, bp) -> true)
+		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f).hasPostProcess((bs, br, bp) -> true)
 				.emissiveRendering((bs, br, bp) -> true));
 	}
 

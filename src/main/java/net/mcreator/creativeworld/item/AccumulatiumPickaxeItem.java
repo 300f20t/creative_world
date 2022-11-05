@@ -36,6 +36,6 @@ public class AccumulatiumPickaxeItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(CreativeWorldModItems.ACCUMULATIUM_INGOT.get()));
 			}
-		}, 1, -2.6f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D));
+		}, 1, -2.6f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS));
 	}
 }

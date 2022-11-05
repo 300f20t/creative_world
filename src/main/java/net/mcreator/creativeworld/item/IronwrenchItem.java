@@ -24,7 +24,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class IronwrenchItem extends Item {
 	public IronwrenchItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).durability(200));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).durability(200));
 	}
 
 	@Override

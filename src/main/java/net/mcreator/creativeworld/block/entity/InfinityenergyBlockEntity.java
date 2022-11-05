@@ -96,7 +96,7 @@ public class InfinityenergyBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Infinityenergy");
+		return Component.literal("Infinity energy");
 	}
 
 	@Override

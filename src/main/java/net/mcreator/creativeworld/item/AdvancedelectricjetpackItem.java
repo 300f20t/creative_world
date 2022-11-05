@@ -66,7 +66,7 @@ public abstract class AdvancedelectricjetpackItem extends ArmorItem {
 
 	public static class Chestplate extends AdvancedelectricjetpackItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT));
 		}
 
 		@Override

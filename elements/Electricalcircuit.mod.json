@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "electrical_circuit",
+    "texture": "electerical_circuit_2",
     "customModelName": "Normal",
     "name": "Electrical circuit",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:CreativeWor1d"
+      "value": "CUSTOM:Creativeworlditems"
     },
     "stackSize": 64,
     "enchantability": 0,

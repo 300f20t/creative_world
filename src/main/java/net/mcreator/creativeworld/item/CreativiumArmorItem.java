@@ -21,12 +21,12 @@ public abstract class CreativiumArmorItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 125;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 128;
 			}
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{16, 48, 40, 16}[slot.getIndex()];
+				return new int[]{32, 48, 64, 32}[slot.getIndex()];
 			}
 
 			@Override
@@ -63,7 +63,7 @@ public abstract class CreativiumArmorItem extends ArmorItem {
 
 	public static class Helmet extends CreativiumArmorItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT));
 		}
 
 		@Override
@@ -74,7 +74,7 @@ public abstract class CreativiumArmorItem extends ArmorItem {
 
 	public static class Chestplate extends CreativiumArmorItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT));
 		}
 
 		@Override
@@ -85,7 +85,7 @@ public abstract class CreativiumArmorItem extends ArmorItem {
 
 	public static class Leggings extends CreativiumArmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT));
 		}
 
 		@Override
@@ -96,7 +96,7 @@ public abstract class CreativiumArmorItem extends ArmorItem {
 
 	public static class Boots extends CreativiumArmorItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT));
 		}
 
 		@Override

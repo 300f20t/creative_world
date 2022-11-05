@@ -45,7 +45,7 @@ public class BedrockbreackerItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Blocks.CRYING_OBSIDIAN), new ItemStack(Items.DIAMOND));
 			}
-		}, 1, -2.4f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).fireResistant());
+		}, 1, -2.4f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).fireResistant());
 	}
 
 	@Override

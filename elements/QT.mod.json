@@ -1,0 +1,9 @@
+{
+  "_fv": 34,
+  "_type": "command",
+  "definition": {
+    "commandName": "qt",
+    "permissionLevel": "No requirement",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"literal\"><field name=\"name\">clear</field><statement name=\"args\"><block type=\"literal\"><field name=\"name\">all</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">QTclearall</field></block></statement><next><block type=\"number_min_max\"><field name=\"name\">id</field><field name=\"min\">1</field><field name=\"max\">2</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">QTclear1</field></block></statement><next><block type=\"number_min_max\"><field name=\"name\">id</field><field name=\"min\">1</field><field name=\"max\">2</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">QTclear2</field></block></statement></block></next></block></next></block></statement></block></next></block></xml>"
+  }
+}

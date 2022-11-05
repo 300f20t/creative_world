@@ -26,15 +26,15 @@ public class CreativeWorldModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> COALGENERATOR = register("coalgenerator", CreativeWorldModBlocks.COALGENERATOR,
 			CoalgeneratorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CRUSHER = register("crusher", CreativeWorldModBlocks.CRUSHER, CrusherBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> COALGENERATOR_1 = register("coalgenerator_1", CreativeWorldModBlocks.COALGENERATOR_1,
-			Coalgenerator1BlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> SOLARPANEL = register("solarpanel", CreativeWorldModBlocks.SOLARPANEL,
-			SolarpanelBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> FAN = register("fan", CreativeWorldModBlocks.FAN, FanBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BATTERYBLOCK = register("batteryblock", CreativeWorldModBlocks.BATTERYBLOCK,
 			BatteryblockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> SOLARPANEL = register("solarpanel", CreativeWorldModBlocks.SOLARPANEL,
+			SolarpanelBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> INFINITYENERGY = register("infinityenergy", CreativeWorldModBlocks.INFINITYENERGY,
 			InfinityenergyBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> COALGENERATOR_1 = register("coalgenerator_1", CreativeWorldModBlocks.COALGENERATOR_1,
+			Coalgenerator1BlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {

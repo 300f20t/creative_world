@@ -8,7 +8,7 @@
     "name": "Composite_plate_tool Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Creativeworldtools"
     },
     "toolType": "Axe",
     "harvestLevel": 6,

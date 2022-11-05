@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "coal_dust_texture",
+    "texture": "coal_dust",
     "customModelName": "Normal",
     "name": "Coal dust",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:CreativeWor1d"
+      "value": "CUSTOM:Creativeworlditems"
     },
     "stackSize": 64,
     "enchantability": 0,

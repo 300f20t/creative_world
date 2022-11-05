@@ -17,7 +17,7 @@ import java.util.List;
 
 public class Alargebucketofwater9Item extends Item {
 	public Alargebucketofwater9Item() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

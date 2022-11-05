@@ -13,7 +13,7 @@ import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 
 public class CrushedcopperoreItem extends Item {
 	public CrushedcopperoreItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVE_WOR_1D).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

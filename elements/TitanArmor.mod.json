@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "titan_boots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Creativeworldcombat"
     },
     "armorTextureFile": "titan",
     "helmetName": "Titan Helmet",
@@ -42,10 +42,10 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
-    "maxDamage": 75,
+    "maxDamage": 32,
     "damageValueHelmet": 10,
-    "damageValueBody": 25,
-    "damageValueLeggings": 30,
+    "damageValueBody": 16,
+    "damageValueLeggings": 14,
     "damageValueBoots": 10,
     "enchantability": 45,
     "toughness": 0.0,

@@ -3,12 +3,12 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "rtrg",
+    "texture": "wrench",
     "customModelName": "Normal",
     "name": "Iron wrench",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:CreativeWor1d"
+      "value": "CUSTOM:Creativeworldtools"
     },
     "toolType": "Special",
     "harvestLevel": 0,
