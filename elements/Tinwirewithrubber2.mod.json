@@ -2,15 +2,15 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "w_w_r_1",
+    "texture": "w2",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "eee_4:default",
-    "rotationMode": 4,
+    "customModelName": "w2:default",
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -38,13 +38,13 @@
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
-      "value": "CUSTOM:Creativeworldblocks"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:Tinwirewithrubber"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -123,6 +123,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockPlayedBy": {
+      "name": "Wireconnecting"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -240,8 +240,7 @@ public class CreativeWorldModItems {
 	public static final RegistryObject<Item> TINWIRE = block(CreativeWorldModBlocks.TINWIRE, CreativeWorldModTabs.TAB_CREATIVEWORLDBLOCKS);
 	public static final RegistryObject<Item> TINWIREWITHRUBBER = block(CreativeWorldModBlocks.TINWIREWITHRUBBER,
 			CreativeWorldModTabs.TAB_CREATIVEWORLDBLOCKS);
-	public static final RegistryObject<Item> TINWIREWITHRUBBER_2 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_2,
-			CreativeWorldModTabs.TAB_CREATIVEWORLDBLOCKS);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_2 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_2, null);
 	public static final RegistryObject<Item> TITAN_BLOCK = block(CreativeWorldModBlocks.TITAN_BLOCK, CreativeWorldModTabs.TAB_CREATIVEWORLDBLOCKS);
 	public static final RegistryObject<Item> MACHINECASE = block(CreativeWorldModBlocks.MACHINECASE, CreativeWorldModTabs.TAB_CREATIVEWORLDBLOCKS);
 	public static final RegistryObject<Item> COALGENERATOR = block(CreativeWorldModBlocks.COALGENERATOR,
@@ -330,6 +329,19 @@ public class CreativeWorldModItems {
 	public static final RegistryObject<Item> BATTERY_2 = REGISTRY.register("battery_2", () -> new Battery2Item());
 	public static final RegistryObject<Item> BATTERY_3 = REGISTRY.register("battery_3", () -> new Battery3Item());
 	public static final RegistryObject<Item> BATTERY_4 = REGISTRY.register("battery_4", () -> new Battery4Item());
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_3 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_3, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_4 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_4, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_5 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_5, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_6 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_6, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_7 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_7, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_8 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_8, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_9 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_9, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_10 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_10, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_11 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_11, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_12 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_12, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_13 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_13, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_14 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_14, null);
+	public static final RegistryObject<Item> TINWIREWITHRUBBER_15 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_15, null);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

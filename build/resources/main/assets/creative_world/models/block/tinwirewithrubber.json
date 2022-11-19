@@ -1,9 +1,9 @@
 {
-  "parent": "creative_world:custom/eee_4",
+  "parent": "creative_world:custom/w1",
   "textures": {
-    "all": "creative_world:blocks/4_w",
-    "particle": "creative_world:blocks/4_w",
-    "2": "creative_world:blocks/4_w"
+    "all": "creative_world:blocks/w1",
+    "particle": "creative_world:blocks/w1",
+    "0": "creative_world:blocks/w1"
   },
   "render_type": "solid"
 }

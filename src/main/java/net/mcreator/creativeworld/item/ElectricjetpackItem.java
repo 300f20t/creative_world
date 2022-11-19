@@ -67,7 +67,7 @@ public abstract class ElectricjetpackItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "creative_world:textures/models/armor/electric_jetpack__layer_1.png";
+			return "creative_world:textures/models/armor/ej_1_layer_1.png";
 		}
 	}
 }

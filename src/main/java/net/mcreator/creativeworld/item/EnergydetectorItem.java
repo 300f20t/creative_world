@@ -23,9 +23,9 @@ public class EnergydetectorItem extends Item {
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
-		InteractionResult retval = super.useOn(context);
+		super.useOn(context);
 		EnergydetectorKoghdaNazhataPKMPoBlokuProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
 				context.getClickedPos().getZ(), context.getClickedFace(), context.getPlayer());
-		return retval;
+		return InteractionResult.SUCCESS;
 	}
 }
