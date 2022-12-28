@@ -3,5 +3,5 @@
   "textures": {
     "layer0": "creative_world:items/fggfjgg"
   },
-  "render_type": "solid"
+  "render_type": "translucent"
 }

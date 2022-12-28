@@ -41,6 +41,7 @@ import net.mcreator.creativeworld.item.ThecoreofinvulnerabilityItem;
 import net.mcreator.creativeworld.item.TapItem;
 import net.mcreator.creativeworld.item.SdfghnItem;
 import net.mcreator.creativeworld.item.RubberItem;
+import net.mcreator.creativeworld.item.ReelItem;
 import net.mcreator.creativeworld.item.RawtinItem;
 import net.mcreator.creativeworld.item.ParticlebinderItem;
 import net.mcreator.creativeworld.item.OilItem;
@@ -66,6 +67,7 @@ import net.mcreator.creativeworld.item.CreativiumIngotItem;
 import net.mcreator.creativeworld.item.CreativiumHoeItem;
 import net.mcreator.creativeworld.item.CreativiumAxeItem;
 import net.mcreator.creativeworld.item.CreativiumArmorItem;
+import net.mcreator.creativeworld.item.CreativereelItem;
 import net.mcreator.creativeworld.item.CreativemodItem;
 import net.mcreator.creativeworld.item.CreativedrillItem;
 import net.mcreator.creativeworld.item.CreatingcoreItem;
@@ -342,6 +344,8 @@ public class CreativeWorldModItems {
 	public static final RegistryObject<Item> TINWIREWITHRUBBER_13 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_13, null);
 	public static final RegistryObject<Item> TINWIREWITHRUBBER_14 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_14, null);
 	public static final RegistryObject<Item> TINWIREWITHRUBBER_15 = block(CreativeWorldModBlocks.TINWIREWITHRUBBER_15, null);
+	public static final RegistryObject<Item> REEL = REGISTRY.register("reel", () -> new ReelItem());
+	public static final RegistryObject<Item> CREATIVEREEL = REGISTRY.register("creativereel", () -> new CreativereelItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

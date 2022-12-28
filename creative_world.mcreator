@@ -3769,6 +3769,22 @@
       "locked_code": false,
       "registry_name": "tinwirewithrubber_15",
       "path": "~/wires"
+    },
+    {
+      "name": "Reel",
+      "type": "item",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reel"
+    },
+    {
+      "name": "Creativereel",
+      "type": "item",
+      "sortid": 372,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creativereel"
     }
   ],
   "variable_elements": [
@@ -4004,6 +4020,7 @@
       "item.creative_world.bronze_armor_chestplate": "Бронзовый нагрудник",
       "item.creative_world.accumulatiumnugget": "Накопительный самородок",
       "item.creative_world.titanplate": "Титановая пластина",
+      "item.creative_world.creativereel": "Creativereel",
       "block.creative_world.resin_wood": "из каучукового дерева",
       "item.creative_world.creativemod": "Креативный мод",
       "item.creative_world.accumulatium_ingot": "Накопление",
@@ -4014,6 +4031,7 @@
       "item.creative_world.titan_sword": "Меч титана",
       "item.creative_world.creatingcore": "Создание ядра",
       "item.creative_world.titan_pickaxe": "Титановая кирка",
+      "item.creative_world.reel": "Reel",
       "item.creative_world.tin_armor_boots": "Жестяные сапоги",
       "block.creative_world.tin_ore": "Оловянная руда",
       "item.creative_world.endlesswatersource": "бесконечным источником воды",
@@ -4211,6 +4229,7 @@
       "item.creative_world.bronze_armor_chestplate": "Bronze Chestplate",
       "item.creative_world.accumulatiumnugget": "Accumulatium nugget",
       "item.creative_world.titanplate": "Titan plate",
+      "item.creative_world.creativereel": "Creativereel",
       "block.creative_world.resin_wood": "rubber tree wood",
       "item.creative_world.creativemod": "Creativemod",
       "item.creative_world.accumulatium_ingot": "Accumulatium",
@@ -4221,6 +4240,7 @@
       "item.creative_world.titan_sword": "Titan Sword",
       "item.creative_world.creatingcore": "Creating core",
       "item.creative_world.titan_pickaxe": "Titan Pickaxe",
+      "item.creative_world.reel": "Reel",
       "item.creative_world.tin_armor_boots": "Tin Boots",
       "block.creative_world.tin_ore": "Tin Ore",
       "item.creative_world.endlesswatersource": "endless water source",
@@ -4258,7 +4278,7 @@
   "workspaceSettings": {
     "modid": "creative_world",
     "modName": "creative world",
-    "version": "0.2.2alfa_3",
+    "version": "0.2.2alfa_4",
     "author": "300f20t, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "MIT License",
@@ -4274,5 +4294,5 @@
     "modElementsPackage": "net.mcreator.creativeworld",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200347418
+  "mcreatorVersion": 202200348217
 }
