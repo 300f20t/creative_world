@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "fluid",
   "definition": {
     "name": "Gas",
@@ -38,9 +38,6 @@
     "tickRate": 10,
     "flammability": 50,
     "fireSpreadSpeed": 50,
-    "colorOnMap": "DEFAULT",
-    "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
-    "restrictionBiomes": []
+    "colorOnMap": "DEFAULT"
   }
 }

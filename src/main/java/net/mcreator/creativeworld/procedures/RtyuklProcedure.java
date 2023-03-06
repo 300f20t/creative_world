@@ -16,8 +16,7 @@ public class RtyuklProcedure {
 		if (entity == null)
 			return;
 		if (world.getLevelData().getGameRules().getBoolean(CreativeWorldModGameRules.ALLOWCREATIVEMODE)) {
-			if (CreativeWorldModItems.CREATIVEMOD.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-					.getItem()) {
+			if (CreativeWorldModItems.CREATIVEMOD.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
 				if (entity instanceof ServerPlayer _player)
 					_player.setGameMode(GameType.CREATIVE);
 				if (entity instanceof LivingEntity _entity)

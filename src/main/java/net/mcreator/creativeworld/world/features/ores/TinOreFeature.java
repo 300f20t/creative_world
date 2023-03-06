@@ -33,11 +33,10 @@ public class TinOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new TinOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("creative_world:tin_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), CreativeWorldModBlocks.TIN_ORE.get().defaultBlockState())), 10));
+		CONFIGURED_FEATURE = FeatureUtils.register("creative_world:tin_ore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), CreativeWorldModBlocks.TIN_ORE.get().defaultBlockState())), 10));
 		PLACED_FEATURE = PlacementUtils.register("creative_world:tin_ore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(20), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(77)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(20), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(77)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

@@ -50,7 +50,6 @@ public class Quantumteleporterblock2Block extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}

@@ -34,8 +34,7 @@ public class LockcreativemoditemcraftingProcedure {
 			return;
 		if (!world.getLevelData().getGameRules().getBoolean(CreativeWorldModGameRules.ALLOWCREATIVEMODE)) {
 			if (entity instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("xcdfvgbhnj"))
-						.ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("xcdfvgbhnj")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
 		}
 		if (world.getLevelData().getGameRules().getBoolean(CreativeWorldModGameRules.ALLOWCREATIVEMODE)) {
 			if (entity instanceof ServerPlayer _serverPlayer)

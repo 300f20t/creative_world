@@ -58,7 +58,6 @@ public class ElectricjetpackcontrolMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		CreativeWorldMod.addNetworkMessage(ElectricjetpackcontrolMessage.class, ElectricjetpackcontrolMessage::buffer,
-				ElectricjetpackcontrolMessage::new, ElectricjetpackcontrolMessage::handler);
+		CreativeWorldMod.addNetworkMessage(ElectricjetpackcontrolMessage.class, ElectricjetpackcontrolMessage::buffer, ElectricjetpackcontrolMessage::new, ElectricjetpackcontrolMessage::handler);
 	}
 }

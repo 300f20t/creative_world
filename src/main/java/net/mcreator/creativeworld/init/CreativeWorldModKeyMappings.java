@@ -20,8 +20,7 @@ import net.mcreator.creativeworld.CreativeWorldMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class CreativeWorldModKeyMappings {
-	public static final KeyMapping ELECTRICJETPACKCONTROL = new KeyMapping("key.creative_world.electricjetpackcontrol", GLFW.GLFW_KEY_SPACE,
-			"key.categories.misc") {
+	public static final KeyMapping ELECTRICJETPACKCONTROL = new KeyMapping("key.creative_world.electricjetpackcontrol", GLFW.GLFW_KEY_SPACE, "key.categories.misc") {
 		private boolean isDownOld = false;
 
 		@Override

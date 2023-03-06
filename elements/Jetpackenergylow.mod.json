@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,7 +9,6 @@
         "data": {
           "image": "jetpack_e_l.png",
           "use1Xscale": false,
-          "name": "jetpack_e_l.png",
           "x": 60,
           "y": 233
         }
@@ -19,7 +18,6 @@
         "data": {
           "image": "l_energy_jp.png",
           "use1Xscale": false,
-          "name": "l_energy_jp.png",
           "x": 78,
           "y": 224
         }

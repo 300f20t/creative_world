@@ -95,12 +95,9 @@ public class CreativeWorldModBlocks {
 	public static final RegistryObject<Block> ADVENCEDMACHINECASE = REGISTRY.register("advencedmachinecase", () -> new AdvencedmachinecaseBlock());
 	public static final RegistryObject<Block> ADVENCEDSOLARPANEL = REGISTRY.register("advencedsolarpanel", () -> new AdvencedsolarpanelBlock());
 	public static final RegistryObject<Block> INFINITYENERGY = REGISTRY.register("infinityenergy", () -> new InfinityenergyBlock());
-	public static final RegistryObject<Block> QUANTUMTELEPORTERBLOCK = REGISTRY.register("quantumteleporterblock",
-			() -> new QuantumteleporterblockBlock());
-	public static final RegistryObject<Block> QUANTUMTELEPORTERBLOCK_2 = REGISTRY.register("quantumteleporterblock_2",
-			() -> new Quantumteleporterblock2Block());
-	public static final RegistryObject<Block> STATIONARYPARTICLEBINDER = REGISTRY.register("stationaryparticlebinder",
-			() -> new StationaryparticlebinderBlock());
+	public static final RegistryObject<Block> QUANTUMTELEPORTERBLOCK = REGISTRY.register("quantumteleporterblock", () -> new QuantumteleporterblockBlock());
+	public static final RegistryObject<Block> QUANTUMTELEPORTERBLOCK_2 = REGISTRY.register("quantumteleporterblock_2", () -> new Quantumteleporterblock2Block());
+	public static final RegistryObject<Block> STATIONARYPARTICLEBINDER = REGISTRY.register("stationaryparticlebinder", () -> new StationaryparticlebinderBlock());
 	public static final RegistryObject<Block> COALGENERATOR_1 = REGISTRY.register("coalgenerator_1", () -> new Coalgenerator1Block());
 	public static final RegistryObject<Block> TINWIREWITHRUBBER_3 = REGISTRY.register("tinwirewithrubber_3", () -> new Tinwirewithrubber3Block());
 	public static final RegistryObject<Block> TINWIREWITHRUBBER_4 = REGISTRY.register("tinwirewithrubber_4", () -> new Tinwirewithrubber4Block());

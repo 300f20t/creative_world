@@ -32,10 +32,7 @@ import net.mcreator.creativeworld.block.entity.FanBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class FanBlock extends Block
-		implements
-
-			EntityBlock {
+public class FanBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public FanBlock() {
@@ -86,7 +83,6 @@ public class FanBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		FanObnovitTaktProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}

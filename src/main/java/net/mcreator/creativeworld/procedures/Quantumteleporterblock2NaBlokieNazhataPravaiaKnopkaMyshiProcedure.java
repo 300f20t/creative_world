@@ -26,10 +26,8 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.PARTICLEBINDER
-				.get()) {
-			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get()
-					&& (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.PARTICLEBINDER.get()) {
+			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get() && (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
 					&& (world.getBlockState(new BlockPos(x + 2, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
 					&& (world.getBlockState(new BlockPos(x + 3, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
 					&& (world.getBlockState(new BlockPos(x + 4, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
@@ -61,8 +59,7 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 					&& (world.getBlockState(new BlockPos(x, y + 2, z + 3))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
 					&& (world.getBlockState(new BlockPos(x + 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
 					&& (world.getBlockState(new BlockPos(x - 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()) {
-				if (!(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new CreativeWorldModVariables.PlayerVariables())).QT_2) {
+				if (!(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).QT_2) {
 					{
 						double _setval = x;
 						entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -95,8 +92,7 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 						_player.displayClientMessage(Component.literal("QT 1 conected"), (false));
 				}
 			}
-			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get()
-					&& (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get() && (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
 					&& (world.getBlockState(new BlockPos(x + 2, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
 					&& (world.getBlockState(new BlockPos(x + 3, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
 					&& (world.getBlockState(new BlockPos(x + 4, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
@@ -128,8 +124,7 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 					&& (world.getBlockState(new BlockPos(x, y + 2, z + 3))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
 					&& (world.getBlockState(new BlockPos(x + 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
 					&& (world.getBlockState(new BlockPos(x - 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()) {
-				if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new CreativeWorldModVariables.PlayerVariables())).QT_1) {
+				if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).QT_1) {
 					{
 						double _setval = x;
 						entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -163,128 +158,71 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 				}
 			}
 		}
-		if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new CreativeWorldModVariables.PlayerVariables())).QT_1
-				&& (entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new CreativeWorldModVariables.PlayerVariables())).QT_2) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.KEYCARD
-					.get()) {
-				if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x == x
-						&& (entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y == y
-						&& (entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z == z) {
+		if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).QT_1
+				&& (entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).QT_2) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.KEYCARD.get()) {
+				if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x == x
+						&& (entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y == y
+						&& (entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z == z) {
 					{
 						Entity _ent = entity;
-						_ent.teleportTo(
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x),
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y + 1),
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z));
+						_ent.teleportTo(((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x),
+								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y + 1),
+								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z));
 						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x),
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y + 1),
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z),
-									_ent.getYRot(), _ent.getXRot());
+							_serverPlayer.connection.teleport(((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x),
+									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y + 1),
+									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z), _ent.getYRot(), _ent.getXRot());
 					}
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.EXPLOSION,
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x),
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y + 1),
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z),
-								10, 1, 1, 1, 2);
+						_level.sendParticles(ParticleTypes.EXPLOSION, ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x),
+								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y + 1),
+								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z), 10, 1, 1, 1, 2);
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null,
-									new BlockPos(
-											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-													.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x,
-											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-													.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y + 1,
-											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-													.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3,
-									1);
+									new BlockPos((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x,
+											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y + 1,
+											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1);
 						} else {
-							_level.playLocalSound(
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x),
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y + 1),
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3,
-									1, false);
+							_level.playLocalSound(((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x),
+									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y + 1),
+									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1, false);
 						}
 					}
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 1));
-				} else if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x == x
-						&& (entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y == y
-						&& (entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z == z) {
+				} else if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x == x
+						&& (entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y == y
+						&& (entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z == z) {
 					{
 						Entity _ent = entity;
-						_ent.teleportTo(
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x),
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y + 1),
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z));
+						_ent.teleportTo(((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x),
+								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y + 1),
+								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z));
 						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x),
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y + 1),
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z),
-									_ent.getYRot(), _ent.getXRot());
+							_serverPlayer.connection.teleport(((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x),
+									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y + 1),
+									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z), _ent.getYRot(), _ent.getXRot());
 					}
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.EXPLOSION,
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x),
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y + 1),
-								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z),
-								10, 1, 1, 1, 2);
+						_level.sendParticles(ParticleTypes.EXPLOSION, ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x),
+								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y + 1),
+								((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z), 10, 1, 1, 1, 2);
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null,
-									new BlockPos(
-											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-													.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x,
-											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-													.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y + 1,
-											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-													.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3,
-									1);
+									new BlockPos((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x,
+											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y + 1,
+											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1);
 						} else {
-							_level.playLocalSound(
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x),
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y + 1),
-									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3,
-									1, false);
+							_level.playLocalSound(((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x),
+									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y + 1),
+									((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1, false);
 						}
 					}
 					if (entity instanceof LivingEntity _entity)

@@ -14,9 +14,8 @@ import net.mcreator.creativeworld.init.CreativeWorldModFluidTypes;
 import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
 
 public abstract class GasFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> CreativeWorldModFluidTypes.GAS_TYPE.get(),
-			() -> CreativeWorldModFluids.GAS.get(), () -> CreativeWorldModFluids.FLOWING_GAS.get()).explosionResistance(100f)
-			.bucket(() -> CreativeWorldModItems.GAS_BUCKET.get()).block(() -> (LiquidBlock) CreativeWorldModBlocks.GAS.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> CreativeWorldModFluidTypes.GAS_TYPE.get(), () -> CreativeWorldModFluids.GAS.get(), () -> CreativeWorldModFluids.FLOWING_GAS.get())
+			.explosionResistance(100f).bucket(() -> CreativeWorldModItems.GAS_BUCKET.get()).block(() -> (LiquidBlock) CreativeWorldModBlocks.GAS.get());
 
 	private GasFluid() {
 		super(PROPERTIES);

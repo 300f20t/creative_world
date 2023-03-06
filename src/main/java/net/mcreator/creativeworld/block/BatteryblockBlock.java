@@ -25,10 +25,7 @@ import net.mcreator.creativeworld.block.entity.BatteryblockBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class BatteryblockBlock extends Block
-		implements
-
-			EntityBlock {
+public class BatteryblockBlock extends Block implements EntityBlock {
 	public BatteryblockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f));
 	}
@@ -58,7 +55,6 @@ public class BatteryblockBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		BatteryblockObnovitTaktProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}

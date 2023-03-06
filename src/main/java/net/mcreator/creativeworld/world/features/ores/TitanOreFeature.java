@@ -33,11 +33,10 @@ public class TitanOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new TitanOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("creative_world:titan_ore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), CreativeWorldModBlocks.TITAN_ORE.get().defaultBlockState())), 1));
+		CONFIGURED_FEATURE = FeatureUtils.register("creative_world:titan_ore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), CreativeWorldModBlocks.TITAN_ORE.get().defaultBlockState())), 1));
 		PLACED_FEATURE = PlacementUtils.register("creative_world:titan_ore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(2), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(16)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(2), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(16)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

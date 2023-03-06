@@ -20,6 +20,5 @@ public class CreativeWorldModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, CreativeWorldMod.MODID);
 	public static final RegistryObject<MenuType<MsrpmroMenu>> MSRPMRO = REGISTRY.register("msrpmro", () -> IForgeMenuType.create(MsrpmroMenu::new));
 	public static final RegistryObject<MenuType<FdgdfMenu>> FDGDF = REGISTRY.register("fdgdf", () -> IForgeMenuType.create(FdgdfMenu::new));
-	public static final RegistryObject<MenuType<FgfhffhghkjkkytwqaMenu>> FGFHFFHGHKJKKYTWQA = REGISTRY.register("fgfhffhghkjkkytwqa",
-			() -> IForgeMenuType.create(FgfhffhghkjkkytwqaMenu::new));
+	public static final RegistryObject<MenuType<FgfhffhghkjkkytwqaMenu>> FGFHFFHGHKJKKYTWQA = REGISTRY.register("fgfhffhghkjkkytwqa", () -> IForgeMenuType.create(FgfhffhghkjkkytwqaMenu::new));
 }

@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -7,6 +6,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.creativeworld.world.inventory.MsrpmroMenu;
@@ -21,6 +21,7 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
 
 	public MsrpmroScreen(MsrpmroMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -50,12 +51,14 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0,
-				new ResourceLocation("creative_world:textures/screens/imgonline-com-ua-transparent-backgr-otc7jv5tgcy9qio.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("creative_world:textures/screens/imgonline-com-ua-transparent-backgr-otc7jv5tgcy9qio.png"));
 		this.blit(ms, this.leftPos + 96, this.topPos + 16, 0, 0, 50, 57, 50, 57);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("creative_world:textures/screens/hdugfbg.png"));
 		this.blit(ms, this.leftPos + 51, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("creative_world:textures/screens/gui_element_1_1.png"));
+		this.blit(ms, this.leftPos + -13, this.topPos + 0, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -88,5 +91,9 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
+		button_empty = new Button(this.leftPos + -13, this.topPos + -19, 30, 20, Component.translatable("gui.creative_world.msrpmro.button_empty"), e -> {
+		});
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 	}
 }

@@ -8,6 +8,9 @@
       "locked_code": false,
       "registry_name": "endlesswatersource_koghda_nazhata_pkm_po_bloku",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/EndlesswatersourceKoghdaNazhataPKMPoBlokuProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -38,7 +41,13 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "endlesswatersource"
+      "registry_name": "endlesswatersource",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/endlesswatersource.json",
+          "src/main/java/net/mcreator/creativeworld/item/EndlesswatersourceItem.java"
+        ]
+      }
     },
     {
       "name": "Qqqqq",
@@ -46,7 +55,12 @@
       "sortid": 132,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "qqqqq"
+      "registry_name": "qqqqq",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/qqqqq.json"
+        ]
+      }
     },
     {
       "name": "Alargebucket",
@@ -54,7 +68,13 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alargebucket"
+      "registry_name": "alargebucket",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/AlargebucketItem.java",
+          "src/main/resources/assets/creative_world/models/item/alargebucket.json"
+        ]
+      }
     },
     {
       "name": "Alargebucketofwater1",
@@ -62,7 +82,13 @@
       "sortid": 133,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alargebucketofwater_1"
+      "registry_name": "alargebucketofwater_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/alargebucketofwater_1.json",
+          "src/main/java/net/mcreator/creativeworld/item/Alargebucketofwater1Item.java"
+        ]
+      }
     },
     {
       "name": "Alargebucketofwater2",
@@ -70,7 +96,13 @@
       "sortid": 134,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alargebucketofwater_2"
+      "registry_name": "alargebucketofwater_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/Alargebucketofwater2Item.java",
+          "src/main/resources/assets/creative_world/models/item/alargebucketofwater_2.json"
+        ]
+      }
     },
     {
       "name": "Alargebucketofwater3",
@@ -78,7 +110,13 @@
       "sortid": 135,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alargebucketofwater_3"
+      "registry_name": "alargebucketofwater_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/alargebucketofwater_3.json",
+          "src/main/java/net/mcreator/creativeworld/item/Alargebucketofwater3Item.java"
+        ]
+      }
     },
     {
       "name": "Alargebucketofwater4",
@@ -86,7 +124,13 @@
       "sortid": 136,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alargebucketofwater_4"
+      "registry_name": "alargebucketofwater_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/Alargebucketofwater4Item.java",
+          "src/main/resources/assets/creative_world/models/item/alargebucketofwater_4.json"
+        ]
+      }
     },
     {
       "name": "Alargebucketofwater5",
@@ -94,7 +138,13 @@
       "sortid": 137,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alargebucketofwater_5"
+      "registry_name": "alargebucketofwater_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/Alargebucketofwater5Item.java",
+          "src/main/resources/assets/creative_world/models/item/alargebucketofwater_5.json"
+        ]
+      }
     },
     {
       "name": "Alargebucketofwater6",
@@ -102,7 +152,13 @@
       "sortid": 138,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alargebucketofwater_6"
+      "registry_name": "alargebucketofwater_6",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/alargebucketofwater_6.json",
+          "src/main/java/net/mcreator/creativeworld/item/Alargebucketofwater6Item.java"
+        ]
+      }
     },
     {
       "name": "Alargebucketofwater7",
@@ -110,7 +166,13 @@
       "sortid": 139,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alargebucketofwater_7"
+      "registry_name": "alargebucketofwater_7",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/alargebucketofwater_7.json",
+          "src/main/java/net/mcreator/creativeworld/item/Alargebucketofwater7Item.java"
+        ]
+      }
     },
     {
       "name": "Alargebucketofwater8",
@@ -118,7 +180,13 @@
       "sortid": 140,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alargebucketofwater_8"
+      "registry_name": "alargebucketofwater_8",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/Alargebucketofwater8Item.java",
+          "src/main/resources/assets/creative_world/models/item/alargebucketofwater_8.json"
+        ]
+      }
     },
     {
       "name": "Alargebucketofwater9",
@@ -126,7 +194,13 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "alargebucketofwater_9"
+      "registry_name": "alargebucketofwater_9",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/Alargebucketofwater9Item.java",
+          "src/main/resources/assets/creative_world/models/item/alargebucketofwater_9.json"
+        ]
+      }
     },
     {
       "name": "AlargebucketKoghdaNazhataPKMPoBloku",
@@ -136,6 +210,9 @@
       "locked_code": false,
       "registry_name": "alargebucket_koghda_nazhata_pkm_po_bloku",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/AlargebucketKoghdaNazhataPKMPoBlokuProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -168,6 +245,9 @@
       "locked_code": false,
       "registry_name": "alargebucketofwater_1_koghda_nazhata_pkm_po_bloku",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/Alargebucketofwater1KoghdaNazhataPKMPoBlokuProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -200,6 +280,9 @@
       "locked_code": false,
       "registry_name": "rpapva",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/RpapvaProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -232,6 +315,9 @@
       "locked_code": false,
       "registry_name": "avavya",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/AvavyaProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -264,6 +350,9 @@
       "locked_code": false,
       "registry_name": "avava",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/AvavaProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -296,6 +385,9 @@
       "locked_code": false,
       "registry_name": "kiepro",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/KieproProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -328,6 +420,9 @@
       "locked_code": false,
       "registry_name": "pvapap",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/PvapapProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -360,6 +455,9 @@
       "locked_code": false,
       "registry_name": "parapr",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/ParaprProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -392,6 +490,9 @@
       "locked_code": false,
       "registry_name": "mimp",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/MimpProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -424,6 +525,9 @@
       "locked_code": false,
       "registry_name": "yavv",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/YavvProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -454,7 +558,12 @@
       "sortid": 151,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "prprprp"
+      "registry_name": "prprprp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/prprprp.json"
+        ]
+      }
     },
     {
       "name": "Ironwrench",
@@ -462,7 +571,13 @@
       "sortid": 76,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ironwrench"
+      "registry_name": "ironwrench",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/IronwrenchItem.java",
+          "src/main/resources/assets/creative_world/models/item/ironwrench.json"
+        ]
+      }
     },
     {
       "name": "Coalgenerator",
@@ -470,7 +585,16 @@
       "sortid": 104,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coalgenerator"
+      "registry_name": "coalgenerator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/coalgenerator.json",
+          "src/main/java/net/mcreator/creativeworld/block/CoalgeneratorBlock.java",
+          "src/main/resources/assets/creative_world/blockstates/coalgenerator.json",
+          "src/main/java/net/mcreator/creativeworld/block/entity/CoalgeneratorBlockEntity.java",
+          "src/main/resources/assets/creative_world/models/item/coalgenerator.json"
+        ]
+      }
     },
     {
       "name": "Machinecase",
@@ -478,7 +602,15 @@
       "sortid": 103,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "machinecase"
+      "registry_name": "machinecase",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/machinecase.json",
+          "src/main/resources/assets/creative_world/models/block/machinecase.json",
+          "src/main/java/net/mcreator/creativeworld/block/MachinecaseBlock.java",
+          "src/main/resources/assets/creative_world/blockstates/machinecase.json"
+        ]
+      }
     },
     {
       "name": "IronwrenchKoghdaNazhataPKMPoBloku",
@@ -488,6 +620,9 @@
       "locked_code": false,
       "registry_name": "ironwrench_koghda_nazhata_pkm_po_bloku",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/IronwrenchKoghdaNazhataPKMPoBlokuProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -518,7 +653,13 @@
       "sortid": 75,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ironhammer"
+      "registry_name": "ironhammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/ironhammer.json",
+          "src/main/java/net/mcreator/creativeworld/item/IronhammerItem.java"
+        ]
+      }
     },
     {
       "name": "Wradsdsds",
@@ -526,7 +667,12 @@
       "sortid": 153,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "wradsdsds"
+      "registry_name": "wradsdsds",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/wradsdsds.json"
+        ]
+      }
     },
     {
       "name": "Ironplate",
@@ -534,7 +680,13 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ironplate"
+      "registry_name": "ironplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/IronplateItem.java",
+          "src/main/resources/assets/creative_world/models/item/ironplate.json"
+        ]
+      }
     },
     {
       "name": "Nrpnpghn",
@@ -542,7 +694,12 @@
       "sortid": 154,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "nrpnpghn"
+      "registry_name": "nrpnpghn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/nrpnpghn.json"
+        ]
+      }
     },
     {
       "name": "Dfdfdfd",
@@ -550,7 +707,12 @@
       "sortid": 155,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dfdfdfd"
+      "registry_name": "dfdfdfd",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/dfdfdfd.json"
+        ]
+      }
     },
     {
       "name": "TinIngot",
@@ -558,7 +720,13 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_ingot"
+      "registry_name": "tin_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/tin_ingot.json",
+          "src/main/java/net/mcreator/creativeworld/item/TinIngotItem.java"
+        ]
+      }
     },
     {
       "name": "TinOre",
@@ -566,7 +734,17 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_ore"
+      "registry_name": "tin_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/world/features/ores/TinOreFeature.java",
+          "src/main/resources/assets/creative_world/models/item/tin_ore.json",
+          "src/main/resources/assets/creative_world/models/block/tin_ore.json",
+          "src/main/java/net/mcreator/creativeworld/block/TinOreBlock.java",
+          "src/main/resources/assets/creative_world/blockstates/tin_ore.json",
+          "src/main/resources/data/creative_world/forge/biome_modifier/tin_ore_biome_modifier.json"
+        ]
+      }
     },
     {
       "name": "TinBlock",
@@ -574,7 +752,15 @@
       "sortid": 86,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_block"
+      "registry_name": "tin_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/TinBlockBlock.java",
+          "src/main/resources/assets/creative_world/models/block/tin_block.json",
+          "src/main/resources/assets/creative_world/models/item/tin_block.json",
+          "src/main/resources/assets/creative_world/blockstates/tin_block.json"
+        ]
+      }
     },
     {
       "name": "TinOreBlockRecipe",
@@ -582,7 +768,12 @@
       "sortid": 156,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_ore_block_recipe"
+      "registry_name": "tin_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_ore_block_recipe.json"
+        ]
+      }
     },
     {
       "name": "TinBlockOreRecipe",
@@ -590,7 +781,12 @@
       "sortid": 157,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_block_ore_recipe"
+      "registry_name": "tin_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_block_ore_recipe.json"
+        ]
+      }
     },
     {
       "name": "TinOreSmelting",
@@ -598,7 +794,12 @@
       "sortid": 158,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_ore_smelting"
+      "registry_name": "tin_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_ore_smelting.json"
+        ]
+      }
     },
     {
       "name": "TinPickaxe",
@@ -606,7 +807,13 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_pickaxe"
+      "registry_name": "tin_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/TinPickaxeItem.java",
+          "src/main/resources/assets/creative_world/models/item/tin_pickaxe.json"
+        ]
+      }
     },
     {
       "name": "TinAxe",
@@ -614,7 +821,13 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_axe"
+      "registry_name": "tin_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/TinAxeItem.java",
+          "src/main/resources/assets/creative_world/models/item/tin_axe.json"
+        ]
+      }
     },
     {
       "name": "TinSword",
@@ -622,7 +835,13 @@
       "sortid": 115,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_sword"
+      "registry_name": "tin_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/tin_sword.json",
+          "src/main/java/net/mcreator/creativeworld/item/TinSwordItem.java"
+        ]
+      }
     },
     {
       "name": "TinShovel",
@@ -630,7 +849,13 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_shovel"
+      "registry_name": "tin_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/TinShovelItem.java",
+          "src/main/resources/assets/creative_world/models/item/tin_shovel.json"
+        ]
+      }
     },
     {
       "name": "TinHoe",
@@ -638,7 +863,13 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_hoe"
+      "registry_name": "tin_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/TinHoeItem.java",
+          "src/main/resources/assets/creative_world/models/item/tin_hoe.json"
+        ]
+      }
     },
     {
       "name": "TinPickaxeRecipe",
@@ -646,7 +877,12 @@
       "sortid": 159,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_pickaxe_recipe"
+      "registry_name": "tin_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_pickaxe_recipe.json"
+        ]
+      }
     },
     {
       "name": "TinAxeRecipe",
@@ -654,7 +890,12 @@
       "sortid": 160,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_axe_recipe"
+      "registry_name": "tin_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_axe_recipe.json"
+        ]
+      }
     },
     {
       "name": "TinSwordRecipe",
@@ -662,7 +903,12 @@
       "sortid": 161,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_sword_recipe"
+      "registry_name": "tin_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_sword_recipe.json"
+        ]
+      }
     },
     {
       "name": "TinShovelRecipe",
@@ -670,7 +916,12 @@
       "sortid": 162,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_shovel_recipe"
+      "registry_name": "tin_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_shovel_recipe.json"
+        ]
+      }
     },
     {
       "name": "TinHoeRecipe",
@@ -678,7 +929,12 @@
       "sortid": 163,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_hoe_recipe"
+      "registry_name": "tin_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_hoe_recipe.json"
+        ]
+      }
     },
     {
       "name": "TinArmor",
@@ -691,7 +947,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/tin_armor_leggings.json",
+          "src/main/resources/assets/creative_world/models/item/tin_armor_boots.json",
+          "src/main/resources/assets/creative_world/models/item/tin_armor_chestplate.json",
+          "src/main/resources/assets/creative_world/models/item/tin_armor_helmet.json",
+          "src/main/java/net/mcreator/creativeworld/item/TinArmorItem.java"
+        ]
       }
     },
     {
@@ -700,7 +963,12 @@
       "sortid": 164,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_armor_helmet_recipe"
+      "registry_name": "tin_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_armor_helmet_recipe.json"
+        ]
+      }
     },
     {
       "name": "TinArmorBodyRecipe",
@@ -708,7 +976,12 @@
       "sortid": 165,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_armor_body_recipe"
+      "registry_name": "tin_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_armor_body_recipe.json"
+        ]
+      }
     },
     {
       "name": "TinArmorLeggingsRecipe",
@@ -716,7 +989,12 @@
       "sortid": 166,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_armor_leggings_recipe"
+      "registry_name": "tin_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_armor_leggings_recipe.json"
+        ]
+      }
     },
     {
       "name": "TinArmorBootsRecipe",
@@ -724,7 +1002,12 @@
       "sortid": 167,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tin_armor_boots_recipe"
+      "registry_name": "tin_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_armor_boots_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperPickaxe",
@@ -732,7 +1015,13 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_pickaxe"
+      "registry_name": "copper_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/copper_pickaxe.json",
+          "src/main/java/net/mcreator/creativeworld/item/CopperPickaxeItem.java"
+        ]
+      }
     },
     {
       "name": "CopperAxe",
@@ -740,7 +1029,13 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_axe"
+      "registry_name": "copper_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CopperAxeItem.java",
+          "src/main/resources/assets/creative_world/models/item/copper_axe.json"
+        ]
+      }
     },
     {
       "name": "CopperSword",
@@ -748,7 +1043,13 @@
       "sortid": 117,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_sword"
+      "registry_name": "copper_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CopperSwordItem.java",
+          "src/main/resources/assets/creative_world/models/item/copper_sword.json"
+        ]
+      }
     },
     {
       "name": "CopperShovel",
@@ -756,7 +1057,13 @@
       "sortid": 49,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_shovel"
+      "registry_name": "copper_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CopperShovelItem.java",
+          "src/main/resources/assets/creative_world/models/item/copper_shovel.json"
+        ]
+      }
     },
     {
       "name": "CopperHoe",
@@ -764,7 +1071,13 @@
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_hoe"
+      "registry_name": "copper_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CopperHoeItem.java",
+          "src/main/resources/assets/creative_world/models/item/copper_hoe.json"
+        ]
+      }
     },
     {
       "name": "CopperPickaxeRecipe",
@@ -772,7 +1085,12 @@
       "sortid": 168,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_pickaxe_recipe"
+      "registry_name": "copper_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/copper_pickaxe_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperAxeRecipe",
@@ -780,7 +1098,12 @@
       "sortid": 169,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_axe_recipe"
+      "registry_name": "copper_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/copper_axe_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperSwordRecipe",
@@ -788,7 +1111,12 @@
       "sortid": 170,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_sword_recipe"
+      "registry_name": "copper_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/copper_sword_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperShovelRecipe",
@@ -796,7 +1124,12 @@
       "sortid": 171,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_shovel_recipe"
+      "registry_name": "copper_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/copper_shovel_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperHoeRecipe",
@@ -804,7 +1137,12 @@
       "sortid": 172,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_hoe_recipe"
+      "registry_name": "copper_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/copper_hoe_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperArmor",
@@ -817,7 +1155,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CopperArmorItem.java",
+          "src/main/resources/assets/creative_world/models/item/copper_armor_helmet.json",
+          "src/main/resources/assets/creative_world/models/item/copper_armor_chestplate.json",
+          "src/main/resources/assets/creative_world/models/item/copper_armor_boots.json",
+          "src/main/resources/assets/creative_world/models/item/copper_armor_leggings.json"
+        ]
       }
     },
     {
@@ -826,7 +1171,12 @@
       "sortid": 173,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_armor_helmet_recipe"
+      "registry_name": "copper_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/copper_armor_helmet_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperArmorBodyRecipe",
@@ -834,7 +1184,12 @@
       "sortid": 174,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_armor_body_recipe"
+      "registry_name": "copper_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/copper_armor_body_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperArmorLeggingsRecipe",
@@ -842,7 +1197,12 @@
       "sortid": 175,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_armor_leggings_recipe"
+      "registry_name": "copper_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/copper_armor_leggings_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperArmorBootsRecipe",
@@ -850,7 +1210,12 @@
       "sortid": 176,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_armor_boots_recipe"
+      "registry_name": "copper_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/copper_armor_boots_recipe.json"
+        ]
+      }
     },
     {
       "name": "Fyutiy",
@@ -858,7 +1223,12 @@
       "sortid": 177,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fyutiy"
+      "registry_name": "fyutiy",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/fyutiy.json"
+        ]
+      }
     },
     {
       "name": "Ghkggh",
@@ -866,7 +1236,12 @@
       "sortid": 178,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ghkggh"
+      "registry_name": "ghkggh",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/ghkggh.json"
+        ]
+      }
     },
     {
       "name": "Tinplate",
@@ -874,7 +1249,13 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tinplate"
+      "registry_name": "tinplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/tinplate.json",
+          "src/main/java/net/mcreator/creativeworld/item/TinplateItem.java"
+        ]
+      }
     },
     {
       "name": "Copperplate",
@@ -882,7 +1263,13 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copperplate"
+      "registry_name": "copperplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CopperplateItem.java",
+          "src/main/resources/assets/creative_world/models/item/copperplate.json"
+        ]
+      }
     },
     {
       "name": "ResinWood",
@@ -890,7 +1277,15 @@
       "sortid": 92,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_wood"
+      "registry_name": "resin_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/resin_wood.json",
+          "src/main/resources/assets/creative_world/models/block/resin_wood.json",
+          "src/main/resources/assets/creative_world/blockstates/resin_wood.json",
+          "src/main/java/net/mcreator/creativeworld/block/ResinWoodBlock.java"
+        ]
+      }
     },
     {
       "name": "ResinLog",
@@ -898,7 +1293,15 @@
       "sortid": 90,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_log"
+      "registry_name": "resin_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/resin_log.json",
+          "src/main/resources/assets/creative_world/models/block/resin_log.json",
+          "src/main/resources/assets/creative_world/blockstates/resin_log.json",
+          "src/main/java/net/mcreator/creativeworld/block/ResinLogBlock.java"
+        ]
+      }
     },
     {
       "name": "ResinPlanks",
@@ -906,7 +1309,15 @@
       "sortid": 93,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_planks"
+      "registry_name": "resin_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/resin_planks.json",
+          "src/main/resources/assets/creative_world/models/item/resin_planks.json",
+          "src/main/java/net/mcreator/creativeworld/block/ResinPlanksBlock.java",
+          "src/main/resources/assets/creative_world/blockstates/resin_planks.json"
+        ]
+      }
     },
     {
       "name": "ResinLeaves",
@@ -914,7 +1325,15 @@
       "sortid": 96,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_leaves"
+      "registry_name": "resin_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/ResinLeavesBlock.java",
+          "src/main/resources/assets/creative_world/models/block/resin_leaves.json",
+          "src/main/resources/assets/creative_world/models/item/resin_leaves.json",
+          "src/main/resources/assets/creative_world/blockstates/resin_leaves.json"
+        ]
+      }
     },
     {
       "name": "ResinStairs",
@@ -922,7 +1341,17 @@
       "sortid": 94,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_stairs"
+      "registry_name": "resin_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/ResinStairsBlock.java",
+          "src/main/resources/assets/creative_world/models/block/resin_stairs_inner.json",
+          "src/main/resources/assets/creative_world/models/block/resin_stairs.json",
+          "src/main/resources/assets/creative_world/blockstates/resin_stairs.json",
+          "src/main/resources/assets/creative_world/models/item/resin_stairs.json",
+          "src/main/resources/assets/creative_world/models/block/resin_stairs_outer.json"
+        ]
+      }
     },
     {
       "name": "ResinSlab",
@@ -930,7 +1359,17 @@
       "sortid": 95,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_slab"
+      "registry_name": "resin_slab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/ResinSlabBlock.java",
+          "src/main/resources/assets/creative_world/models/block/resin_slab.json",
+          "src/main/resources/assets/creative_world/blockstates/resin_slab.json",
+          "src/main/resources/assets/creative_world/models/block/resin_slab_full.json",
+          "src/main/resources/assets/creative_world/models/item/resin_slab.json",
+          "src/main/resources/assets/creative_world/models/block/resin_slab_top.json"
+        ]
+      }
     },
     {
       "name": "ResinFence",
@@ -938,7 +1377,17 @@
       "sortid": 97,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_fence"
+      "registry_name": "resin_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/resin_fence.json",
+          "src/main/resources/assets/creative_world/models/block/resin_fence.json",
+          "src/main/resources/assets/creative_world/blockstates/resin_fence.json",
+          "src/main/java/net/mcreator/creativeworld/block/ResinFenceBlock.java",
+          "src/main/resources/assets/creative_world/models/block/resin_fence_post.json",
+          "src/main/resources/assets/creative_world/models/block/resin_fence_inventory.json"
+        ]
+      }
     },
     {
       "name": "ResinFenceGate",
@@ -946,7 +1395,18 @@
       "sortid": 98,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_fence_gate"
+      "registry_name": "resin_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/resin_fence_gate_open.json",
+          "src/main/resources/assets/creative_world/models/item/resin_fence_gate.json",
+          "src/main/resources/assets/creative_world/blockstates/resin_fence_gate.json",
+          "src/main/resources/assets/creative_world/models/block/resin_fence_gate_wall.json",
+          "src/main/java/net/mcreator/creativeworld/block/ResinFenceGateBlock.java",
+          "src/main/resources/assets/creative_world/models/block/resin_fence_gate_wall_open.json",
+          "src/main/resources/assets/creative_world/models/block/resin_fence_gate.json"
+        ]
+      }
     },
     {
       "name": "ResinItemsTag",
@@ -954,7 +1414,12 @@
       "sortid": 179,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_items_tag"
+      "registry_name": "resin_items_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/resin_log.json"
+        ]
+      }
     },
     {
       "name": "ResinWoodRecipe",
@@ -962,7 +1427,12 @@
       "sortid": 180,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_wood_recipe"
+      "registry_name": "resin_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/resin_wood_recipe.json"
+        ]
+      }
     },
     {
       "name": "ResinPlanksRecipe",
@@ -970,7 +1440,12 @@
       "sortid": 181,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_planks_recipe"
+      "registry_name": "resin_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/resin_planks_recipe.json"
+        ]
+      }
     },
     {
       "name": "ResinStairsRecipe",
@@ -978,7 +1453,12 @@
       "sortid": 182,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_stairs_recipe"
+      "registry_name": "resin_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/resin_stairs_recipe.json"
+        ]
+      }
     },
     {
       "name": "ResinSlabRecipe",
@@ -986,7 +1466,12 @@
       "sortid": 183,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_slab_recipe"
+      "registry_name": "resin_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/resin_slab_recipe.json"
+        ]
+      }
     },
     {
       "name": "ResinFenceRecipe",
@@ -994,7 +1479,12 @@
       "sortid": 184,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_fence_recipe"
+      "registry_name": "resin_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/resin_fence_recipe.json"
+        ]
+      }
     },
     {
       "name": "ResinFenceGateRecipe",
@@ -1002,7 +1492,12 @@
       "sortid": 185,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_fence_gate_recipe"
+      "registry_name": "resin_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/resin_fence_gate_recipe.json"
+        ]
+      }
     },
     {
       "name": "ResinStickRecipe",
@@ -1010,7 +1505,12 @@
       "sortid": 186,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "resin_stick_recipe"
+      "registry_name": "resin_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/resin_stick_recipe.json"
+        ]
+      }
     },
     {
       "name": "Crusher",
@@ -1018,7 +1518,16 @@
       "sortid": 105,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crusher"
+      "registry_name": "crusher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/blockstates/crusher.json",
+          "src/main/resources/assets/creative_world/models/block/crusher.json",
+          "src/main/java/net/mcreator/creativeworld/block/entity/CrusherBlockEntity.java",
+          "src/main/resources/assets/creative_world/models/item/crusher.json",
+          "src/main/java/net/mcreator/creativeworld/block/CrusherBlock.java"
+        ]
+      }
     },
     {
       "name": "Rsinlogwithresin",
@@ -1026,7 +1535,15 @@
       "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rsinlogwithresin"
+      "registry_name": "rsinlogwithresin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/RsinlogwithresinBlock.java",
+          "src/main/resources/assets/creative_world/models/block/rsinlogwithresin.json",
+          "src/main/resources/assets/creative_world/blockstates/rsinlogwithresin.json",
+          "src/main/resources/assets/creative_world/models/item/rsinlogwithresin.json"
+        ]
+      }
     },
     {
       "name": "Msrpmro",
@@ -1034,7 +1551,13 @@
       "sortid": 187,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "msrpmro"
+      "registry_name": "msrpmro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/client/gui/MsrpmroScreen.java",
+          "src/main/java/net/mcreator/creativeworld/world/inventory/MsrpmroMenu.java"
+        ]
+      }
     },
     {
       "name": "Wirecutters",
@@ -1042,7 +1565,13 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "wirecutters"
+      "registry_name": "wirecutters",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/wirecutters.json",
+          "src/main/java/net/mcreator/creativeworld/item/WirecuttersItem.java"
+        ]
+      }
     },
     {
       "name": "Thecoreoftheformation",
@@ -1050,7 +1579,13 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "thecoreoftheformation"
+      "registry_name": "thecoreoftheformation",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/thecoreoftheformation.json",
+          "src/main/java/net/mcreator/creativeworld/item/ThecoreoftheformationItem.java"
+        ]
+      }
     },
     {
       "name": "Thecoreofmatter",
@@ -1058,7 +1593,13 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "thecoreofmatter"
+      "registry_name": "thecoreofmatter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/ThecoreofmatterItem.java",
+          "src/main/resources/assets/creative_world/models/item/thecoreofmatter.json"
+        ]
+      }
     },
     {
       "name": "Creatingcore",
@@ -1066,7 +1607,13 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creatingcore"
+      "registry_name": "creatingcore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/creatingcore.json",
+          "src/main/java/net/mcreator/creativeworld/item/CreatingcoreItem.java"
+        ]
+      }
     },
     {
       "name": "Gfg",
@@ -1074,7 +1621,12 @@
       "sortid": 188,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gfg"
+      "registry_name": "gfg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/gfg.json"
+        ]
+      }
     },
     {
       "name": "Gfdfgfgfg",
@@ -1082,7 +1634,12 @@
       "sortid": 189,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gfdfgfgfg"
+      "registry_name": "gfdfgfgfg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/gfdfgfgfg.json"
+        ]
+      }
     },
     {
       "name": "Xfdvdc",
@@ -1090,7 +1647,12 @@
       "sortid": 190,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "xfdvdc"
+      "registry_name": "xfdvdc",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/xfdvdc.json"
+        ]
+      }
     },
     {
       "name": "Bedrockbreacker",
@@ -1098,7 +1660,13 @@
       "sortid": 71,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bedrockbreacker"
+      "registry_name": "bedrockbreacker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/bedrockbreacker.json",
+          "src/main/java/net/mcreator/creativeworld/item/BedrockbreackerItem.java"
+        ]
+      }
     },
     {
       "name": "Gttyju",
@@ -1106,7 +1674,12 @@
       "sortid": 191,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gttyju"
+      "registry_name": "gttyju",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/gttyju.json"
+        ]
+      }
     },
     {
       "name": "Coalgenerator1",
@@ -1114,7 +1687,16 @@
       "sortid": 192,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coalgenerator_1"
+      "registry_name": "coalgenerator_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/blockstates/coalgenerator_1.json",
+          "src/main/java/net/mcreator/creativeworld/block/Coalgenerator1Block.java",
+          "src/main/resources/assets/creative_world/models/block/coalgenerator_1.json",
+          "src/main/resources/assets/creative_world/models/item/coalgenerator_1.json",
+          "src/main/java/net/mcreator/creativeworld/block/entity/Coalgenerator1BlockEntity.java"
+        ]
+      }
     },
     {
       "name": "Ysvyvy",
@@ -1124,6 +1706,9 @@
       "locked_code": false,
       "registry_name": "ysvyvy",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/YsvyvyProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -1150,7 +1735,16 @@
       "sortid": 108,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "solarpanel"
+      "registry_name": "solarpanel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/SolarpanelBlock.java",
+          "src/main/resources/assets/creative_world/blockstates/solarpanel.json",
+          "src/main/resources/assets/creative_world/models/item/solarpanel.json",
+          "src/main/resources/assets/creative_world/models/block/solarpanel.json",
+          "src/main/java/net/mcreator/creativeworld/block/entity/SolarpanelBlockEntity.java"
+        ]
+      }
     },
     {
       "name": "SolarpanelObnovitTakt",
@@ -1160,6 +1754,9 @@
       "locked_code": false,
       "registry_name": "solarpanel_obnovit_takt",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/SolarpanelObnovitTaktProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -1186,7 +1783,13 @@
       "sortid": 195,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fdgdf"
+      "registry_name": "fdgdf",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/client/gui/FdgdfScreen.java",
+          "src/main/java/net/mcreator/creativeworld/world/inventory/FdgdfMenu.java"
+        ]
+      }
     },
     {
       "name": "Crushedironore",
@@ -1194,7 +1797,13 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crushedironore"
+      "registry_name": "crushedironore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/crushedironore.json",
+          "src/main/java/net/mcreator/creativeworld/item/CrushedironoreItem.java"
+        ]
+      }
     },
     {
       "name": "CrusherNaBlokieNazhataPravaiaKnopkaMyshi",
@@ -1204,6 +1813,9 @@
       "locked_code": false,
       "registry_name": "crusher_na_blokie_nazhata_pravaia_knopka_myshi",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/CrusherNaBlokieNazhataPravaiaKnopkaMyshiProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1236,6 +1848,9 @@
       "locked_code": false,
       "registry_name": "crusher_obnovit_takt",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/CrusherObnovitTaktProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1254,7 +1869,12 @@
       "sortid": 198,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "defdf"
+      "registry_name": "defdf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/defdf.json"
+        ]
+      }
     },
     {
       "name": "CrushedironoreKoghdaNazhataPKMPoBloku",
@@ -1264,6 +1884,9 @@
       "locked_code": false,
       "registry_name": "crushedironore_koghda_nazhata_pkm_po_bloku",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/CrushedironoreKoghdaNazhataPKMPoBlokuProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1294,7 +1917,12 @@
       "sortid": 200,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "infinity"
+      "registry_name": "infinity",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/advancements/infinity.json"
+        ]
+      }
     },
     {
       "name": "Core",
@@ -1302,7 +1930,12 @@
       "sortid": 201,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "core"
+      "registry_name": "core",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/advancements/core.json"
+        ]
+      }
     },
     {
       "name": "Creativeworld",
@@ -1310,7 +1943,12 @@
       "sortid": 202,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativeworld"
+      "registry_name": "creativeworld",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/advancements/creativeworld.json"
+        ]
+      }
     },
     {
       "name": "Bedrock",
@@ -1318,7 +1956,12 @@
       "sortid": 203,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bedrock"
+      "registry_name": "bedrock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/advancements/bedrock.json"
+        ]
+      }
     },
     {
       "name": "Fgfhffhghkjkkytwqa",
@@ -1326,7 +1969,13 @@
       "sortid": 204,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fgfhffhghkjkkytwqa"
+      "registry_name": "fgfhffhghkjkkytwqa",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/world/inventory/FgfhffhghkjkkytwqaMenu.java",
+          "src/main/java/net/mcreator/creativeworld/client/gui/FgfhffhghkjkkytwqaScreen.java"
+        ]
+      }
     },
     {
       "name": "Tinwire",
@@ -1335,6 +1984,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwire",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/tinwire.json",
+          "src/main/resources/assets/creative_world/models/item/tinwire.json",
+          "src/main/resources/assets/creative_world/blockstates/tinwire.json",
+          "src/main/java/net/mcreator/creativeworld/block/TinwireBlock.java"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -1343,7 +2000,13 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crushedcopperore"
+      "registry_name": "crushedcopperore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CrushedcopperoreItem.java",
+          "src/main/resources/assets/creative_world/models/item/crushedcopperore.json"
+        ]
+      }
     },
     {
       "name": "Crushedtinore",
@@ -1351,7 +2014,13 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crushedtinore"
+      "registry_name": "crushedtinore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CrushedtinoreItem.java",
+          "src/main/resources/assets/creative_world/models/item/crushedtinore.json"
+        ]
+      }
     },
     {
       "name": "CrushedcopperoreKoghdaNazhataPKMPoBloku",
@@ -1361,6 +2030,9 @@
       "locked_code": false,
       "registry_name": "crushedcopperore_koghda_nazhata_pkm_po_bloku",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/CrushedcopperoreKoghdaNazhataPKMPoBlokuProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1393,6 +2065,9 @@
       "locked_code": false,
       "registry_name": "crushedtinore_koghda_nazhata_pkm_po_bloku",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/CrushedtinoreKoghdaNazhataPKMPoBlokuProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1423,7 +2098,13 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tinnugget"
+      "registry_name": "tinnugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/tinnugget.json",
+          "src/main/java/net/mcreator/creativeworld/item/TinnuggetItem.java"
+        ]
+      }
     },
     {
       "name": "Coppernugget",
@@ -1431,7 +2112,13 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coppernugget"
+      "registry_name": "coppernugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/coppernugget.json",
+          "src/main/java/net/mcreator/creativeworld/item/CoppernuggetItem.java"
+        ]
+      }
     },
     {
       "name": "Rubbertree",
@@ -1439,7 +2126,13 @@
       "sortid": 207,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rubbertree"
+      "registry_name": "rubbertree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/forge/biome_modifier/rubbertree_biome_modifier.json",
+          "src/main/java/net/mcreator/creativeworld/world/features/RubbertreeFeature.java"
+        ]
+      }
     },
     {
       "name": "Ggthg",
@@ -1447,7 +2140,12 @@
       "sortid": 208,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ggthg"
+      "registry_name": "ggthg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/ggthg.json"
+        ]
+      }
     },
     {
       "name": "Drgffdg",
@@ -1455,7 +2153,12 @@
       "sortid": 209,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "drgffdg"
+      "registry_name": "drgffdg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/drgffdg.json"
+        ]
+      }
     },
     {
       "name": "Washedcrushedironore",
@@ -1463,7 +2166,13 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "washedcrushedironore"
+      "registry_name": "washedcrushedironore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/washedcrushedironore.json",
+          "src/main/java/net/mcreator/creativeworld/item/WashedcrushedironoreItem.java"
+        ]
+      }
     },
     {
       "name": "Washedcrushedcopperore",
@@ -1471,7 +2180,13 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "washedcrushedcopperore"
+      "registry_name": "washedcrushedcopperore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/WashedcrushedcopperoreItem.java",
+          "src/main/resources/assets/creative_world/models/item/washedcrushedcopperore.json"
+        ]
+      }
     },
     {
       "name": "Washedcrushedtinore",
@@ -1479,7 +2194,13 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "washedcrushedtinore"
+      "registry_name": "washedcrushedtinore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/washedcrushedtinore.json",
+          "src/main/java/net/mcreator/creativeworld/item/WashedcrushedtinoreItem.java"
+        ]
+      }
     },
     {
       "name": "Ghhgfd",
@@ -1487,7 +2208,12 @@
       "sortid": 210,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ghhgfd"
+      "registry_name": "ghhgfd",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/ghhgfd.json"
+        ]
+      }
     },
     {
       "name": "Upnieu",
@@ -1495,7 +2221,12 @@
       "sortid": 211,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "upnieu"
+      "registry_name": "upnieu",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/upnieu.json"
+        ]
+      }
     },
     {
       "name": "Cghsdd",
@@ -1503,7 +2234,12 @@
       "sortid": 212,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cghsdd"
+      "registry_name": "cghsdd",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/cghsdd.json"
+        ]
+      }
     },
     {
       "name": "Xrdg",
@@ -1511,7 +2247,12 @@
       "sortid": 213,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "xrdg"
+      "registry_name": "xrdg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/xrdg.json"
+        ]
+      }
     },
     {
       "name": "Rtedfgfgd",
@@ -1519,7 +2260,12 @@
       "sortid": 214,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rtedfgfgd"
+      "registry_name": "rtedfgfgd",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/rtedfgfgd.json"
+        ]
+      }
     },
     {
       "name": "Gsdgfrewdefgyy",
@@ -1527,7 +2273,12 @@
       "sortid": 215,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gsdgfrewdefgyy"
+      "registry_name": "gsdgfrewdefgyy",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/gsdgfrewdefgyy.json"
+        ]
+      }
     },
     {
       "name": "Zfdgfdfs",
@@ -1535,7 +2286,12 @@
       "sortid": 216,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "zfdgfdfs"
+      "registry_name": "zfdgfdfs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/zfdgfdfs.json"
+        ]
+      }
     },
     {
       "name": "Dgttrwased",
@@ -1543,7 +2299,12 @@
       "sortid": 217,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dgttrwased"
+      "registry_name": "dgttrwased",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/dgttrwased.json"
+        ]
+      }
     },
     {
       "name": "Olddl",
@@ -1551,7 +2312,12 @@
       "sortid": 218,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "olddl"
+      "registry_name": "olddl",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/olddl.json"
+        ]
+      }
     },
     {
       "name": "Tsuk",
@@ -1559,7 +2325,12 @@
       "sortid": 219,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tsuk"
+      "registry_name": "tsuk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tsuk.json"
+        ]
+      }
     },
     {
       "name": "Dhjhgfd",
@@ -1567,7 +2338,12 @@
       "sortid": 220,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dhjhgfd"
+      "registry_name": "dhjhgfd",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/dhjhgfd.json"
+        ]
+      }
     },
     {
       "name": "Creativemod",
@@ -1575,7 +2351,13 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativemod"
+      "registry_name": "creativemod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/creativemod.json",
+          "src/main/java/net/mcreator/creativeworld/item/CreativemodItem.java"
+        ]
+      }
     },
     {
       "name": "Rtyukl",
@@ -1585,6 +2367,9 @@
       "locked_code": false,
       "registry_name": "rtyukl",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/RtyuklProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1603,7 +2388,12 @@
       "sortid": 222,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "xcdfvgbhnj"
+      "registry_name": "xcdfvgbhnj",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/xcdfvgbhnj.json"
+        ]
+      }
     },
     {
       "name": "Sdfgbhnjmk",
@@ -1611,7 +2401,12 @@
       "sortid": 223,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sdfgbhnjmk"
+      "registry_name": "sdfgbhnjmk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/sdfgbhnjmk.json"
+        ]
+      }
     },
     {
       "name": "Ssdfghj",
@@ -1619,7 +2414,12 @@
       "sortid": 224,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ssdfghj"
+      "registry_name": "ssdfghj",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/ssdfghj.json"
+        ]
+      }
     },
     {
       "name": "Latex",
@@ -1627,7 +2427,13 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "latex"
+      "registry_name": "latex",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/latex.json",
+          "src/main/java/net/mcreator/creativeworld/item/LatexItem.java"
+        ]
+      }
     },
     {
       "name": "TapKoghdaNazhataPKMPoBloku",
@@ -1637,6 +2443,9 @@
       "locked_code": false,
       "registry_name": "tap_koghda_nazhata_pkm_po_bloku",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/TapKoghdaNazhataPKMPoBlokuProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1671,7 +2480,13 @@
       "sortid": 78,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tap"
+      "registry_name": "tap",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/tap.json",
+          "src/main/java/net/mcreator/creativeworld/item/TapItem.java"
+        ]
+      }
     },
     {
       "name": "Asdfgh",
@@ -1679,7 +2494,12 @@
       "sortid": 226,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "asdfgh"
+      "registry_name": "asdfgh",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/asdfgh.json"
+        ]
+      }
     },
     {
       "name": "Rubber",
@@ -1687,7 +2507,13 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rubber"
+      "registry_name": "rubber",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/RubberItem.java",
+          "src/main/resources/assets/creative_world/models/item/rubber.json"
+        ]
+      }
     },
     {
       "name": "Dfgch",
@@ -1695,7 +2521,12 @@
       "sortid": 227,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dfgch"
+      "registry_name": "dfgch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/dfgch.json"
+        ]
+      }
     },
     {
       "name": "Tincover",
@@ -1703,7 +2534,13 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tincover"
+      "registry_name": "tincover",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/TincoverItem.java",
+          "src/main/resources/assets/creative_world/models/item/tincover.json"
+        ]
+      }
     },
     {
       "name": "Battery",
@@ -1711,7 +2548,13 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "battery"
+      "registry_name": "battery",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/battery.json",
+          "src/main/java/net/mcreator/creativeworld/item/BatteryItem.java"
+        ]
+      }
     },
     {
       "name": "Vhgfhjk",
@@ -1719,7 +2562,12 @@
       "sortid": 228,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "vhgfhjk"
+      "registry_name": "vhgfhjk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/vhgfhjk.json"
+        ]
+      }
     },
     {
       "name": "Tinwirewithrubber",
@@ -1728,6 +2576,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber.json",
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber.json",
+          "src/main/java/net/mcreator/creativeworld/block/TinwirewithrubberBlock.java",
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber.json"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -1736,7 +2592,12 @@
       "sortid": 229,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "zdgjg"
+      "registry_name": "zdgjg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/zdgjg.json"
+        ]
+      }
     },
     {
       "name": "Ukap",
@@ -1744,7 +2605,12 @@
       "sortid": 230,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ukap"
+      "registry_name": "ukap",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/ukap.json"
+        ]
+      }
     },
     {
       "name": "Tsukvaiepn",
@@ -1752,7 +2618,12 @@
       "sortid": 231,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tsukvaiepn"
+      "registry_name": "tsukvaiepn",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tsukvaiepn.json"
+        ]
+      }
     },
     {
       "name": "Oil",
@@ -1762,7 +2633,16 @@
       "locked_code": false,
       "registry_name": "oil",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/fluid/types/OilFluidType.java",
+          "src/main/resources/assets/creative_world/models/block/oil.json",
+          "src/main/java/net/mcreator/creativeworld/item/OilItem.java",
+          "src/main/java/net/mcreator/creativeworld/fluid/OilFluid.java",
+          "src/main/java/net/mcreator/creativeworld/block/OilBlock.java",
+          "src/main/resources/assets/creative_world/blockstates/oil.json",
+          "src/main/resources/assets/creative_world/models/item/oil_bucket.json"
+        ]
       }
     },
     {
@@ -1773,7 +2653,16 @@
       "locked_code": false,
       "registry_name": "gas",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/gas_bucket.json",
+          "src/main/resources/assets/creative_world/blockstates/gas.json",
+          "src/main/resources/assets/creative_world/models/block/gas.json",
+          "src/main/java/net/mcreator/creativeworld/fluid/GasFluid.java",
+          "src/main/java/net/mcreator/creativeworld/fluid/types/GasFluidType.java",
+          "src/main/java/net/mcreator/creativeworld/item/GasItem.java",
+          "src/main/java/net/mcreator/creativeworld/block/GasBlock.java"
+        ]
       }
     },
     {
@@ -1782,7 +2671,13 @@
       "sortid": 232,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "littleoilmine"
+      "registry_name": "littleoilmine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/forge/biome_modifier/littleoilmine_biome_modifier.json",
+          "src/main/java/net/mcreator/creativeworld/world/features/LittleoilmineFeature.java"
+        ]
+      }
     },
     {
       "name": "Mediumoilmine",
@@ -1790,7 +2685,13 @@
       "sortid": 233,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mediumoilmine"
+      "registry_name": "mediumoilmine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/forge/biome_modifier/mediumoilmine_biome_modifier.json",
+          "src/main/java/net/mcreator/creativeworld/world/features/MediumoilmineFeature.java"
+        ]
+      }
     },
     {
       "name": "Littlegasmine",
@@ -1798,7 +2699,13 @@
       "sortid": 234,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "littlegasmine"
+      "registry_name": "littlegasmine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/world/features/LittlegasmineFeature.java",
+          "src/main/resources/data/creative_world/forge/biome_modifier/littlegasmine_biome_modifier.json"
+        ]
+      }
     },
     {
       "name": "Mediumgasmine",
@@ -1806,7 +2713,13 @@
       "sortid": 235,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mediumgasmine"
+      "registry_name": "mediumgasmine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/world/features/MediumgasmineFeature.java",
+          "src/main/resources/data/creative_world/forge/biome_modifier/mediumgasmine_biome_modifier.json"
+        ]
+      }
     },
     {
       "name": "Battery1",
@@ -1814,7 +2727,13 @@
       "sortid": 236,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "battery_1"
+      "registry_name": "battery_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/Battery1Item.java",
+          "src/main/resources/assets/creative_world/models/item/battery_1.json"
+        ]
+      }
     },
     {
       "name": "Battery2",
@@ -1822,7 +2741,13 @@
       "sortid": 237,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "battery_2"
+      "registry_name": "battery_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/battery_2.json",
+          "src/main/java/net/mcreator/creativeworld/item/Battery2Item.java"
+        ]
+      }
     },
     {
       "name": "Battery3",
@@ -1830,7 +2755,13 @@
       "sortid": 238,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "battery_3"
+      "registry_name": "battery_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/battery_3.json",
+          "src/main/java/net/mcreator/creativeworld/item/Battery3Item.java"
+        ]
+      }
     },
     {
       "name": "Battery4",
@@ -1838,7 +2769,13 @@
       "sortid": 239,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "battery_4"
+      "registry_name": "battery_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/battery_4.json",
+          "src/main/java/net/mcreator/creativeworld/item/Battery4Item.java"
+        ]
+      }
     },
     {
       "name": "Battery5",
@@ -1846,7 +2783,13 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "battery_5"
+      "registry_name": "battery_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/Battery5Item.java",
+          "src/main/resources/assets/creative_world/models/item/battery_5.json"
+        ]
+      }
     },
     {
       "name": "Tinwirewithrubber2",
@@ -1855,6 +2798,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_2.json",
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_2.json",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_2.json",
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber2Block.java"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -1865,6 +2816,9 @@
       "locked_code": false,
       "registry_name": "battery_koghda_priedmiet_izghotovlienpierieplavlien",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/BatteryKoghdaPriedmietIzghotovlienpierieplavlienProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "itemstack",
@@ -1879,7 +2833,13 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rawtin"
+      "registry_name": "rawtin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/rawtin.json",
+          "src/main/java/net/mcreator/creativeworld/item/RawtinItem.java"
+        ]
+      }
     },
     {
       "name": "Vyapr",
@@ -1887,7 +2847,12 @@
       "sortid": 241,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "vyapr"
+      "registry_name": "vyapr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/vyapr.json"
+        ]
+      }
     },
     {
       "name": "Bronzedust",
@@ -1895,7 +2860,13 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronzedust"
+      "registry_name": "bronzedust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/BronzedustItem.java",
+          "src/main/resources/assets/creative_world/models/item/bronzedust.json"
+        ]
+      }
     },
     {
       "name": "Qwertyuhjtcf",
@@ -1903,7 +2874,12 @@
       "sortid": 242,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "qwertyuhjtcf"
+      "registry_name": "qwertyuhjtcf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/qwertyuhjtcf.json"
+        ]
+      }
     },
     {
       "name": "Kiepnrghsh",
@@ -1911,7 +2887,12 @@
       "sortid": 243,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kiepnrghsh"
+      "registry_name": "kiepnrghsh",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/kiepnrghsh.json"
+        ]
+      }
     },
     {
       "name": "CoalgeneratorObnovitTakt",
@@ -1921,6 +2902,9 @@
       "locked_code": false,
       "registry_name": "coalgenerator_obnovit_takt",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/CoalgeneratorObnovitTaktProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -1947,7 +2931,13 @@
       "sortid": 79,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "energydetector"
+      "registry_name": "energydetector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/EnergydetectorItem.java",
+          "src/main/resources/assets/creative_world/models/item/energydetector.json"
+        ]
+      }
     },
     {
       "name": "FanObnovitTakt",
@@ -1957,6 +2947,9 @@
       "locked_code": false,
       "registry_name": "fan_obnovit_takt",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/FanObnovitTaktProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -1983,7 +2976,16 @@
       "sortid": 106,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fan"
+      "registry_name": "fan",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/blockstates/fan.json",
+          "src/main/resources/assets/creative_world/models/item/fan.json",
+          "src/main/resources/assets/creative_world/models/block/fan.json",
+          "src/main/java/net/mcreator/creativeworld/block/FanBlock.java",
+          "src/main/java/net/mcreator/creativeworld/block/entity/FanBlockEntity.java"
+        ]
+      }
     },
     {
       "name": "EnergydetectorKoghdaNazhataPKMPoBloku",
@@ -1993,6 +2995,9 @@
       "locked_code": false,
       "registry_name": "energydetector_koghda_nazhata_pkm_po_bloku",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/EnergydetectorKoghdaNazhataPKMPoBlokuProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "direction",
@@ -2029,6 +3034,9 @@
       "locked_code": false,
       "registry_name": "batteryblock_obnovit_takt",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/BatteryblockObnovitTaktProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -2055,7 +3063,16 @@
       "sortid": 107,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "batteryblock"
+      "registry_name": "batteryblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/batteryblock.json",
+          "src/main/java/net/mcreator/creativeworld/block/BatteryblockBlock.java",
+          "src/main/resources/assets/creative_world/models/item/batteryblock.json",
+          "src/main/java/net/mcreator/creativeworld/block/entity/BatteryblockBlockEntity.java",
+          "src/main/resources/assets/creative_world/blockstates/batteryblock.json"
+        ]
+      }
     },
     {
       "name": "Electricjetpack",
@@ -2068,7 +3085,11 @@
         "eh": false,
         "el": false,
         "eb": false,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/ElectricjetpackItem.java",
+          "src/main/resources/assets/creative_world/models/item/electricjetpack_chestplate.json"
+        ]
       }
     },
     {
@@ -2079,6 +3100,9 @@
       "locked_code": false,
       "registry_name": "electricjetpackcontrol_pri_nazhatii_klavishi",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/ElectricjetpackcontrolPriNazhatiiKlavishiProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2093,7 +3117,12 @@
       "sortid": 249,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "electricjetpackcontrol"
+      "registry_name": "electricjetpackcontrol",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/network/ElectricjetpackcontrolMessage.java"
+        ]
+      }
     },
     {
       "name": "BlackscreenOtobrazhatOvierlieiVIghrie",
@@ -2104,6 +3133,9 @@
       "registry_name": "blackscreen_otobrazhat_ovierliei_v_ighrie",
       "metadata": {
         "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/BlackscreenOtobrazhatOvierlieiVIghrieProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -2130,7 +3162,12 @@
       "sortid": 251,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blackscreen"
+      "registry_name": "blackscreen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/client/screens/BlackscreenOverlay.java"
+        ]
+      }
     },
     {
       "name": "Sdfghn",
@@ -2138,7 +3175,13 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sdfghn"
+      "registry_name": "sdfghn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/sdfghn.json",
+          "src/main/java/net/mcreator/creativeworld/item/SdfghnItem.java"
+        ]
+      }
     },
     {
       "name": "Gdfgdxf",
@@ -2146,7 +3189,12 @@
       "sortid": 252,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gdfgdxf"
+      "registry_name": "gdfgdxf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/gdfgdxf.json"
+        ]
+      }
     },
     {
       "name": "BronzeIngot",
@@ -2154,7 +3202,13 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_ingot"
+      "registry_name": "bronze_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/BronzeIngotItem.java",
+          "src/main/resources/assets/creative_world/models/item/bronze_ingot.json"
+        ]
+      }
     },
     {
       "name": "BronzeBlock",
@@ -2162,7 +3216,15 @@
       "sortid": 87,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_block"
+      "registry_name": "bronze_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/bronze_block.json",
+          "src/main/resources/assets/creative_world/models/item/bronze_block.json",
+          "src/main/resources/assets/creative_world/blockstates/bronze_block.json",
+          "src/main/java/net/mcreator/creativeworld/block/BronzeBlockBlock.java"
+        ]
+      }
     },
     {
       "name": "BronzeOreBlockRecipe",
@@ -2170,7 +3232,12 @@
       "sortid": 253,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_ore_block_recipe"
+      "registry_name": "bronze_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_ore_block_recipe.json"
+        ]
+      }
     },
     {
       "name": "BronzeBlockOreRecipe",
@@ -2178,7 +3245,12 @@
       "sortid": 254,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_block_ore_recipe"
+      "registry_name": "bronze_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_block_ore_recipe.json"
+        ]
+      }
     },
     {
       "name": "BronzeOreSmelting",
@@ -2186,7 +3258,12 @@
       "sortid": 255,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_ore_smelting"
+      "registry_name": "bronze_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_ore_smelting.json"
+        ]
+      }
     },
     {
       "name": "BronzePickaxe",
@@ -2194,7 +3271,13 @@
       "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_pickaxe"
+      "registry_name": "bronze_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/BronzePickaxeItem.java",
+          "src/main/resources/assets/creative_world/models/item/bronze_pickaxe.json"
+        ]
+      }
     },
     {
       "name": "BronzeAxe",
@@ -2202,7 +3285,13 @@
       "sortid": 52,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_axe"
+      "registry_name": "bronze_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/bronze_axe.json",
+          "src/main/java/net/mcreator/creativeworld/item/BronzeAxeItem.java"
+        ]
+      }
     },
     {
       "name": "BronzeSword",
@@ -2210,7 +3299,13 @@
       "sortid": 119,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_sword"
+      "registry_name": "bronze_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/BronzeSwordItem.java",
+          "src/main/resources/assets/creative_world/models/item/bronze_sword.json"
+        ]
+      }
     },
     {
       "name": "BronzeShovel",
@@ -2218,7 +3313,13 @@
       "sortid": 53,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_shovel"
+      "registry_name": "bronze_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/BronzeShovelItem.java",
+          "src/main/resources/assets/creative_world/models/item/bronze_shovel.json"
+        ]
+      }
     },
     {
       "name": "BronzeHoe",
@@ -2226,7 +3327,13 @@
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_hoe"
+      "registry_name": "bronze_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/bronze_hoe.json",
+          "src/main/java/net/mcreator/creativeworld/item/BronzeHoeItem.java"
+        ]
+      }
     },
     {
       "name": "BronzePickaxeRecipe",
@@ -2234,7 +3341,12 @@
       "sortid": 256,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_pickaxe_recipe"
+      "registry_name": "bronze_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_pickaxe_recipe.json"
+        ]
+      }
     },
     {
       "name": "BronzeAxeRecipe",
@@ -2242,7 +3354,12 @@
       "sortid": 257,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_axe_recipe"
+      "registry_name": "bronze_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_axe_recipe.json"
+        ]
+      }
     },
     {
       "name": "BronzeSwordRecipe",
@@ -2250,7 +3367,12 @@
       "sortid": 258,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_sword_recipe"
+      "registry_name": "bronze_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_sword_recipe.json"
+        ]
+      }
     },
     {
       "name": "BronzeShovelRecipe",
@@ -2258,7 +3380,12 @@
       "sortid": 259,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_shovel_recipe"
+      "registry_name": "bronze_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_shovel_recipe.json"
+        ]
+      }
     },
     {
       "name": "BronzeHoeRecipe",
@@ -2266,7 +3393,12 @@
       "sortid": 260,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_hoe_recipe"
+      "registry_name": "bronze_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_hoe_recipe.json"
+        ]
+      }
     },
     {
       "name": "BronzeArmor",
@@ -2279,7 +3411,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/bronze_armor_boots.json",
+          "src/main/resources/assets/creative_world/models/item/bronze_armor_chestplate.json",
+          "src/main/resources/assets/creative_world/models/item/bronze_armor_leggings.json",
+          "src/main/java/net/mcreator/creativeworld/item/BronzeArmorItem.java",
+          "src/main/resources/assets/creative_world/models/item/bronze_armor_helmet.json"
+        ]
       }
     },
     {
@@ -2288,7 +3427,12 @@
       "sortid": 261,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_armor_helmet_recipe"
+      "registry_name": "bronze_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_armor_helmet_recipe.json"
+        ]
+      }
     },
     {
       "name": "BronzeArmorBodyRecipe",
@@ -2296,7 +3440,12 @@
       "sortid": 262,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_armor_body_recipe"
+      "registry_name": "bronze_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_armor_body_recipe.json"
+        ]
+      }
     },
     {
       "name": "BronzeArmorLeggingsRecipe",
@@ -2304,7 +3453,12 @@
       "sortid": 263,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_armor_leggings_recipe"
+      "registry_name": "bronze_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_armor_leggings_recipe.json"
+        ]
+      }
     },
     {
       "name": "BronzeArmorBootsRecipe",
@@ -2312,7 +3466,12 @@
       "sortid": 264,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronze_armor_boots_recipe"
+      "registry_name": "bronze_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronze_armor_boots_recipe.json"
+        ]
+      }
     },
     {
       "name": "Rubbertrade",
@@ -2320,7 +3479,10 @@
       "sortid": 265,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rubbertrade"
+      "registry_name": "rubbertrade",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "Infinityenergy",
@@ -2328,7 +3490,16 @@
       "sortid": 111,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "infinityenergy"
+      "registry_name": "infinityenergy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/infinityenergy.json",
+          "src/main/resources/assets/creative_world/blockstates/infinityenergy.json",
+          "src/main/java/net/mcreator/creativeworld/block/InfinityenergyBlock.java",
+          "src/main/resources/assets/creative_world/models/item/infinityenergy.json",
+          "src/main/java/net/mcreator/creativeworld/block/entity/InfinityenergyBlockEntity.java"
+        ]
+      }
     },
     {
       "name": "BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokie",
@@ -2338,6 +3509,9 @@
       "locked_code": false,
       "registry_name": "bedrockbreacker_pri_shchielchkie_pravoi_knopkoi_myshi_na_blokie",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2372,7 +3546,10 @@
       "sortid": 267,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dsdf"
+      "registry_name": "dsdf",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "Pryvvpa",
@@ -2380,7 +3557,10 @@
       "sortid": 268,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pryvvpa"
+      "registry_name": "pryvvpa",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "Avprso",
@@ -2388,7 +3568,10 @@
       "sortid": 269,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "avprso"
+      "registry_name": "avprso",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "Ironwrenchcraft",
@@ -2396,7 +3579,12 @@
       "sortid": 270,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ironwrenchcraft"
+      "registry_name": "ironwrenchcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/ironwrenchcraft.json"
+        ]
+      }
     },
     {
       "name": "Coalgeneratorcraft",
@@ -2404,7 +3592,12 @@
       "sortid": 271,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coalgeneratorcraft"
+      "registry_name": "coalgeneratorcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/coalgeneratorcraft.json"
+        ]
+      }
     },
     {
       "name": "Coaldust",
@@ -2412,7 +3605,13 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coaldust"
+      "registry_name": "coaldust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CoaldustItem.java",
+          "src/main/resources/assets/creative_world/models/item/coaldust.json"
+        ]
+      }
     },
     {
       "name": "Coaldustcraft",
@@ -2420,7 +3619,12 @@
       "sortid": 272,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coaldustcraft"
+      "registry_name": "coaldustcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/coaldustcraft.json"
+        ]
+      }
     },
     {
       "name": "Electricalcircuit",
@@ -2428,7 +3632,13 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "electricalcircuit"
+      "registry_name": "electricalcircuit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/electricalcircuit.json",
+          "src/main/java/net/mcreator/creativeworld/item/ElectricalcircuitItem.java"
+        ]
+      }
     },
     {
       "name": "Solarpanelcraft",
@@ -2436,7 +3646,12 @@
       "sortid": 273,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "solarpanelcraft"
+      "registry_name": "solarpanelcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/solarpanelcraft.json"
+        ]
+      }
     },
     {
       "name": "Electricalcircuitcraft",
@@ -2444,7 +3659,12 @@
       "sortid": 274,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "electricalcircuitcraft"
+      "registry_name": "electricalcircuitcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/electricalcircuitcraft.json"
+        ]
+      }
     },
     {
       "name": "Wirecutterscraft",
@@ -2452,7 +3672,12 @@
       "sortid": 275,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "wirecutterscraft"
+      "registry_name": "wirecutterscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/wirecutterscraft.json"
+        ]
+      }
     },
     {
       "name": "Tinwirecraft",
@@ -2460,7 +3685,12 @@
       "sortid": 276,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tinwirecraft"
+      "registry_name": "tinwirecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tinwirecraft.json"
+        ]
+      }
     },
     {
       "name": "Tinwirewithrubbercraft",
@@ -2468,7 +3698,12 @@
       "sortid": 277,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tinwirewithrubbercraft"
+      "registry_name": "tinwirewithrubbercraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tinwirewithrubbercraft.json"
+        ]
+      }
     },
     {
       "name": "Batteryblockcraft",
@@ -2476,7 +3711,12 @@
       "sortid": 278,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "batteryblockcraft"
+      "registry_name": "batteryblockcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/batteryblockcraft.json"
+        ]
+      }
     },
     {
       "name": "Whatisit",
@@ -2484,7 +3724,12 @@
       "sortid": 279,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "whatisit"
+      "registry_name": "whatisit",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/advancements/whatisit.json"
+        ]
+      }
     },
     {
       "name": "Advancedelectricjetpack",
@@ -2497,7 +3742,11 @@
         "eh": false,
         "el": false,
         "eb": false,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/advancedelectricjetpack_chestplate.json",
+          "src/main/java/net/mcreator/creativeworld/item/AdvancedelectricjetpackItem.java"
+        ]
       }
     },
     {
@@ -2508,6 +3757,9 @@
       "locked_code": false,
       "registry_name": "advancedelectricjetpack_sobytiie_taktov_kirasy",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/AdvancedelectricjetpackSobytiieTaktovKirasyProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2526,7 +3778,12 @@
       "sortid": 281,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "aejetpackcraft"
+      "registry_name": "aejetpackcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/aejetpackcraft.json"
+        ]
+      }
     },
     {
       "name": "Ejetpackcraft",
@@ -2534,7 +3791,12 @@
       "sortid": 282,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ejetpackcraft"
+      "registry_name": "ejetpackcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/ejetpackcraft.json"
+        ]
+      }
     },
     {
       "name": "Jetpackenergylow",
@@ -2542,7 +3804,12 @@
       "sortid": 283,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "jetpackenergylow"
+      "registry_name": "jetpackenergylow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/client/screens/JetpackenergylowOverlay.java"
+        ]
+      }
     },
     {
       "name": "Hklklh",
@@ -2553,6 +3820,9 @@
       "registry_name": "hklklh",
       "metadata": {
         "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/HklklhProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2567,7 +3837,15 @@
       "sortid": 109,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "advencedmachinecase"
+      "registry_name": "advencedmachinecase",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/advencedmachinecase.json",
+          "src/main/resources/assets/creative_world/blockstates/advencedmachinecase.json",
+          "src/main/java/net/mcreator/creativeworld/block/AdvencedmachinecaseBlock.java",
+          "src/main/resources/assets/creative_world/models/item/advencedmachinecase.json"
+        ]
+      }
     },
     {
       "name": "Advencedsolarpanel",
@@ -2575,7 +3853,15 @@
       "sortid": 110,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "advencedsolarpanel"
+      "registry_name": "advencedsolarpanel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/advencedsolarpanel.json",
+          "src/main/java/net/mcreator/creativeworld/block/AdvencedsolarpanelBlock.java",
+          "src/main/resources/assets/creative_world/models/block/advencedsolarpanel.json",
+          "src/main/resources/assets/creative_world/blockstates/advencedsolarpanel.json"
+        ]
+      }
     },
     {
       "name": "CreativiumIngot",
@@ -2583,7 +3869,13 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_ingot"
+      "registry_name": "creativium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumIngotItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativium_ingot.json"
+        ]
+      }
     },
     {
       "name": "CreativiumOre",
@@ -2591,7 +3883,17 @@
       "sortid": 85,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_ore"
+      "registry_name": "creativium_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/CreativiumOreBlock.java",
+          "src/main/java/net/mcreator/creativeworld/world/features/ores/CreativiumOreFeature.java",
+          "src/main/resources/data/creative_world/forge/biome_modifier/creativium_ore_biome_modifier.json",
+          "src/main/resources/assets/creative_world/models/item/creativium_ore.json",
+          "src/main/resources/assets/creative_world/blockstates/creativium_ore.json",
+          "src/main/resources/assets/creative_world/models/block/creativium_ore.json"
+        ]
+      }
     },
     {
       "name": "CreativiumBlock",
@@ -2599,7 +3901,15 @@
       "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_block"
+      "registry_name": "creativium_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/blockstates/creativium_block.json",
+          "src/main/java/net/mcreator/creativeworld/block/CreativiumBlockBlock.java",
+          "src/main/resources/assets/creative_world/models/block/creativium_block.json",
+          "src/main/resources/assets/creative_world/models/item/creativium_block.json"
+        ]
+      }
     },
     {
       "name": "CreativiumOreBlockRecipe",
@@ -2607,7 +3917,12 @@
       "sortid": 285,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_ore_block_recipe"
+      "registry_name": "creativium_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_ore_block_recipe.json"
+        ]
+      }
     },
     {
       "name": "CreativiumBlockOreRecipe",
@@ -2615,7 +3930,12 @@
       "sortid": 286,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_block_ore_recipe"
+      "registry_name": "creativium_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_block_ore_recipe.json"
+        ]
+      }
     },
     {
       "name": "CreativiumOreSmelting",
@@ -2623,7 +3943,12 @@
       "sortid": 287,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_ore_smelting"
+      "registry_name": "creativium_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_ore_smelting.json"
+        ]
+      }
     },
     {
       "name": "CreativiumPickaxe",
@@ -2631,7 +3956,13 @@
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_pickaxe"
+      "registry_name": "creativium_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/creativium_pickaxe.json",
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumPickaxeItem.java"
+        ]
+      }
     },
     {
       "name": "CreativiumAxe",
@@ -2639,7 +3970,13 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_axe"
+      "registry_name": "creativium_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/creativium_axe.json",
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumAxeItem.java"
+        ]
+      }
     },
     {
       "name": "CreativiumSword",
@@ -2647,7 +3984,13 @@
       "sortid": 127,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_sword"
+      "registry_name": "creativium_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/creativium_sword.json",
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumSwordItem.java"
+        ]
+      }
     },
     {
       "name": "CreativiumShovel",
@@ -2655,7 +3998,13 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_shovel"
+      "registry_name": "creativium_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumShovelItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativium_shovel.json"
+        ]
+      }
     },
     {
       "name": "CreativiumHoe",
@@ -2663,7 +4012,13 @@
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_hoe"
+      "registry_name": "creativium_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumHoeItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativium_hoe.json"
+        ]
+      }
     },
     {
       "name": "CreativiumPickaxeRecipe",
@@ -2671,7 +4026,12 @@
       "sortid": 288,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_pickaxe_recipe"
+      "registry_name": "creativium_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_pickaxe_recipe.json"
+        ]
+      }
     },
     {
       "name": "CreativiumAxeRecipe",
@@ -2679,7 +4039,12 @@
       "sortid": 289,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_axe_recipe"
+      "registry_name": "creativium_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_axe_recipe.json"
+        ]
+      }
     },
     {
       "name": "CreativiumSwordRecipe",
@@ -2687,7 +4052,12 @@
       "sortid": 290,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_sword_recipe"
+      "registry_name": "creativium_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_sword_recipe.json"
+        ]
+      }
     },
     {
       "name": "CreativiumShovelRecipe",
@@ -2695,7 +4065,12 @@
       "sortid": 291,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_shovel_recipe"
+      "registry_name": "creativium_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_shovel_recipe.json"
+        ]
+      }
     },
     {
       "name": "CreativiumHoeRecipe",
@@ -2703,7 +4078,12 @@
       "sortid": 292,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_hoe_recipe"
+      "registry_name": "creativium_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_hoe_recipe.json"
+        ]
+      }
     },
     {
       "name": "CreativiumArmor",
@@ -2716,7 +4096,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/creativium_armor_boots.json",
+          "src/main/resources/assets/creative_world/models/item/creativium_armor_helmet.json",
+          "src/main/resources/assets/creative_world/models/item/creativium_armor_leggings.json",
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumArmorItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativium_armor_chestplate.json"
+        ]
       }
     },
     {
@@ -2725,7 +4112,12 @@
       "sortid": 293,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_armor_helmet_recipe"
+      "registry_name": "creativium_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_armor_helmet_recipe.json"
+        ]
+      }
     },
     {
       "name": "CreativiumArmorBodyRecipe",
@@ -2733,7 +4125,12 @@
       "sortid": 294,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_armor_body_recipe"
+      "registry_name": "creativium_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_armor_body_recipe.json"
+        ]
+      }
     },
     {
       "name": "CreativiumArmorLeggingsRecipe",
@@ -2741,7 +4138,12 @@
       "sortid": 295,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_armor_leggings_recipe"
+      "registry_name": "creativium_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_armor_leggings_recipe.json"
+        ]
+      }
     },
     {
       "name": "CreativiumArmorBootsRecipe",
@@ -2749,7 +4151,12 @@
       "sortid": 296,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativium_armor_boots_recipe"
+      "registry_name": "creativium_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativium_armor_boots_recipe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumIngot",
@@ -2757,7 +4164,13 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_ingot"
+      "registry_name": "accumulatium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumIngotItem.java",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_ingot.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumOre",
@@ -2765,7 +4178,17 @@
       "sortid": 84,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_ore"
+      "registry_name": "accumulatium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/accumulatium_ore.json",
+          "src/main/resources/assets/creative_world/blockstates/accumulatium_ore.json",
+          "src/main/java/net/mcreator/creativeworld/world/features/ores/AccumulatiumOreFeature.java",
+          "src/main/resources/data/creative_world/forge/biome_modifier/accumulatium_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/creativeworld/block/AccumulatiumOreBlock.java",
+          "src/main/resources/assets/creative_world/models/block/accumulatium_ore.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumBlock",
@@ -2773,7 +4196,15 @@
       "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_block"
+      "registry_name": "accumulatium_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/AccumulatiumBlockBlock.java",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_block.json",
+          "src/main/resources/assets/creative_world/blockstates/accumulatium_block.json",
+          "src/main/resources/assets/creative_world/models/block/accumulatium_block.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumOreBlockRecipe",
@@ -2781,7 +4212,12 @@
       "sortid": 297,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_ore_block_recipe"
+      "registry_name": "accumulatium_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_ore_block_recipe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumBlockOreRecipe",
@@ -2789,7 +4225,12 @@
       "sortid": 298,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_block_ore_recipe"
+      "registry_name": "accumulatium_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_block_ore_recipe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumOreSmelting",
@@ -2797,7 +4238,12 @@
       "sortid": 299,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_ore_smelting"
+      "registry_name": "accumulatium_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_ore_smelting.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumPickaxe",
@@ -2805,7 +4251,13 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_pickaxe"
+      "registry_name": "accumulatium_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/accumulatium_pickaxe.json",
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumPickaxeItem.java"
+        ]
+      }
     },
     {
       "name": "AccumulatiumAxe",
@@ -2813,7 +4265,13 @@
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_axe"
+      "registry_name": "accumulatium_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumAxeItem.java",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_axe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumSword",
@@ -2821,7 +4279,13 @@
       "sortid": 125,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_sword"
+      "registry_name": "accumulatium_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/accumulatium_sword.json",
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumSwordItem.java"
+        ]
+      }
     },
     {
       "name": "AccumulatiumShovel",
@@ -2829,7 +4293,13 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_shovel"
+      "registry_name": "accumulatium_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumShovelItem.java",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_shovel.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumHoe",
@@ -2837,7 +4307,13 @@
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_hoe"
+      "registry_name": "accumulatium_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumHoeItem.java",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_hoe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumPickaxeRecipe",
@@ -2845,7 +4321,12 @@
       "sortid": 300,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_pickaxe_recipe"
+      "registry_name": "accumulatium_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_pickaxe_recipe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumAxeRecipe",
@@ -2853,7 +4334,12 @@
       "sortid": 301,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_axe_recipe"
+      "registry_name": "accumulatium_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_axe_recipe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumSwordRecipe",
@@ -2861,7 +4347,12 @@
       "sortid": 302,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_sword_recipe"
+      "registry_name": "accumulatium_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_sword_recipe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumShovelRecipe",
@@ -2869,7 +4360,12 @@
       "sortid": 303,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_shovel_recipe"
+      "registry_name": "accumulatium_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_shovel_recipe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumHoeRecipe",
@@ -2877,7 +4373,12 @@
       "sortid": 304,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_hoe_recipe"
+      "registry_name": "accumulatium_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_hoe_recipe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumArmor",
@@ -2890,7 +4391,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumArmorItem.java",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_armor_chestplate.json",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_armor_leggings.json",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_armor_boots.json",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_armor_helmet.json"
+        ]
       }
     },
     {
@@ -2899,7 +4407,12 @@
       "sortid": 305,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_armor_helmet_recipe"
+      "registry_name": "accumulatium_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_armor_helmet_recipe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumArmorBodyRecipe",
@@ -2907,7 +4420,12 @@
       "sortid": 306,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_armor_body_recipe"
+      "registry_name": "accumulatium_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_armor_body_recipe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumArmorLeggingsRecipe",
@@ -2915,7 +4433,12 @@
       "sortid": 307,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_armor_leggings_recipe"
+      "registry_name": "accumulatium_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_armor_leggings_recipe.json"
+        ]
+      }
     },
     {
       "name": "AccumulatiumArmorBootsRecipe",
@@ -2923,7 +4446,12 @@
       "sortid": 308,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatium_armor_boots_recipe"
+      "registry_name": "accumulatium_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatium_armor_boots_recipe.json"
+        ]
+      }
     },
     {
       "name": "Creativiumnugget",
@@ -2931,7 +4459,13 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativiumnugget"
+      "registry_name": "creativiumnugget",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumnuggetItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativiumnugget.json"
+        ]
+      }
     },
     {
       "name": "Creativiumnuggetcraft",
@@ -2939,7 +4473,12 @@
       "sortid": 309,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativiumnuggetcraft"
+      "registry_name": "creativiumnuggetcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativiumnuggetcraft.json"
+        ]
+      }
     },
     {
       "name": "Creativiumingotcraft",
@@ -2947,7 +4486,12 @@
       "sortid": 310,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativiumingotcraft"
+      "registry_name": "creativiumingotcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/creativiumingotcraft.json"
+        ]
+      }
     },
     {
       "name": "Accumulatiumnugget",
@@ -2955,7 +4499,13 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatiumnugget"
+      "registry_name": "accumulatiumnugget",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumnuggetItem.java",
+          "src/main/resources/assets/creative_world/models/item/accumulatiumnugget.json"
+        ]
+      }
     },
     {
       "name": "Accumulatiumnuggetcraft",
@@ -2963,7 +4513,12 @@
       "sortid": 311,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatiumnuggetcraft"
+      "registry_name": "accumulatiumnuggetcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatiumnuggetcraft.json"
+        ]
+      }
     },
     {
       "name": "Accumulatiumingotcraft",
@@ -2971,7 +4526,12 @@
       "sortid": 312,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulatiumingotcraft"
+      "registry_name": "accumulatiumingotcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/accumulatiumingotcraft.json"
+        ]
+      }
     },
     {
       "name": "Carbonplate",
@@ -2979,7 +4539,13 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "carbonplate"
+      "registry_name": "carbonplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CarbonplateItem.java",
+          "src/main/resources/assets/creative_world/models/item/carbonplate.json"
+        ]
+      }
     },
     {
       "name": "Advencedmachinecasecraft",
@@ -2987,7 +4553,12 @@
       "sortid": 313,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "advencedmachinecasecraft"
+      "registry_name": "advencedmachinecasecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/advencedmachinecasecraft.json"
+        ]
+      }
     },
     {
       "name": "Advencedmachinecasecraft2",
@@ -2995,7 +4566,12 @@
       "sortid": 314,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "advencedmachinecasecraft_2"
+      "registry_name": "advencedmachinecasecraft_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/advencedmachinecasecraft_2.json"
+        ]
+      }
     },
     {
       "name": "Advencedsolarpanelcraft",
@@ -3003,7 +4579,12 @@
       "sortid": 315,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "advencedsolarpanelcraft"
+      "registry_name": "advencedsolarpanelcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/advencedsolarpanelcraft.json"
+        ]
+      }
     },
     {
       "name": "Carbonplatecraft",
@@ -3011,7 +4592,12 @@
       "sortid": 316,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "carbonplatecraft"
+      "registry_name": "carbonplatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/carbonplatecraft.json"
+        ]
+      }
     },
     {
       "name": "Thecoreofinvulnerability",
@@ -3019,7 +4605,13 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "thecoreofinvulnerability"
+      "registry_name": "thecoreofinvulnerability",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/thecoreofinvulnerability.json",
+          "src/main/java/net/mcreator/creativeworld/item/ThecoreofinvulnerabilityItem.java"
+        ]
+      }
     },
     {
       "name": "Thecoreofinvulnerabilitycraft",
@@ -3027,7 +4619,12 @@
       "sortid": 317,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "thecoreofinvulnerabilitycraft"
+      "registry_name": "thecoreofinvulnerabilitycraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/thecoreofinvulnerabilitycraft.json"
+        ]
+      }
     },
     {
       "name": "Bronzeplate",
@@ -3035,7 +4632,13 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronzeplate"
+      "registry_name": "bronzeplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/BronzeplateItem.java",
+          "src/main/resources/assets/creative_world/models/item/bronzeplate.json"
+        ]
+      }
     },
     {
       "name": "Bronzeplatecraft",
@@ -3043,7 +4646,12 @@
       "sortid": 318,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bronzeplatecraft"
+      "registry_name": "bronzeplatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/bronzeplatecraft.json"
+        ]
+      }
     },
     {
       "name": "TitanIngot",
@@ -3051,7 +4659,13 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_ingot"
+      "registry_name": "titan_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/TitanIngotItem.java",
+          "src/main/resources/assets/creative_world/models/item/titan_ingot.json"
+        ]
+      }
     },
     {
       "name": "TitanOre",
@@ -3059,7 +4673,17 @@
       "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_ore"
+      "registry_name": "titan_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/blockstates/titan_ore.json",
+          "src/main/resources/assets/creative_world/models/block/titan_ore.json",
+          "src/main/java/net/mcreator/creativeworld/block/TitanOreBlock.java",
+          "src/main/resources/data/creative_world/forge/biome_modifier/titan_ore_biome_modifier.json",
+          "src/main/resources/assets/creative_world/models/item/titan_ore.json",
+          "src/main/java/net/mcreator/creativeworld/world/features/ores/TitanOreFeature.java"
+        ]
+      }
     },
     {
       "name": "TitanBlock",
@@ -3067,7 +4691,15 @@
       "sortid": 102,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_block"
+      "registry_name": "titan_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/TitanBlockBlock.java",
+          "src/main/resources/assets/creative_world/models/block/titan_block.json",
+          "src/main/resources/assets/creative_world/models/item/titan_block.json",
+          "src/main/resources/assets/creative_world/blockstates/titan_block.json"
+        ]
+      }
     },
     {
       "name": "TitanOreBlockRecipe",
@@ -3075,7 +4707,12 @@
       "sortid": 319,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_ore_block_recipe"
+      "registry_name": "titan_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_ore_block_recipe.json"
+        ]
+      }
     },
     {
       "name": "TitanBlockOreRecipe",
@@ -3083,7 +4720,12 @@
       "sortid": 320,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_block_ore_recipe"
+      "registry_name": "titan_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_block_ore_recipe.json"
+        ]
+      }
     },
     {
       "name": "TitanOreSmelting",
@@ -3091,7 +4733,12 @@
       "sortid": 321,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_ore_smelting"
+      "registry_name": "titan_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_ore_smelting.json"
+        ]
+      }
     },
     {
       "name": "TitanPickaxe",
@@ -3099,7 +4746,13 @@
       "sortid": 63,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_pickaxe"
+      "registry_name": "titan_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/TitanPickaxeItem.java",
+          "src/main/resources/assets/creative_world/models/item/titan_pickaxe.json"
+        ]
+      }
     },
     {
       "name": "TitanAxe",
@@ -3107,7 +4760,13 @@
       "sortid": 64,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_axe"
+      "registry_name": "titan_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/TitanAxeItem.java",
+          "src/main/resources/assets/creative_world/models/item/titan_axe.json"
+        ]
+      }
     },
     {
       "name": "TitanSword",
@@ -3115,7 +4774,13 @@
       "sortid": 123,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_sword"
+      "registry_name": "titan_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/titan_sword.json",
+          "src/main/java/net/mcreator/creativeworld/item/TitanSwordItem.java"
+        ]
+      }
     },
     {
       "name": "TitanShovel",
@@ -3123,7 +4788,13 @@
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_shovel"
+      "registry_name": "titan_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/TitanShovelItem.java",
+          "src/main/resources/assets/creative_world/models/item/titan_shovel.json"
+        ]
+      }
     },
     {
       "name": "TitanHoe",
@@ -3131,7 +4802,13 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_hoe"
+      "registry_name": "titan_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/TitanHoeItem.java",
+          "src/main/resources/assets/creative_world/models/item/titan_hoe.json"
+        ]
+      }
     },
     {
       "name": "TitanPickaxeRecipe",
@@ -3139,7 +4816,12 @@
       "sortid": 322,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_pickaxe_recipe"
+      "registry_name": "titan_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_pickaxe_recipe.json"
+        ]
+      }
     },
     {
       "name": "TitanAxeRecipe",
@@ -3147,7 +4829,12 @@
       "sortid": 323,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_axe_recipe"
+      "registry_name": "titan_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_axe_recipe.json"
+        ]
+      }
     },
     {
       "name": "TitanSwordRecipe",
@@ -3155,7 +4842,12 @@
       "sortid": 324,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_sword_recipe"
+      "registry_name": "titan_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_sword_recipe.json"
+        ]
+      }
     },
     {
       "name": "TitanShovelRecipe",
@@ -3163,7 +4855,12 @@
       "sortid": 325,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_shovel_recipe"
+      "registry_name": "titan_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_shovel_recipe.json"
+        ]
+      }
     },
     {
       "name": "TitanHoeRecipe",
@@ -3171,7 +4868,12 @@
       "sortid": 326,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_hoe_recipe"
+      "registry_name": "titan_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_hoe_recipe.json"
+        ]
+      }
     },
     {
       "name": "TitanArmor",
@@ -3184,7 +4886,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/TitanArmorItem.java",
+          "src/main/resources/assets/creative_world/models/item/titan_armor_helmet.json",
+          "src/main/resources/assets/creative_world/models/item/titan_armor_chestplate.json",
+          "src/main/resources/assets/creative_world/models/item/titan_armor_leggings.json",
+          "src/main/resources/assets/creative_world/models/item/titan_armor_boots.json"
+        ]
       }
     },
     {
@@ -3193,7 +4902,12 @@
       "sortid": 327,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_armor_helmet_recipe"
+      "registry_name": "titan_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_armor_helmet_recipe.json"
+        ]
+      }
     },
     {
       "name": "TitanArmorBodyRecipe",
@@ -3201,7 +4915,12 @@
       "sortid": 328,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_armor_body_recipe"
+      "registry_name": "titan_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_armor_body_recipe.json"
+        ]
+      }
     },
     {
       "name": "TitanArmorLeggingsRecipe",
@@ -3209,7 +4928,12 @@
       "sortid": 329,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_armor_leggings_recipe"
+      "registry_name": "titan_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_armor_leggings_recipe.json"
+        ]
+      }
     },
     {
       "name": "TitanArmorBootsRecipe",
@@ -3217,7 +4941,12 @@
       "sortid": 330,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titan_armor_boots_recipe"
+      "registry_name": "titan_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/titan_armor_boots_recipe.json"
+        ]
+      }
     },
     {
       "name": "Titanplate",
@@ -3225,7 +4954,13 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titanplate"
+      "registry_name": "titanplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/titanplate.json",
+          "src/main/java/net/mcreator/creativeworld/item/TitanplateItem.java"
+        ]
+      }
     },
     {
       "name": "Compositeplate",
@@ -3233,7 +4968,13 @@
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "compositeplate"
+      "registry_name": "compositeplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/compositeplate.json",
+          "src/main/java/net/mcreator/creativeworld/item/CompositeplateItem.java"
+        ]
+      }
     },
     {
       "name": "Compositeplatecraft",
@@ -3241,7 +4982,12 @@
       "sortid": 331,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "compositeplatecraft"
+      "registry_name": "compositeplatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/compositeplatecraft.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_armorArmor",
@@ -3254,7 +5000,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/Composite_plate_armorArmorItem.java",
+          "src/main/resources/assets/creative_world/models/item/composite_plate_armor_armor_boots.json",
+          "src/main/resources/assets/creative_world/models/item/composite_plate_armor_armor_leggings.json",
+          "src/main/resources/assets/creative_world/models/item/composite_plate_armor_armor_chestplate.json",
+          "src/main/resources/assets/creative_world/models/item/composite_plate_armor_armor_helmet.json"
+        ]
       }
     },
     {
@@ -3263,7 +5016,12 @@
       "sortid": 332,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_armor_armor_helmet_recipe"
+      "registry_name": "composite_plate_armor_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/composite_plate_armor_armor_helmet_recipe.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_armorArmorBodyRecipe",
@@ -3271,7 +5029,12 @@
       "sortid": 333,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_armor_armor_body_recipe"
+      "registry_name": "composite_plate_armor_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/composite_plate_armor_armor_body_recipe.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_armorArmorLeggingsRecipe",
@@ -3279,7 +5042,12 @@
       "sortid": 334,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_armor_armor_leggings_recipe"
+      "registry_name": "composite_plate_armor_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/composite_plate_armor_armor_leggings_recipe.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_armorArmorBootsRecipe",
@@ -3287,7 +5055,12 @@
       "sortid": 335,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_armor_armor_boots_recipe"
+      "registry_name": "composite_plate_armor_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/composite_plate_armor_armor_boots_recipe.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_toolPickaxe",
@@ -3295,7 +5068,13 @@
       "sortid": 67,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_tool_pickaxe"
+      "registry_name": "composite_plate_tool_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/composite_plate_tool_pickaxe.json",
+          "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolPickaxeItem.java"
+        ]
+      }
     },
     {
       "name": "Composite_plate_toolAxe",
@@ -3303,7 +5082,13 @@
       "sortid": 68,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_tool_axe"
+      "registry_name": "composite_plate_tool_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolAxeItem.java",
+          "src/main/resources/assets/creative_world/models/item/composite_plate_tool_axe.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_toolSword",
@@ -3311,7 +5096,13 @@
       "sortid": 121,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_tool_sword"
+      "registry_name": "composite_plate_tool_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolSwordItem.java",
+          "src/main/resources/assets/creative_world/models/item/composite_plate_tool_sword.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_toolShovel",
@@ -3319,7 +5110,13 @@
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_tool_shovel"
+      "registry_name": "composite_plate_tool_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/composite_plate_tool_shovel.json",
+          "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolShovelItem.java"
+        ]
+      }
     },
     {
       "name": "Composite_plate_toolHoe",
@@ -3327,7 +5124,13 @@
       "sortid": 70,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_tool_hoe"
+      "registry_name": "composite_plate_tool_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolHoeItem.java",
+          "src/main/resources/assets/creative_world/models/item/composite_plate_tool_hoe.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_toolPickaxeRecipe",
@@ -3335,7 +5138,12 @@
       "sortid": 336,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_tool_pickaxe_recipe"
+      "registry_name": "composite_plate_tool_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/composite_plate_tool_pickaxe_recipe.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_toolAxeRecipe",
@@ -3343,7 +5151,12 @@
       "sortid": 337,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_tool_axe_recipe"
+      "registry_name": "composite_plate_tool_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/composite_plate_tool_axe_recipe.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_toolSwordRecipe",
@@ -3351,7 +5164,12 @@
       "sortid": 338,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_tool_sword_recipe"
+      "registry_name": "composite_plate_tool_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/composite_plate_tool_sword_recipe.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_toolShovelRecipe",
@@ -3359,7 +5177,12 @@
       "sortid": 339,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_tool_shovel_recipe"
+      "registry_name": "composite_plate_tool_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/composite_plate_tool_shovel_recipe.json"
+        ]
+      }
     },
     {
       "name": "Composite_plate_toolHoeRecipe",
@@ -3367,7 +5190,12 @@
       "sortid": 340,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "composite_plate_tool_hoe_recipe"
+      "registry_name": "composite_plate_tool_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/composite_plate_tool_hoe_recipe.json"
+        ]
+      }
     },
     {
       "name": "Particlebinder",
@@ -3375,7 +5203,13 @@
       "sortid": 80,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "particlebinder"
+      "registry_name": "particlebinder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/ParticlebinderItem.java",
+          "src/main/resources/assets/creative_world/models/item/particlebinder.json"
+        ]
+      }
     },
     {
       "name": "Particlebindercraft",
@@ -3383,7 +5217,12 @@
       "sortid": 341,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "particlebindercraft"
+      "registry_name": "particlebindercraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/particlebindercraft.json"
+        ]
+      }
     },
     {
       "name": "Stationaryparticlebinder",
@@ -3391,7 +5230,15 @@
       "sortid": 114,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stationaryparticlebinder"
+      "registry_name": "stationaryparticlebinder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/stationaryparticlebinder.json",
+          "src/main/resources/assets/creative_world/blockstates/stationaryparticlebinder.json",
+          "src/main/java/net/mcreator/creativeworld/block/StationaryparticlebinderBlock.java",
+          "src/main/resources/assets/creative_world/models/block/stationaryparticlebinder.json"
+        ]
+      }
     },
     {
       "name": "Stationaryparticlebindercraft",
@@ -3399,7 +5246,12 @@
       "sortid": 342,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stationaryparticlebindercraft"
+      "registry_name": "stationaryparticlebindercraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/stationaryparticlebindercraft.json"
+        ]
+      }
     },
     {
       "name": "Quantumteleporterblock",
@@ -3407,7 +5259,15 @@
       "sortid": 112,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "quantumteleporterblock"
+      "registry_name": "quantumteleporterblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/quantumteleporterblock.json",
+          "src/main/resources/assets/creative_world/models/block/quantumteleporterblock.json",
+          "src/main/resources/assets/creative_world/blockstates/quantumteleporterblock.json",
+          "src/main/java/net/mcreator/creativeworld/block/QuantumteleporterblockBlock.java"
+        ]
+      }
     },
     {
       "name": "Quantumteleporterblock2",
@@ -3415,7 +5275,15 @@
       "sortid": 113,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "quantumteleporterblock_2"
+      "registry_name": "quantumteleporterblock_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/quantumteleporterblock_2.json",
+          "src/main/resources/assets/creative_world/blockstates/quantumteleporterblock_2.json",
+          "src/main/resources/assets/creative_world/models/item/quantumteleporterblock_2.json",
+          "src/main/java/net/mcreator/creativeworld/block/Quantumteleporterblock2Block.java"
+        ]
+      }
     },
     {
       "name": "Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshi",
@@ -3425,6 +5293,9 @@
       "locked_code": false,
       "registry_name": "quantumteleporterblock_2_na_blokie_nazhata_pravaia_knopka_myshi",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -3455,7 +5326,12 @@
       "sortid": 344,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "qt"
+      "registry_name": "qt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/command/QTCommand.java"
+        ]
+      }
     },
     {
       "name": "QTclearall",
@@ -3465,6 +5341,9 @@
       "locked_code": false,
       "registry_name": "q_tclearall",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/QTclearallProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -3481,6 +5360,9 @@
       "locked_code": false,
       "registry_name": "q_tclear_1",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/QTclear1Procedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -3497,6 +5379,9 @@
       "locked_code": false,
       "registry_name": "q_tclear_2",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/QTclear2Procedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -3511,7 +5396,12 @@
       "sortid": 348,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "quantumteleporterblock_2craft"
+      "registry_name": "quantumteleporterblock_2craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/quantumteleporterblock_2craft.json"
+        ]
+      }
     },
     {
       "name": "Quantumteleporterblockcraft",
@@ -3519,7 +5409,12 @@
       "sortid": 349,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "quantumteleporterblockcraft"
+      "registry_name": "quantumteleporterblockcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/quantumteleporterblockcraft.json"
+        ]
+      }
     },
     {
       "name": "Keycard",
@@ -3527,7 +5422,13 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "keycard"
+      "registry_name": "keycard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/KeycardItem.java",
+          "src/main/resources/assets/creative_world/models/item/keycard.json"
+        ]
+      }
     },
     {
       "name": "Keycardcraft",
@@ -3535,7 +5436,12 @@
       "sortid": 350,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "keycardcraft"
+      "registry_name": "keycardcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/keycardcraft.json"
+        ]
+      }
     },
     {
       "name": "Drill",
@@ -3543,7 +5449,13 @@
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "drill"
+      "registry_name": "drill",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/drill.json",
+          "src/main/java/net/mcreator/creativeworld/item/DrillItem.java"
+        ]
+      }
     },
     {
       "name": "Advanceddrill",
@@ -3551,7 +5463,13 @@
       "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "advanceddrill"
+      "registry_name": "advanceddrill",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/advanceddrill.json",
+          "src/main/java/net/mcreator/creativeworld/item/AdvanceddrillItem.java"
+        ]
+      }
     },
     {
       "name": "Creativedrill",
@@ -3559,7 +5477,13 @@
       "sortid": 74,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativedrill"
+      "registry_name": "creativedrill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CreativedrillItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativedrill.json"
+        ]
+      }
     },
     {
       "name": "Allowcreativemode",
@@ -3569,7 +5493,8 @@
       "locked_code": false,
       "registry_name": "allowcreativemode",
       "metadata": {
-        "type": "logic"
+        "type": "logic",
+        "files": []
       }
     },
     {
@@ -3580,6 +5505,9 @@
       "locked_code": false,
       "registry_name": "lockcreativemoditemcrafting",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/LockcreativemoditemcraftingProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -3598,7 +5526,10 @@
       "sortid": 353,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativeworlditems"
+      "registry_name": "creativeworlditems",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "Creativeworldblocks",
@@ -3606,7 +5537,10 @@
       "sortid": 354,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativeworldblocks"
+      "registry_name": "creativeworldblocks",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "Creativeworldtools",
@@ -3614,7 +5548,10 @@
       "sortid": 355,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativeworldtools"
+      "registry_name": "creativeworldtools",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "Creativeworldcombat",
@@ -3622,7 +5559,10 @@
       "sortid": 356,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativeworldcombat"
+      "registry_name": "creativeworldcombat",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "Tinwirewithrubber3",
@@ -3631,6 +5571,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber3Block.java",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_3.json",
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_3.json",
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_3.json"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3641,6 +5589,9 @@
       "locked_code": false,
       "registry_name": "wireconnecting",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/WireconnectingProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -3669,6 +5620,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_4.json",
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_4.json",
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_4.json",
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber4Block.java"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3678,6 +5637,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_5.json",
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber5Block.java",
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_5.json",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_5.json"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3687,6 +5654,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_6",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_6.json",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_6.json",
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_6.json",
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber6Block.java"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3696,6 +5671,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber7Block.java",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_7.json",
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_7.json",
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_7.json"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3705,6 +5688,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_8",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_8.json",
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber8Block.java",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_8.json",
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_8.json"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3714,6 +5705,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_9",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_9.json",
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_9.json",
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber9Block.java",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_9.json"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3723,6 +5722,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_10",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_10.json",
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber10Block.java",
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_10.json",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_10.json"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3732,6 +5739,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_11",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_11.json",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_11.json",
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_11.json",
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber11Block.java"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3741,6 +5756,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_12",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber12Block.java",
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_12.json",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_12.json",
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_12.json"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3750,6 +5773,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_13",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_13.json",
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_13.json",
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_13.json",
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber13Block.java"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3759,6 +5790,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_14",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_14.json",
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_14.json",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_14.json",
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber14Block.java"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3768,6 +5807,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinwirewithrubber_15",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/tinwirewithrubber_15.json",
+          "src/main/java/net/mcreator/creativeworld/block/Tinwirewithrubber15Block.java",
+          "src/main/resources/assets/creative_world/blockstates/tinwirewithrubber_15.json",
+          "src/main/resources/assets/creative_world/models/block/tinwirewithrubber_15.json"
+        ]
+      },
       "path": "~/wires"
     },
     {
@@ -3776,7 +5823,13 @@
       "sortid": 371,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "reel"
+      "registry_name": "reel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/item/reel.json",
+          "src/main/java/net/mcreator/creativeworld/item/ReelItem.java"
+        ]
+      }
     },
     {
       "name": "Creativereel",
@@ -3784,7 +5837,58 @@
       "sortid": 372,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creativereel"
+      "registry_name": "creativereel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/CreativereelItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativereel.json"
+        ]
+      }
+    },
+    {
+      "name": "Jetpackwithwarpengine",
+      "type": "armor",
+      "sortid": 373,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jetpackwithwarpengine",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true,
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/item/JetpackwithwarpengineItem.java",
+          "src/main/resources/assets/creative_world/models/item/jetpackwithwarpengine_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "Omegaspeed",
+      "type": "overlay",
+      "sortid": 374,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "omegaspeed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/client/screens/OmegaspeedOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "JetpackwithwarpengineSobytiieTaktovKirasy",
+      "type": "procedure",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jetpackwithwarpengine_sobytiie_taktov_kirasy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/JetpackwithwarpengineSobytiieTaktovKirasyProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -3856,8 +5960,8 @@
       "item.creative_world.composite_plate_tool_pickaxe": "Композитное_платье_тул Кирка",
       "block.creative_world.resin_slab": "Плита из каучукового дерева",
       "gamerule.allowcreativemode.description": "позволяет создавать предметы в творческом режиме",
-      "item.creative_world.titan_armor_chestplate": "Титановый нагрудник",
       "item.creative_world.electricjetpack_leggings": "Электрический реактивный ранец пїЅпїЅпїЅпїЅпїЅпїЅ",
+      "item.creative_world.titan_armor_chestplate": "Титановый нагрудник",
       "block.creative_world.solarpanel": "Панель солнечных батарей",
       "item.creative_world.advancedelectricjetpack_leggings": "Усовершенствованный электрический реактивный ранец РџРѕРЅРѕР¶Рё",
       "item.creative_world.washedcrushedtinore": "Промытая измельченная оловянная руда",
@@ -3866,8 +5970,8 @@
       "item.creative_world.battery_3": "Батарея",
       "block.creative_world.coalgenerator_1": "Угольный генератор",
       "gamerule.allowcreativemode": "позволяет использовать творческий режим",
-      "item.creative_world.battery_2": "Батарея",
       "advancements.infinity.title": "Бесконечность?",
+      "item.creative_world.battery_2": "Батарея",
       "item.creative_world.battery_1": "Батарея",
       "block.creative_world.fan": "Фанат",
       "item.creative_world.composite_plate_tool_shovel": "Composite_plate_tool Лопата",
@@ -3875,8 +5979,8 @@
       "block.creative_world.accumulatium_ore": "Аккумулятивная руда",
       "item.creative_world.bronzeplate": "Бронзовая пластина",
       "item.creative_world.composite_plate_tool_sword": "Композитное_платье_тул Меч",
-      "item.creative_world.thecoreofmatter": "Ядро материи",
       "item.creative_world.creativium_pickaxe": "Креативная кирка",
+      "item.creative_world.thecoreofmatter": "Ядро материи",
       "block.creative_world.accumulatium_block": "Блок накопления",
       "item.creative_world.creativium_armor_chestplate": "Нагрудный знак Creativium",
       "item.creative_world.advancedelectricjetpack_helmet": "Усовершенствованный электрический реактивный ранец РЁР»РμРј",
@@ -3897,7 +6001,9 @@
       "item.creative_world.accumulatium_shovel": "Накопительная лопата",
       "block.creative_world.creativium_ore": "Креативиевая руда",
       "item.creative_world.gas_bucket": "Газовое ведро",
+      "item.creative_world.jetpackwithwarpengine_helmet": "Jetpackwithwarpengine Шлем",
       "key.creative_world.electricjetpackcontrol": "Управление электрическим струйным пакетом",
+      "gui.creative_world.fgfhffhghkjkkytwqa.label_fe": "FE",
       "item.creative_world.bronze_pickaxe": "Бронзовая кирка",
       "item.creative_world.copper_shovel": "Медная лопата",
       "item.creative_world.tin_axe": "Жестяной топор",
@@ -3915,13 +6021,14 @@
       "item.creative_world.alargebucketofwater_4": "Большое ведро воды 4",
       "item.creative_world.alargebucketofwater_7": "Большое ведро воды 7",
       "item.creative_world.alargebucketofwater_6": "Большое ведро с водой 6",
-      "item.creative_world.alargebucketofwater_9": "Большое ведро с водой 9",
       "item.creative_world.creativedrill": "Творческое упражнение",
+      "item.creative_world.alargebucketofwater_9": "Большое ведро с водой 9",
       "item.creative_world.alargebucketofwater_8": "Большое ведро с водой 8",
       "item.creative_world.copper_sword": "Медный меч",
       "item.creative_world.composite_plate_tool_hoe": "Composite_plate_tool Мотыга",
       "item.creative_world.electricjetpack_helmet": "Электрический реактивный ранец пїЅпїЅпїЅпїЅ",
       "block.creative_world.rsinlogwithresin": "Бревно из каучукового дерева с резиновым",
+      "item.creative_world.jetpackwithwarpengine_leggings": "Jetpackwithwarpengine Поножи",
       "advancements.whatisit.descr": "craft sdfghn",
       "block.creative_world.resin_fence": "Забор из каучукового дерева",
       "item.creative_world.creativium_axe": "Топор Креативиума",
@@ -3974,8 +6081,11 @@
       "item.creative_world.rawtin": "Необработанное олово",
       "item.creative_world.titan_armor_helmet": "Шлем титана",
       "block.creative_world.stationaryparticlebinder": "Стационарный частичный преобразователь",
+      "item.creative_world.jetpackwithwarpengine_boots": "Jetpackwithwarpengine Ботинки",
       "item.creative_world.tin_armor_helmet": "Жестяной шлем",
       "advancements.creativeworld.descr": "давайте начнем",
+      "gui.creative_world.fgfhffhghkjkkytwqa.label_energy": "\u003cenergy\u003e",
+      "item.creative_world.jetpackwithwarpengine_chestplate": "Jetpackwithwarpengine Кираса",
       "item.creative_world.copper_axe": "Медный топор",
       "item.creative_world.bronze_armor_leggings": "Бронзовые леггинсы",
       "item.creative_world.coppernugget": "Медный самородок",
@@ -4024,6 +6134,7 @@
       "block.creative_world.resin_wood": "из каучукового дерева",
       "item.creative_world.creativemod": "Креативный мод",
       "item.creative_world.accumulatium_ingot": "Накопление",
+      "gui.creative_world.msrpmro.button_empty": "!",
       "advancements.creativeworld.title": "Творческий мир",
       "item.creative_world.bronzedust": "Бронзовая пыль",
       "item.creative_world.copper_armor_helmet": "Медный шлем",
@@ -4064,8 +6175,8 @@
       "item.creative_world.composite_plate_tool_pickaxe": "Composite_plate_tool Pickaxe",
       "block.creative_world.resin_slab": "Rubber tree slab",
       "gamerule.allowcreativemode.description": "allow use creative mode item",
-      "item.creative_world.electricjetpack_leggings": "Electricjetpack ������",
       "item.creative_world.titan_armor_chestplate": "Titan Chestplate",
+      "item.creative_world.electricjetpack_leggings": "Electricjetpack ������",
       "block.creative_world.solarpanel": "Solar panel",
       "item.creative_world.advancedelectricjetpack_leggings": "Advancedelectricjetpack Поножи",
       "item.creative_world.washedcrushedtinore": "Washed crushed tin ore",
@@ -4074,8 +6185,8 @@
       "item.creative_world.battery_3": "Battery",
       "block.creative_world.coalgenerator_1": "Coal generator",
       "gamerule.allowcreativemode": "allow creative mode",
-      "advancements.infinity.title": "Infinity?",
       "item.creative_world.battery_2": "Battery",
+      "advancements.infinity.title": "Infinity?",
       "item.creative_world.battery_1": "Battery",
       "block.creative_world.fan": "Fan",
       "item.creative_world.composite_plate_tool_shovel": "Composite_plate_tool Shovel",
@@ -4083,8 +6194,8 @@
       "block.creative_world.accumulatium_ore": "Accumulatium Ore",
       "item.creative_world.bronzeplate": "Bronze plate",
       "item.creative_world.composite_plate_tool_sword": "Composite_plate_tool Sword",
-      "item.creative_world.creativium_pickaxe": "Creativium Pickaxe",
       "item.creative_world.thecoreofmatter": "The core of matter",
+      "item.creative_world.creativium_pickaxe": "Creativium Pickaxe",
       "block.creative_world.accumulatium_block": "Block of Accumulatium",
       "item.creative_world.creativium_armor_chestplate": "Creativium Chestplate",
       "item.creative_world.advancedelectricjetpack_helmet": "Advancedelectricjetpack Шлем",
@@ -4105,7 +6216,9 @@
       "item.creative_world.accumulatium_shovel": "Accumulatium Shovel",
       "block.creative_world.creativium_ore": "Creativium Ore",
       "item.creative_world.gas_bucket": "Gas Bucket",
+      "item.creative_world.jetpackwithwarpengine_helmet": "Jetpackwithwarpengine Шлем",
       "key.creative_world.electricjetpackcontrol": "Electricjetpackcontrol",
+      "gui.creative_world.fgfhffhghkjkkytwqa.label_fe": "FE",
       "item.creative_world.bronze_pickaxe": "Bronze Pickaxe",
       "item.creative_world.copper_shovel": "Copper Shovel",
       "item.creative_world.tin_axe": "Tin Axe",
@@ -4131,6 +6244,7 @@
       "item.creative_world.composite_plate_tool_hoe": "Composite_plate_tool Hoe",
       "item.creative_world.electricjetpack_helmet": "Electricjetpack ����",
       "block.creative_world.rsinlogwithresin": "Rubber tree log with rubber",
+      "item.creative_world.jetpackwithwarpengine_leggings": "Jetpackwithwarpengine Поножи",
       "advancements.whatisit.descr": "craft the sdfghn",
       "block.creative_world.resin_fence": "Rubber tree fence",
       "item.creative_world.creativium_axe": "Creativium Axe",
@@ -4183,8 +6297,11 @@
       "item.creative_world.rawtin": "Raw tin",
       "item.creative_world.titan_armor_helmet": "Titan Helmet",
       "block.creative_world.stationaryparticlebinder": "Stationary partic lebinder",
+      "item.creative_world.jetpackwithwarpengine_boots": "Jetpackwithwarpengine Ботинки",
       "item.creative_world.tin_armor_helmet": "Tin Helmet",
       "advancements.creativeworld.descr": "let\u0027s start",
+      "gui.creative_world.fgfhffhghkjkkytwqa.label_energy": "\u003cenergy\u003e",
+      "item.creative_world.jetpackwithwarpengine_chestplate": "Jetpackwithwarpengine Кираса",
       "item.creative_world.copper_axe": "Copper Axe",
       "item.creative_world.bronze_armor_leggings": "Bronze Leggings",
       "item.creative_world.coppernugget": "Copper nugget",
@@ -4233,6 +6350,7 @@
       "block.creative_world.resin_wood": "rubber tree wood",
       "item.creative_world.creativemod": "Creativemod",
       "item.creative_world.accumulatium_ingot": "Accumulatium",
+      "gui.creative_world.msrpmro.button_empty": "!",
       "advancements.creativeworld.title": "Creative world",
       "item.creative_world.bronzedust": "Bronz edust",
       "item.creative_world.copper_armor_helmet": "Copper Helmet",
@@ -4278,7 +6396,7 @@
   "workspaceSettings": {
     "modid": "creative_world",
     "modName": "creative world",
-    "version": "0.2.2alfa_4",
+    "version": "0.2.2beta_2",
     "author": "300f20t, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "MIT License",
@@ -4294,5 +6412,5 @@
     "modElementsPackage": "net.mcreator.creativeworld",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200348217
+  "mcreatorVersion": 202300109612
 }

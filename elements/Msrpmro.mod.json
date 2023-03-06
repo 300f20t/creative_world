@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -14,9 +14,10 @@
         "type": "outputslot",
         "data": {
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 177,
           "y": 53
         }
@@ -27,10 +28,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 1,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #1",
           "x": 177,
           "y": 89
         }
@@ -40,7 +45,6 @@
         "data": {
           "image": "imgonline-com-ua-transparent-backgr-otc7jv5tgcy9qio.png",
           "use1Xscale": false,
-          "name": "imgonline-com-ua-transparent-backgr-otc7jv5tgcy9qio.png",
           "x": 222,
           "y": 53
         }
@@ -50,9 +54,28 @@
         "data": {
           "image": "hdugfbg.png",
           "use1Xscale": false,
-          "name": "hdugfbg.png",
           "x": 177,
           "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_element_1_1.png",
+          "use1Xscale": false,
+          "x": 112,
+          "y": 37
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "!",
+          "width": 30,
+          "height": 20,
+          "x": 112,
+          "y": 18
         }
       }
     ],

@@ -34,10 +34,7 @@ import net.mcreator.creativeworld.block.entity.CrusherBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class CrusherBlock extends Block
-		implements
-
-			EntityBlock {
+public class CrusherBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public CrusherBlock() {
@@ -86,7 +83,6 @@ public class CrusherBlock extends Block
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		CrusherNaBlokieNazhataPravaiaKnopkaMyshiProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}

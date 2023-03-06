@@ -18,15 +18,13 @@ public class YavvProcedure {
 		if (entity == null)
 			return;
 		if ((world.getBlockState(new BlockPos(x, 1 + y, z))).getBlock() == Blocks.AIR) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-					.getItem() == CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get()) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get()) {
 				world.setBlock(new BlockPos(x, 1 + y, z), Blocks.WATER.defaultBlockState(), 3);
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				if (entity instanceof Player _player) {
 					ItemStack _stktoremove = new ItemStack(CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get());
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-							_player.inventoryMenu.getCraftSlots());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = new ItemStack(CreativeWorldModItems.ALARGEBUCKETOFWATER_8.get());

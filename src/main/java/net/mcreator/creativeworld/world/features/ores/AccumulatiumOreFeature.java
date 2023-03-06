@@ -34,11 +34,9 @@ public class AccumulatiumOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new AccumulatiumOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("creative_world:accumulatium_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()),
-						CreativeWorldModBlocks.ACCUMULATIUM_ORE.get().defaultBlockState())), 2));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), CreativeWorldModBlocks.ACCUMULATIUM_ORE.get().defaultBlockState())), 2));
 		PLACED_FEATURE = PlacementUtils.register("creative_world:accumulatium_ore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(1), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(20)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(1), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(20)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

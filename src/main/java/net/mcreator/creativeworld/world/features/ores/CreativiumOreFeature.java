@@ -34,11 +34,9 @@ public class CreativiumOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new CreativiumOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("creative_world:creativium_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()),
-						CreativeWorldModBlocks.CREATIVIUM_ORE.get().defaultBlockState())), 1));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), CreativeWorldModBlocks.CREATIVIUM_ORE.get().defaultBlockState())), 1));
 		PLACED_FEATURE = PlacementUtils.register("creative_world:creativium_ore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(1), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(30)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(1), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(30)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

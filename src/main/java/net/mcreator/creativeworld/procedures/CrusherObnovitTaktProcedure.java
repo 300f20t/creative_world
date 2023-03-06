@@ -17,12 +17,9 @@ public class CrusherObnovitTaktProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
-				? ((Slot) _slt.get(0)).getItem()
-				: ItemStack.EMPTY).getItem() == Blocks.IRON_ORE.asItem()) {
+		if ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Blocks.IRON_ORE.asItem()) {
 			CreativeWorldMod.queueServerWork(100, () -> {
-				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-						&& _current.get() instanceof Map _slots) {
+				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(CreativeWorldModItems.CRUSHEDIRONORE.get());
 					_setstack.setCount(2);
 					((Slot) _slots.get(1)).set(_setstack);

@@ -22,13 +22,9 @@ import net.mcreator.creativeworld.block.entity.InfinityenergyBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class InfinityenergyBlock extends Block
-		implements
-
-			EntityBlock {
+public class InfinityenergyBlock extends Block implements EntityBlock {
 	public InfinityenergyBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f).hasPostProcess((bs, br, bp) -> true)
-				.emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

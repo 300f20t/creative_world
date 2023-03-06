@@ -15,8 +15,7 @@ import net.mcreator.creativeworld.init.CreativeWorldModItems;
 
 public class SdfghnItem extends Item {
 	public SdfghnItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).stacksTo(1).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(100).saturationMod(100f).alwaysEat().meat().build()));
+		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).stacksTo(1).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(100).saturationMod(100f).alwaysEat().meat().build()));
 	}
 
 	@Override

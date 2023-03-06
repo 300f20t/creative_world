@@ -14,9 +14,8 @@ import net.mcreator.creativeworld.init.CreativeWorldModFluidTypes;
 import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
 
 public abstract class OilFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> CreativeWorldModFluidTypes.OIL_TYPE.get(),
-			() -> CreativeWorldModFluids.OIL.get(), () -> CreativeWorldModFluids.FLOWING_OIL.get()).explosionResistance(100f).tickRate(50)
-			.slopeFindDistance(3).bucket(() -> CreativeWorldModItems.OIL_BUCKET.get()).block(() -> (LiquidBlock) CreativeWorldModBlocks.OIL.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> CreativeWorldModFluidTypes.OIL_TYPE.get(), () -> CreativeWorldModFluids.OIL.get(), () -> CreativeWorldModFluids.FLOWING_OIL.get())
+			.explosionResistance(100f).tickRate(50).slopeFindDistance(3).bucket(() -> CreativeWorldModItems.OIL_BUCKET.get()).block(() -> (LiquidBlock) CreativeWorldModBlocks.OIL.get());
 
 	private OilFluid() {
 		super(PROPERTIES);

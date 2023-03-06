@@ -46,10 +46,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class CoalgeneratorBlock extends Block
-		implements
-
-			EntityBlock {
+public class CoalgeneratorBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public CoalgeneratorBlock() {
@@ -100,7 +97,6 @@ public class CoalgeneratorBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		CoalgeneratorObnovitTaktProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}

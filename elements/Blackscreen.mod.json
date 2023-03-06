@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -9,7 +9,6 @@
         "data": {
           "image": "black_screen_texture.png",
           "use1Xscale": false,
-          "name": "black_screen_texture.png",
           "x": -44,
           "y": -131
         }

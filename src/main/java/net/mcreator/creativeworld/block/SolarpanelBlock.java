@@ -25,10 +25,7 @@ import net.mcreator.creativeworld.block.entity.SolarpanelBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class SolarpanelBlock extends Block
-		implements
-
-			EntityBlock {
+public class SolarpanelBlock extends Block implements EntityBlock {
 	public SolarpanelBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(1f, 10f));
 	}
@@ -58,7 +55,6 @@ public class SolarpanelBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		SolarpanelObnovitTaktProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}
