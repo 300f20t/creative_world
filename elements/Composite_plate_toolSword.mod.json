@@ -1,7 +1,8 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "tool",
   "definition": {
+    "toolType": "Sword",
     "renderType": 0,
     "texture": "composite_plate_tool_sword",
     "customModelName": "Normal",
@@ -10,12 +11,11 @@
     "creativeTab": {
       "value": "CUSTOM:Creativeworldcombat"
     },
-    "toolType": "Sword",
     "harvestLevel": 6,
     "efficiency": 12.0,
-    "attackSpeed": 1.0,
+    "attackSpeed": 2.0,
     "enchantability": 42,
-    "damageVsEntity": 6.0,
+    "damageVsEntity": 7.0,
     "usageCount": 1164,
     "blocksAffected": [],
     "hasGlow": false,

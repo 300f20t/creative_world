@@ -34,7 +34,7 @@ public class JetpackenergylowOverlay {
 		double z = 0;
 		Player entity = Minecraft.getInstance().player;
 		if (entity != null) {
-			world = entity.level;
+			world = entity.level();
 			x = entity.getX();
 			y = entity.getY();
 			z = entity.getZ();
@@ -46,11 +46,9 @@ public class JetpackenergylowOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (HklklhProcedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("creative_world:textures/screens/jetpack_e_l.png"));
-			Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -153, posY + 113, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/jetpack_e_l.png"), posX + -153, posY + 113, 0, 0, 16, 16, 16, 16);
 
-			RenderSystem.setShaderTexture(0, new ResourceLocation("creative_world:textures/screens/l_energy_jp.png"));
-			Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -135, posY + 104, 0, 0, 32, 32, 32, 32);
+			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/l_energy_jp.png"), posX + -135, posY + 104, 0, 0, 32, 32, 32, 32);
 
 		}
 		RenderSystem.depthMask(true);

@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "electerical_circuit_2",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Electrical circuit",
     "rarity": "COMMON",
     "creativeTab": {

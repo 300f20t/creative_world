@@ -1,16 +1,16 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "block",
   "definition": {
     "texture": "resin_log_top",
     "textureTop": "resin_log_top",
     "textureLeft": "resin_log_side",
-    "textureFront": "resin_log_side",
+    "textureFront": "fgart",
     "textureRight": "resin_log_side",
     "textureBack": "resin_log_side",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -44,7 +44,7 @@
     },
     "destroyTool": "axe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:ResinLog"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -121,7 +121,16 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.STONE#5"
       }
     ],
     "generationShape": "UNIFORM",

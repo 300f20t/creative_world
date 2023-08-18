@@ -1,20 +1,21 @@
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[47,)"
 license="MIT License"
 
 [[mods]]
 modId="creative_world"
-version="0.2.22"
+version="0.2.31"
 displayName="creative world"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
-authors="300f20t, MCreator"
+authors="300f20t, MCreator."
+description="This is Alpha!"
 
 [[dependencies.creative_world]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2]"
+    versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
 

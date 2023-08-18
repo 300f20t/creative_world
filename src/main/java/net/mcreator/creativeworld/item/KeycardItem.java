@@ -8,11 +8,9 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
-
 public class KeycardItem extends Item {
 	public KeycardItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).stacksTo(1).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

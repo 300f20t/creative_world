@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "block",
   "definition": {
     "texture": "tffyuiui",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Solar panel",
-    "specialInfo": [],
+    "specialInfo": [
+      "§cdoes not work correctly (in development)"
+    ],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -124,7 +126,16 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.STONE#5"
       }
     ],
     "generationShape": "UNIFORM",

@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fdgdfgdd",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Copper plate",
     "rarity": "COMMON",
     "creativeTab": {

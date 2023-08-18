@@ -1,18 +1,19 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "tool",
   "definition": {
+    "toolType": "Pickaxe",
     "renderType": 0,
     "texture": "ytghfg",
     "customModelName": "Normal",
     "name": "Bedrock breaker",
     "specialInfo": [
-      "destroy bedrock"
+      "destroy bedrock",
+      "§ehas incomplete functionality (in development)"
     ],
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
-    "toolType": "Pickaxe",
     "harvestLevel": 4,
     "efficiency": 10.0,
     "attackSpeed": 1.6,

@@ -1,9 +1,9 @@
 {
   "parent": "creative_world:custom/w9",
   "textures": {
-    "all": "creative_world:blocks/w9",
-    "particle": "creative_world:blocks/w9",
-    "0": "creative_world:blocks/w9"
+    "all": "creative_world:block/w9",
+    "particle": "creative_world:block/w9",
+    "0": "creative_world:block/w9"
   },
   "render_type": "solid"
 }

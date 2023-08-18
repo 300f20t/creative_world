@@ -6,8 +6,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
-
 public class CopperShovelItem extends ShovelItem {
 	public CopperShovelItem() {
 		super(new Tier() {
@@ -32,8 +30,8 @@ public class CopperShovelItem extends ShovelItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
-		}, 1, -3f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS));
+		}, 1, -3f, new Item.Properties());
 	}
 }

@@ -7,7 +7,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
 
 public class AccumulatiumHoeItem extends HoeItem {
@@ -36,6 +35,6 @@ public class AccumulatiumHoeItem extends HoeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(CreativeWorldModItems.ACCUMULATIUM_INGOT.get()));
 			}
-		}, 0, 8f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS));
+		}, 0, 8f, new Item.Properties());
 	}
 }

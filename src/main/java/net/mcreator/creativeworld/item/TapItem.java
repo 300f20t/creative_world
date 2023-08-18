@@ -15,21 +15,18 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.creativeworld.procedures.TapKoghdaNazhataPKMPoBlokuProcedure;
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
-
-import java.util.List;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
 
 public class TapItem extends Item {
 	public TapItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).durability(100));
+		super(new Item.Properties().durability(25));
 	}
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return List.of().contains(blockstate.getBlock()) ? 4f : 1;
+		return 1f;
 	}
 
 	@Override

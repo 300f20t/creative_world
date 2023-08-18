@@ -4,8 +4,7 @@ package net.mcreator.creativeworld.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
@@ -35,7 +34,7 @@ public class Tinwirewithrubber2Block extends Block implements SimpleWaterloggedB
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public Tinwirewithrubber2Block() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
@@ -79,7 +78,7 @@ public class Tinwirewithrubber2Block extends Block implements SimpleWaterloggedB
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
@@ -89,6 +88,6 @@ public class Tinwirewithrubber2Block extends Block implements SimpleWaterloggedB
 	@Override
 	public void setPlacedBy(Level world, BlockPos pos, BlockState blockstate, LivingEntity entity, ItemStack itemstack) {
 		super.setPlacedBy(world, pos, blockstate, entity, itemstack);
-		WireconnectingProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		WireconnectingProcedure.execute();
 	}
 }

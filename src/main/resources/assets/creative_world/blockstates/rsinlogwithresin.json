@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "creative_world:block/rsinlogwithresin"
+    },
+    "facing=east": {
+      "model": "creative_world:block/rsinlogwithresin",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "creative_world:block/rsinlogwithresin",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "creative_world:block/rsinlogwithresin",
+      "y": 270
     }
   }
 }

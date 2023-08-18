@@ -15,7 +15,6 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.creativeworld.procedures.BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure;
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 
 import java.util.List;
 
@@ -45,13 +44,14 @@ public class BedrockbreackerItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Blocks.CRYING_OBSIDIAN), new ItemStack(Items.DIAMOND));
 			}
-		}, 1, -2.4f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).fireResistant());
+		}, 1, -2.4f, new Item.Properties().fireResistant());
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("destroy bedrock"));
+		list.add(Component.literal("\u00A7ehas incomplete functionality (in development)"));
 	}
 
 	@Override

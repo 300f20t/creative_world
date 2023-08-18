@@ -1,9 +1,9 @@
 {
   "parent": "creative_world:custom/w8",
   "textures": {
-    "all": "creative_world:blocks/w8",
-    "particle": "creative_world:blocks/w8",
-    "0": "creative_world:blocks/w8"
+    "all": "creative_world:block/w8",
+    "particle": "creative_world:block/w8",
+    "0": "creative_world:block/w8"
   },
   "render_type": "solid"
 }

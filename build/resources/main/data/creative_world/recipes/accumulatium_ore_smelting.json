@@ -1,6 +1,7 @@
 {
   "type": "minecraft:smelting",
-  "experience": 4.199999999999999,
+  "category": "misc",
+  "experience": 4.2,
   "cookingtime": 200,
   "ingredient": {
     "item": "creative_world:accumulatium_ore"

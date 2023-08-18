@@ -1,7 +1,8 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "tool",
   "definition": {
+    "toolType": "Special",
     "renderType": 0,
     "texture": "sefsdf",
     "customModelName": "Normal",
@@ -10,7 +11,6 @@
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
-    "toolType": "Special",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 1.0,

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "creative_world:items/electerical_circuit_2"
+    "layer0": "creative_world:item/electerical_circuit_2"
   }
 }

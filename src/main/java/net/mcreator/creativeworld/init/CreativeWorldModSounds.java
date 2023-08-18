@@ -15,5 +15,5 @@ import net.mcreator.creativeworld.CreativeWorldMod;
 
 public class CreativeWorldModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, CreativeWorldMod.MODID);
-	public static final RegistryObject<SoundEvent> QT_TELEPORT = REGISTRY.register("qt.teleport", () -> new SoundEvent(new ResourceLocation("creative_world", "qt.teleport")));
+	public static final RegistryObject<SoundEvent> QT_TELEPORT = REGISTRY.register("qt.teleport", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("creative_world", "qt.teleport")));
 }

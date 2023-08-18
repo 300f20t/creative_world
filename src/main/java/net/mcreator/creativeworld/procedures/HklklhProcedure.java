@@ -31,7 +31,7 @@ public class HklklhProcedure {
 		if (entity == null)
 			return false;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == CreativeWorldModItems.ADVANCEDELECTRICJETPACK_CHESTPLATE.get()) {
-			if (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)).getDamageValue() >= 2500) {
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getDamageValue() >= 2500) {
 				return true;
 			}
 		}

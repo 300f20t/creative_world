@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cvbhfgs",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Creativemod",
     "rarity": "EPIC",
     "creativeTab": {
@@ -24,7 +26,9 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "§ehas incomplete functionality (in development)"
+    ],
     "hasGlow": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,

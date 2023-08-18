@@ -1,7 +1,8 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "tool",
   "definition": {
+    "toolType": "Axe",
     "renderType": 0,
     "texture": "copper_axe",
     "customModelName": "Normal",
@@ -10,12 +11,11 @@
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
-    "toolType": "Axe",
     "harvestLevel": 2,
     "efficiency": 6.0,
-    "attackSpeed": 1.0,
+    "attackSpeed": 0.9,
     "enchantability": 13,
-    "damageVsEntity": 2.0,
+    "damageVsEntity": 9.0,
     "usageCount": 216,
     "blocksAffected": [],
     "hasGlow": false,

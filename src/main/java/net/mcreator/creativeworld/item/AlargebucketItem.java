@@ -11,13 +11,12 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.creativeworld.procedures.AlargebucketKoghdaNazhataPKMPoBlokuProcedure;
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 
 import java.util.List;
 
 public class AlargebucketItem extends Item {
 	public AlargebucketItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

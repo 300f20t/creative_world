@@ -7,13 +7,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.creativeworld.world.inventory.MsrpmroMenu;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
@@ -37,28 +36,24 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 	private static final ResourceLocation texture = new ResourceLocation("creative_world:textures/screens/msrpmro.png");
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("creative_world:textures/screens/imgonline-com-ua-transparent-backgr-otc7jv5tgcy9qio.png"));
-		this.blit(ms, this.leftPos + 96, this.topPos + 16, 0, 0, 50, 57, 50, 57);
+		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/imgonline-com-ua-transparent-backgr-otc7jv5tgcy9qio.png"), this.leftPos + 96, this.topPos + 16, 0, 0, 50, 57, 50, 57);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("creative_world:textures/screens/hdugfbg.png"));
-		this.blit(ms, this.leftPos + 51, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/hdugfbg.png"), this.leftPos + 51, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("creative_world:textures/screens/gui_element_1_1.png"));
-		this.blit(ms, this.leftPos + -13, this.topPos + 0, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/gui_element_1_1.png"), this.leftPos + -13, this.topPos + 0, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -78,21 +73,19 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 	}
 
 	@Override
 	public void onClose() {
 		super.onClose();
-		Minecraft.getInstance().keyboardHandler.setSendRepeatsToGui(false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		button_empty = new Button(this.leftPos + -13, this.topPos + -19, 30, 20, Component.translatable("gui.creative_world.msrpmro.button_empty"), e -> {
-		});
+		button_empty = Button.builder(Component.translatable("gui.creative_world.msrpmro.button_empty"), e -> {
+		}).bounds(this.leftPos + -13, this.topPos + -19, 30, 20).build();
 		guistate.put("button:button_empty", button_empty);
 		this.addRenderableWidget(button_empty);
 	}

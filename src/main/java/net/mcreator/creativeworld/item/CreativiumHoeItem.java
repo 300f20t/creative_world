@@ -7,7 +7,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
 
 public class CreativiumHoeItem extends HoeItem {
@@ -22,7 +21,7 @@ public class CreativiumHoeItem extends HoeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 1.9999999999999996f;
+				return 2f;
 			}
 
 			public int getLevel() {
@@ -36,6 +35,6 @@ public class CreativiumHoeItem extends HoeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(CreativeWorldModItems.CREATIVIUM_INGOT.get()));
 			}
-		}, 0, 12f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).fireResistant());
+		}, 0, 12f, new Item.Properties().fireResistant());
 	}
 }

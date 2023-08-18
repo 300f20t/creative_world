@@ -7,7 +7,6 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
 
 public class TitanSwordItem extends SwordItem {
@@ -22,7 +21,7 @@ public class TitanSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 28f;
+				return 6f;
 			}
 
 			public int getLevel() {
@@ -36,6 +35,6 @@ public class TitanSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(CreativeWorldModItems.TITAN_INGOT.get()));
 			}
-		}, 3, -3f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT));
+		}, 3, -2.2f, new Item.Properties());
 	}
 }

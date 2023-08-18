@@ -12,14 +12,14 @@ import java.util.function.Consumer;
 
 public class GasFluidType extends FluidType {
 	public GasFluidType() {
-		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).density(100).viscosity(53).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(0.007D).density(100).viscosity(53).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
 				.sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}
 
 	@Override
 	public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
 		consumer.accept(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("creative_world:blocks/sapro"), FLOWING_TEXTURE = new ResourceLocation("creative_world:blocks/apr");
+			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("creative_world:block/sapro"), FLOWING_TEXTURE = new ResourceLocation("creative_world:block/apr");
 
 			@Override
 			public ResourceLocation getStillTexture() {

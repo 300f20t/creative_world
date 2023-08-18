@@ -25,7 +25,7 @@ public class BatteryblockObnovitTaktProcedure {
 					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
-		}.canReceiveEnergy(world, new BlockPos(x, y - 1, z))) {
+		}.canReceiveEnergy(world, BlockPos.containing(x, y - 1, z))) {
 			down = new Object() {
 				public int extractEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -34,7 +34,7 @@ public class BatteryblockObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.extractEnergySimulate(world, new BlockPos(x, y, z), 10000);
+			}.extractEnergySimulate(world, BlockPos.containing(x, y, z), 10000);
 			down = new Object() {
 				public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -43,15 +43,15 @@ public class BatteryblockObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.receiveEnergySimulate(world, new BlockPos(x, y - 1, z), (int) down);
+			}.receiveEnergySimulate(world, BlockPos.containing(x, y - 1, z), (int) down);
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				int _amount = (int) down;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.extractEnergy(_amount, false));
 			}
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y - 1, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y - 1, z));
 				int _amount = (int) down;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> capability.receiveEnergy(_amount, false));
@@ -65,7 +65,7 @@ public class BatteryblockObnovitTaktProcedure {
 					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.EAST).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
-		}.canReceiveEnergy(world, new BlockPos(x - 1, y, z))) {
+		}.canReceiveEnergy(world, BlockPos.containing(x - 1, y, z))) {
 			west = new Object() {
 				public int extractEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -74,7 +74,7 @@ public class BatteryblockObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.extractEnergySimulate(world, new BlockPos(x, y, z), 10000);
+			}.extractEnergySimulate(world, BlockPos.containing(x, y, z), 10000);
 			west = new Object() {
 				public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -83,15 +83,15 @@ public class BatteryblockObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, Direction.EAST).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.receiveEnergySimulate(world, new BlockPos(x - 1, y, z), (int) west);
+			}.receiveEnergySimulate(world, BlockPos.containing(x - 1, y, z), (int) west);
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				int _amount = (int) west;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.extractEnergy(_amount, false));
 			}
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x - 1, y, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x - 1, y, z));
 				int _amount = (int) west;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.EAST).ifPresent(capability -> capability.receiveEnergy(_amount, false));
@@ -105,7 +105,7 @@ public class BatteryblockObnovitTaktProcedure {
 					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.WEST).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
-		}.canReceiveEnergy(world, new BlockPos(x + 1, y, z))) {
+		}.canReceiveEnergy(world, BlockPos.containing(x + 1, y, z))) {
 			east = new Object() {
 				public int extractEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -114,7 +114,7 @@ public class BatteryblockObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.extractEnergySimulate(world, new BlockPos(x, y, z), 10000);
+			}.extractEnergySimulate(world, BlockPos.containing(x, y, z), 10000);
 			east = new Object() {
 				public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -123,15 +123,15 @@ public class BatteryblockObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, Direction.WEST).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.receiveEnergySimulate(world, new BlockPos(x + 1, y, z), (int) east);
+			}.receiveEnergySimulate(world, BlockPos.containing(x + 1, y, z), (int) east);
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				int _amount = (int) east;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.extractEnergy(_amount, false));
 			}
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x + 1, y, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x + 1, y, z));
 				int _amount = (int) east;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.WEST).ifPresent(capability -> capability.receiveEnergy(_amount, false));
@@ -145,7 +145,7 @@ public class BatteryblockObnovitTaktProcedure {
 					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.NORTH).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
-		}.canReceiveEnergy(world, new BlockPos(x, y, z + 1))) {
+		}.canReceiveEnergy(world, BlockPos.containing(x, y, z + 1))) {
 			south = new Object() {
 				public int extractEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -154,7 +154,7 @@ public class BatteryblockObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.extractEnergySimulate(world, new BlockPos(x, y, z), 10000);
+			}.extractEnergySimulate(world, BlockPos.containing(x, y, z), 10000);
 			south = new Object() {
 				public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -163,15 +163,15 @@ public class BatteryblockObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, Direction.NORTH).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.receiveEnergySimulate(world, new BlockPos(x, y, z + 1), (int) south);
+			}.receiveEnergySimulate(world, BlockPos.containing(x, y, z + 1), (int) south);
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				int _amount = (int) south;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.extractEnergy(_amount, false));
 			}
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z + 1));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z + 1));
 				int _amount = (int) south;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.NORTH).ifPresent(capability -> capability.receiveEnergy(_amount, false));
@@ -185,7 +185,7 @@ public class BatteryblockObnovitTaktProcedure {
 					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.SOUTH).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
-		}.canReceiveEnergy(world, new BlockPos(x, y, z - 1))) {
+		}.canReceiveEnergy(world, BlockPos.containing(x, y, z - 1))) {
 			north = new Object() {
 				public int extractEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -194,7 +194,7 @@ public class BatteryblockObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.extractEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.extractEnergySimulate(world, new BlockPos(x, y, z), 10000);
+			}.extractEnergySimulate(world, BlockPos.containing(x, y, z), 10000);
 			north = new Object() {
 				public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -203,15 +203,15 @@ public class BatteryblockObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, Direction.SOUTH).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 					return _retval.get();
 				}
-			}.receiveEnergySimulate(world, new BlockPos(x, y, z - 1), (int) north);
+			}.receiveEnergySimulate(world, BlockPos.containing(x, y, z - 1), (int) north);
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				int _amount = (int) north;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.extractEnergy(_amount, false));
 			}
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z - 1));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z - 1));
 				int _amount = (int) north;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.SOUTH).ifPresent(capability -> capability.receiveEnergy(_amount, false));

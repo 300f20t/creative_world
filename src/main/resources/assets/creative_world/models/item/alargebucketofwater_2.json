@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "creative_world:items/fchjfcg"
+    "layer0": "creative_world:item/a_large_bucket"
   }
 }

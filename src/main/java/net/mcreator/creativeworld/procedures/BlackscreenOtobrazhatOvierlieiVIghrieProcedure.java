@@ -17,7 +17,7 @@ public class BlackscreenOtobrazhatOvierlieiVIghrieProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ());
+			execute(event, event.player.level(), event.player.getX(), event.player.getY(), event.player.getZ());
 		}
 	}
 
@@ -26,7 +26,7 @@ public class BlackscreenOtobrazhatOvierlieiVIghrieProcedure {
 	}
 
 	private static boolean execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == CreativeWorldModBlocks.OIL.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == CreativeWorldModBlocks.OIL.get()) {
 			return true;
 		}
 		return false;

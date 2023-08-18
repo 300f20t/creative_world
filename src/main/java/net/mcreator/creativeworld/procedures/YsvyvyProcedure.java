@@ -24,7 +24,7 @@ import java.util.Map;
 public class YsvyvyProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
-		execute(event, event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ());
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -32,7 +32,7 @@ public class YsvyvyProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.COALGENERATOR_1.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.COALGENERATOR_1.get()) {
 			if (new Object() {
 				public int getEnergyStored(LevelAccessor level, BlockPos pos) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -41,9 +41,9 @@ public class YsvyvyProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 					return _retval.get();
 				}
-			}.getEnergyStored(world, new BlockPos(x, y, z)) == 0) {
+			}.getEnergyStored(world, BlockPos.containing(x, y, z)) == 0) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = CreativeWorldModBlocks.COALGENERATOR.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {

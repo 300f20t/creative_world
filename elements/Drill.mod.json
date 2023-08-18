@@ -1,16 +1,18 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "tool",
   "definition": {
+    "toolType": "MultiTool",
     "renderType": 0,
     "texture": "drill",
     "customModelName": "Normal",
     "name": "Drill",
-    "specialInfo": [],
+    "specialInfo": [
+      "§cdoes not work correctly (in development)"
+    ],
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
-    "toolType": "MultiTool",
     "harvestLevel": 2,
     "efficiency": 7.0,
     "attackSpeed": 1.0,

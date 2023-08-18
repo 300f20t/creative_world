@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class Battery2Item extends Item {
 	public Battery2Item() {
-		super(new Item.Properties().tab(null).durability(1000).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(1000).rarity(Rarity.COMMON));
 	}
 
 	@Override

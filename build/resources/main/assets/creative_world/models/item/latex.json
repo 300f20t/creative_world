@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "creative_world:items/srftgyhuj"
+    "layer0": "creative_world:item/srftgyhuj"
   }
 }

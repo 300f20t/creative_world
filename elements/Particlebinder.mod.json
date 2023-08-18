@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "particle_binder",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Particle binder",
     "rarity": "COMMON",
     "creativeTab": {
@@ -29,6 +31,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshi"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

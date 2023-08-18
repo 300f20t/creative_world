@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "creative_world:items/new_bettery"
+    "layer0": "creative_world:item/new_bettery"
   }
 }

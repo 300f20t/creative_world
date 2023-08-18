@@ -1,6 +1,7 @@
 package net.mcreator.creativeworld.procedures;
 
 public class JetpackwithwarpengineSobytiieTaktovKirasyProcedure {
-	public static void execute() {
+	public static boolean execute() {
+		return false;
 	}
 }

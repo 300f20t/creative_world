@@ -6,8 +6,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
-
 public class CopperAxeItem extends AxeItem {
 	public CopperAxeItem() {
 		super(new Tier() {
@@ -20,7 +18,7 @@ public class CopperAxeItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0f;
+				return 7f;
 			}
 
 			public int getLevel() {
@@ -32,8 +30,8 @@ public class CopperAxeItem extends AxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
-		}, 1, -3f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS));
+		}, 1, -3.1f, new Item.Properties());
 	}
 }

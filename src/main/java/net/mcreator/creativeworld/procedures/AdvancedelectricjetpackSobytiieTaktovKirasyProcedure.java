@@ -10,10 +10,10 @@ public class AdvancedelectricjetpackSobytiieTaktovKirasyProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player) {
-			_player.getAbilities().mayfly = (true);
+			_player.getAbilities().mayfly = true;
 			_player.onUpdateAbilities();
 		}
-		if (!entity.isOnGround()) {
+		if (!entity.onGround()) {
 			{
 				ItemStack _ist = itemstack;
 				if (_ist.hurt(1, RandomSource.create(), null)) {

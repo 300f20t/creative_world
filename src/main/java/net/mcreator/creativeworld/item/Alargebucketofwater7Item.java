@@ -16,7 +16,7 @@ import java.util.List;
 
 public class Alargebucketofwater7Item extends Item {
 	public Alargebucketofwater7Item() {
-		super(new Item.Properties().tab(null).stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

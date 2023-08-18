@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "creative_world:items/wrench"
+    "layer0": "creative_world:item/wrench"
   }
 }

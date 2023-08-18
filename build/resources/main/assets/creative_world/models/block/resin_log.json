@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "creative_world:blocks/resin_log_top",
-    "up": "creative_world:blocks/resin_log_top",
-    "north": "creative_world:blocks/resin_log_side",
-    "east": "creative_world:blocks/resin_log_side",
-    "south": "creative_world:blocks/resin_log_side",
-    "west": "creative_world:blocks/resin_log_side",
-    "particle": "creative_world:blocks/resin_log_top"
+    "down": "creative_world:block/resin_log_top",
+    "up": "creative_world:block/resin_log_top",
+    "north": "creative_world:block/resin_log_side",
+    "east": "creative_world:block/resin_log_side",
+    "south": "creative_world:block/resin_log_side",
+    "west": "creative_world:block/resin_log_side",
+    "particle": "creative_world:block/resin_log_top"
   },
   "render_type": "solid"
 }

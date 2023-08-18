@@ -1,16 +1,18 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "tool",
   "definition": {
+    "toolType": "Special",
     "renderType": 0,
     "texture": "afaefsdefe",
     "customModelName": "Normal",
     "name": "Wire cutters",
-    "specialInfo": [],
+    "specialInfo": [
+      "§ehas incomplete functionality (in development)"
+    ],
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
-    "toolType": "Special",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 1.0,

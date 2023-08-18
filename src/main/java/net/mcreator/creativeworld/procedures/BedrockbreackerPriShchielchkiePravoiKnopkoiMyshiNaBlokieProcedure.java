@@ -14,13 +14,13 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (Blocks.BEDROCK == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+		if (Blocks.BEDROCK == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = (new ItemStack((world.getBlockState(new BlockPos(x, y, z))).getBlock()));
+				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
-			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			{
 				ItemStack _ist = itemstack;
 				if (_ist.hurt(1, RandomSource.create(), null)) {
@@ -31,13 +31,13 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
 		}
-		if (Blocks.COMMAND_BLOCK == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+		if (Blocks.COMMAND_BLOCK == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = (new ItemStack((world.getBlockState(new BlockPos(x, y, z))).getBlock()));
+				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
-			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			{
 				ItemStack _ist = itemstack;
 				if (_ist.hurt(1, RandomSource.create(), null)) {
@@ -48,13 +48,13 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
 		}
-		if (Blocks.REPEATING_COMMAND_BLOCK == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+		if (Blocks.REPEATING_COMMAND_BLOCK == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = (new ItemStack((world.getBlockState(new BlockPos(x, y, z))).getBlock()));
+				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
-			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			{
 				ItemStack _ist = itemstack;
 				if (_ist.hurt(1, RandomSource.create(), null)) {
@@ -65,13 +65,13 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
 		}
-		if (Blocks.CHAIN_COMMAND_BLOCK == (world.getBlockState(new BlockPos(x, y, z))).getBlock()) {
+		if (Blocks.CHAIN_COMMAND_BLOCK == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = (new ItemStack((world.getBlockState(new BlockPos(x, y, z))).getBlock()));
+				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
-			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			{
 				ItemStack _ist = itemstack;
 				if (_ist.hurt(1, RandomSource.create(), null)) {

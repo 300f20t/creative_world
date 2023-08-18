@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "creative_world:items/tin_sword"
+    "layer0": "creative_world:item/tin_sword"
   }
 }

@@ -7,7 +7,6 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
 
 public class Composite_plate_toolPickaxeItem extends PickaxeItem {
@@ -36,6 +35,6 @@ public class Composite_plate_toolPickaxeItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(CreativeWorldModItems.COMPOSITEPLATE.get()));
 			}
-		}, 1, -3f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS));
+		}, 1, -3f, new Item.Properties());
 	}
 }

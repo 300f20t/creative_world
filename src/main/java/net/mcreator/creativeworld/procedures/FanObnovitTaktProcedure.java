@@ -5,6 +5,7 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
@@ -28,9 +29,9 @@ public class FanObnovitTaktProcedure {
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 				return _retval.get();
 			}
-		}.getEnergyStored(world, new BlockPos(x, y, z)) >= 50) {
+		}.getEnergyStored(world, BlockPos.containing(x, y, z)) >= 50) {
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				int _amount = 50;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.extractEnergy(_amount, false));
@@ -41,12 +42,13 @@ public class FanObnovitTaktProcedure {
 					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
 					if (property != null && _bs.getValue(property) instanceof Direction _dir)
 						return _dir;
-					property = _bs.getBlock().getStateDefinition().getProperty("axis");
-					if (property != null && _bs.getValue(property) instanceof Direction.Axis _axis)
-						return Direction.fromAxisAndDirection(_axis, Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
 					return Direction.NORTH;
 				}
-			}.getDirection(new BlockPos(x, y, z))) == Direction.UP) {
+			}.getDirection(BlockPos.containing(x, y, z))) == Direction.UP) {
 				if (!world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(x, (y + 3), z), 6, 6, 6), e -> true).isEmpty()) {
 					((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(x, (y + 3), z), 6, 6, 6), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -67,12 +69,13 @@ public class FanObnovitTaktProcedure {
 					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
 					if (property != null && _bs.getValue(property) instanceof Direction _dir)
 						return _dir;
-					property = _bs.getBlock().getStateDefinition().getProperty("axis");
-					if (property != null && _bs.getValue(property) instanceof Direction.Axis _axis)
-						return Direction.fromAxisAndDirection(_axis, Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
 					return Direction.NORTH;
 				}
-			}.getDirection(new BlockPos(x, y, z))) == Direction.DOWN) {
+			}.getDirection(BlockPos.containing(x, y, z))) == Direction.DOWN) {
 				if (!world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(x, (y - 3), z), 6, 6, 6), e -> true).isEmpty()) {
 					((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(x, (y - 3), z), 6, 6, 6), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -93,12 +96,13 @@ public class FanObnovitTaktProcedure {
 					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
 					if (property != null && _bs.getValue(property) instanceof Direction _dir)
 						return _dir;
-					property = _bs.getBlock().getStateDefinition().getProperty("axis");
-					if (property != null && _bs.getValue(property) instanceof Direction.Axis _axis)
-						return Direction.fromAxisAndDirection(_axis, Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
 					return Direction.NORTH;
 				}
-			}.getDirection(new BlockPos(x, y, z))) == Direction.NORTH) {
+			}.getDirection(BlockPos.containing(x, y, z))) == Direction.NORTH) {
 				if (!world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(x, y, (z - 3)), 6, 6, 6), e -> true).isEmpty()) {
 					((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(x, y, (z - 3)), 6, 6, 6), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -119,12 +123,13 @@ public class FanObnovitTaktProcedure {
 					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
 					if (property != null && _bs.getValue(property) instanceof Direction _dir)
 						return _dir;
-					property = _bs.getBlock().getStateDefinition().getProperty("axis");
-					if (property != null && _bs.getValue(property) instanceof Direction.Axis _axis)
-						return Direction.fromAxisAndDirection(_axis, Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
 					return Direction.NORTH;
 				}
-			}.getDirection(new BlockPos(x, y, z))) == Direction.SOUTH) {
+			}.getDirection(BlockPos.containing(x, y, z))) == Direction.SOUTH) {
 				if (!world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(x, y, (z + 3)), 6, 6, 6), e -> true).isEmpty()) {
 					((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(x, y, (z + 3)), 6, 6, 6), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -145,12 +150,13 @@ public class FanObnovitTaktProcedure {
 					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
 					if (property != null && _bs.getValue(property) instanceof Direction _dir)
 						return _dir;
-					property = _bs.getBlock().getStateDefinition().getProperty("axis");
-					if (property != null && _bs.getValue(property) instanceof Direction.Axis _axis)
-						return Direction.fromAxisAndDirection(_axis, Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
 					return Direction.NORTH;
 				}
-			}.getDirection(new BlockPos(x, y, z))) == Direction.WEST) {
+			}.getDirection(BlockPos.containing(x, y, z))) == Direction.WEST) {
 				if (!world.getEntitiesOfClass(Zombie.class, AABB.ofSize(new Vec3((x - 3), y, z), 6, 6, 6), e -> true).isEmpty()) {
 					((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x - 3), y, z), 6, 6, 6), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -171,12 +177,13 @@ public class FanObnovitTaktProcedure {
 					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
 					if (property != null && _bs.getValue(property) instanceof Direction _dir)
 						return _dir;
-					property = _bs.getBlock().getStateDefinition().getProperty("axis");
-					if (property != null && _bs.getValue(property) instanceof Direction.Axis _axis)
-						return Direction.fromAxisAndDirection(_axis, Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
 					return Direction.NORTH;
 				}
-			}.getDirection(new BlockPos(x, y, z))) == Direction.EAST) {
+			}.getDirection(BlockPos.containing(x, y, z))) == Direction.EAST) {
 				if (!world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x + 3), y, z), 6, 6, 6), e -> true).isEmpty()) {
 					((Entity) world.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3((x + 3), y, z), 6, 6, 6), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {

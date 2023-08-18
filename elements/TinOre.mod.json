@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "block",
   "definition": {
     "texture": "tin_ore",
@@ -47,7 +47,7 @@
       "value": "CUSTOM:Rawtin"
     },
     "dropAmount": 2,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -123,7 +123,16 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.STONE#5"
       }
     ],
     "generationShape": "UNIFORM",

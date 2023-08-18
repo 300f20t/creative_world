@@ -20,7 +20,7 @@ public class IronwrenchKoghdaNazhataPKMPoBlokuProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.IRONWRENCH.get()) {
-			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.COALGENERATOR.get()) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.COALGENERATOR.get()) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				{
@@ -30,13 +30,13 @@ public class IronwrenchKoghdaNazhataPKMPoBlokuProcedure {
 						_ist.setDamageValue(0);
 					}
 				}
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.COALGENERATOR.get());
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.CRUSHER.get()) {
+			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.CRUSHER.get()) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				{
@@ -46,13 +46,13 @@ public class IronwrenchKoghdaNazhataPKMPoBlokuProcedure {
 						_ist.setDamageValue(0);
 					}
 				}
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.CRUSHER.get());
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.FAN.get()) {
+			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.FAN.get()) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				{
@@ -62,13 +62,13 @@ public class IronwrenchKoghdaNazhataPKMPoBlokuProcedure {
 						_ist.setDamageValue(0);
 					}
 				}
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.FAN.get());
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.BATTERYBLOCK.get()) {
+			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.BATTERYBLOCK.get()) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				{
@@ -78,13 +78,13 @@ public class IronwrenchKoghdaNazhataPKMPoBlokuProcedure {
 						_ist.setDamageValue(0);
 					}
 				}
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.BATTERYBLOCK.get());
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
-			} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.SOLARPANEL.get()) {
+			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.SOLARPANEL.get()) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				{
@@ -94,7 +94,7 @@ public class IronwrenchKoghdaNazhataPKMPoBlokuProcedure {
 						_ist.setDamageValue(0);
 					}
 				}
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.SOLARPANEL.get());
 					_setstack.setCount(1);

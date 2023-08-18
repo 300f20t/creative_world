@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "creative_world:items/titan_shovel"
+    "layer0": "creative_world:item/titan_shovel"
   }
 }

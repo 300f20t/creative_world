@@ -6,8 +6,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
-
 public class CopperHoeItem extends HoeItem {
 	public CopperHoeItem() {
 		super(new Tier() {
@@ -32,8 +30,8 @@ public class CopperHoeItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
-		}, 0, -3f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS));
+		}, 0, -3f, new Item.Properties());
 	}
 }

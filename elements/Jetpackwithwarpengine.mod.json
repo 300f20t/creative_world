@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -14,11 +14,11 @@
       "name": "JetpackwithwarpengineSobytiieTaktovKirasy"
     },
     "creativeTab": {
-      "value": "CUSTOM:Creativeworldcombat"
+      "value": "No creative tab entry"
     },
     "armorTextureFile": "j_w_w_e_",
     "helmetName": "Jetpackwithwarpengine Шлем",
-    "bodyName": "Jetpackwithwarpengine Кираса",
+    "bodyName": "Jetpack with warp engine",
     "leggingsName": "Jetpackwithwarpengine Поножи",
     "bootsName": "Jetpackwithwarpengine Ботинки",
     "helmetSpecialInfo": [],

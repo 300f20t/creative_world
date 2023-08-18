@@ -10,12 +10,11 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
 
 public class SdfghnItem extends Item {
 	public SdfghnItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).stacksTo(1).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(100).saturationMod(100f).alwaysEat().meat().build()));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(100).saturationMod(100f).alwaysEat().meat().build()));
 	}
 
 	@Override

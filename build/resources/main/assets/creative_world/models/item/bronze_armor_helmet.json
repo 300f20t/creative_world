@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "creative_world:items/bronze_head"
+    "layer0": "creative_world:item/bronze_head"
   }
 }

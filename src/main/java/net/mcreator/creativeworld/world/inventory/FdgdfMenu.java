@@ -36,7 +36,7 @@ public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Int
 	public FdgdfMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(CreativeWorldModMenus.FDGDF.get(), id);
 		this.entity = inv.player;
-		this.world = inv.player.level;
+		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(2);
 		BlockPos pos = null;
 		if (extraData != null) {
@@ -66,7 +66,7 @@ public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Int
 						this.bound = true;
 					});
 			} else { // might be bound to block
-				BlockEntity ent = inv.player != null ? inv.player.level.getBlockEntity(pos) : null;
+				BlockEntity ent = inv.player != null ? inv.player.level().getBlockEntity(pos) : null;
 				if (ent != null) {
 					ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						this.internal = capability;
@@ -76,8 +76,11 @@ public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Int
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 43, 35) {
+			private final int slot = 0;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 115, 35) {
+			private final int slot = 1;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
@@ -185,9 +188,9 @@ public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Int
 				ItemStack itemstack1 = slot1.getItem();
 				if (itemstack1.isEmpty() && slot1.mayPlace(p_38904_)) {
 					if (p_38904_.getCount() > slot1.getMaxStackSize()) {
-						slot1.set(p_38904_.split(slot1.getMaxStackSize()));
+						slot1.setByPlayer(p_38904_.split(slot1.getMaxStackSize()));
 					} else {
-						slot1.set(p_38904_.split(p_38904_.getCount()));
+						slot1.setByPlayer(p_38904_.split(p_38904_.getCount()));
 					}
 					slot1.setChanged();
 					flag = true;

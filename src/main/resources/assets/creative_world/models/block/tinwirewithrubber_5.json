@@ -1,9 +1,9 @@
 {
   "parent": "creative_world:custom/w5",
   "textures": {
-    "all": "creative_world:blocks/w5",
-    "particle": "creative_world:blocks/w5",
-    "0": "creative_world:blocks/w5"
+    "all": "creative_world:block/w5",
+    "particle": "creative_world:block/w5",
+    "0": "creative_world:block/w5"
   },
   "render_type": "cutout_mipped"
 }

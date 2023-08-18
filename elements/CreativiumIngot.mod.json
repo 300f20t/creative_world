@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "creativium_ingot",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Creativium",
     "rarity": "COMMON",
     "creativeTab": {

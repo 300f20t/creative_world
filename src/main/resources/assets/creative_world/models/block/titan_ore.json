@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "creative_world:blocks/titan_ore",
-    "particle": "creative_world:blocks/titan_ore"
+    "all": "creative_world:block/titan_ore",
+    "particle": "creative_world:block/titan_ore"
   },
   "render_type": "solid"
 }

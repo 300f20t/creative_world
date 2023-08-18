@@ -15,21 +15,18 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.creativeworld.procedures.IronwrenchKoghdaNazhataPKMPoBlokuProcedure;
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
-
-import java.util.List;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
 
 public class IronwrenchItem extends Item {
 	public IronwrenchItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).durability(200));
+		super(new Item.Properties().durability(200));
 	}
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return List.of().contains(blockstate.getBlock()) ? 1000f : 1;
+		return 1f;
 	}
 
 	@Override

@@ -1,11 +1,13 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "creative_reel",
     "customModelName": "Normal",
-    "name": "Creativereel",
+    "customProperties": {},
+    "states": [],
+    "name": "Creative reel",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Creativeworlditems"
@@ -24,7 +26,9 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "§cdoes not work correctly (in development)"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "creative_world:items/ytghfg"
+    "layer0": "creative_world:item/ytghfg"
   }
 }

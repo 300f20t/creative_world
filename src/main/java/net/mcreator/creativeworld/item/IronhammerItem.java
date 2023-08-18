@@ -12,21 +12,17 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
-
-import java.util.List;
-
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
 
 public class IronhammerItem extends Item {
 	public IronhammerItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).durability(80));
+		super(new Item.Properties().durability(80));
 	}
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return List.of().contains(blockstate.getBlock()) ? 4f : 1;
+		return 1f;
 	}
 
 	@Override

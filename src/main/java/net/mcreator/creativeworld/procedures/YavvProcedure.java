@@ -17,9 +17,9 @@ public class YavvProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(new BlockPos(x, 1 + y, z))).getBlock() == Blocks.AIR) {
+		if ((world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock() == Blocks.AIR) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get()) {
-				world.setBlock(new BlockPos(x, 1 + y, z), Blocks.WATER.defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, 1 + y, z), Blocks.WATER.defaultBlockState(), 3);
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				if (entity instanceof Player _player) {

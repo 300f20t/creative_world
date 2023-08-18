@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "composite_plate_2",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Composite plate",
     "rarity": "COMMON",
     "creativeTab": {

@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "creative_world:blocks/new_leaves",
-    "particle": "creative_world:blocks/new_leaves"
+    "all": "creative_world:block/new_leaves",
+    "particle": "creative_world:block/new_leaves"
   }
 }

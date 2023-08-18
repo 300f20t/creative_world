@@ -42,7 +42,9 @@ import net.mcreator.creativeworld.init.CreativeWorldModBlockEntities;
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.List;
+import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
@@ -53,19 +55,18 @@ public class CreativeWorldMod {
 
 	public CreativeWorldMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-		CreativeWorldModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		CreativeWorldModSounds.REGISTRY.register(bus);
 		CreativeWorldModBlocks.REGISTRY.register(bus);
+		CreativeWorldModBlockEntities.REGISTRY.register(bus);
 		CreativeWorldModItems.REGISTRY.register(bus);
 
-		CreativeWorldModBlockEntities.REGISTRY.register(bus);
+		CreativeWorldModTabs.REGISTRY.register(bus);
 		CreativeWorldModFeatures.REGISTRY.register(bus);
-		CreativeWorldModFluids.REGISTRY.register(bus);
-		CreativeWorldModFluidTypes.REGISTRY.register(bus);
 
 		CreativeWorldModMenus.REGISTRY.register(bus);
-
+		CreativeWorldModFluids.REGISTRY.register(bus);
+		CreativeWorldModFluidTypes.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";
@@ -77,7 +78,7 @@ public class CreativeWorldMod {
 		messageID++;
 	}
 
-	private static final List<AbstractMap.SimpleEntry<Runnable, Integer>> workQueue = new ArrayList<>();
+	private static final Collection<AbstractMap.SimpleEntry<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
 
 	public static void queueServerWork(int tick, Runnable action) {
 		workQueue.add(new AbstractMap.SimpleEntry(action, tick));

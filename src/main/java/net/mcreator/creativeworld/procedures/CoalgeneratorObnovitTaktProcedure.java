@@ -22,7 +22,7 @@ public class CoalgeneratorObnovitTaktProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem()) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem()) {
 			if (new Object() {
 				public int getEnergyStored(LevelAccessor level, BlockPos pos) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -31,9 +31,9 @@ public class CoalgeneratorObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 					return _retval.get();
 				}
-			}.getEnergyStored(world, new BlockPos(x, y, z)) < 1024) {
+			}.getEnergyStored(world, BlockPos.containing(x, y, z)) < 1024) {
 				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_ent != null) {
 						final int _slotid = 1;
 						final int _amount = 1;
@@ -47,7 +47,7 @@ public class CoalgeneratorObnovitTaktProcedure {
 					}
 				}
 				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					int _amount = 64;
 					if (_ent != null)
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
@@ -61,7 +61,7 @@ public class CoalgeneratorObnovitTaktProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem()) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem()) {
 			if (new Object() {
 				public int getEnergyStored(LevelAccessor level, BlockPos pos) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -70,9 +70,9 @@ public class CoalgeneratorObnovitTaktProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 					return _retval.get();
 				}
-			}.getEnergyStored(world, new BlockPos(x, y, z)) < 1024) {
+			}.getEnergyStored(world, BlockPos.containing(x, y, z)) < 1024) {
 				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_ent != null) {
 						final int _slotid = 1;
 						final int _amount = 1;
@@ -86,7 +86,7 @@ public class CoalgeneratorObnovitTaktProcedure {
 					}
 				}
 				{
-					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
+					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					int _amount = 64;
 					if (_ent != null)
 						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
@@ -101,39 +101,39 @@ public class CoalgeneratorObnovitTaktProcedure {
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 				return _retval.get();
 			}
-		}.getEnergyStored(world, new BlockPos(x, y, z)) > 128) {
+		}.getEnergyStored(world, BlockPos.containing(x, y, z)) > 128) {
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y + 1, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y + 1, z));
 				int _amount = 128;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 			}
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y - 1, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y - 1, z));
 				int _amount = 128;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 			}
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z + 1));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z + 1));
 				int _amount = 128;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 			}
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z - 1));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z - 1));
 				int _amount = 128;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 			}
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x + 1, y, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x + 1, y, z));
 				int _amount = 128;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 			}
 			{
-				BlockEntity _ent = world.getBlockEntity(new BlockPos(x - 1, y, z));
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x - 1, y, z));
 				int _amount = 128;
 				if (_ent != null)
 					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));

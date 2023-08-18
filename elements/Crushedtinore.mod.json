@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "hugtyht",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Crushed tin ore",
     "rarity": "COMMON",
     "creativeTab": {

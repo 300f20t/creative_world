@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "b1",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Battery",
     "rarity": "COMMON",
     "creativeTab": {
@@ -24,7 +26,9 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "§ehas incomplete functionality (in development)"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -32,6 +36,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

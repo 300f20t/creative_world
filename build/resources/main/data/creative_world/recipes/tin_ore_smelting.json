@@ -1,6 +1,7 @@
 {
   "type": "minecraft:smelting",
-  "experience": 0.5599999999999999,
+  "category": "misc",
+  "experience": 0.56,
   "cookingtime": 175,
   "ingredient": {
     "item": "creative_world:rawtin"

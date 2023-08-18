@@ -27,38 +27,39 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.PARTICLEBINDER.get()) {
-			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get() && (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 2, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 3, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 4, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 2, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 3, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 4, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z + 2))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z + 3))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z - 2))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z - 3))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 4, y + 1, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 4, y + 1, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y + 1, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y + 1, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 4, y + 2, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 4, y + 2, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y + 2, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y + 2, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 1, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 1, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 1, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 1, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y + 2, z - 3))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
-					&& (world.getBlockState(new BlockPos(x, y + 2, z + 3))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
-					&& (world.getBlockState(new BlockPos(x + 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
-					&& (world.getBlockState(new BlockPos(x - 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get()
+					&& (world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 2, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 3, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 4, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 2, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 3, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 4, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z + 2))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z + 3))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z - 2))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z - 3))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 4, y + 1, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 4, y + 1, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 1, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 1, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 4, y + 2, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 4, y + 2, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 2, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 2, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 1, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 1, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 1, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 1, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 2, z - 3))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 2, z + 3))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
+					&& (world.getBlockState(BlockPos.containing(x + 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
+					&& (world.getBlockState(BlockPos.containing(x - 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()) {
 				if (!(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).QT_2) {
 					{
 						double _setval = x;
@@ -88,42 +89,43 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal("QT 1 conected"), (false));
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("QT 1 conected"), false);
 				}
 			}
-			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get() && (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 2, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 3, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 4, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 2, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 3, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 4, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z + 2))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z + 3))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z - 2))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z - 3))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 4, y + 1, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 4, y + 1, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y + 1, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y + 1, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 4, y + 2, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 4, y + 2, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y + 2, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y + 2, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 1, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 1, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x - 1, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x + 1, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
-					&& (world.getBlockState(new BlockPos(x, y + 2, z - 3))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
-					&& (world.getBlockState(new BlockPos(x, y + 2, z + 3))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
-					&& (world.getBlockState(new BlockPos(x + 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
-					&& (world.getBlockState(new BlockPos(x - 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get()
+					&& (world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 2, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 3, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 4, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 2, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 3, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 4, y, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z + 2))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z + 3))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z - 2))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z - 3))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 4, y + 1, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 4, y + 1, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 1, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 1, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 4, y + 2, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 4, y + 2, z))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 2, z + 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 2, z - 4))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 1, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 1, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x - 1, y, z + 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x + 1, y, z - 1))).getBlock() == CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 2, z - 3))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
+					&& (world.getBlockState(BlockPos.containing(x, y + 2, z + 3))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
+					&& (world.getBlockState(BlockPos.containing(x + 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()
+					&& (world.getBlockState(BlockPos.containing(x - 3, y + 2, z))).getBlock() == CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get()) {
 				if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).QT_1) {
 					{
 						double _setval = x;
@@ -153,8 +155,8 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal("QT 2 conected"), (false));
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("QT 2 conected"), false);
 				}
 			}
 		}
@@ -181,7 +183,7 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null,
-									new BlockPos((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x,
+									BlockPos.containing((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x,
 											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y + 1,
 											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_z),
 									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1);
@@ -192,7 +194,7 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1, false);
 						}
 					}
-					if (entity instanceof LivingEntity _entity)
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 1));
 				} else if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_x == x
 						&& (entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).first_QT_ID_y == y
@@ -214,7 +216,7 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null,
-									new BlockPos((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x,
+									BlockPos.containing((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_x,
 											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_y + 1,
 											(entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).seckond_QT_ID_z),
 									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1);
@@ -225,7 +227,7 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1, false);
 						}
 					}
-					if (entity instanceof LivingEntity _entity)
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 1));
 				}
 			}

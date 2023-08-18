@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "creative_world:items/jetpack_with_warp_engine"
+    "layer0": "creative_world:item/jetpack_with_warp_engine"
   }
 }

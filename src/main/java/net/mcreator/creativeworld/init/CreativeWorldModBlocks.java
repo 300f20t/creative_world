@@ -21,6 +21,10 @@ import net.mcreator.creativeworld.block.Tinwirewithrubber5Block;
 import net.mcreator.creativeworld.block.Tinwirewithrubber4Block;
 import net.mcreator.creativeworld.block.Tinwirewithrubber3Block;
 import net.mcreator.creativeworld.block.Tinwirewithrubber2Block;
+import net.mcreator.creativeworld.block.Tinwirewithrubber19Block;
+import net.mcreator.creativeworld.block.Tinwirewithrubber18Block;
+import net.mcreator.creativeworld.block.Tinwirewithrubber17Block;
+import net.mcreator.creativeworld.block.Tinwirewithrubber16Block;
 import net.mcreator.creativeworld.block.Tinwirewithrubber15Block;
 import net.mcreator.creativeworld.block.Tinwirewithrubber14Block;
 import net.mcreator.creativeworld.block.Tinwirewithrubber13Block;
@@ -33,6 +37,7 @@ import net.mcreator.creativeworld.block.TinBlockBlock;
 import net.mcreator.creativeworld.block.StationaryparticlebinderBlock;
 import net.mcreator.creativeworld.block.SolarpanelBlock;
 import net.mcreator.creativeworld.block.RsinlogwithresinBlock;
+import net.mcreator.creativeworld.block.ResintreesaplingBlock;
 import net.mcreator.creativeworld.block.ResinWoodBlock;
 import net.mcreator.creativeworld.block.ResinStairsBlock;
 import net.mcreator.creativeworld.block.ResinSlabBlock;
@@ -112,4 +117,9 @@ public class CreativeWorldModBlocks {
 	public static final RegistryObject<Block> TINWIREWITHRUBBER_13 = REGISTRY.register("tinwirewithrubber_13", () -> new Tinwirewithrubber13Block());
 	public static final RegistryObject<Block> TINWIREWITHRUBBER_14 = REGISTRY.register("tinwirewithrubber_14", () -> new Tinwirewithrubber14Block());
 	public static final RegistryObject<Block> TINWIREWITHRUBBER_15 = REGISTRY.register("tinwirewithrubber_15", () -> new Tinwirewithrubber15Block());
+	public static final RegistryObject<Block> TINWIREWITHRUBBER_16 = REGISTRY.register("tinwirewithrubber_16", () -> new Tinwirewithrubber16Block());
+	public static final RegistryObject<Block> TINWIREWITHRUBBER_17 = REGISTRY.register("tinwirewithrubber_17", () -> new Tinwirewithrubber17Block());
+	public static final RegistryObject<Block> TINWIREWITHRUBBER_18 = REGISTRY.register("tinwirewithrubber_18", () -> new Tinwirewithrubber18Block());
+	public static final RegistryObject<Block> TINWIREWITHRUBBER_19 = REGISTRY.register("tinwirewithrubber_19", () -> new Tinwirewithrubber19Block());
+	public static final RegistryObject<Block> RESINTREESAPLING = REGISTRY.register("resintreesapling", () -> new ResintreesaplingBlock());
 }

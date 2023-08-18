@@ -34,7 +34,7 @@ public class BlackscreenOverlay {
 		double z = 0;
 		Player entity = Minecraft.getInstance().player;
 		if (entity != null) {
-			world = entity.level;
+			world = entity.level();
 			x = entity.getX();
 			y = entity.getY();
 			z = entity.getZ();
@@ -46,8 +46,7 @@ public class BlackscreenOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (BlackscreenOtobrazhatOvierlieiVIghrieProcedure.execute(world, x, y, z)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("creative_world:textures/screens/black_screen_texture.png"));
-			Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -257, posY + -251, 0, 0, 512, 512, 512, 512);
+			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/black_screen_texture.png"), posX + -257, posY + -251, 0, 0, 512, 512, 512, 512);
 
 		}
 		RenderSystem.depthMask(true);

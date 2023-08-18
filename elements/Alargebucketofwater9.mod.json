@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "fgtjyg",
+    "texture": "a_large_bucket_filled_with_water",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "A large bucket of water 9",
     "rarity": "COMMON",
     "creativeTab": {

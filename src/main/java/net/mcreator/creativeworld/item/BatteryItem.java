@@ -9,11 +9,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 
 import net.mcreator.creativeworld.procedures.BatteryKoghdaPriedmietIzghotovlienpierieplavlienProcedure;
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 
 public class BatteryItem extends Item {
 	public BatteryItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).durability(1001).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(1001).rarity(Rarity.COMMON));
 	}
 
 	@Override

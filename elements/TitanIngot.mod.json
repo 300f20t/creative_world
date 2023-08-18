@@ -1,12 +1,14 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "titan_ingot",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Titan",
-    "rarity": "COMMON",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Creativeworlditems"
     },

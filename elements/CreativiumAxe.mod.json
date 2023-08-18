@@ -1,7 +1,8 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "tool",
   "definition": {
+    "toolType": "Axe",
     "renderType": 0,
     "texture": "creativium_axe",
     "customModelName": "Normal",
@@ -10,10 +11,9 @@
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
-    "toolType": "Axe",
     "harvestLevel": 16,
     "efficiency": 21.0,
-    "attackSpeed": 1.0,
+    "attackSpeed": 1.6,
     "enchantability": 112,
     "damageVsEntity": 72.0,
     "usageCount": 4595,

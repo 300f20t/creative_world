@@ -1,9 +1,9 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
-    "bottom": "creative_world:blocks/resin_planks",
-    "top": "creative_world:blocks/resin_planks",
-    "side": "creative_world:blocks/resin_planks"
+    "bottom": "creative_world:block/resin_planks",
+    "top": "creative_world:block/resin_planks",
+    "side": "creative_world:block/resin_planks"
   },
   "render_type": "solid"
 }

@@ -6,11 +6,9 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
-
 public class ThecoreofmatterItem extends Item {
 	public ThecoreofmatterItem() {
-		super(new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).stacksTo(64).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

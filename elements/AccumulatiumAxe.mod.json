@@ -1,7 +1,8 @@
 {
-  "_fv": 39,
+  "_fv": 45,
   "_type": "tool",
   "definition": {
+    "toolType": "Axe",
     "renderType": 0,
     "texture": "accumulatium_axe",
     "customModelName": "Normal",
@@ -10,10 +11,9 @@
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
-    "toolType": "Axe",
     "harvestLevel": 12,
     "efficiency": 18.0,
-    "attackSpeed": 1.0999999999999999,
+    "attackSpeed": 1.4000000000000001,
     "enchantability": 84,
     "damageVsEntity": 48.0,
     "usageCount": 1675,

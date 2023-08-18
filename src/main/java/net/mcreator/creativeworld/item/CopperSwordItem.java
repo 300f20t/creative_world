@@ -6,8 +6,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.creativeworld.init.CreativeWorldModTabs;
-
 public class CopperSwordItem extends SwordItem {
 	public CopperSwordItem() {
 		super(new Tier() {
@@ -32,8 +30,8 @@ public class CopperSwordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
-		}, 3, -3f, new Item.Properties().tab(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT));
+		}, 3, -3f, new Item.Properties());
 	}
 }

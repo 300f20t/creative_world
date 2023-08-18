@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "creative_world:items/fggfjgg"
+    "layer0": "creative_world:item/fggfjgg"
   },
   "render_type": "translucent"
 }

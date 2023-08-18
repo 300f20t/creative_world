@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "creative_world:items/accumulatium_pickaxe"
+    "layer0": "creative_world:item/accumulatium_pickaxe"
   }
 }

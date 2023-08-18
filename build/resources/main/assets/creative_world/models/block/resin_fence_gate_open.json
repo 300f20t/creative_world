@@ -1,7 +1,7 @@
 {
   "parent": "block/template_fence_gate_open",
   "textures": {
-    "texture": "creative_world:blocks/resin_planks"
+    "texture": "creative_world:block/resin_planks"
   },
   "render_type": "solid"
 }
