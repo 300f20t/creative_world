@@ -26,7 +26,7 @@ public class WirecuttersItem extends Item {
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return 1f;
+		return 1;
 	}
 
 	@Override

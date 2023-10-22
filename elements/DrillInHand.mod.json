@@ -1,0 +1,84 @@
+{
+  "_fv": 47,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "drill_extraction_mode_1x1.png",
+          "use1Xscale": false,
+          "x": 6,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "battery_0.png",
+          "use1Xscale": false,
+          "x": 24,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "drill_extraction_mode_3x3.png",
+          "use1Xscale": false,
+          "x": 6,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "drill_extraction_mode_custom.png",
+          "use1Xscale": false,
+          "x": 6,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "battery_1.png",
+          "use1Xscale": false,
+          "x": 24,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "battery_2.png",
+          "use1Xscale": false,
+          "x": 24,
+          "y": 215
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "battery_3.png",
+          "use1Xscale": false,
+          "x": 24,
+          "y": 215
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "DrillKazhdyiTikVRukie"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

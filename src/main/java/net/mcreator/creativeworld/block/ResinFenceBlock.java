@@ -17,7 +17,7 @@ import java.util.Collections;
 
 public class ResinFenceBlock extends FenceBlock {
 	public ResinFenceBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape());
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape().forceSolidOn());
 	}
 
 	@Override

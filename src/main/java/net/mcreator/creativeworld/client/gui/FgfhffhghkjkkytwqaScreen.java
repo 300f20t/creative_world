@@ -68,8 +68,8 @@ public class FgfhffhghkjkkytwqaScreen extends AbstractContainerScreen<Fgfhffhghk
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(font, Component.translatable("gui.creative_world.fgfhffhghkjkkytwqa.label_energy"), 411, 169, -12829636);
-		guiGraphics.drawString(font, Component.translatable("gui.creative_world.fgfhffhghkjkkytwqa.label_fe"), 447, 169, -12829636);
+		guiGraphics.drawString(this.font, Component.translatable("gui.creative_world.fgfhffhghkjkkytwqa.label_energy"), 411, 169, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.creative_world.fgfhffhghkjkkytwqa.label_fe"), 447, 169, -12829636, false);
 	}
 
 	@Override

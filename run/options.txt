@@ -31,8 +31,8 @@ glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
 gamma:1.0
-renderDistance:32
-simulationDistance:16
+renderDistance:12
+simulationDistance:8
 entityDistanceScaling:1.0
 guiScale:2
 particles:0
@@ -119,8 +119,8 @@ key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
 key_key.creative_world.electricjetpackcontrol:key.keyboard.space
-soundCategory_master:1.0
-soundCategory_music:1.0
+soundCategory_master:0.05132450331125828
+soundCategory_music:0.5
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

@@ -1,5 +1,5 @@
 {
-  "_fv": 45,
+  "_fv": 47,
   "_type": "tool",
   "definition": {
     "toolType": "MultiTool",
@@ -24,6 +24,9 @@
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "DrillKazhdyiTikVRukie"
+    }
   }
 }
