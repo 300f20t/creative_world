@@ -2,37 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "bcb",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "creative_world:tinwirewithrubber"
+    "a": {
+      "item": "creative_world:insulated_copper_wire"
     },
-    "1": {
-      "item": "creative_world:tinwirewithrubber"
-    },
-    "2": {
-      "item": "creative_world:tinwirewithrubber"
-    },
-    "3": {
+    "b": {
       "item": "minecraft:redstone"
     },
-    "4": {
+    "c": {
       "item": "creative_world:ironplate"
-    },
-    "5": {
-      "item": "minecraft:redstone"
-    },
-    "6": {
-      "item": "creative_world:tinwirewithrubber"
-    },
-    "7": {
-      "item": "creative_world:tinwirewithrubber"
-    },
-    "8": {
-      "item": "creative_world:tinwirewithrubber"
     }
   },
   "result": {

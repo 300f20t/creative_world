@@ -2,30 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0 2",
-    "3 5",
-    "678"
+    "a a",
+    "a a",
+    "bab"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:iron_block"
     },
-    "2": {
-      "item": "minecraft:iron_block"
-    },
-    "3": {
-      "item": "minecraft:iron_block"
-    },
-    "5": {
-      "item": "minecraft:iron_block"
-    },
-    "6": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "7": {
-      "item": "minecraft:iron_block"
-    },
-    "8": {
+    "b": {
       "item": "minecraft:netherite_ingot"
     }
   },

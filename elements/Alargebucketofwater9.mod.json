@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "A large bucket of water 9",
+    "name": "A large bucket of water",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Creativeworlditems"
@@ -26,15 +26,26 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "9000/9000 mb"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "Alargebucketofwater9DopolnitielnaiaInformatsiia"
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedOnBlock": {
-      "name": "Yavv"
+      "name": "AlargebucketPriShchielchkiePKMPoBloku"
+    },
+    "onItemInUseTick": {
+      "name": "Alargebucketofwater9KazhdyiTikVRukie"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
     },
     "isFood": false,
     "nutritionalValue": 0,

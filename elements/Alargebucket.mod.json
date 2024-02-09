@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -22,19 +22,27 @@
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
-    "stayInGridWhenCrafting": false,
+    "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "0/9000 mb"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "Alargebucketofwater9DopolnitielnaiaInformatsiia"
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedOnBlock": {
-      "name": "AlargebucketKoghdaNazhataPKMPoBloku"
+      "name": "AlargebucketPriShchielchkiePKMPoBloku"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
     },
     "isFood": false,
     "nutritionalValue": 0,

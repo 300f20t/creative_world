@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -18,10 +18,18 @@
     "bodyName": "Titan Chestplate",
     "leggingsName": "Titan Leggings",
     "bootsName": "Titan Boots",
-    "helmetSpecialInfo": [],
-    "bodySpecialInfo": [],
-    "leggingsSpecialInfo": [],
-    "bootsSpecialInfo": [],
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",
     "helmetModelTexture": "From armor",
@@ -50,11 +58,23 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 32,
-    "damageValueHelmet": 10,
-    "damageValueBody": 16,
-    "damageValueLeggings": 14,
-    "damageValueBoots": 10,
+    "damageValueHelmet": 8,
+    "damageValueBody": 10,
+    "damageValueLeggings": 10,
+    "damageValueBoots": 8,
     "enchantability": 45,
     "toughness": 0.0,
     "knockbackResistance": 0.0,

@@ -2,37 +2,25 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "cdc",
+    "aea"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:netherite_ingot"
     },
-    "1": {
+    "b": {
       "item": "creative_world:thecoreoftheformation"
     },
-    "2": {
-      "item": "minecraft:netherite_ingot"
+    "c": {
+      "item": "minecraft:bedrock"
     },
-    "3": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "4": {
+    "d": {
       "item": "minecraft:diamond_block"
     },
-    "5": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "6": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "7": {
+    "e": {
       "item": "creative_world:thecoreofmatter"
-    },
-    "8": {
-      "item": "minecraft:netherite_ingot"
     }
   },
   "result": {

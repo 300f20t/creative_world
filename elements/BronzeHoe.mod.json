@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "bronze_hoe",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Bronze Hoe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 2.0,
     "usageCount": 323,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:BronzeIngot"

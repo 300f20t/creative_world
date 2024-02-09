@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "hjfg",
@@ -34,9 +34,11 @@
       }
     ],
     "name": "Batteryblock",
-    "specialInfo": [
-      "§ehas incomplete functionality (in development)"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "§ehas incomplete functionality (in development)"
+      ]
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -122,7 +124,7 @@
     "onTickUpdate": {
       "name": "BatteryblockObnovitTakt"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

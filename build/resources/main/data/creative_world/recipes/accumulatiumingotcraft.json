@@ -2,36 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "creative_world:accumulatiumnugget"
-    },
-    "1": {
-      "item": "creative_world:accumulatiumnugget"
-    },
-    "2": {
-      "item": "creative_world:accumulatiumnugget"
-    },
-    "3": {
-      "item": "creative_world:accumulatiumnugget"
-    },
-    "4": {
-      "item": "creative_world:accumulatiumnugget"
-    },
-    "5": {
-      "item": "creative_world:accumulatiumnugget"
-    },
-    "6": {
-      "item": "creative_world:accumulatiumnugget"
-    },
-    "7": {
-      "item": "creative_world:accumulatiumnugget"
-    },
-    "8": {
+    "a": {
       "item": "creative_world:accumulatiumnugget"
     }
   },

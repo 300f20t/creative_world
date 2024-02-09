@@ -2,37 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "bab",
+    "cdc"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "creative_world:coaldust"
     },
-    "1": {
+    "b": {
       "item": "minecraft:glass"
     },
-    "2": {
-      "item": "creative_world:coaldust"
-    },
-    "3": {
-      "item": "minecraft:glass"
-    },
-    "4": {
-      "item": "creative_world:coaldust"
-    },
-    "5": {
-      "item": "minecraft:glass"
-    },
-    "6": {
+    "c": {
       "item": "creative_world:electricalcircuit"
     },
-    "7": {
+    "d": {
       "item": "creative_world:coalgenerator"
-    },
-    "8": {
-      "item": "creative_world:electricalcircuit"
     }
   },
   "result": {

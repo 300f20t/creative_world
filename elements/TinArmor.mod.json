@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -18,10 +18,18 @@
     "bodyName": "Tin Chestplate",
     "leggingsName": "Tin Leggings",
     "bootsName": "Tin Boots",
-    "helmetSpecialInfo": [],
-    "bodySpecialInfo": [],
-    "leggingsSpecialInfo": [],
-    "bootsSpecialInfo": [],
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",
     "helmetModelTexture": "From armor",
@@ -50,14 +58,26 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 12,
     "damageValueHelmet": 2,
     "damageValueBody": 4,
-    "damageValueLeggings": 5,
+    "damageValueLeggings": 4,
     "damageValueBoots": 2,
     "enchantability": 7,
     "toughness": 0.0,
-    "knockbackResistance": 0.0,
+    "knockbackResistance": 0.1,
     "equipSound": {
       "value": ""
     },

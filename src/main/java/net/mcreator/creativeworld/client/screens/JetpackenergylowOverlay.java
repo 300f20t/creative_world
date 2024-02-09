@@ -26,8 +26,6 @@ public class JetpackenergylowOverlay {
 	public static void eventHandler(RenderGuiEvent.Pre event) {
 		int w = event.getWindow().getGuiScaledWidth();
 		int h = event.getWindow().getGuiScaledHeight();
-		int posX = w / 2;
-		int posY = h / 2;
 		Level world = null;
 		double x = 0;
 		double y = 0;
@@ -46,9 +44,9 @@ public class JetpackenergylowOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (HklklhProcedure.execute(entity)) {
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/jetpack_e_l.png"), posX + -153, posY + 113, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/jetpack_e_l.png"), w / 2 + -153, h / 2 + 113, 0, 0, 16, 16, 16, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/l_energy_jp.png"), posX + -135, posY + 104, 0, 0, 32, 32, 32, 32);
+			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/l_energy_jp.png"), w / 2 + -135, h / 2 + 104, 0, 0, 32, 32, 32, 32);
 
 		}
 		RenderSystem.depthMask(true);

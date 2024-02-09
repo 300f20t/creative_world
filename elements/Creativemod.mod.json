@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -26,16 +26,22 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "§ehas incomplete functionality (in development)"
-    ],
-    "hasGlow": true,
+    "specialInformation": {
+      "fixedValue": [
+        "§ehas incomplete functionality (in development)"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
       "name": "Rtyukl"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,

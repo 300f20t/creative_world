@@ -2,14 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0 ",
-    " 3"
+    "a ",
+    " a"
   ],
   "key": {
-    "0": {
-      "item": "creative_world:alargebucketofwater_9"
-    },
-    "3": {
+    "a": {
       "item": "creative_world:alargebucketofwater_9"
     }
   },

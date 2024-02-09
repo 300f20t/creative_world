@@ -110,7 +110,6 @@ public class DrillItem extends TieredItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A7cdoes not work correctly (in development)"));
 	}
 
 	@Override

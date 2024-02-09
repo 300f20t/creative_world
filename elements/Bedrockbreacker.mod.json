@@ -1,16 +1,19 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "ytghfg",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Bedrock breaker",
-    "specialInfo": [
-      "destroy bedrock",
-      "§ehas incomplete functionality (in development)"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "destroy bedrock"
+      ]
+    },
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
@@ -21,7 +24,9 @@
     "damageVsEntity": 7.0,
     "usageCount": 5,
     "blocksAffected": [],
-    "hasGlow": false,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Blocks.CRYING_OBSIDIAN"

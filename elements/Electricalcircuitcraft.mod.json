@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Tinwirewithrubber"
+        "value": "CUSTOM:InsulatedCopperWire"
       },
       {
-        "value": "CUSTOM:Tinwirewithrubber"
+        "value": "CUSTOM:InsulatedCopperWire"
       },
       {
-        "value": "CUSTOM:Tinwirewithrubber"
+        "value": "CUSTOM:InsulatedCopperWire"
       },
       {
         "value": "Items.REDSTONE"
@@ -30,13 +30,13 @@
         "value": "Items.REDSTONE"
       },
       {
-        "value": "CUSTOM:Tinwirewithrubber"
+        "value": "CUSTOM:InsulatedCopperWire"
       },
       {
-        "value": "CUSTOM:Tinwirewithrubber"
+        "value": "CUSTOM:InsulatedCopperWire"
       },
       {
-        "value": "CUSTOM:Tinwirewithrubber"
+        "value": "CUSTOM:InsulatedCopperWire"
       }
     ],
     "recipeReturnStack": {

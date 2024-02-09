@@ -2,37 +2,28 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "cdc",
+    "efe"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "creative_world:electricalcircuit"
     },
-    "1": {
+    "b": {
       "item": "creative_world:creatingcore"
     },
-    "2": {
-      "item": "creative_world:electricalcircuit"
-    },
-    "3": {
+    "c": {
       "item": "creative_world:accumulatium_ingot"
     },
-    "4": {
+    "d": {
       "item": "creative_world:electricjetpack_chestplate"
     },
-    "5": {
-      "item": "creative_world:accumulatium_ingot"
-    },
-    "6": {
+    "e": {
       "item": "creative_world:creativium_ingot"
     },
-    "7": {
+    "f": {
       "item": "minecraft:nether_star"
-    },
-    "8": {
-      "item": "creative_world:creativium_ingot"
     }
   },
   "result": {

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "creative_world:copperplate"
+    },
+    {
+      "item": "creative_world:wirecutters"
+    }
+  ],
+  "result": {
+    "item": "creative_world:copper_wire",
+    "count": 4
+  }
+}

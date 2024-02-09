@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -29,9 +29,11 @@
       }
     ],
     "name": "Resintreesapling",
-    "specialInfo": [
-      "§ehas incomplete functionality (in development)"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "§ehas incomplete functionality (in development)"
+      ]
+    },
     "creativeTab": {
       "value": "CUSTOM:Creativeworldblocks"
     },
@@ -88,7 +90,7 @@
     ],
     "isBonemealable": false,
     "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "generationType": "Flower",
     "patchSize": 64,

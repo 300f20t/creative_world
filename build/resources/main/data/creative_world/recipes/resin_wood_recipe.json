@@ -2,20 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "01",
-    "23"
+    "aa",
+    "aa"
   ],
   "key": {
-    "0": {
-      "item": "creative_world:resin_log"
-    },
-    "1": {
-      "item": "creative_world:resin_log"
-    },
-    "2": {
-      "item": "creative_world:resin_log"
-    },
-    "3": {
+    "a": {
       "item": "creative_world:resin_log"
     }
   },

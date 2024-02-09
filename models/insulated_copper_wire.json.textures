@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "insulated_copper_wire"
+      },
+      "name": "default"
+    }
+  }
+}

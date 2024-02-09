@@ -2,24 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "0 2",
-    " 4 ",
-    "6 8"
+    "a a",
+    " a ",
+    "b b"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "creative_world:tinplate"
     },
-    "2": {
-      "item": "creative_world:tinplate"
-    },
-    "4": {
-      "item": "creative_world:tinplate"
-    },
-    "6": {
-      "item": "minecraft:stick"
-    },
-    "8": {
+    "b": {
       "item": "minecraft:stick"
     }
   },

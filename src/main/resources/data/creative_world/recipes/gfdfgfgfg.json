@@ -2,37 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "cdc",
+    "aba"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:netherite_ingot"
     },
-    "1": {
+    "b": {
       "item": "minecraft:diamond_block"
     },
-    "2": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "3": {
+    "c": {
       "item": "minecraft:iron_block"
     },
-    "4": {
+    "d": {
       "item": "creative_world:endlesswatersource"
-    },
-    "5": {
-      "item": "minecraft:iron_block"
-    },
-    "6": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "7": {
-      "item": "minecraft:diamond_block"
-    },
-    "8": {
-      "item": "minecraft:netherite_ingot"
     }
   },
   "result": {

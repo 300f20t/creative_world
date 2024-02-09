@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "titan_shovel",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Titan Shovel",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 10.0,
     "usageCount": 2380,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:TitanIngot"

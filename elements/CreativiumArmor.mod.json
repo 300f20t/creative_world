@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -18,10 +18,18 @@
     "bodyName": "Creativium Chestplate",
     "leggingsName": "Creativium Leggings",
     "bootsName": "Creativium Boots",
-    "helmetSpecialInfo": [],
-    "bodySpecialInfo": [],
-    "leggingsSpecialInfo": [],
-    "bootsSpecialInfo": [],
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",
     "helmetModelTexture": "From armor",
@@ -50,12 +58,24 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 128,
-    "damageValueHelmet": 32,
-    "damageValueBody": 64,
-    "damageValueLeggings": 48,
-    "damageValueBoots": 32,
-    "enchantability": 72,
+    "damageValueHelmet": 24,
+    "damageValueBody": 32,
+    "damageValueLeggings": 32,
+    "damageValueBoots": 24,
+    "enchantability": 64,
     "toughness": 4.0,
     "knockbackResistance": 1.0,
     "equipSound": {

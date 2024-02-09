@@ -16,6 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.creativeworld.network.ElectricjetpackcontrolMessage;
+import net.mcreator.creativeworld.network.DrillModeSwitchMessage;
 import net.mcreator.creativeworld.CreativeWorldMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -33,10 +34,24 @@ public class CreativeWorldModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping DRILL_MODE_SWITCH = new KeyMapping("key.creative_world.drill_mode_switch", GLFW.GLFW_KEY_M, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				CreativeWorldMod.PACKET_HANDLER.sendToServer(new DrillModeSwitchMessage(0, 0));
+				DrillModeSwitchMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(ELECTRICJETPACKCONTROL);
+		event.register(DRILL_MODE_SWITCH);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -45,6 +60,7 @@ public class CreativeWorldModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				ELECTRICJETPACKCONTROL.consumeClick();
+				DRILL_MODE_SWITCH.consumeClick();
 			}
 		}
 	}

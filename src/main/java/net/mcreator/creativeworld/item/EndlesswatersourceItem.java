@@ -16,7 +16,7 @@ import java.util.List;
 
 public class EndlesswatersourceItem extends Item {
 	public EndlesswatersourceItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON));
 	}
 
 	@Override

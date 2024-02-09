@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Special",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "sefsdf",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Iron hammer",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 4.0,
     "usageCount": 80,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "Items.IRON_INGOT"

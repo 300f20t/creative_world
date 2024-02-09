@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,8 +9,12 @@
         "data": {
           "image": "drill_extraction_mode_1x1.png",
           "use1Xscale": false,
-          "x": 6,
-          "y": 215
+          "displayCondition": {
+            "name": "DrillMode1x1"
+          },
+          "anchorPoint": "CENTER",
+          "x": 78,
+          "y": 224
         }
       },
       {
@@ -18,8 +22,9 @@
         "data": {
           "image": "battery_0.png",
           "use1Xscale": false,
-          "x": 24,
-          "y": 215
+          "anchorPoint": "CENTER",
+          "x": 96,
+          "y": 224
         }
       },
       {
@@ -27,8 +32,12 @@
         "data": {
           "image": "drill_extraction_mode_3x3.png",
           "use1Xscale": false,
-          "x": 6,
-          "y": 215
+          "displayCondition": {
+            "name": "DrillMode3x3"
+          },
+          "anchorPoint": "CENTER",
+          "x": 78,
+          "y": 224
         }
       },
       {
@@ -36,8 +45,12 @@
         "data": {
           "image": "drill_extraction_mode_custom.png",
           "use1Xscale": false,
-          "x": 6,
-          "y": 215
+          "displayCondition": {
+            "name": "DrillModeCustom"
+          },
+          "anchorPoint": "CENTER",
+          "x": 78,
+          "y": 224
         }
       },
       {
@@ -45,8 +58,9 @@
         "data": {
           "image": "battery_1.png",
           "use1Xscale": false,
-          "x": 24,
-          "y": 215
+          "anchorPoint": "CENTER",
+          "x": 96,
+          "y": 224
         }
       },
       {
@@ -54,8 +68,9 @@
         "data": {
           "image": "battery_2.png",
           "use1Xscale": false,
-          "x": 24,
-          "y": 215
+          "anchorPoint": "CENTER",
+          "x": 96,
+          "y": 224
         }
       },
       {
@@ -63,8 +78,9 @@
         "data": {
           "image": "battery_3.png",
           "use1Xscale": false,
-          "x": 24,
-          "y": 215
+          "anchorPoint": "CENTER",
+          "x": 96,
+          "y": 224
         }
       }
     ],

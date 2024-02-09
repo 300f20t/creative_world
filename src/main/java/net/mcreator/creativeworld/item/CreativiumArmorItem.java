@@ -1,17 +1,23 @@
 
 package net.mcreator.creativeworld.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
+
+import java.util.List;
 
 public abstract class CreativiumArmorItem extends ArmorItem {
 	public CreativiumArmorItem(ArmorItem.Type type, Item.Properties properties) {
@@ -23,12 +29,12 @@ public abstract class CreativiumArmorItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{32, 48, 64, 32}[type.getSlot().getIndex()];
+				return new int[]{24, 32, 32, 24}[type.getSlot().getIndex()];
 			}
 
 			@Override
 			public int getEnchantmentValue() {
-				return 72;
+				return 64;
 			}
 
 			@Override
@@ -64,8 +70,18 @@ public abstract class CreativiumArmorItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "creative_world:textures/models/armor/creativium_layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -75,8 +91,18 @@ public abstract class CreativiumArmorItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "creative_world:textures/models/armor/creativium_layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -86,8 +112,18 @@ public abstract class CreativiumArmorItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "creative_world:textures/models/armor/creativium_layer_2.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -97,8 +133,18 @@ public abstract class CreativiumArmorItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "creative_world:textures/models/armor/creativium_layer_1.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 }

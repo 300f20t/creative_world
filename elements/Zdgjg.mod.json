@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -21,7 +21,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:Tinwire"
+        "value": "CUSTOM:CopperWire"
       },
       {
         "value": "CUSTOM:Rubber"
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tinwirewithrubber"
+      "value": "CUSTOM:InsulatedCopperWire"
     },
     "name": "zdgjg",
     "namespace": "mod"

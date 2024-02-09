@@ -15,6 +15,9 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.creativeworld.procedures.DrillModeCustomProcedure;
+import net.mcreator.creativeworld.procedures.DrillMode3x3Procedure;
+import net.mcreator.creativeworld.procedures.DrillMode1x1Procedure;
 import net.mcreator.creativeworld.procedures.DrillKazhdyiTikVRukieProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -26,8 +29,6 @@ public class DrillInHandOverlay {
 	public static void eventHandler(RenderGuiEvent.Pre event) {
 		int w = event.getWindow().getGuiScaledWidth();
 		int h = event.getWindow().getGuiScaledHeight();
-		int posX = w / 2;
-		int posY = h / 2;
 		Level world = null;
 		double x = 0;
 		double y = 0;
@@ -46,19 +47,22 @@ public class DrillInHandOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (DrillKazhdyiTikVRukieProcedure.execute(entity)) {
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/drill_extraction_mode_1x1.png"), posX + -207, posY + 95, 0, 0, 16, 16, 16, 16);
+			if (DrillMode1x1Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/drill_extraction_mode_1x1.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+			}
+			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_0.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_0.png"), posX + -189, posY + 95, 0, 0, 16, 16, 16, 16);
+			if (DrillMode3x3Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/drill_extraction_mode_3x3.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+			}
+			if (DrillModeCustomProcedure.execute(entity)) {
+				event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/drill_extraction_mode_custom.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+			}
+			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_1.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/drill_extraction_mode_3x3.png"), posX + -207, posY + 95, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_2.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/drill_extraction_mode_custom.png"), posX + -207, posY + 95, 0, 0, 16, 16, 16, 16);
-
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_1.png"), posX + -189, posY + 95, 0, 0, 16, 16, 16, 16);
-
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_2.png"), posX + -189, posY + 95, 0, 0, 16, 16, 16, 16);
-
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_3.png"), posX + -189, posY + 95, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_3.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
 
 		}
 		RenderSystem.depthMask(true);

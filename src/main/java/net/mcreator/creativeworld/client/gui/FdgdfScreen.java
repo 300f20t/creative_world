@@ -38,6 +38,8 @@ public class FdgdfScreen extends AbstractContainerScreen<FdgdfMenu> {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		if (mouseX > leftPos + 11 && mouseX < leftPos + 35 && mouseY > topPos + 29 && mouseY < topPos + 53)
+			guiGraphics.renderTooltip(font, Component.translatable("gui.creative_world.fdgdf.tooltip_999999_fe"), mouseX, mouseY);
 	}
 
 	@Override
@@ -46,6 +48,11 @@ public class FdgdfScreen extends AbstractContainerScreen<FdgdfMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/crushing_icon.png"), this.leftPos + 78, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/battery_3.png"), this.leftPos + 15, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 

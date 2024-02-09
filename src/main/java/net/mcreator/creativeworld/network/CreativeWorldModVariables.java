@@ -33,15 +33,9 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.creativeworld.CreativeWorldMod;
 
 import java.util.function.Supplier;
-import java.util.List;
-import java.util.ArrayList;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CreativeWorldModVariables {
-	public static List<Object> itemsInCrusherOutput = new ArrayList<>();
-	public static List<Object> crusherPositionX = new ArrayList<>();
-	public static List<Object> crusherPositionY = new ArrayList<>();
-	public static List<Object> crusherPositionZ = new ArrayList<>();
 	public static double worldIndex = 0;
 
 	@SubscribeEvent
@@ -88,6 +82,7 @@ public class CreativeWorldModVariables {
 			clone.seckond_QT_ID_y = original.seckond_QT_ID_y;
 			clone.first_QT_ID_z = original.first_QT_ID_z;
 			clone.seckond_QT_ID_z = original.seckond_QT_ID_z;
+			clone.drillMode = original.drillMode;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -186,16 +181,19 @@ public class CreativeWorldModVariables {
 	}
 
 	public static class SavedDataSyncMessage {
-		public int type;
-		public SavedData data;
+		private final int type;
+		private SavedData data;
 
 		public SavedDataSyncMessage(FriendlyByteBuf buffer) {
 			this.type = buffer.readInt();
-			this.data = this.type == 0 ? new MapVariables() : new WorldVariables();
-			if (this.data instanceof MapVariables _mapvars)
-				_mapvars.read(buffer.readNbt());
-			else if (this.data instanceof WorldVariables _worldvars)
-				_worldvars.read(buffer.readNbt());
+			CompoundTag nbt = buffer.readNbt();
+			if (nbt != null) {
+				this.data = this.type == 0 ? new MapVariables() : new WorldVariables();
+				if (this.data instanceof MapVariables mapVariables)
+					mapVariables.read(nbt);
+				else if (this.data instanceof WorldVariables worldVariables)
+					worldVariables.read(nbt);
+			}
 		}
 
 		public SavedDataSyncMessage(int type, SavedData data) {
@@ -205,13 +203,14 @@ public class CreativeWorldModVariables {
 
 		public static void buffer(SavedDataSyncMessage message, FriendlyByteBuf buffer) {
 			buffer.writeInt(message.type);
-			buffer.writeNbt(message.data.save(new CompoundTag()));
+			if (message.data != null)
+				buffer.writeNbt(message.data.save(new CompoundTag()));
 		}
 
 		public static void handler(SavedDataSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 			NetworkEvent.Context context = contextSupplier.get();
 			context.enqueueWork(() -> {
-				if (!context.getDirection().getReceptionSide().isServer()) {
+				if (!context.getDirection().getReceptionSide().isServer() && message.data != null) {
 					if (message.type == 0)
 						MapVariables.clientSide = (MapVariables) message.data;
 					else
@@ -261,6 +260,7 @@ public class CreativeWorldModVariables {
 		public double seckond_QT_ID_y = 0;
 		public double first_QT_ID_z = 0;
 		public double seckond_QT_ID_z = 0;
+		public double drillMode = 1.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -277,6 +277,7 @@ public class CreativeWorldModVariables {
 			nbt.putDouble("seckond_QT_ID_y", seckond_QT_ID_y);
 			nbt.putDouble("first_QT_ID_z", first_QT_ID_z);
 			nbt.putDouble("seckond_QT_ID_z", seckond_QT_ID_z);
+			nbt.putDouble("drillMode", drillMode);
 			return nbt;
 		}
 
@@ -290,11 +291,12 @@ public class CreativeWorldModVariables {
 			seckond_QT_ID_y = nbt.getDouble("seckond_QT_ID_y");
 			first_QT_ID_z = nbt.getDouble("first_QT_ID_z");
 			seckond_QT_ID_z = nbt.getDouble("seckond_QT_ID_z");
+			drillMode = nbt.getDouble("drillMode");
 		}
 	}
 
 	public static class PlayerVariablesSyncMessage {
-		public PlayerVariables data;
+		private final PlayerVariables data;
 
 		public PlayerVariablesSyncMessage(FriendlyByteBuf buffer) {
 			this.data = new PlayerVariables();
@@ -322,6 +324,7 @@ public class CreativeWorldModVariables {
 					variables.seckond_QT_ID_y = message.data.seckond_QT_ID_y;
 					variables.first_QT_ID_z = message.data.first_QT_ID_z;
 					variables.seckond_QT_ID_z = message.data.seckond_QT_ID_z;
+					variables.drillMode = message.data.drillMode;
 				}
 			});
 			context.setPacketHandled(true);

@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "fluid",
   "definition": {
     "name": "Oil",
@@ -30,7 +30,9 @@
       "value": ""
     },
     "rarity": "UNCOMMON",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "resistance": 100.0,
     "luminance": 0,
     "lightOpacity": 14,

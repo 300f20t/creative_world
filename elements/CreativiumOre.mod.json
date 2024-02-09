@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "creativium_ore",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Creativium Ore",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 24.0,
     "resistance": 26.390158215457888,
     "hasGravity": false,
@@ -117,10 +119,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "Surface"
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "#is_overworld"
+      }
     ],
-    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE#0"
@@ -135,10 +139,10 @@
         "value": "Blocks.STONE#5"
       }
     ],
-    "generationShape": "UNIFORM",
+    "generationShape": "TRIANGLE",
     "frequencyPerChunks": 1,
-    "frequencyOnChunk": 1,
-    "minGenerateHeight": 1,
-    "maxGenerateHeight": 30
+    "frequencyOnChunk": 2,
+    "minGenerateHeight": -64,
+    "maxGenerateHeight": 20
   }
 }

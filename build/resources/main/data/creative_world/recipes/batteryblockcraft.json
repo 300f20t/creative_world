@@ -2,25 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "aba",
+    " a "
   ],
   "key": {
-    "1": {
-      "item": "creative_world:battery"
+    "a": {
+      "tag": "minecraft:battery"
     },
-    "3": {
-      "item": "creative_world:battery"
-    },
-    "4": {
+    "b": {
       "item": "creative_world:machinecase"
-    },
-    "5": {
-      "item": "creative_world:battery"
-    },
-    "7": {
-      "item": "creative_world:battery"
     }
   },
   "result": {

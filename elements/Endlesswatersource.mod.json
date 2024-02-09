@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -12,7 +12,7 @@
     "creativeTab": {
       "value": "CUSTOM:Creativeworlditems"
     },
-    "stackSize": 1,
+    "stackSize": 16,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -26,15 +26,24 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "infinity/infinity mb"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "infinity/infinity mb"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedOnBlock": {
       "name": "EndlesswatersourceKoghdaNazhataPKMPoBloku"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
     },
     "isFood": false,
     "nutritionalValue": 0,

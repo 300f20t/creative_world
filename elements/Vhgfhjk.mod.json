@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -15,7 +15,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:Tinwirewithrubber"
+        "value": "CUSTOM:InsulatedCopperWire"
       },
       {
         "value": ""
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Battery"
+      "value": "CUSTOM:Battrey0"
     },
     "name": "vhgfhjk",
     "namespace": "mod"

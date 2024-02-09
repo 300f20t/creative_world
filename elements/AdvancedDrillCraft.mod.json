@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Carbonplate"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Electricalcircuit"
+      },
+      {
+        "value": "CUSTOM:AccumulatiumIngot"
+      },
+      {
+        "value": "CUSTOM:Drill"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Carbonplate"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Electricalcircuit"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Advanceddrill"
+    },
+    "name": "advanced_drill_craft",
+    "namespace": "mod"
+  }
+}

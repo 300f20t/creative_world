@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Carbonplate"
+      },
+      {
+        "value": "CUSTOM:Compositeplate"
+      },
+      {
+        "value": "CUSTOM:Electricalcircuit"
+      },
+      {
+        "value": "TAG:forge:battery"
+      },
+      {
+        "value": "CUSTOM:ElectricMotor"
+      },
+      {
+        "value": "CUSTOM:Titanplate"
+      },
+      {
+        "value": "CUSTOM:Carbonplate"
+      },
+      {
+        "value": "CUSTOM:Compositeplate"
+      },
+      {
+        "value": "CUSTOM:Electricalcircuit"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Drill"
+    },
+    "name": "drill_craft",
+    "namespace": "mod"
+  }
+}

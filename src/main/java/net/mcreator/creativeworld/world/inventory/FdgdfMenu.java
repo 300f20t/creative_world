@@ -249,7 +249,7 @@ public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Int
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			CrusherWorkProcedure.execute(entity);
+			CrusherWorkProcedure.execute(world, entity);
 		}
 	}
 }

@@ -1,15 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "MultiTool",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "drill",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Drill",
-    "specialInfo": [
-      "§cdoes not work correctly (in development)"
-    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
@@ -20,7 +22,9 @@
     "damageVsEntity": 8.0,
     "usageCount": 256,
     "blocksAffected": [],
-    "hasGlow": false,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,

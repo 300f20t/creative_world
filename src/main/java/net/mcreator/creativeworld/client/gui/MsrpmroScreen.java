@@ -53,7 +53,7 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 
 		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/hdugfbg.png"), this.leftPos + 51, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
-		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/gui_element_1_1.png"), this.leftPos + -13, this.topPos + 0, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/gui_element_1_1.png"), this.leftPos + -14, this.topPos + 0, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -85,7 +85,7 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 	public void init() {
 		super.init();
 		button_empty = Button.builder(Component.translatable("gui.creative_world.msrpmro.button_empty"), e -> {
-		}).bounds(this.leftPos + -13, this.topPos + -19, 30, 20).build();
+		}).bounds(this.leftPos + -14, this.topPos + -19, 30, 20).build();
 		guistate.put("button:button_empty", button_empty);
 		this.addRenderableWidget(button_empty);
 	}

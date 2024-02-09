@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "advenced_machine_case",
@@ -34,9 +34,11 @@
       }
     ],
     "name": "Advencedsolarpanel",
-    "specialInfo": [
-      "§cdoes not work correctly (in development)"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "§cdoes not work correctly (in development)"
+      ]
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -119,7 +121,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

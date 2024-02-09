@@ -1,0 +1,9 @@
+{
+  "parent": "creative_world:custom/insulated_copper_wire",
+  "textures": {
+    "all": "creative_world:block/insulated_copper_wire",
+    "particle": "creative_world:block/insulated_copper_wire",
+    "0": "creative_world:block/insulated_copper_wire"
+  },
+  "render_type": "solid"
+}

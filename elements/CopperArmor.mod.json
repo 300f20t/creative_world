@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -18,10 +18,18 @@
     "bodyName": "Copper Chestplate",
     "leggingsName": "Copper Leggings",
     "bootsName": "Copper Boots",
-    "helmetSpecialInfo": [],
-    "bodySpecialInfo": [],
-    "leggingsSpecialInfo": [],
-    "bootsSpecialInfo": [],
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",
     "helmetModelTexture": "From armor",
@@ -50,6 +58,18 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 14,
     "damageValueHelmet": 2,
     "damageValueBody": 5,
@@ -57,7 +77,7 @@
     "damageValueBoots": 2,
     "enchantability": 8,
     "toughness": 0.0,
-    "knockbackResistance": 0.0,
+    "knockbackResistance": 0.05,
     "equipSound": {
       "value": ""
     },

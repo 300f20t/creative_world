@@ -2,36 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "creative_world:tinnugget"
-    },
-    "1": {
-      "item": "creative_world:tinnugget"
-    },
-    "2": {
-      "item": "creative_world:tinnugget"
-    },
-    "3": {
-      "item": "creative_world:tinnugget"
-    },
-    "4": {
-      "item": "creative_world:tinnugget"
-    },
-    "5": {
-      "item": "creative_world:tinnugget"
-    },
-    "6": {
-      "item": "creative_world:tinnugget"
-    },
-    "7": {
-      "item": "creative_world:tinnugget"
-    },
-    "8": {
+    "a": {
       "item": "creative_world:tinnugget"
     }
   },

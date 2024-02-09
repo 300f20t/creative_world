@@ -21,6 +21,7 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModItems.ENDLESSWATERSOURCE.get());
 				tabData.accept(CreativeWorldModItems.ALARGEBUCKET.get());
 				tabData.accept(CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get());
+				tabData.accept(CreativeWorldModItems.A_LARGE_BUCKET_OF_FLUID_9.get());
 				tabData.accept(CreativeWorldModItems.GAS_BUCKET.get());
 				tabData.accept(CreativeWorldModItems.OIL_BUCKET.get());
 				tabData.accept(CreativeWorldModItems.RUBBER.get());
@@ -33,6 +34,7 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModItems.WASHEDCRUSHEDCOPPERORE.get());
 				tabData.accept(CreativeWorldModItems.CRUSHEDIRONORE.get());
 				tabData.accept(CreativeWorldModItems.WASHEDCRUSHEDIRONORE.get());
+				tabData.accept(CreativeWorldModItems.RAWTITAN.get());
 				tabData.accept(CreativeWorldModItems.RAWTIN.get());
 				tabData.accept(CreativeWorldModItems.TIN_INGOT.get());
 				tabData.accept(CreativeWorldModItems.BRONZE_INGOT.get());
@@ -51,18 +53,22 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModItems.BRONZEPLATE.get());
 				tabData.accept(CreativeWorldModItems.TITANPLATE.get());
 				tabData.accept(CreativeWorldModItems.TINCOVER.get());
-				tabData.accept(CreativeWorldModItems.SDFGHN.get());
 				tabData.accept(CreativeWorldModItems.THECOREOFMATTER.get());
 				tabData.accept(CreativeWorldModItems.THECOREOFTHEFORMATION.get());
 				tabData.accept(CreativeWorldModItems.CREATINGCORE.get());
-				tabData.accept(CreativeWorldModItems.BATTERY.get());
-				tabData.accept(CreativeWorldModItems.BATTERY_5.get());
 				tabData.accept(CreativeWorldModItems.ELECTRICALCIRCUIT.get());
 				tabData.accept(CreativeWorldModItems.THECOREOFINVULNERABILITY.get());
 				tabData.accept(CreativeWorldModItems.CREATIVEMOD.get());
 				tabData.accept(CreativeWorldModItems.REEL.get());
 				tabData.accept(CreativeWorldModItems.CREATIVEREEL.get());
-				tabData.accept(CreativeWorldModItems.RAWTITAN.get());
+				tabData.accept(CreativeWorldModBlocks.COPPER_WIRE.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.INSULATED_COPPER_WIRE.get().asItem());
+				tabData.accept(CreativeWorldModItems.BATTREY_0.get());
+				tabData.accept(CreativeWorldModItems.BATTREY_1.get());
+				tabData.accept(CreativeWorldModItems.BATTREY_2.get());
+				tabData.accept(CreativeWorldModItems.BATTREY_3.get());
+				tabData.accept(CreativeWorldModItems.ELECTRIC_MOTOR.get());
+				tabData.accept(CreativeWorldModItems.CREATIVE_ELECTRIC_MOTOR.get());
 			})
 
 					.build());
@@ -85,8 +91,6 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModBlocks.RESIN_LEAVES.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.RESIN_FENCE.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.RESIN_FENCE_GATE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.TINWIRE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.TINWIREWITHRUBBER.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.TITAN_BLOCK.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.MACHINECASE.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.COALGENERATOR.get().asItem());
@@ -142,6 +146,7 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModItems.IRONWRENCH.get());
 				tabData.accept(CreativeWorldModItems.WIRECUTTERS.get());
 				tabData.accept(CreativeWorldModItems.TAP.get());
+				tabData.accept(CreativeWorldModItems.IRON_MORTAR.get());
 				tabData.accept(CreativeWorldModItems.ENERGYDETECTOR.get());
 				tabData.accept(CreativeWorldModItems.PARTICLEBINDER.get());
 				tabData.accept(CreativeWorldModItems.KEYCARD.get());

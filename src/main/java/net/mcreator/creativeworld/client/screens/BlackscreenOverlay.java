@@ -26,8 +26,6 @@ public class BlackscreenOverlay {
 	public static void eventHandler(RenderGuiEvent.Pre event) {
 		int w = event.getWindow().getGuiScaledWidth();
 		int h = event.getWindow().getGuiScaledHeight();
-		int posX = w / 2;
-		int posY = h / 2;
 		Level world = null;
 		double x = 0;
 		double y = 0;
@@ -46,7 +44,7 @@ public class BlackscreenOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (BlackscreenOtobrazhatOvierlieiVIghrieProcedure.execute(world, x, y, z)) {
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/black_screen_texture.png"), posX + -257, posY + -251, 0, 0, 512, 512, 512, 512);
+			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/black_screen_texture.png"), w / 2 + -257, h / 2 + -251, 0, 0, 512, 512, 512, 512);
 
 		}
 		RenderSystem.depthMask(true);

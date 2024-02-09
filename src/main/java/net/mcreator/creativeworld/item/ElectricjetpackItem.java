@@ -1,7 +1,9 @@
 
 package net.mcreator.creativeworld.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
@@ -10,6 +12,9 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public abstract class ElectricjetpackItem extends ArmorItem {
 	public ElectricjetpackItem(ArmorItem.Type type, Item.Properties properties) {
@@ -59,6 +64,11 @@ public abstract class ElectricjetpackItem extends ArmorItem {
 	public static class Chestplate extends ElectricjetpackItem {
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
 		}
 
 		@Override

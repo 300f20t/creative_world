@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "tffyuiui",
@@ -34,9 +34,11 @@
       }
     ],
     "name": "Solar panel",
-    "specialInfo": [
-      "§cdoes not work correctly (in development)"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "§cdoes not work correctly (in development)"
+      ]
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -122,7 +124,7 @@
     "onTickUpdate": {
       "name": "SolarpanelObnovitTakt"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

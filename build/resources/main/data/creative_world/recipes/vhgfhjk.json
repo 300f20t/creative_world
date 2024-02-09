@@ -2,35 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    "678"
+    " a ",
+    "bcb",
+    "bcb"
   ],
   "key": {
-    "1": {
-      "item": "creative_world:tinwirewithrubber"
+    "a": {
+      "item": "creative_world:insulated_copper_wire"
     },
-    "3": {
+    "b": {
       "item": "creative_world:tincover"
     },
-    "4": {
+    "c": {
       "item": "minecraft:redstone"
-    },
-    "5": {
-      "item": "creative_world:tincover"
-    },
-    "6": {
-      "item": "creative_world:tincover"
-    },
-    "7": {
-      "item": "minecraft:redstone"
-    },
-    "8": {
-      "item": "creative_world:tincover"
     }
   },
   "result": {
-    "item": "creative_world:battery",
+    "item": "creative_world:battrey_0",
     "count": 1
   }
 }

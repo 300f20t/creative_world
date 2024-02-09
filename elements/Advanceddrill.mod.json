@@ -1,15 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "MultiTool",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "advanced_drill",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Advanced drill",
-    "specialInfo": [
-      "§cdoes not work correctly (in development)"
-    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
@@ -20,10 +22,15 @@
     "damageVsEntity": 9.0,
     "usageCount": 2048,
     "blocksAffected": [],
-    "hasGlow": false,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "AdvanceddrillPriRazrushieniiBlokaInstrumientom"
+    }
   }
 }

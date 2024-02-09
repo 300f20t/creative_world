@@ -2,37 +2,25 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "cdc",
+    "aea"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:command_block"
     },
-    "1": {
+    "b": {
       "item": "creative_world:creativedrill"
     },
-    "2": {
-      "item": "minecraft:command_block"
-    },
-    "3": {
+    "c": {
       "item": "minecraft:netherite_block"
     },
-    "4": {
+    "d": {
       "item": "creative_world:thecoreofinvulnerability"
     },
-    "5": {
-      "item": "minecraft:netherite_block"
-    },
-    "6": {
-      "item": "minecraft:command_block"
-    },
-    "7": {
+    "e": {
       "item": "creative_world:advancedelectricjetpack_chestplate"
-    },
-    "8": {
-      "item": "minecraft:command_block"
     }
   },
   "result": {

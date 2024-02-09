@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:CreativiumIngot"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      },
+      {
+        "value": "CUSTOM:Accumulatiumnugget"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Creativereel"
+    },
+    "name": "creative_reel_craft",
+    "namespace": "mod"
+  }
+}

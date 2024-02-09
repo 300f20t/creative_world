@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "tin_ore",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Tin Ore",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 2.4000000000000004,
     "resistance": 4.182558210365094,
     "hasGravity": false,
@@ -117,10 +119,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "Surface"
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "#is_overworld"
+      }
     ],
-    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE#0"
@@ -135,10 +139,10 @@
         "value": "Blocks.STONE#5"
       }
     ],
-    "generationShape": "UNIFORM",
+    "generationShape": "TRIANGLE",
     "frequencyPerChunks": 20,
     "frequencyOnChunk": 10,
-    "minGenerateHeight": 1,
-    "maxGenerateHeight": 77
+    "minGenerateHeight": -40,
+    "maxGenerateHeight": 80
   }
 }

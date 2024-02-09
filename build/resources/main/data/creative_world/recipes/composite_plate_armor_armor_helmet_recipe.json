@@ -2,23 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "3 5"
+    "aaa",
+    "a a"
   ],
   "key": {
-    "0": {
-      "item": "creative_world:compositeplate"
-    },
-    "1": {
-      "item": "creative_world:compositeplate"
-    },
-    "2": {
-      "item": "creative_world:compositeplate"
-    },
-    "3": {
-      "item": "creative_world:compositeplate"
-    },
-    "5": {
+    "a": {
       "item": "creative_world:compositeplate"
     }
   },

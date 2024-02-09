@@ -2,37 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aba",
+    "aaa"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "creative_world:carbonplate"
     },
-    "1": {
-      "item": "creative_world:carbonplate"
-    },
-    "2": {
-      "item": "creative_world:carbonplate"
-    },
-    "3": {
-      "item": "creative_world:carbonplate"
-    },
-    "4": {
+    "b": {
       "item": "creative_world:creativiumnugget"
-    },
-    "5": {
-      "item": "creative_world:carbonplate"
-    },
-    "6": {
-      "item": "creative_world:carbonplate"
-    },
-    "7": {
-      "item": "creative_world:carbonplate"
-    },
-    "8": {
-      "item": "creative_world:carbonplate"
     }
   },
   "result": {

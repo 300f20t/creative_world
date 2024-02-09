@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "abc"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:carbonplate"
+    },
+    "b": {
+      "item": "creative_world:compositeplate"
+    },
+    "c": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "d": {
+      "tag": "forge:battery"
+    },
+    "e": {
+      "item": "creative_world:electric_motor"
+    },
+    "f": {
+      "item": "creative_world:titanplate"
+    }
+  },
+  "result": {
+    "item": "creative_world:drill",
+    "count": 1
+  }
+}

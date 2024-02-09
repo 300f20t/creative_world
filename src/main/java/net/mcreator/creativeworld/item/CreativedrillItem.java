@@ -21,6 +21,8 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.creativeworld.procedures.CreativedrillPriRazrushieniiBlokaInstrumientomProcedure;
+
 import java.util.List;
 
 import com.google.common.collect.Multimap;
@@ -95,6 +97,7 @@ public class CreativedrillItem extends TieredItem {
 	@Override
 	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
 		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+		CreativedrillPriRazrushieniiBlokaInstrumientomProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return true;
 	}
 
@@ -107,6 +110,5 @@ public class CreativedrillItem extends TieredItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A7cdoes not work correctly (in development)"));
 	}
 }

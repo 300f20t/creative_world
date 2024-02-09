@@ -1,13 +1,17 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "accumulatium_pickaxe",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Accumulatium Pickaxe",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
@@ -18,7 +22,6 @@
     "damageVsEntity": 12.0,
     "usageCount": 3072,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:AccumulatiumIngot"

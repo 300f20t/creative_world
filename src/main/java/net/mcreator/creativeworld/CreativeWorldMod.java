@@ -29,13 +29,13 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.creativeworld.world.features.StructureFeature;
 import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 import net.mcreator.creativeworld.init.CreativeWorldModSounds;
 import net.mcreator.creativeworld.init.CreativeWorldModMenus;
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
 import net.mcreator.creativeworld.init.CreativeWorldModFluids;
 import net.mcreator.creativeworld.init.CreativeWorldModFluidTypes;
-import net.mcreator.creativeworld.init.CreativeWorldModFeatures;
 import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
 import net.mcreator.creativeworld.init.CreativeWorldModBlockEntities;
 
@@ -62,7 +62,8 @@ public class CreativeWorldMod {
 		CreativeWorldModItems.REGISTRY.register(bus);
 
 		CreativeWorldModTabs.REGISTRY.register(bus);
-		CreativeWorldModFeatures.REGISTRY.register(bus);
+
+		StructureFeature.REGISTRY.register(bus);
 
 		CreativeWorldModMenus.REGISTRY.register(bus);
 		CreativeWorldModFluids.REGISTRY.register(bus);

@@ -4,13 +4,13 @@ license="MIT License"
 
 [[mods]]
 modId="creative_world"
-version="0.2.31"
+version="0.2.3"
 displayName="creative world"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="300f20t, MCreator."
-description="This is Alpha!"
+description="This is Release!"
 
 [[dependencies.creative_world]]
     modId="minecraft"

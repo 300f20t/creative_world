@@ -1,15 +1,19 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
     "toolType": "Special",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "afaefsdefe",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Wire cutters",
-    "specialInfo": [
-      "§ehas incomplete functionality (in development)"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "§ehas incomplete functionality (in development)"
+      ]
+    },
     "creativeTab": {
       "value": "CUSTOM:Creativeworldtools"
     },
@@ -20,7 +24,6 @@
     "damageVsEntity": 4.0,
     "usageCount": 100,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": true,

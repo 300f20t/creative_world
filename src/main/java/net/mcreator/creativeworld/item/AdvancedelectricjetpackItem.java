@@ -3,6 +3,7 @@ package net.mcreator.creativeworld.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
@@ -12,9 +13,14 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.creativeworld.procedures.AdvancedelectricjetpackSobytiieTaktovKirasyProcedure;
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
+
+import java.util.List;
+
+import com.google.common.collect.Iterables;
 
 public abstract class AdvancedelectricjetpackItem extends ArmorItem {
 	public AdvancedelectricjetpackItem(ArmorItem.Type type, Item.Properties properties) {
@@ -67,13 +73,21 @@ public abstract class AdvancedelectricjetpackItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "creative_world:textures/models/armor/apvkie_layer_1.png";
 		}
 
 		@Override
-		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
-			AdvancedelectricjetpackSobytiieTaktovKirasyProcedure.execute(entity, itemstack);
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				AdvancedelectricjetpackSobytiieTaktovKirasyProcedure.execute(entity, itemstack);
+			}
 		}
 	}
 }

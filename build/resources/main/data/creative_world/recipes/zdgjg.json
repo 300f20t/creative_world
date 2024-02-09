@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "01"
+    "ab"
   ],
   "key": {
-    "0": {
-      "item": "creative_world:tinwire"
+    "a": {
+      "item": "creative_world:copper_wire"
     },
-    "1": {
+    "b": {
       "item": "creative_world:rubber"
     }
   },
   "result": {
-    "item": "creative_world:tinwirewithrubber",
+    "item": "creative_world:insulated_copper_wire",
     "count": 1
   }
 }
