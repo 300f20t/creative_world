@@ -21,4 +21,10 @@ description="This is Release!"
 
 
 
+[[dependencies.creative_world]]
+    modId="jei"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

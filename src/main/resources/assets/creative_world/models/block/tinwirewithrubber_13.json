@@ -1,9 +1,0 @@
-{
-  "parent": "creative_world:custom/w13",
-  "textures": {
-    "all": "creative_world:block/w13",
-    "particle": "creative_world:block/w13",
-    "0": "creative_world:block/w13"
-  },
-  "render_type": "solid"
-}

@@ -1,9 +1,0 @@
-{
-  "parent": "creative_world:custom/tinw16",
-  "textures": {
-    "all": "creative_world:block/tinw16",
-    "particle": "creative_world:block/tinw16",
-    "0": "creative_world:block/tinw16"
-  },
-  "render_type": "solid"
-}

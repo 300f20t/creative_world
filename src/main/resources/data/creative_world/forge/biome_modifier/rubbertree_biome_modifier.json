@@ -1,8 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": {
-    "type": "forge:any"
-  },
-  "features": "creative_world:rubbertree",
-  "step": "surface_structures"
-}
