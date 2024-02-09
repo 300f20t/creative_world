@@ -1,7 +1,0 @@
-# ignore game run floader
-
-run/
-
-# ignore backups and modElementThumbnails
-
-.mcreator/
