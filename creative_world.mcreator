@@ -45,8 +45,8 @@
       "registry_name": "endlesswatersource",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/EndlesswatersourceItem.java",
-          "src/main/resources/assets/creative_world/models/item/endlesswatersource.json"
+          "src/main/resources/assets/creative_world/models/item/endlesswatersource.json",
+          "src/main/java/net/mcreator/creativeworld/item/EndlesswatersourceItem.java"
         ]
       },
       "path": "~/Legacy"
@@ -118,8 +118,8 @@
       "registry_name": "ironwrench",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/IronwrenchItem.java",
-          "src/main/resources/assets/creative_world/models/item/ironwrench.json"
+          "src/main/resources/assets/creative_world/models/item/ironwrench.json",
+          "src/main/java/net/mcreator/creativeworld/item/IronwrenchItem.java"
         ]
       },
       "path": "~/Tools"
@@ -133,11 +133,11 @@
       "registry_name": "coalgenerator",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/blockstates/coalgenerator.json",
-          "src/main/java/net/mcreator/creativeworld/block/CoalgeneratorBlock.java",
           "src/main/java/net/mcreator/creativeworld/block/entity/CoalgeneratorBlockEntity.java",
+          "src/main/java/net/mcreator/creativeworld/block/CoalgeneratorBlock.java",
+          "src/main/resources/assets/creative_world/models/block/coalgenerator.json",
           "src/main/resources/assets/creative_world/models/item/coalgenerator.json",
-          "src/main/resources/assets/creative_world/models/block/coalgenerator.json"
+          "src/main/resources/assets/creative_world/blockstates/coalgenerator.json"
         ]
       },
       "path": "~/Mekanisms"
@@ -153,8 +153,8 @@
         "files": [
           "src/main/resources/assets/creative_world/models/item/machinecase.json",
           "src/main/resources/assets/creative_world/blockstates/machinecase.json",
-          "src/main/resources/assets/creative_world/models/block/machinecase.json",
-          "src/main/java/net/mcreator/creativeworld/block/MachinecaseBlock.java"
+          "src/main/java/net/mcreator/creativeworld/block/MachinecaseBlock.java",
+          "src/main/resources/assets/creative_world/models/block/machinecase.json"
         ]
       },
       "path": "~/Components"
@@ -204,8 +204,8 @@
       "registry_name": "ironhammer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/ironhammer.json",
-          "src/main/java/net/mcreator/creativeworld/item/IronhammerItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/IronhammerItem.java",
+          "src/main/resources/assets/creative_world/models/item/ironhammer.json"
         ]
       },
       "path": "~/Tools"
@@ -233,8 +233,8 @@
       "registry_name": "ironplate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/IronplateItem.java",
-          "src/main/resources/assets/creative_world/models/item/ironplate.json"
+          "src/main/resources/assets/creative_world/models/item/ironplate.json",
+          "src/main/java/net/mcreator/creativeworld/item/IronplateItem.java"
         ]
       },
       "path": "~/Materials/Plates"
@@ -276,8 +276,8 @@
       "registry_name": "tin_ingot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/TinIngotItem.java",
-          "src/main/resources/assets/creative_world/models/item/tin_ingot.json"
+          "src/main/resources/assets/creative_world/models/item/tin_ingot.json",
+          "src/main/java/net/mcreator/creativeworld/item/TinIngotItem.java"
         ]
       },
       "path": "~/Materials/Ingots"
@@ -291,12 +291,12 @@
       "registry_name": "tin_ore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/block/TinOreBlock.java",
-          "src/main/resources/data/creative_world/worldgen/configured_feature/tin_ore.json",
-          "src/main/resources/assets/creative_world/blockstates/tin_ore.json",
-          "src/main/resources/data/creative_world/worldgen/placed_feature/tin_ore.json",
           "src/main/resources/data/creative_world/forge/biome_modifier/tin_ore_biome_modifier.json",
+          "src/main/resources/assets/creative_world/blockstates/tin_ore.json",
+          "src/main/resources/data/creative_world/worldgen/configured_feature/tin_ore.json",
+          "src/main/resources/data/creative_world/worldgen/placed_feature/tin_ore.json",
           "src/main/resources/assets/creative_world/models/block/tin_ore.json",
+          "src/main/java/net/mcreator/creativeworld/block/TinOreBlock.java",
           "src/main/resources/assets/creative_world/models/item/tin_ore.json"
         ]
       },
@@ -311,10 +311,10 @@
       "registry_name": "tin_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/block/tin_block.json",
-          "src/main/resources/assets/creative_world/models/item/tin_block.json",
           "src/main/java/net/mcreator/creativeworld/block/TinBlockBlock.java",
-          "src/main/resources/assets/creative_world/blockstates/tin_block.json"
+          "src/main/resources/assets/creative_world/blockstates/tin_block.json",
+          "src/main/resources/assets/creative_world/models/item/tin_block.json",
+          "src/main/resources/assets/creative_world/models/block/tin_block.json"
         ]
       },
       "path": "~/Materials/Blocks"
@@ -370,8 +370,8 @@
       "registry_name": "tin_pickaxe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/TinPickaxeItem.java",
-          "src/main/resources/assets/creative_world/models/item/tin_pickaxe.json"
+          "src/main/resources/assets/creative_world/models/item/tin_pickaxe.json",
+          "src/main/java/net/mcreator/creativeworld/item/TinPickaxeItem.java"
         ]
       },
       "path": "~/Materials/Tools"
@@ -415,8 +415,8 @@
       "registry_name": "tin_shovel",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/TinShovelItem.java",
-          "src/main/resources/assets/creative_world/models/item/tin_shovel.json"
+          "src/main/resources/assets/creative_world/models/item/tin_shovel.json",
+          "src/main/java/net/mcreator/creativeworld/item/TinShovelItem.java"
         ]
       },
       "path": "~/Materials/Tools"
@@ -430,8 +430,8 @@
       "registry_name": "tin_hoe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/tin_hoe.json",
-          "src/main/java/net/mcreator/creativeworld/item/TinHoeItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/TinHoeItem.java",
+          "src/main/resources/assets/creative_world/models/item/tin_hoe.json"
         ]
       },
       "path": "~/Materials/Tools"
@@ -519,10 +519,10 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/creative_world/models/item/tin_armor_helmet.json",
           "src/main/resources/assets/creative_world/models/item/tin_armor_chestplate.json",
-          "src/main/resources/assets/creative_world/models/item/tin_armor_leggings.json",
           "src/main/java/net/mcreator/creativeworld/item/TinArmorItem.java",
+          "src/main/resources/assets/creative_world/models/item/tin_armor_helmet.json",
+          "src/main/resources/assets/creative_world/models/item/tin_armor_leggings.json",
           "src/main/resources/assets/creative_world/models/item/tin_armor_boots.json"
         ]
       },
@@ -608,8 +608,8 @@
       "registry_name": "copper_axe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/copper_axe.json",
-          "src/main/java/net/mcreator/creativeworld/item/CopperAxeItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/CopperAxeItem.java",
+          "src/main/resources/assets/creative_world/models/item/copper_axe.json"
         ]
       },
       "path": "~/Materials/Tools"
@@ -638,8 +638,8 @@
       "registry_name": "copper_shovel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/copper_shovel.json",
-          "src/main/java/net/mcreator/creativeworld/item/CopperShovelItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/CopperShovelItem.java",
+          "src/main/resources/assets/creative_world/models/item/copper_shovel.json"
         ]
       },
       "path": "~/Materials/Tools"
@@ -653,8 +653,8 @@
       "registry_name": "copper_hoe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/copper_hoe.json",
-          "src/main/java/net/mcreator/creativeworld/item/CopperHoeItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/CopperHoeItem.java",
+          "src/main/resources/assets/creative_world/models/item/copper_hoe.json"
         ]
       },
       "path": "~/Materials/Tools"
@@ -742,11 +742,11 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/CopperArmorItem.java",
+          "src/main/resources/assets/creative_world/models/item/copper_armor_leggings.json",
+          "src/main/resources/assets/creative_world/models/item/copper_armor_boots.json",
           "src/main/resources/assets/creative_world/models/item/copper_armor_chestplate.json",
           "src/main/resources/assets/creative_world/models/item/copper_armor_helmet.json",
-          "src/main/resources/assets/creative_world/models/item/copper_armor_leggings.json",
-          "src/main/resources/assets/creative_world/models/item/copper_armor_boots.json"
+          "src/main/java/net/mcreator/creativeworld/item/CopperArmorItem.java"
         ]
       },
       "path": "~/Materials/Armors"
@@ -844,8 +844,8 @@
       "registry_name": "tinplate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/tinplate.json",
-          "src/main/java/net/mcreator/creativeworld/item/TinplateItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/TinplateItem.java",
+          "src/main/resources/assets/creative_world/models/item/tinplate.json"
         ]
       },
       "path": "~/Materials/Plates"
@@ -859,8 +859,8 @@
       "registry_name": "copperplate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/CopperplateItem.java",
-          "src/main/resources/assets/creative_world/models/item/copperplate.json"
+          "src/main/resources/assets/creative_world/models/item/copperplate.json",
+          "src/main/java/net/mcreator/creativeworld/item/CopperplateItem.java"
         ]
       },
       "path": "~/Materials/Plates"
@@ -874,10 +874,10 @@
       "registry_name": "resin_wood",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/block/ResinWoodBlock.java",
-          "src/main/resources/assets/creative_world/models/item/resin_wood.json",
+          "src/main/resources/assets/creative_world/models/block/resin_wood.json",
           "src/main/resources/assets/creative_world/blockstates/resin_wood.json",
-          "src/main/resources/assets/creative_world/models/block/resin_wood.json"
+          "src/main/java/net/mcreator/creativeworld/block/ResinWoodBlock.java",
+          "src/main/resources/assets/creative_world/models/item/resin_wood.json"
         ]
       },
       "path": "~/ResinTree"
@@ -892,9 +892,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/creativeworld/block/ResinLogBlock.java",
-          "src/main/resources/assets/creative_world/blockstates/resin_log.json",
           "src/main/resources/assets/creative_world/models/item/resin_log.json",
-          "src/main/resources/assets/creative_world/models/block/resin_log.json"
+          "src/main/resources/assets/creative_world/models/block/resin_log.json",
+          "src/main/resources/assets/creative_world/blockstates/resin_log.json"
         ]
       },
       "path": "~/ResinTree"
@@ -908,10 +908,10 @@
       "registry_name": "resin_planks",
       "metadata": {
         "files": [
+          "src/main/resources/assets/creative_world/blockstates/resin_planks.json",
           "src/main/resources/assets/creative_world/models/block/resin_planks.json",
-          "src/main/java/net/mcreator/creativeworld/block/ResinPlanksBlock.java",
           "src/main/resources/assets/creative_world/models/item/resin_planks.json",
-          "src/main/resources/assets/creative_world/blockstates/resin_planks.json"
+          "src/main/java/net/mcreator/creativeworld/block/ResinPlanksBlock.java"
         ]
       },
       "path": "~/ResinTree"
@@ -925,9 +925,9 @@
       "registry_name": "resin_leaves",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/block/ResinLeavesBlock.java",
           "src/main/resources/assets/creative_world/blockstates/resin_leaves.json",
           "src/main/resources/assets/creative_world/models/block/resin_leaves.json",
+          "src/main/java/net/mcreator/creativeworld/block/ResinLeavesBlock.java",
           "src/main/resources/assets/creative_world/models/item/resin_leaves.json"
         ]
       },
@@ -943,11 +943,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/creativeworld/block/ResinStairsBlock.java",
-          "src/main/resources/assets/creative_world/blockstates/resin_stairs.json",
-          "src/main/resources/assets/creative_world/models/block/resin_stairs_outer.json",
-          "src/main/resources/assets/creative_world/models/block/resin_stairs.json",
+          "src/main/resources/assets/creative_world/models/item/resin_stairs.json",
           "src/main/resources/assets/creative_world/models/block/resin_stairs_inner.json",
-          "src/main/resources/assets/creative_world/models/item/resin_stairs.json"
+          "src/main/resources/assets/creative_world/models/block/resin_stairs_outer.json",
+          "src/main/resources/assets/creative_world/blockstates/resin_stairs.json",
+          "src/main/resources/assets/creative_world/models/block/resin_stairs.json"
         ]
       },
       "path": "~/ResinTree"
@@ -961,12 +961,12 @@
       "registry_name": "resin_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/blockstates/resin_slab.json",
-          "src/main/resources/assets/creative_world/models/item/resin_slab.json",
+          "src/main/resources/assets/creative_world/models/block/resin_slab_full.json",
           "src/main/resources/assets/creative_world/models/block/resin_slab_top.json",
-          "src/main/java/net/mcreator/creativeworld/block/ResinSlabBlock.java",
           "src/main/resources/assets/creative_world/models/block/resin_slab.json",
-          "src/main/resources/assets/creative_world/models/block/resin_slab_full.json"
+          "src/main/java/net/mcreator/creativeworld/block/ResinSlabBlock.java",
+          "src/main/resources/assets/creative_world/models/item/resin_slab.json",
+          "src/main/resources/assets/creative_world/blockstates/resin_slab.json"
         ]
       },
       "path": "~/ResinTree"
@@ -980,12 +980,12 @@
       "registry_name": "resin_fence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/block/resin_fence_inventory.json",
-          "src/main/resources/assets/creative_world/models/block/resin_fence.json",
-          "src/main/resources/assets/creative_world/blockstates/resin_fence.json",
-          "src/main/resources/assets/creative_world/models/item/resin_fence.json",
           "src/main/java/net/mcreator/creativeworld/block/ResinFenceBlock.java",
-          "src/main/resources/assets/creative_world/models/block/resin_fence_post.json"
+          "src/main/resources/assets/creative_world/models/block/resin_fence.json",
+          "src/main/resources/assets/creative_world/models/item/resin_fence.json",
+          "src/main/resources/assets/creative_world/models/block/resin_fence_post.json",
+          "src/main/resources/assets/creative_world/blockstates/resin_fence.json",
+          "src/main/resources/assets/creative_world/models/block/resin_fence_inventory.json"
         ]
       },
       "path": "~/ResinTree"
@@ -999,13 +999,13 @@
       "registry_name": "resin_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/block/resin_fence_gate.json",
+          "src/main/resources/assets/creative_world/models/item/resin_fence_gate.json",
           "src/main/resources/assets/creative_world/models/block/resin_fence_gate_open.json",
           "src/main/java/net/mcreator/creativeworld/block/ResinFenceGateBlock.java",
           "src/main/resources/assets/creative_world/blockstates/resin_fence_gate.json",
+          "src/main/resources/assets/creative_world/models/block/resin_fence_gate.json",
           "src/main/resources/assets/creative_world/models/block/resin_fence_gate_wall.json",
-          "src/main/resources/assets/creative_world/models/block/resin_fence_gate_wall_open.json",
-          "src/main/resources/assets/creative_world/models/item/resin_fence_gate.json"
+          "src/main/resources/assets/creative_world/models/block/resin_fence_gate_wall_open.json"
         ]
       },
       "path": "~/ResinTree"
@@ -1131,10 +1131,10 @@
       "registry_name": "crusher",
       "metadata": {
         "files": [
+          "src/main/resources/assets/creative_world/blockstates/crusher.json",
+          "src/main/java/net/mcreator/creativeworld/block/entity/CrusherBlockEntity.java",
           "src/main/java/net/mcreator/creativeworld/block/CrusherBlock.java",
           "src/main/resources/assets/creative_world/models/block/crusher.json",
-          "src/main/java/net/mcreator/creativeworld/block/entity/CrusherBlockEntity.java",
-          "src/main/resources/assets/creative_world/blockstates/crusher.json",
           "src/main/resources/assets/creative_world/models/item/crusher.json"
         ]
       },
@@ -1149,10 +1149,10 @@
       "registry_name": "rsinlogwithresin",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/rsinlogwithresin.json",
-          "src/main/resources/assets/creative_world/models/block/rsinlogwithresin.json",
           "src/main/java/net/mcreator/creativeworld/block/RsinlogwithresinBlock.java",
-          "src/main/resources/assets/creative_world/blockstates/rsinlogwithresin.json"
+          "src/main/resources/assets/creative_world/blockstates/rsinlogwithresin.json",
+          "src/main/resources/assets/creative_world/models/block/rsinlogwithresin.json",
+          "src/main/resources/assets/creative_world/models/item/rsinlogwithresin.json"
         ]
       },
       "path": "~/ResinTree"
@@ -1181,8 +1181,8 @@
       "registry_name": "wirecutters",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/WirecuttersItem.java",
-          "src/main/resources/assets/creative_world/models/item/wirecutters.json"
+          "src/main/resources/assets/creative_world/models/item/wirecutters.json",
+          "src/main/java/net/mcreator/creativeworld/item/WirecuttersItem.java"
         ]
       },
       "path": "~/Tools"
@@ -1283,8 +1283,8 @@
       "registry_name": "bedrockbreacker",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/BedrockbreackerItem.java",
-          "src/main/resources/assets/creative_world/models/item/bedrockbreacker.json"
+          "src/main/resources/assets/creative_world/models/item/bedrockbreacker.json",
+          "src/main/java/net/mcreator/creativeworld/item/BedrockbreackerItem.java"
         ]
       },
       "path": "~/Tools"
@@ -1313,8 +1313,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/creativeworld/block/Coalgenerator1Block.java",
-          "src/main/resources/assets/creative_world/models/item/coalgenerator_1.json",
           "src/main/resources/assets/creative_world/models/block/coalgenerator_1.json",
+          "src/main/resources/assets/creative_world/models/item/coalgenerator_1.json",
           "src/main/java/net/mcreator/creativeworld/block/entity/Coalgenerator1BlockEntity.java",
           "src/main/resources/assets/creative_world/blockstates/coalgenerator_1.json"
         ]
@@ -1330,11 +1330,11 @@
       "registry_name": "solarpanel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/solarpanel.json",
-          "src/main/resources/assets/creative_world/blockstates/solarpanel.json",
-          "src/main/resources/assets/creative_world/models/block/solarpanel.json",
           "src/main/java/net/mcreator/creativeworld/block/entity/SolarpanelBlockEntity.java",
-          "src/main/java/net/mcreator/creativeworld/block/SolarpanelBlock.java"
+          "src/main/resources/assets/creative_world/blockstates/solarpanel.json",
+          "src/main/java/net/mcreator/creativeworld/block/SolarpanelBlock.java",
+          "src/main/resources/assets/creative_world/models/block/solarpanel.json",
+          "src/main/resources/assets/creative_world/models/item/solarpanel.json"
         ]
       },
       "path": "~/Mekanisms"
@@ -1380,8 +1380,8 @@
       "registry_name": "fdgdf",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/client/gui/FdgdfScreen.java",
-          "src/main/java/net/mcreator/creativeworld/world/inventory/FdgdfMenu.java"
+          "src/main/java/net/mcreator/creativeworld/world/inventory/FdgdfMenu.java",
+          "src/main/java/net/mcreator/creativeworld/client/gui/FdgdfScreen.java"
         ]
       },
       "path": "~/Mekanisms"
@@ -1552,8 +1552,8 @@
       "registry_name": "fgfhffhghkjkkytwqa",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/client/gui/FgfhffhghkjkkytwqaScreen.java",
-          "src/main/java/net/mcreator/creativeworld/world/inventory/FgfhffhghkjkkytwqaMenu.java"
+          "src/main/java/net/mcreator/creativeworld/world/inventory/FgfhffhghkjkkytwqaMenu.java",
+          "src/main/java/net/mcreator/creativeworld/client/gui/FgfhffhghkjkkytwqaScreen.java"
         ]
       }
     },
@@ -1683,8 +1683,8 @@
       "registry_name": "coppernugget",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/coppernugget.json",
-          "src/main/java/net/mcreator/creativeworld/item/CoppernuggetItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/CoppernuggetItem.java",
+          "src/main/resources/assets/creative_world/models/item/coppernugget.json"
         ]
       },
       "path": "~/Materials/Nuggets"
@@ -1741,8 +1741,8 @@
       "registry_name": "washedcrushedcopperore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/WashedcrushedcopperoreItem.java",
-          "src/main/resources/assets/creative_world/models/item/washedcrushedcopperore.json"
+          "src/main/resources/assets/creative_world/models/item/washedcrushedcopperore.json",
+          "src/main/java/net/mcreator/creativeworld/item/WashedcrushedcopperoreItem.java"
         ]
       },
       "path": "~/Materials/Washed crushed ores"
@@ -1925,8 +1925,8 @@
       "registry_name": "creativemod",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/CreativemodItem.java",
-          "src/main/resources/assets/creative_world/models/item/creativemod.json"
+          "src/main/resources/assets/creative_world/models/item/creativemod.json",
+          "src/main/java/net/mcreator/creativeworld/item/CreativemodItem.java"
         ]
       }
     },
@@ -2044,8 +2044,8 @@
       "registry_name": "tap",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/TapItem.java",
-          "src/main/resources/assets/creative_world/models/item/tap.json"
+          "src/main/resources/assets/creative_world/models/item/tap.json",
+          "src/main/java/net/mcreator/creativeworld/item/TapItem.java"
         ]
       },
       "path": "~/Tools"
@@ -2073,8 +2073,8 @@
       "registry_name": "rubber",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/rubber.json",
-          "src/main/java/net/mcreator/creativeworld/item/RubberItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/RubberItem.java",
+          "src/main/resources/assets/creative_world/models/item/rubber.json"
         ]
       },
       "path": "~/Materials"
@@ -2174,13 +2174,13 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/java/net/mcreator/creativeworld/fluid/types/OilFluidType.java",
           "src/main/resources/assets/creative_world/models/item/oil_bucket.json",
-          "src/main/resources/assets/creative_world/blockstates/oil.json",
-          "src/main/resources/assets/creative_world/models/block/oil.json",
           "src/main/java/net/mcreator/creativeworld/item/OilItem.java",
           "src/main/java/net/mcreator/creativeworld/fluid/OilFluid.java",
-          "src/main/java/net/mcreator/creativeworld/block/OilBlock.java"
+          "src/main/java/net/mcreator/creativeworld/block/OilBlock.java",
+          "src/main/resources/assets/creative_world/blockstates/oil.json",
+          "src/main/resources/assets/creative_world/models/block/oil.json",
+          "src/main/java/net/mcreator/creativeworld/fluid/types/OilFluidType.java"
         ]
       }
     },
@@ -2194,13 +2194,13 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/creative_world/blockstates/gas.json",
           "src/main/java/net/mcreator/creativeworld/fluid/GasFluid.java",
-          "src/main/java/net/mcreator/creativeworld/block/GasBlock.java",
           "src/main/resources/assets/creative_world/models/item/gas_bucket.json",
+          "src/main/java/net/mcreator/creativeworld/block/GasBlock.java",
           "src/main/java/net/mcreator/creativeworld/fluid/types/GasFluidType.java",
+          "src/main/java/net/mcreator/creativeworld/item/GasItem.java",
           "src/main/resources/assets/creative_world/models/block/gas.json",
-          "src/main/java/net/mcreator/creativeworld/item/GasItem.java"
+          "src/main/resources/assets/creative_world/blockstates/gas.json"
         ]
       }
     },
@@ -2363,11 +2363,11 @@
       "registry_name": "fan",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/fan.json",
           "src/main/java/net/mcreator/creativeworld/block/entity/FanBlockEntity.java",
-          "src/main/resources/assets/creative_world/models/block/fan.json",
           "src/main/java/net/mcreator/creativeworld/block/FanBlock.java",
-          "src/main/resources/assets/creative_world/blockstates/fan.json"
+          "src/main/resources/assets/creative_world/blockstates/fan.json",
+          "src/main/resources/assets/creative_world/models/block/fan.json",
+          "src/main/resources/assets/creative_world/models/item/fan.json"
         ]
       },
       "path": "~/Mekanisms"
@@ -2452,11 +2452,11 @@
       "registry_name": "batteryblock",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/creativeworld/block/BatteryblockBlock.java",
           "src/main/resources/assets/creative_world/blockstates/batteryblock.json",
           "src/main/resources/assets/creative_world/models/block/batteryblock.json",
-          "src/main/resources/assets/creative_world/models/item/batteryblock.json",
-          "src/main/java/net/mcreator/creativeworld/block/BatteryblockBlock.java",
-          "src/main/java/net/mcreator/creativeworld/block/entity/BatteryblockBlockEntity.java"
+          "src/main/java/net/mcreator/creativeworld/block/entity/BatteryblockBlockEntity.java",
+          "src/main/resources/assets/creative_world/models/item/batteryblock.json"
         ]
       },
       "path": "~/Mekanisms"
@@ -2581,8 +2581,8 @@
       "registry_name": "bronze_ingot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/BronzeIngotItem.java",
-          "src/main/resources/assets/creative_world/models/item/bronze_ingot.json"
+          "src/main/resources/assets/creative_world/models/item/bronze_ingot.json",
+          "src/main/java/net/mcreator/creativeworld/item/BronzeIngotItem.java"
         ]
       },
       "path": "~/Materials/Ingots"
@@ -2596,9 +2596,9 @@
       "registry_name": "bronze_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/block/BronzeBlockBlock.java",
           "src/main/resources/assets/creative_world/models/item/bronze_block.json",
           "src/main/resources/assets/creative_world/models/block/bronze_block.json",
+          "src/main/java/net/mcreator/creativeworld/block/BronzeBlockBlock.java",
           "src/main/resources/assets/creative_world/blockstates/bronze_block.json"
         ]
       },
@@ -2700,8 +2700,8 @@
       "registry_name": "bronze_shovel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/bronze_shovel.json",
-          "src/main/java/net/mcreator/creativeworld/item/BronzeShovelItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/BronzeShovelItem.java",
+          "src/main/resources/assets/creative_world/models/item/bronze_shovel.json"
         ]
       },
       "path": "~/Materials/Tools"
@@ -2715,8 +2715,8 @@
       "registry_name": "bronze_hoe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/bronze_hoe.json",
-          "src/main/java/net/mcreator/creativeworld/item/BronzeHoeItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/BronzeHoeItem.java",
+          "src/main/resources/assets/creative_world/models/item/bronze_hoe.json"
         ]
       },
       "path": "~/Materials/Tools"
@@ -2804,11 +2804,11 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/creative_world/models/item/bronze_armor_helmet.json",
+          "src/main/resources/assets/creative_world/models/item/bronze_armor_chestplate.json",
           "src/main/resources/assets/creative_world/models/item/bronze_armor_leggings.json",
           "src/main/java/net/mcreator/creativeworld/item/BronzeArmorItem.java",
-          "src/main/resources/assets/creative_world/models/item/bronze_armor_boots.json",
-          "src/main/resources/assets/creative_world/models/item/bronze_armor_chestplate.json"
+          "src/main/resources/assets/creative_world/models/item/bronze_armor_helmet.json",
+          "src/main/resources/assets/creative_world/models/item/bronze_armor_boots.json"
         ]
       },
       "path": "~/Materials/Armors"
@@ -2889,11 +2889,11 @@
       "registry_name": "infinityenergy",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/block/infinityenergy.json",
-          "src/main/resources/assets/creative_world/blockstates/infinityenergy.json",
-          "src/main/resources/assets/creative_world/models/item/infinityenergy.json",
           "src/main/java/net/mcreator/creativeworld/block/InfinityenergyBlock.java",
-          "src/main/java/net/mcreator/creativeworld/block/entity/InfinityenergyBlockEntity.java"
+          "src/main/java/net/mcreator/creativeworld/block/entity/InfinityenergyBlockEntity.java",
+          "src/main/resources/assets/creative_world/models/item/infinityenergy.json",
+          "src/main/resources/assets/creative_world/blockstates/infinityenergy.json",
+          "src/main/resources/assets/creative_world/models/block/infinityenergy.json"
         ]
       },
       "path": "~/Mekanisms"
@@ -3008,8 +3008,8 @@
       "registry_name": "coaldust",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/CoaldustItem.java",
-          "src/main/resources/assets/creative_world/models/item/coaldust.json"
+          "src/main/resources/assets/creative_world/models/item/coaldust.json",
+          "src/main/java/net/mcreator/creativeworld/item/CoaldustItem.java"
         ]
       },
       "path": "~/Materials/Dusts"
@@ -3255,9 +3255,9 @@
       "registry_name": "advencedmachinecase",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/block/advencedmachinecase.json",
-          "src/main/java/net/mcreator/creativeworld/block/AdvencedmachinecaseBlock.java",
           "src/main/resources/assets/creative_world/blockstates/advencedmachinecase.json",
+          "src/main/java/net/mcreator/creativeworld/block/AdvencedmachinecaseBlock.java",
+          "src/main/resources/assets/creative_world/models/block/advencedmachinecase.json",
           "src/main/resources/assets/creative_world/models/item/advencedmachinecase.json"
         ]
       },
@@ -3272,10 +3272,10 @@
       "registry_name": "advencedsolarpanel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/block/advencedsolarpanel.json",
-          "src/main/java/net/mcreator/creativeworld/block/AdvencedsolarpanelBlock.java",
           "src/main/resources/assets/creative_world/blockstates/advencedsolarpanel.json",
-          "src/main/resources/assets/creative_world/models/item/advencedsolarpanel.json"
+          "src/main/resources/assets/creative_world/models/item/advencedsolarpanel.json",
+          "src/main/resources/assets/creative_world/models/block/advencedsolarpanel.json",
+          "src/main/java/net/mcreator/creativeworld/block/AdvencedsolarpanelBlock.java"
         ]
       },
       "path": "~/Mekanisms"
@@ -3289,8 +3289,8 @@
       "registry_name": "creativium_ingot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/CreativiumIngotItem.java",
-          "src/main/resources/assets/creative_world/models/item/creativium_ingot.json"
+          "src/main/resources/assets/creative_world/models/item/creativium_ingot.json",
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumIngotItem.java"
         ]
       },
       "path": "~/Materials/Ingots"
@@ -3304,13 +3304,13 @@
       "registry_name": "creativium_ore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/block/CreativiumOreBlock.java",
           "src/main/resources/assets/creative_world/models/item/creativium_ore.json",
-          "src/main/resources/data/creative_world/worldgen/placed_feature/creativium_ore.json",
-          "src/main/resources/data/creative_world/worldgen/configured_feature/creativium_ore.json",
-          "src/main/resources/assets/creative_world/blockstates/creativium_ore.json",
           "src/main/resources/assets/creative_world/models/block/creativium_ore.json",
-          "src/main/resources/data/creative_world/forge/biome_modifier/creativium_ore_biome_modifier.json"
+          "src/main/resources/data/creative_world/worldgen/configured_feature/creativium_ore.json",
+          "src/main/resources/data/creative_world/forge/biome_modifier/creativium_ore_biome_modifier.json",
+          "src/main/resources/data/creative_world/worldgen/placed_feature/creativium_ore.json",
+          "src/main/java/net/mcreator/creativeworld/block/CreativiumOreBlock.java",
+          "src/main/resources/assets/creative_world/blockstates/creativium_ore.json"
         ]
       },
       "path": "~/Materials/Ores"
@@ -3324,9 +3324,9 @@
       "registry_name": "creativium_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/block/CreativiumBlockBlock.java",
-          "src/main/resources/assets/creative_world/models/item/creativium_block.json",
           "src/main/resources/assets/creative_world/models/block/creativium_block.json",
+          "src/main/resources/assets/creative_world/models/item/creativium_block.json",
+          "src/main/java/net/mcreator/creativeworld/block/CreativiumBlockBlock.java",
           "src/main/resources/assets/creative_world/blockstates/creativium_block.json"
         ]
       },
@@ -3383,8 +3383,8 @@
       "registry_name": "creativium_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/creativium_pickaxe.json",
-          "src/main/java/net/mcreator/creativeworld/item/CreativiumPickaxeItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumPickaxeItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativium_pickaxe.json"
         ]
       },
       "path": "~/Materials/Tools"
@@ -3413,8 +3413,8 @@
       "registry_name": "creativium_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/CreativiumSwordItem.java",
-          "src/main/resources/assets/creative_world/models/item/creativium_sword.json"
+          "src/main/resources/assets/creative_world/models/item/creativium_sword.json",
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumSwordItem.java"
         ]
       },
       "path": "~/Materials/Tools"
@@ -3428,8 +3428,8 @@
       "registry_name": "creativium_shovel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/creativium_shovel.json",
-          "src/main/java/net/mcreator/creativeworld/item/CreativiumShovelItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumShovelItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativium_shovel.json"
         ]
       },
       "path": "~/Materials/Tools"
@@ -3532,10 +3532,10 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/creative_world/models/item/creativium_armor_boots.json",
           "src/main/resources/assets/creative_world/models/item/creativium_armor_chestplate.json",
-          "src/main/java/net/mcreator/creativeworld/item/CreativiumArmorItem.java",
           "src/main/resources/assets/creative_world/models/item/creativium_armor_leggings.json",
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumArmorItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativium_armor_boots.json",
           "src/main/resources/assets/creative_world/models/item/creativium_armor_helmet.json"
         ]
       },
@@ -3621,13 +3621,13 @@
       "registry_name": "accumulatium_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/accumulatium_ore.json",
+          "src/main/resources/data/creative_world/worldgen/configured_feature/accumulatium_ore.json",
+          "src/main/resources/data/creative_world/forge/biome_modifier/accumulatium_ore_biome_modifier.json",
           "src/main/resources/assets/creative_world/blockstates/accumulatium_ore.json",
+          "src/main/resources/data/creative_world/worldgen/placed_feature/accumulatium_ore.json",
           "src/main/resources/assets/creative_world/models/block/accumulatium_ore.json",
           "src/main/java/net/mcreator/creativeworld/block/AccumulatiumOreBlock.java",
-          "src/main/resources/data/creative_world/forge/biome_modifier/accumulatium_ore_biome_modifier.json",
-          "src/main/resources/data/creative_world/worldgen/configured_feature/accumulatium_ore.json",
-          "src/main/resources/data/creative_world/worldgen/placed_feature/accumulatium_ore.json"
+          "src/main/resources/assets/creative_world/models/item/accumulatium_ore.json"
         ]
       },
       "path": "~/Materials/Ores"
@@ -3642,9 +3642,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/creative_world/blockstates/accumulatium_block.json",
-          "src/main/resources/assets/creative_world/models/block/accumulatium_block.json",
+          "src/main/java/net/mcreator/creativeworld/block/AccumulatiumBlockBlock.java",
           "src/main/resources/assets/creative_world/models/item/accumulatium_block.json",
-          "src/main/java/net/mcreator/creativeworld/block/AccumulatiumBlockBlock.java"
+          "src/main/resources/assets/creative_world/models/block/accumulatium_block.json"
         ]
       },
       "path": "~/Materials/Blocks"
@@ -3700,8 +3700,8 @@
       "registry_name": "accumulatium_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/accumulatium_pickaxe.json",
-          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumPickaxeItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumPickaxeItem.java",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_pickaxe.json"
         ]
       },
       "path": "~/Materials/Tools"
@@ -3715,8 +3715,8 @@
       "registry_name": "accumulatium_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumAxeItem.java",
-          "src/main/resources/assets/creative_world/models/item/accumulatium_axe.json"
+          "src/main/resources/assets/creative_world/models/item/accumulatium_axe.json",
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumAxeItem.java"
         ]
       },
       "path": "~/Materials/Tools"
@@ -3730,8 +3730,8 @@
       "registry_name": "accumulatium_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumSwordItem.java",
-          "src/main/resources/assets/creative_world/models/item/accumulatium_sword.json"
+          "src/main/resources/assets/creative_world/models/item/accumulatium_sword.json",
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumSwordItem.java"
         ]
       },
       "path": "~/Materials/Tools"
@@ -3745,8 +3745,8 @@
       "registry_name": "accumulatium_shovel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/accumulatium_shovel.json",
-          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumShovelItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumShovelItem.java",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_shovel.json"
         ]
       },
       "path": "~/Materials/Tools"
@@ -3760,8 +3760,8 @@
       "registry_name": "accumulatium_hoe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumHoeItem.java",
-          "src/main/resources/assets/creative_world/models/item/accumulatium_hoe.json"
+          "src/main/resources/assets/creative_world/models/item/accumulatium_hoe.json",
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumHoeItem.java"
         ]
       },
       "path": "~/Materials/Tools"
@@ -3849,11 +3849,11 @@
         "eb": true,
         "ec": true,
         "files": [
+          "src/main/resources/assets/creative_world/models/item/accumulatium_armor_boots.json",
+          "src/main/resources/assets/creative_world/models/item/accumulatium_armor_chestplate.json",
           "src/main/resources/assets/creative_world/models/item/accumulatium_armor_leggings.json",
           "src/main/resources/assets/creative_world/models/item/accumulatium_armor_helmet.json",
-          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumArmorItem.java",
-          "src/main/resources/assets/creative_world/models/item/accumulatium_armor_boots.json",
-          "src/main/resources/assets/creative_world/models/item/accumulatium_armor_chestplate.json"
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumArmorItem.java"
         ]
       },
       "path": "~/Materials/Armors"
@@ -3923,8 +3923,8 @@
       "registry_name": "creativiumnugget",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/creativiumnugget.json",
-          "src/main/java/net/mcreator/creativeworld/item/CreativiumnuggetItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/CreativiumnuggetItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativiumnugget.json"
         ]
       },
       "path": "~/Materials/Nuggets"
@@ -3966,8 +3966,8 @@
       "registry_name": "accumulatiumnugget",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumnuggetItem.java",
-          "src/main/resources/assets/creative_world/models/item/accumulatiumnugget.json"
+          "src/main/resources/assets/creative_world/models/item/accumulatiumnugget.json",
+          "src/main/java/net/mcreator/creativeworld/item/AccumulatiumnuggetItem.java"
         ]
       },
       "path": "~/Materials/Nuggets"
@@ -4080,8 +4080,8 @@
       "registry_name": "thecoreofinvulnerability",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/ThecoreofinvulnerabilityItem.java",
-          "src/main/resources/assets/creative_world/models/item/thecoreofinvulnerability.json"
+          "src/main/resources/assets/creative_world/models/item/thecoreofinvulnerability.json",
+          "src/main/java/net/mcreator/creativeworld/item/ThecoreofinvulnerabilityItem.java"
         ]
       }
     },
@@ -4153,12 +4153,12 @@
       "metadata": {
         "files": [
           "src/main/resources/data/creative_world/forge/biome_modifier/titan_ore_biome_modifier.json",
-          "src/main/java/net/mcreator/creativeworld/block/TitanOreBlock.java",
+          "src/main/resources/assets/creative_world/blockstates/titan_ore.json",
           "src/main/resources/assets/creative_world/models/item/titan_ore.json",
+          "src/main/java/net/mcreator/creativeworld/block/TitanOreBlock.java",
           "src/main/resources/assets/creative_world/models/block/titan_ore.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/titan_ore.json",
-          "src/main/resources/data/creative_world/worldgen/configured_feature/titan_ore.json",
-          "src/main/resources/assets/creative_world/blockstates/titan_ore.json"
+          "src/main/resources/data/creative_world/worldgen/configured_feature/titan_ore.json"
         ]
       },
       "path": "~/Materials/Ores"
@@ -4172,10 +4172,10 @@
       "registry_name": "titan_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/block/titan_block.json",
-          "src/main/resources/assets/creative_world/blockstates/titan_block.json",
           "src/main/java/net/mcreator/creativeworld/block/TitanBlockBlock.java",
-          "src/main/resources/assets/creative_world/models/item/titan_block.json"
+          "src/main/resources/assets/creative_world/models/item/titan_block.json",
+          "src/main/resources/assets/creative_world/blockstates/titan_block.json",
+          "src/main/resources/assets/creative_world/models/block/titan_block.json"
         ]
       },
       "path": "~/Materials/Blocks"
@@ -4246,8 +4246,8 @@
       "registry_name": "titan_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/TitanAxeItem.java",
-          "src/main/resources/assets/creative_world/models/item/titan_axe.json"
+          "src/main/resources/assets/creative_world/models/item/titan_axe.json",
+          "src/main/java/net/mcreator/creativeworld/item/TitanAxeItem.java"
         ]
       },
       "path": "~/Materials/Tools"
@@ -4261,8 +4261,8 @@
       "registry_name": "titan_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/titan_sword.json",
-          "src/main/java/net/mcreator/creativeworld/item/TitanSwordItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/TitanSwordItem.java",
+          "src/main/resources/assets/creative_world/models/item/titan_sword.json"
         ]
       },
       "path": "~/Materials/Tools"
@@ -4276,8 +4276,8 @@
       "registry_name": "titan_shovel",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/TitanShovelItem.java",
-          "src/main/resources/assets/creative_world/models/item/titan_shovel.json"
+          "src/main/resources/assets/creative_world/models/item/titan_shovel.json",
+          "src/main/java/net/mcreator/creativeworld/item/TitanShovelItem.java"
         ]
       },
       "path": "~/Materials/Tools"
@@ -4291,8 +4291,8 @@
       "registry_name": "titan_hoe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/TitanHoeItem.java",
-          "src/main/resources/assets/creative_world/models/item/titan_hoe.json"
+          "src/main/resources/assets/creative_world/models/item/titan_hoe.json",
+          "src/main/java/net/mcreator/creativeworld/item/TitanHoeItem.java"
         ]
       },
       "path": "~/Materials/Tools"
@@ -4380,11 +4380,11 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/creative_world/models/item/titan_armor_leggings.json",
           "src/main/resources/assets/creative_world/models/item/titan_armor_helmet.json",
           "src/main/resources/assets/creative_world/models/item/titan_armor_boots.json",
-          "src/main/java/net/mcreator/creativeworld/item/TitanArmorItem.java",
-          "src/main/resources/assets/creative_world/models/item/titan_armor_chestplate.json"
+          "src/main/resources/assets/creative_world/models/item/titan_armor_chestplate.json",
+          "src/main/resources/assets/creative_world/models/item/titan_armor_leggings.json",
+          "src/main/java/net/mcreator/creativeworld/item/TitanArmorItem.java"
         ]
       },
       "path": "~/Materials/Armors"
@@ -4454,8 +4454,8 @@
       "registry_name": "titanplate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/TitanplateItem.java",
-          "src/main/resources/assets/creative_world/models/item/titanplate.json"
+          "src/main/resources/assets/creative_world/models/item/titanplate.json",
+          "src/main/java/net/mcreator/creativeworld/item/TitanplateItem.java"
         ]
       },
       "path": "~/Materials/Plates"
@@ -4502,10 +4502,10 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/creative_world/models/item/composite_plate_armor_armor_helmet.json",
           "src/main/resources/assets/creative_world/models/item/composite_plate_armor_armor_boots.json",
-          "src/main/resources/assets/creative_world/models/item/composite_plate_armor_armor_chestplate.json",
+          "src/main/resources/assets/creative_world/models/item/composite_plate_armor_armor_helmet.json",
           "src/main/resources/assets/creative_world/models/item/composite_plate_armor_armor_leggings.json",
+          "src/main/resources/assets/creative_world/models/item/composite_plate_armor_armor_chestplate.json",
           "src/main/java/net/mcreator/creativeworld/item/Composite_plate_armorArmorItem.java"
         ]
       },
@@ -4606,8 +4606,8 @@
       "registry_name": "composite_plate_tool_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolSwordItem.java",
-          "src/main/resources/assets/creative_world/models/item/composite_plate_tool_sword.json"
+          "src/main/resources/assets/creative_world/models/item/composite_plate_tool_sword.json",
+          "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolSwordItem.java"
         ]
       },
       "path": "~/Materials/Tools"
@@ -4621,8 +4621,8 @@
       "registry_name": "composite_plate_tool_shovel",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolShovelItem.java",
-          "src/main/resources/assets/creative_world/models/item/composite_plate_tool_shovel.json"
+          "src/main/resources/assets/creative_world/models/item/composite_plate_tool_shovel.json",
+          "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolShovelItem.java"
         ]
       },
       "path": "~/Materials/Tools"
@@ -4721,8 +4721,8 @@
       "registry_name": "particlebinder",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/ParticlebinderItem.java",
-          "src/main/resources/assets/creative_world/models/item/particlebinder.json"
+          "src/main/resources/assets/creative_world/models/item/particlebinder.json",
+          "src/main/java/net/mcreator/creativeworld/item/ParticlebinderItem.java"
         ]
       },
       "path": "~/Tools"
@@ -4750,8 +4750,8 @@
       "registry_name": "stationaryparticlebinder",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/block/stationaryparticlebinder.json",
           "src/main/java/net/mcreator/creativeworld/block/StationaryparticlebinderBlock.java",
+          "src/main/resources/assets/creative_world/models/block/stationaryparticlebinder.json",
           "src/main/resources/assets/creative_world/models/item/stationaryparticlebinder.json",
           "src/main/resources/assets/creative_world/blockstates/stationaryparticlebinder.json"
         ]
@@ -4780,9 +4780,9 @@
       "registry_name": "quantumteleporterblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/blockstates/quantumteleporterblock.json",
           "src/main/resources/assets/creative_world/models/block/quantumteleporterblock.json",
           "src/main/resources/assets/creative_world/models/item/quantumteleporterblock.json",
+          "src/main/resources/assets/creative_world/blockstates/quantumteleporterblock.json",
           "src/main/java/net/mcreator/creativeworld/block/QuantumteleporterblockBlock.java"
         ]
       }
@@ -4796,10 +4796,10 @@
       "registry_name": "quantumteleporterblock_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/block/quantumteleporterblock_2.json",
-          "src/main/resources/assets/creative_world/blockstates/quantumteleporterblock_2.json",
+          "src/main/resources/assets/creative_world/models/item/quantumteleporterblock_2.json",
           "src/main/java/net/mcreator/creativeworld/block/Quantumteleporterblock2Block.java",
-          "src/main/resources/assets/creative_world/models/item/quantumteleporterblock_2.json"
+          "src/main/resources/assets/creative_world/blockstates/quantumteleporterblock_2.json",
+          "src/main/resources/assets/creative_world/models/block/quantumteleporterblock_2.json"
         ]
       }
     },
@@ -4974,8 +4974,8 @@
       "registry_name": "drill",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/drill.json",
-          "src/main/java/net/mcreator/creativeworld/item/DrillItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/DrillItem.java",
+          "src/main/resources/assets/creative_world/models/item/drill.json"
         ]
       },
       "path": "~/Tools/Drills"
@@ -5102,8 +5102,8 @@
       "registry_name": "reel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/reel.json",
-          "src/main/java/net/mcreator/creativeworld/item/ReelItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/ReelItem.java",
+          "src/main/resources/assets/creative_world/models/item/reel.json"
         ]
       },
       "path": "~/Components"
@@ -5117,8 +5117,8 @@
       "registry_name": "creativereel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/creativereel.json",
-          "src/main/java/net/mcreator/creativeworld/item/CreativereelItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/CreativereelItem.java",
+          "src/main/resources/assets/creative_world/models/item/creativereel.json"
         ]
       },
       "path": "~/Components"
@@ -5207,10 +5207,10 @@
       "registry_name": "resintreesapling",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/block/ResintreesaplingBlock.java",
-          "src/main/resources/assets/creative_world/models/item/resintreesapling.json",
           "src/main/resources/assets/creative_world/models/block/resintreesapling.json",
-          "src/main/resources/assets/creative_world/blockstates/resintreesapling.json"
+          "src/main/resources/assets/creative_world/blockstates/resintreesapling.json",
+          "src/main/java/net/mcreator/creativeworld/block/ResintreesaplingBlock.java",
+          "src/main/resources/assets/creative_world/models/item/resintreesapling.json"
         ]
       },
       "path": "~/ResinTree"
@@ -5342,9 +5342,9 @@
       "registry_name": "rubbertree_feature",
       "metadata": {
         "files": [
+          "src/main/resources/data/creative_world/forge/biome_modifier/rubbertree_feature_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/rubbertree_feature.json",
-          "src/main/resources/data/creative_world/worldgen/placed_feature/rubbertree_feature.json",
-          "src/main/resources/data/creative_world/forge/biome_modifier/rubbertree_feature_biome_modifier.json"
+          "src/main/resources/data/creative_world/worldgen/placed_feature/rubbertree_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -5406,9 +5406,9 @@
       "registry_name": "mediumgasmine_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/creative_world/worldgen/configured_feature/mediumgasmine_feature.json",
           "src/main/resources/data/creative_world/forge/biome_modifier/mediumgasmine_feature_biome_modifier.json",
-          "src/main/resources/data/creative_world/worldgen/placed_feature/mediumgasmine_feature.json"
+          "src/main/resources/data/creative_world/worldgen/placed_feature/mediumgasmine_feature.json",
+          "src/main/resources/data/creative_world/worldgen/configured_feature/mediumgasmine_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -5452,9 +5452,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/creative_world/models/block/bug.json",
-          "src/main/resources/assets/creative_world/blockstates/bug.json",
+          "src/main/resources/assets/creative_world/models/item/bug.json",
           "src/main/java/net/mcreator/creativeworld/block/BUGBlock.java",
-          "src/main/resources/assets/creative_world/models/item/bug.json"
+          "src/main/resources/assets/creative_world/blockstates/bug.json"
         ]
       },
       "path": "~/Legacy"
@@ -5539,9 +5539,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/creativeworld/block/CopperWireBlock.java",
-          "src/main/resources/assets/creative_world/blockstates/copper_wire.json",
           "src/main/resources/assets/creative_world/models/block/copper_wire.json",
-          "src/main/resources/assets/creative_world/models/item/copper_wire.json"
+          "src/main/resources/assets/creative_world/models/item/copper_wire.json",
+          "src/main/resources/assets/creative_world/blockstates/copper_wire.json"
         ]
       },
       "path": "~/Wires"
@@ -5555,10 +5555,10 @@
       "registry_name": "insulated_copper_wire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/blockstates/insulated_copper_wire.json",
-          "src/main/resources/assets/creative_world/models/block/insulated_copper_wire.json",
           "src/main/resources/assets/creative_world/models/item/insulated_copper_wire.json",
-          "src/main/java/net/mcreator/creativeworld/block/InsulatedCopperWireBlock.java"
+          "src/main/java/net/mcreator/creativeworld/block/InsulatedCopperWireBlock.java",
+          "src/main/resources/assets/creative_world/models/block/insulated_copper_wire.json",
+          "src/main/resources/assets/creative_world/blockstates/insulated_copper_wire.json"
         ]
       },
       "path": "~/Wires"
@@ -5697,8 +5697,8 @@
       "registry_name": "a_large_bucket_of_fluid_9",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/a_large_bucket_of_fluid_9.json",
-          "src/main/java/net/mcreator/creativeworld/item/ALargeBucketOfFluid9Item.java"
+          "src/main/java/net/mcreator/creativeworld/item/ALargeBucketOfFluid9Item.java",
+          "src/main/resources/assets/creative_world/models/item/a_large_bucket_of_fluid_9.json"
         ]
       },
       "path": "~/LargeBucket"
@@ -5794,8 +5794,8 @@
       "registry_name": "battrey_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/item/Battrey1Item.java",
-          "src/main/resources/assets/creative_world/models/item/battrey_1.json"
+          "src/main/resources/assets/creative_world/models/item/battrey_1.json",
+          "src/main/java/net/mcreator/creativeworld/item/Battrey1Item.java"
         ]
       },
       "path": "~/Components/Battery"
@@ -5824,8 +5824,8 @@
       "registry_name": "battrey_3",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/battrey_3.json",
-          "src/main/java/net/mcreator/creativeworld/item/Battrey3Item.java"
+          "src/main/java/net/mcreator/creativeworld/item/Battrey3Item.java",
+          "src/main/resources/assets/creative_world/models/item/battrey_3.json"
         ]
       },
       "path": "~/Components/Battery"
@@ -5964,8 +5964,8 @@
       "registry_name": "creative_electric_motor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/creative_world/models/item/creative_electric_motor.json",
-          "src/main/java/net/mcreator/creativeworld/item/CreativeElectricMotorItem.java"
+          "src/main/java/net/mcreator/creativeworld/item/CreativeElectricMotorItem.java",
+          "src/main/resources/assets/creative_world/models/item/creative_electric_motor.json"
         ]
       },
       "path": "~/Components"
@@ -6151,6 +6151,20 @@
         "files": [],
         "type": "logic"
       }
+    },
+    {
+      "name": "MyFirstDrill",
+      "type": "achievement",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "my_first_drill",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/advancements/my_first_drill.json"
+        ]
+      },
+      "path": "~/Achievements"
     }
   ],
   "variable_elements": [
@@ -6284,13 +6298,14 @@
       "block.creative_world.accumulatium_ore": "Аккумулятивная руда",
       "item.creative_world.bronzeplate": "Бронзовая пластина",
       "item.creative_world.composite_plate_tool_sword": "Композитное_платье_тул Меч",
-      "item.creative_world.creativium_pickaxe": "Креативная кирка",
       "item.creative_world.thecoreofmatter": "Ядро материи",
+      "item.creative_world.creativium_pickaxe": "Креативная кирка",
       "block.creative_world.accumulatium_block": "Блок аккумулятиума",
       "item.creative_world.creativium_armor_chestplate": "Креативиумный нагрудник",
       "item_group.creative_world.creativeworldcombat": "Creative world: бой",
-      "advancements.bedrock.descr": "Бедрок не может быть сломан.",
+      "advancements.my_first_drill.title": "My First Drill",
       "advancements.infinity.descr": "Вода?",
+      "advancements.bedrock.descr": "Бедрок не может быть сломан.",
       "item.creative_world.tinplate": "Жестяная тарелка",
       "item.creative_world.composite_plate_armor_armor_chestplate": "Композитное_платье_бронетанковый нагрудник",
       "item.creative_world.bronze_hoe": "Бронзовая мотыга",
@@ -6323,8 +6338,8 @@
       "item.creative_world.creativium_shovel": "Лопата для творчества",
       "block.creative_world.coalgenerator": "Угольный генератор",
       "block.creative_world.advencedmachinecase": "Усовершенствованный корпус машины",
-      "item.creative_world.creativedrill": "Творческое упражнение",
       "item.creative_world.alargebucketofwater_9": "Большое ведро с водой",
+      "item.creative_world.creativedrill": "Творческое упражнение",
       "item.creative_world.copper_sword": "Медный меч",
       "item.creative_world.composite_plate_tool_hoe": "Composite_plate_tool Мотыга",
       "item.creative_world.electric_motor": "Electric Motor",
@@ -6336,8 +6351,8 @@
       "item.creative_world.tin_ingot": "Слиток олова",
       "item.creative_world.ironhammer": "Железный молоток",
       "item.creative_world.copper_armor_boots": "Медные сапоги",
-      "item.creative_world.advanceddrill": "Усовершенствованная дрель",
       "item.creative_world.copper_pickaxe": "Медная кирка",
+      "item.creative_world.advanceddrill": "Усовершенствованная дрель",
       "block.creative_world.crusher": "Дробилка",
       "item.creative_world.alargebucket": "Большое ведро",
       "itemGroup.tabcreativeworldtools": "Creativeworldtools",
@@ -6428,6 +6443,7 @@
       "item.creative_world.titan_sword": "Меч титана",
       "item.creative_world.creatingcore": "Создание ядра",
       "item.creative_world.titan_pickaxe": "Титановая кирка",
+      "advancements.my_first_drill.descr": "Craft drill",
       "item.creative_world.reel": "Reel",
       "item.creative_world.tin_armor_boots": "Жестяные сапоги",
       "block.creative_world.tin_ore": "Оловянная руда",
@@ -6481,13 +6497,14 @@
       "block.creative_world.accumulatium_ore": "Accumulatium Ore",
       "item.creative_world.bronzeplate": "Bronze plate",
       "item.creative_world.composite_plate_tool_sword": "Composite_plate_tool Sword",
-      "item.creative_world.creativium_pickaxe": "Creativium Pickaxe",
       "item.creative_world.thecoreofmatter": "The core of matter",
+      "item.creative_world.creativium_pickaxe": "Creativium Pickaxe",
       "block.creative_world.accumulatium_block": "Block of Accumulatium",
       "item.creative_world.creativium_armor_chestplate": "Creativium Chestplate",
       "item_group.creative_world.creativeworldcombat": "Creative world: combat",
-      "advancements.infinity.descr": "water?",
+      "advancements.my_first_drill.title": "My First Drill",
       "advancements.bedrock.descr": "The bedrock cannot be broken",
+      "advancements.infinity.descr": "water?",
       "item.creative_world.tinplate": "Tin plate",
       "item.creative_world.bronze_hoe": "Bronze Hoe",
       "item.creative_world.composite_plate_armor_armor_chestplate": "Composite_plate_armor Chestplate",
@@ -6521,21 +6538,21 @@
       "item.creative_world.creativium_shovel": "Creativium Shovel",
       "block.creative_world.coalgenerator": "Coal generator",
       "block.creative_world.advencedmachinecase": "Advenced machine case",
-      "item.creative_world.alargebucketofwater_9": "A large bucket of water",
       "item.creative_world.creativedrill": "Creative drill",
+      "item.creative_world.alargebucketofwater_9": "A large bucket of water",
       "item.creative_world.copper_sword": "Copper Sword",
       "item.creative_world.composite_plate_tool_hoe": "Composite_plate_tool Hoe",
       "item.creative_world.electric_motor": "Electric Motor",
       "block.creative_world.rsinlogwithresin": "Rubber tree log with rubber",
-      "advancements.whatisit.descr": "craft the sdfghn",
+      "advancements.whatisit.descr": "craft the core of the formation",
       "block.creative_world.resin_fence": "Rubber tree fence",
       "item.creative_world.creativium_axe": "Creativium Axe",
       "item.creative_world.composite_plate_armor_armor_boots": "Composite_plate_armor Boots",
       "item.creative_world.tin_ingot": "Tin ingot",
       "item.creative_world.ironhammer": "Iron hammer",
       "item.creative_world.copper_armor_boots": "Copper Boots",
-      "item.creative_world.copper_pickaxe": "Copper Pickaxe",
       "item.creative_world.advanceddrill": "Advanced drill",
+      "item.creative_world.copper_pickaxe": "Copper Pickaxe",
       "block.creative_world.crusher": "Crusher",
       "item.creative_world.alargebucket": "A large bucket",
       "itemGroup.tabcreativeworldtools": "Creative world: tools",
@@ -6626,6 +6643,7 @@
       "item.creative_world.titan_sword": "Titan Sword",
       "item.creative_world.creatingcore": "Creating core",
       "item.creative_world.titan_pickaxe": "Titan Pickaxe",
+      "advancements.my_first_drill.descr": "Craft drill",
       "item.creative_world.reel": "Reel",
       "item.creative_world.tin_armor_boots": "Tin Boots",
       "block.creative_world.tin_ore": "Tin Ore",

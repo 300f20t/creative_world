@@ -49,8 +49,6 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/imgonline-com-ua-transparent-backgr-otc7jv5tgcy9qio.png"), this.leftPos + 96, this.topPos + 16, 0, 0, 50, 57, 50, 57);
-
 		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/hdugfbg.png"), this.leftPos + 51, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
 		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/gui_element_1_1.png"), this.leftPos + -14, this.topPos + 0, 0, 0, 16, 16, 16, 16);

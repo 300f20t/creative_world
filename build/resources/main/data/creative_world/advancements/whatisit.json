@@ -2,7 +2,7 @@
   "display": {
     "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "item": "creative_world:deleted_mod_element"
+      "item": "creative_world:thecoreoftheformation"
     },
     "title": {
       "translate": "advancements.whatisit.title"
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": [
-              "creative_world:deleted_mod_element"
+              "creative_world:thecoreoftheformation"
             ],
             "count": {
               "min": 1,

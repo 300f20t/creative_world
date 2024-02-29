@@ -1,39 +1,36 @@
 {
   "display": {
     "icon": {
-      "item": "creative_world:creatingcore"
+      "item": "creative_world:drill"
     },
     "title": {
-      "translate": "advancements.core.title"
+      "translate": "advancements.my_first_drill.title"
     },
     "description": {
-      "translate": "advancements.core.descr"
+      "translate": "advancements.my_first_drill.descr"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "core": {
+    "my_first_drill": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "creative_world:creatingcore"
+              "creative_world:drill"
             ],
             "count": {
               "min": 1,
-              "max": 64
+              "max": 1
             }
           }
         ]
       }
     }
   },
-  "rewards": {
-    "experience": 10
-  },
-  "parent": "creative_world:whatisit"
+  "parent": "creative_world:creativeworld"
 }
