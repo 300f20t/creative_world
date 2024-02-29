@@ -1,0 +1,16 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "crushing",
+    "result": {
+      "value": "CUSTOM:Crushedcopperore"
+    },
+    "count": 2,
+    "ingredients": [
+      {
+        "value": "Items.RAW_COPPER"
+      }
+    ]
+  }
+}

@@ -13,7 +13,7 @@ public class AdvancedelectricjetpackSobytiieTaktovKirasyProcedure {
 			_player.getAbilities().mayfly = true;
 			_player.onUpdateAbilities();
 		}
-		if (!entity.onGround()) {
+		if (entity instanceof Player player && player.getAbilities().flying) {
 			{
 				ItemStack _ist = itemstack;
 				if (_ist.hurt(1, RandomSource.create(), null)) {

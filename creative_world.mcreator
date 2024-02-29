@@ -1438,30 +1438,6 @@
       "path": "~/Mekanisms"
     },
     {
-      "name": "CrusherObnovitTakt",
-      "type": "procedure",
-      "sortid": 188,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crusher_obnovit_takt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/CrusherObnovitTaktProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mekanisms"
-    },
-    {
       "name": "Defdf",
       "type": "recipe",
       "sortid": 189,
@@ -3563,7 +3539,7 @@
           "src/main/resources/assets/creative_world/models/item/creativium_armor_helmet.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Materials/Armors"
     },
     {
       "name": "CreativiumArmorHelmetRecipe",
@@ -5042,8 +5018,8 @@
       "locked_code": false,
       "registry_name": "allowcreativemode",
       "metadata": {
-        "type": "logic",
-        "files": []
+        "files": [],
+        "type": "logic"
       }
     },
     {
@@ -5270,30 +5246,6 @@
         ]
       },
       "path": "~/ResinTree"
-    },
-    {
-      "name": "CrusherWork",
-      "type": "procedure",
-      "sortid": 364,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crusher_work",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/CrusherWorkProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mekanisms"
     },
     {
       "name": "SetWorldIndex",
@@ -6115,6 +6067,90 @@
         ]
       },
       "path": "~/Components"
+    },
+    {
+      "name": "Crushing",
+      "type": "jeirecipetype",
+      "sortid": 402,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crushing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/jei_recipes/CrushingRecipe.java",
+          "src/main/java/net/mcreator/creativeworld/jei_recipes/CrushingRecipeCategory.java"
+        ]
+      },
+      "path": "~/JEI"
+    },
+    {
+      "name": "TinCrushing",
+      "type": "jeirecipe",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tin_crushing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/tin_crushing.json"
+        ]
+      },
+      "path": "~/JEI"
+    },
+    {
+      "name": "FdgdfKazhdyiTikPokaIntierfieisOtkryt",
+      "type": "procedure",
+      "sortid": 404,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fdgdf_kazhdyi_tik_poka_intierfieis_otkryt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/FdgdfKazhdyiTikPokaIntierfieisOtkrytProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Mekanisms"
+    },
+    {
+      "name": "IronCrushing",
+      "type": "jeirecipe",
+      "sortid": 405,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_crushing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/iron_crushing.json"
+        ]
+      },
+      "path": "~/JEI"
+    },
+    {
+      "name": "CopperCrushing",
+      "type": "jeirecipe",
+      "sortid": 406,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_crushing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/copper_crushing.json"
+        ]
+      },
+      "path": "~/JEI"
+    },
+    {
+      "name": "AllowCheatItems",
+      "type": "gamerule",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allow_cheat_items",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
     }
   ],
   "variable_elements": [
@@ -6309,6 +6345,7 @@
       "item.creative_world.creativium_armor_boots": "Креативиумные ботинки",
       "block.creative_world.resintreesapling": "Сажанец каучукового дерева",
       "item.creative_world.thecoreofinvulnerability": "Принцип неуязвимости",
+      "gamerule.allowCheatItems": "Allow cheat items",
       "item.creative_world.a_large_bucket_of_fluid_9": "Большое ведро с жидкостью",
       "item.creative_world.particlebinder": "Связующее для частиц",
       "item.creative_world.rubber": "Резинка",
@@ -6352,6 +6389,7 @@
       "block.creative_world.titan_ore": "Титановая руда",
       "item.creative_world.accumulatium_armor_leggings": "Аккумулятиумные поножи",
       "item.creative_world.bronze_axe": "Бронзовый топор",
+      "gamerule.allowCheatItems.description": "allow use cheat item",
       "item.creative_world.accumulatium_axe": "Аккумулятиумный топор",
       "item.creative_world.accumulatium_armor_helmet": "Аккумулятиумный шлем",
       "item.creative_world.titan_armor_boots": "Титановые сапоги",
@@ -6505,6 +6543,7 @@
       "item.creative_world.creativium_armor_boots": "Creativium Boots",
       "block.creative_world.resintreesapling": "Resintreesapling",
       "item.creative_world.thecoreofinvulnerability": "The core of invulnerability",
+      "gamerule.allowCheatItems": "Allow cheat items",
       "item.creative_world.a_large_bucket_of_fluid_9": "A Large Bucket Of Fluid 9",
       "item.creative_world.particlebinder": "Particle binder",
       "item.creative_world.rubber": "Rubber",
@@ -6548,6 +6587,7 @@
       "block.creative_world.titan_ore": "Titan Ore",
       "item.creative_world.accumulatium_armor_leggings": "Accumulatium Leggings",
       "item.creative_world.bronze_axe": "Bronze Axe",
+      "gamerule.allowCheatItems.description": "allow use cheat item",
       "item.creative_world.accumulatium_axe": "Accumulatium Axe",
       "item.creative_world.accumulatium_armor_helmet": "Accumulatium Helmet",
       "item.creative_world.titan_armor_boots": "Titan Boots",
@@ -6734,13 +6774,17 @@
       {
         "name": "Jetpacks",
         "children": []
+      },
+      {
+        "name": "JEI",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "creative_world",
-    "modName": "creative world",
-    "version": "0.2.4alpha_2",
+    "modName": "Creative world",
+    "version": "0.2.4.2_alpha",
     "description": "This is Alpha!",
     "author": "300f20t, MCreator.",
     "websiteURL": "https://mcreator.net",

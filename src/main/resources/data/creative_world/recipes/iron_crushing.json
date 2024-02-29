@@ -1,0 +1,12 @@
+{
+  "type": "creative_world:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_iron"
+    }
+  ],
+  "output": {
+    "item": "creative_world:crushedironore",
+    "count": 2
+  }
+}

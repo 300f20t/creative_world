@@ -22,7 +22,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.creativeworld.procedures.CrusherWorkProcedure;
+import net.mcreator.creativeworld.procedures.FdgdfKazhdyiTikPokaIntierfieisOtkrytProcedure;
 import net.mcreator.creativeworld.init.CreativeWorldModMenus;
 
 import java.util.function.Supplier;
@@ -249,7 +249,7 @@ public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Int
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			CrusherWorkProcedure.execute(world, entity);
+			FdgdfKazhdyiTikPokaIntierfieisOtkrytProcedure.execute();
 		}
 	}
 }

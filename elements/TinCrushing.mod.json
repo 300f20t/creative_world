@@ -1,0 +1,16 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "crushing",
+    "result": {
+      "value": "CUSTOM:Crushedtinore"
+    },
+    "count": 2,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Rawtin"
+      }
+    ]
+  }
+}

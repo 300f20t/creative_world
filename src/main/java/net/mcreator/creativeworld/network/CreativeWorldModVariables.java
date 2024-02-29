@@ -33,9 +33,15 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.creativeworld.CreativeWorldMod;
 
 import java.util.function.Supplier;
+import java.util.List;
+import java.util.ArrayList;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CreativeWorldModVariables {
+	public static List<Object> itemsInCrusherOutput = new ArrayList<>();
+	public static List<Object> crusherPositionX = new ArrayList<>();
+	public static List<Object> crusherPositionY = new ArrayList<>();
+	public static List<Object> crusherPositionZ = new ArrayList<>();
 	public static double worldIndex = 0;
 
 	@SubscribeEvent
