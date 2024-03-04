@@ -6,6 +6,6 @@ run/
 
 .mcreator/
 
-# ignore fabric cache
+# ignore .gradle
 
-.gradle/loom-cache/
+.gradle/
