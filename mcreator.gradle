@@ -1,14 +1,4 @@
 repositories {
-    maven { url 'https://maven.blamejared.com' }
-}
-
-dependencies {
-    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-84-FORGE:api")
-    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-84-FORGE")
-}
-
-
-repositories {
   maven {
     name = "Progwml6's maven"
     url = "https://dvs1.progwml6.com/files/maven/"
