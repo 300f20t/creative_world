@@ -18,7 +18,6 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.creativeworld.procedures.CreativedrillPriRazrushieniiBlokaInstrumientomProcedure;
 import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -98,10 +97,6 @@ public class CreativedrillItem extends TieredItem {
 	@Override
 	public boolean mineBlock(ItemStack stack, Level world, BlockState state, BlockPos pos, LivingEntity entity) {
 		stack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		CreativedrillPriRazrushieniiBlokaInstrumientomProcedure.execute(world, x, y, z, entity);
 		return true;
 	}
 

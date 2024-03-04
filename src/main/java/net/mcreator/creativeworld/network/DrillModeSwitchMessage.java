@@ -7,8 +7,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.creativeworld.procedures.DrillModeSwitchPriNazhatiiKlavishiProcedure;
-
 import net.fabricmc.fabric.api.networking.v1.PacketSender;
 
 import io.netty.buffer.Unpooled;
@@ -31,10 +29,6 @@ public class DrillModeSwitchMessage extends FriendlyByteBuf {
 			// security measure to prevent arbitrary chunk generation
 			if (!world.hasChunkAt(entity.blockPosition()))
 				return;
-			if (pressed) {
-
-				DrillModeSwitchPriNazhatiiKlavishiProcedure.execute(world, entity);
-			}
 		});
 	}
 }

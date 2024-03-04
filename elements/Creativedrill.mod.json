@@ -28,9 +28,6 @@
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onBlockDestroyedWithTool": {
-      "name": "CreativedrillPriRazrushieniiBlokaInstrumientom"
-    }
+    "damageOnCrafting": false
   }
 }

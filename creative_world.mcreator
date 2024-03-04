@@ -2928,26 +2928,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Hklklh",
-      "type": "procedure",
-      "sortid": 267,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hklklh",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/HklklhProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "Advencedmachinecase",
       "type": "block",
       "sortid": 117,
@@ -4502,110 +4482,6 @@
       }
     },
     {
-      "name": "Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshi",
-      "type": "procedure",
-      "sortid": 326,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "quantumteleporterblock_2_na_blokie_nazhata_pravaia_knopka_myshi",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "QTclearall",
-      "type": "procedure",
-      "sortid": 328,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "q_tclearall",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/QTclearallProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "QTclear1",
-      "type": "procedure",
-      "sortid": 329,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "q_tclear_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/QTclear1Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "QTclear2",
-      "type": "procedure",
-      "sortid": 330,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "q_tclear_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/QTclear2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Quantumteleporterblock2craft",
       "type": "recipe",
       "sortid": 331,
@@ -4966,42 +4842,6 @@
       "path": "~/Tools/Drills"
     },
     {
-      "name": "AdvanceddrillPriRazrushieniiBlokaInstrumientom",
-      "type": "procedure",
-      "sortid": 368,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "advanceddrill_pri_razrushienii_bloka_instrumientom",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/AdvanceddrillPriRazrushieniiBlokaInstrumientomProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Tools/Drills"
-    },
-    {
       "name": "RubbertreeFeature",
       "type": "feature",
       "sortid": 369,
@@ -5123,30 +4963,6 @@
       "path": "~/Legacy"
     },
     {
-      "name": "DrillModeSwitchPriNazhatiiKlavishi",
-      "type": "procedure",
-      "sortid": 376,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "drill_mode_switch_pri_nazhatii_klavishi",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/DrillModeSwitchPriNazhatiiKlavishiProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Tools/Drills"
-    },
-    {
       "name": "DrillModeSwitch",
       "type": "keybind",
       "sortid": 377,
@@ -5156,42 +4972,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/creativeworld/network/DrillModeSwitchMessage.java"
-        ]
-      },
-      "path": "~/Tools/Drills"
-    },
-    {
-      "name": "CreativedrillPriRazrushieniiBlokaInstrumientom",
-      "type": "procedure",
-      "sortid": 378,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "creativedrill_pri_razrushienii_bloka_instrumientom",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/CreativedrillPriRazrushieniiBlokaInstrumientomProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Tools/Drills"
@@ -5404,69 +5184,6 @@
       "path": "~/Components/Battery"
     },
     {
-      "name": "DrillMode1x1",
-      "type": "procedure",
-      "sortid": 388,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "drill_mode_1x_1",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/DrillMode1x1Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Tools/Drills"
-    },
-    {
-      "name": "DrillMode3x3",
-      "type": "procedure",
-      "sortid": 389,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "drill_mode_3x_3",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/DrillMode3x3Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Tools/Drills"
-    },
-    {
-      "name": "DrillModeCustom",
-      "type": "procedure",
-      "sortid": 390,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "drill_mode_custom",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/DrillModeCustomProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Tools/Drills"
-    },
-    {
       "name": "ThecoreofinvulnerabilityKazhdyiTikVInvientarie",
       "type": "procedure",
       "sortid": 391,
@@ -5669,68 +5386,7 @@
       "path": "~/Achievements"
     }
   ],
-  "variable_elements": [
-    {
-      "name": "QT_1",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
-      "name": "QT_2",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
-      "name": "first_QT_ID_x",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "seckond_QT_ID_x",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "first_QT_ID_y",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "seckond_QT_ID_y",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "first_QT_ID_z",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "seckond_QT_ID_z",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "crusherIndex",
-      "type": "number",
-      "scope": "map",
-      "value": "0.0"
-    },
-    {
-      "name": "drillMode",
-      "type": "number",
-      "scope": "map",
-      "value": "1.0"
-    }
-  ],
+  "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "ru_ru": {

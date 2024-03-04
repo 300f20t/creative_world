@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "creative_world:block/fan"
+    },
+    "facing=east": {
+      "model": "creative_world:block/fan",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "creative_world:block/fan",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "creative_world:block/fan",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "creative_world:block/fan",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "creative_world:block/fan",
+      "x": 90
+    }
+  }
+}

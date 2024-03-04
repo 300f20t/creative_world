@@ -15,7 +15,6 @@ package net.mcreator.creativeworld;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.mcreator.creativeworld.network.CreativeWorldModVariables;
 import net.mcreator.creativeworld.init.CreativeWorldModTrades;
 import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 import net.mcreator.creativeworld.init.CreativeWorldModProcedures;
@@ -53,7 +52,5 @@ public class CreativeWorldMod implements ModInitializer {
 
 		CreativeWorldModTrades.registerTrades();
 
-		CreativeWorldModVariables.SyncJoin();
-		CreativeWorldModVariables.SyncChangeWorld();
 	}
 }

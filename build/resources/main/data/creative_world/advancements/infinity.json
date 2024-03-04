@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "creative_world:endlesswatersource"
+    },
+    "title": "Infinity?",
+    "description": "water?",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "infinity": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "creative_world:endlesswatersource"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "creative_world:core"
+}

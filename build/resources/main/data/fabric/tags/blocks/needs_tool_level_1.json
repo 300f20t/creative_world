@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "creative_world:copper_wire",
+    "creative_world:insulated_copper_wire",
+    "creative_world:machinecase",
+    "creative_world:coalgenerator",
+    "creative_world:crusher",
+    "creative_world:fan",
+    "creative_world:batteryblock",
+    "creative_world:solarpanel",
+    "creative_world:advencedmachinecase",
+    "creative_world:advencedsolarpanel",
+    "creative_world:infinityenergy",
+    "creative_world:quantumteleporterblock",
+    "creative_world:quantumteleporterblock_2",
+    "creative_world:stationaryparticlebinder",
+    "creative_world:coalgenerator_1",
+    "creative_world:bug"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "creative_world:block/resin_slab"
+    },
+    "type=top": {
+      "model": "creative_world:block/resin_slab_top"
+    },
+    "type=double": {
+      "model": "creative_world:block/resin_slab_full"
+    }
+  }
+}

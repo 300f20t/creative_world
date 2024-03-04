@@ -28,9 +28,6 @@
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onBlockDestroyedWithTool": {
-      "name": "AdvanceddrillPriRazrushieniiBlokaInstrumientom"
-    }
+    "damageOnCrafting": false
   }
 }

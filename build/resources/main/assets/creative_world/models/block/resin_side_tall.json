@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "creative_core_:blocks/fsf",
+    "particle": "creative_core_:blocks/fsf"
+  }
+}

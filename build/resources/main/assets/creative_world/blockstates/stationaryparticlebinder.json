@@ -1,0 +1,57 @@
+{
+  "variants": {
+    "face=floor,facing=north": {
+      "model": "creative_world:block/stationaryparticlebinder"
+    },
+    "face=floor,facing=east": {
+      "model": "creative_world:block/stationaryparticlebinder",
+      "y": 90
+    },
+    "face=floor,facing=south": {
+      "model": "creative_world:block/stationaryparticlebinder",
+      "y": 180
+    },
+    "face=floor,facing=west": {
+      "model": "creative_world:block/stationaryparticlebinder",
+      "y": 270
+    },
+    "face=wall,facing=north": {
+      "model": "creative_world:block/stationaryparticlebinder",
+      "x": 90
+    },
+    "face=wall,facing=east": {
+      "model": "creative_world:block/stationaryparticlebinder",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south": {
+      "model": "creative_world:block/stationaryparticlebinder",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "creative_world:block/stationaryparticlebinder",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "creative_world:block/stationaryparticlebinder",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "creative_world:block/stationaryparticlebinder",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=south": {
+      "model": "creative_world:block/stationaryparticlebinder",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "creative_world:block/stationaryparticlebinder",
+      "x": 180,
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "creative_world:structure_feature",
+  "config": {
+    "structure": "creative_world:medium_gas_mine",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}
