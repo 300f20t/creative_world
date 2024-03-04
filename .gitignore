@@ -5,3 +5,7 @@ run/
 # ignore backups and modElementThumbnails
 
 .mcreator/
+
+# ignore .gradle
+
+.gradle/
