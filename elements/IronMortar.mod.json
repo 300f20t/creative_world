@@ -27,7 +27,7 @@
     },
     "repairItems": [],
     "immuneToFire": false,
-    "stayInGridWhenCrafting": true,
+    "stayInGridWhenCrafting": false,
     "damageOnCrafting": true
   }
 }

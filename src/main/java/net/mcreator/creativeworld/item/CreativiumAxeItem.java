@@ -10,7 +10,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
+
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
 import java.util.List;
 
@@ -38,9 +41,10 @@ public class CreativiumAxeItem extends AxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(CreativeWorldModItems.CREATIVIUM_INGOT.get()));
+				return Ingredient.of(new ItemStack(CreativeWorldModItems.CREATIVIUM_INGOT));
 			}
 		}, 1, -2.4f, new Item.Properties().fireResistant());
+		ItemGroupEvents.modifyEntriesEvent(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).register(content -> content.accept(this));
 	}
 
 	@Override

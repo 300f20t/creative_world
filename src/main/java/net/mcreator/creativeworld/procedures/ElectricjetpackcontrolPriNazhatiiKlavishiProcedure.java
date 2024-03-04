@@ -12,7 +12,7 @@ public class ElectricjetpackcontrolPriNazhatiiKlavishiProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		while ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == CreativeWorldModItems.ELECTRICJETPACK_CHESTPLATE.get()) {
+		while ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == CreativeWorldModItems.ELECTRICJETPACK_CHESTPLATE) {
 			entity.setDeltaMovement(new Vec3(0, 0.5, 0));
 		}
 	}

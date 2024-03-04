@@ -9,16 +9,26 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.creativeworld.init.CreativeWorldModTabs;
+
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+
 import java.util.List;
 
 public class CreatingcoreItem extends Item {
 	public CreatingcoreItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.RARE));
+		ItemGroupEvents.modifyEntriesEvent(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).register(content -> content.accept(this));
 	}
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
 		return UseAnim.EAT;
+	}
+
+	@Override
+	public int getUseDuration(ItemStack itemstack) {
+		return 0;
 	}
 
 	@Override

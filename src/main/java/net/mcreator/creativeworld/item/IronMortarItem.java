@@ -14,6 +14,10 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.creativeworld.init.CreativeWorldModTabs;
+
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+
 import java.util.List;
 
 import com.google.common.collect.Multimap;
@@ -22,22 +26,23 @@ import com.google.common.collect.ImmutableMultimap;
 public class IronMortarItem extends Item {
 	public IronMortarItem() {
 		super(new Item.Properties().durability(100));
+		ItemGroupEvents.modifyEntriesEvent(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).register(content -> content.accept(this));
 	}
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return 1;
+		return 1f;
 	}
 
 	@Override
-	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
-		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	public boolean mineBlock(ItemStack stack, Level world, BlockState state, BlockPos pos, LivingEntity entity) {
+		stack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		itemstack.hurtAndBreak(2, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	public boolean hurtEnemy(ItemStack stack, LivingEntity entity, LivingEntity sourceentity) {
+		stack.hurtAndBreak(2, sourceentity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
 
@@ -56,26 +61,6 @@ public class IronMortarItem extends Item {
 			return builder.build();
 		}
 		return super.getDefaultAttributeModifiers(equipmentSlot);
-	}
-
-	@Override
-	public boolean hasCraftingRemainingItem(ItemStack stack) {
-		return true;
-	}
-
-	@Override
-	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-		ItemStack retval = new ItemStack(this);
-		retval.setDamageValue(itemstack.getDamageValue() + 1);
-		if (retval.getDamageValue() >= retval.getMaxDamage()) {
-			return ItemStack.EMPTY;
-		}
-		return retval;
-	}
-
-	@Override
-	public boolean isRepairable(ItemStack itemstack) {
-		return false;
 	}
 
 	@Override

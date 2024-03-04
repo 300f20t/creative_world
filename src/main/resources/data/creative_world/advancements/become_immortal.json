@@ -3,12 +3,8 @@
     "icon": {
       "item": "creative_world:thecoreofinvulnerability"
     },
-    "title": {
-      "translate": "advancements.become_immortal.title"
-    },
-    "description": {
-      "translate": "advancements.become_immortal.descr"
-    },
+    "title": "Become Immortal",
+    "description": "create The core of invulnerability",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

@@ -1,8 +1,6 @@
 
 package net.mcreator.creativeworld.block;
 
-import net.minecraftforge.network.NetworkHooks;
-
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -19,44 +17,34 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.RenderType;
 
-import net.mcreator.creativeworld.world.inventory.FgfhffhghkjkkytwqaMenu;
-import net.mcreator.creativeworld.procedures.CoalgeneratorObnovitTaktProcedure;
 import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
 import net.mcreator.creativeworld.block.entity.CoalgeneratorBlockEntity;
+
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.api.Environment;
+import net.fabricmc.api.EnvType;
 
 import java.util.List;
 import java.util.Collections;
 
-import io.netty.buffer.Unpooled;
-
 public class CoalgeneratorBlock extends Block implements EntityBlock {
+	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(5f, 10f);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public CoalgeneratorBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(5f, 10f));
+		super(PROPERTIES);
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override
@@ -87,40 +75,16 @@ public class CoalgeneratorBlock extends Block implements EntityBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(CreativeWorldModBlocks.MACHINECASE.get()));
-	}
-
-	@Override
-	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
-		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 10);
-	}
-
-	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
-		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		CoalgeneratorObnovitTaktProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 10);
+		return Collections.singletonList(new ItemStack(CreativeWorldModBlocks.MACHINECASE));
 	}
 
 	@Override
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
-		if (entity instanceof ServerPlayer player) {
-			NetworkHooks.openScreen(player, new MenuProvider() {
-				@Override
-				public Component getDisplayName() {
-					return Component.literal("Coal generator");
-				}
-
-				@Override
-				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new FgfhffhghkjkkytwqaMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
-				}
-			}, pos);
+		if (!world.isClientSide) {
+			MenuProvider menuProvider = blockstate.getMenuProvider(world, pos);
+			if (menuProvider != null)
+				entity.openMenu(menuProvider);
 		}
 		return InteractionResult.SUCCESS;
 	}
@@ -128,7 +92,7 @@ public class CoalgeneratorBlock extends Block implements EntityBlock {
 	@Override
 	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
 		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
-		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
+		return tileEntity instanceof MenuProvider ? (MenuProvider) tileEntity : null;
 	}
 
 	@Override
@@ -167,5 +131,10 @@ public class CoalgeneratorBlock extends Block implements EntityBlock {
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;
+	}
+
+	@Environment(EnvType.CLIENT)
+	public static void clientInit() {
+		BlockRenderLayerMap.INSTANCE.putBlock(CreativeWorldModBlocks.COALGENERATOR, RenderType.solid());
 	}
 }

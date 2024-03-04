@@ -1,14 +1,13 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package net.mcreator.creativeworld.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-
 import net.minecraft.world.level.block.Block;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
 
 import net.mcreator.creativeworld.block.TitanOreBlock;
 import net.mcreator.creativeworld.block.TitanBlockBlock;
@@ -28,11 +27,9 @@ import net.mcreator.creativeworld.block.ResinFenceGateBlock;
 import net.mcreator.creativeworld.block.ResinFenceBlock;
 import net.mcreator.creativeworld.block.QuantumteleporterblockBlock;
 import net.mcreator.creativeworld.block.Quantumteleporterblock2Block;
-import net.mcreator.creativeworld.block.OilBlock;
 import net.mcreator.creativeworld.block.MachinecaseBlock;
 import net.mcreator.creativeworld.block.InsulatedCopperWireBlock;
 import net.mcreator.creativeworld.block.InfinityenergyBlock;
-import net.mcreator.creativeworld.block.GasBlock;
 import net.mcreator.creativeworld.block.FanBlock;
 import net.mcreator.creativeworld.block.CrusherBlock;
 import net.mcreator.creativeworld.block.CreativiumOreBlock;
@@ -50,42 +47,115 @@ import net.mcreator.creativeworld.block.AccumulatiumBlockBlock;
 import net.mcreator.creativeworld.CreativeWorldMod;
 
 public class CreativeWorldModBlocks {
-	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, CreativeWorldMod.MODID);
-	public static final RegistryObject<Block> GAS = REGISTRY.register("gas", () -> new GasBlock());
-	public static final RegistryObject<Block> OIL = REGISTRY.register("oil", () -> new OilBlock());
-	public static final RegistryObject<Block> COPPER_WIRE = REGISTRY.register("copper_wire", () -> new CopperWireBlock());
-	public static final RegistryObject<Block> INSULATED_COPPER_WIRE = REGISTRY.register("insulated_copper_wire", () -> new InsulatedCopperWireBlock());
-	public static final RegistryObject<Block> TIN_ORE = REGISTRY.register("tin_ore", () -> new TinOreBlock());
-	public static final RegistryObject<Block> TITAN_ORE = REGISTRY.register("titan_ore", () -> new TitanOreBlock());
-	public static final RegistryObject<Block> ACCUMULATIUM_ORE = REGISTRY.register("accumulatium_ore", () -> new AccumulatiumOreBlock());
-	public static final RegistryObject<Block> CREATIVIUM_ORE = REGISTRY.register("creativium_ore", () -> new CreativiumOreBlock());
-	public static final RegistryObject<Block> TIN_BLOCK = REGISTRY.register("tin_block", () -> new TinBlockBlock());
-	public static final RegistryObject<Block> BRONZE_BLOCK = REGISTRY.register("bronze_block", () -> new BronzeBlockBlock());
-	public static final RegistryObject<Block> ACCUMULATIUM_BLOCK = REGISTRY.register("accumulatium_block", () -> new AccumulatiumBlockBlock());
-	public static final RegistryObject<Block> CREATIVIUM_BLOCK = REGISTRY.register("creativium_block", () -> new CreativiumBlockBlock());
-	public static final RegistryObject<Block> RESIN_LOG = REGISTRY.register("resin_log", () -> new ResinLogBlock());
-	public static final RegistryObject<Block> RSINLOGWITHRESIN = REGISTRY.register("rsinlogwithresin", () -> new RsinlogwithresinBlock());
-	public static final RegistryObject<Block> RESIN_WOOD = REGISTRY.register("resin_wood", () -> new ResinWoodBlock());
-	public static final RegistryObject<Block> RESIN_PLANKS = REGISTRY.register("resin_planks", () -> new ResinPlanksBlock());
-	public static final RegistryObject<Block> RESIN_STAIRS = REGISTRY.register("resin_stairs", () -> new ResinStairsBlock());
-	public static final RegistryObject<Block> RESIN_SLAB = REGISTRY.register("resin_slab", () -> new ResinSlabBlock());
-	public static final RegistryObject<Block> RESIN_LEAVES = REGISTRY.register("resin_leaves", () -> new ResinLeavesBlock());
-	public static final RegistryObject<Block> RESIN_FENCE = REGISTRY.register("resin_fence", () -> new ResinFenceBlock());
-	public static final RegistryObject<Block> RESIN_FENCE_GATE = REGISTRY.register("resin_fence_gate", () -> new ResinFenceGateBlock());
-	public static final RegistryObject<Block> TITAN_BLOCK = REGISTRY.register("titan_block", () -> new TitanBlockBlock());
-	public static final RegistryObject<Block> MACHINECASE = REGISTRY.register("machinecase", () -> new MachinecaseBlock());
-	public static final RegistryObject<Block> COALGENERATOR = REGISTRY.register("coalgenerator", () -> new CoalgeneratorBlock());
-	public static final RegistryObject<Block> CRUSHER = REGISTRY.register("crusher", () -> new CrusherBlock());
-	public static final RegistryObject<Block> FAN = REGISTRY.register("fan", () -> new FanBlock());
-	public static final RegistryObject<Block> BATTERYBLOCK = REGISTRY.register("batteryblock", () -> new BatteryblockBlock());
-	public static final RegistryObject<Block> SOLARPANEL = REGISTRY.register("solarpanel", () -> new SolarpanelBlock());
-	public static final RegistryObject<Block> ADVENCEDMACHINECASE = REGISTRY.register("advencedmachinecase", () -> new AdvencedmachinecaseBlock());
-	public static final RegistryObject<Block> ADVENCEDSOLARPANEL = REGISTRY.register("advencedsolarpanel", () -> new AdvencedsolarpanelBlock());
-	public static final RegistryObject<Block> INFINITYENERGY = REGISTRY.register("infinityenergy", () -> new InfinityenergyBlock());
-	public static final RegistryObject<Block> QUANTUMTELEPORTERBLOCK = REGISTRY.register("quantumteleporterblock", () -> new QuantumteleporterblockBlock());
-	public static final RegistryObject<Block> QUANTUMTELEPORTERBLOCK_2 = REGISTRY.register("quantumteleporterblock_2", () -> new Quantumteleporterblock2Block());
-	public static final RegistryObject<Block> STATIONARYPARTICLEBINDER = REGISTRY.register("stationaryparticlebinder", () -> new StationaryparticlebinderBlock());
-	public static final RegistryObject<Block> RESINTREESAPLING = REGISTRY.register("resintreesapling", () -> new ResintreesaplingBlock());
-	public static final RegistryObject<Block> COALGENERATOR_1 = REGISTRY.register("coalgenerator_1", () -> new Coalgenerator1Block());
-	public static final RegistryObject<Block> BUG = REGISTRY.register("bug", () -> new BUGBlock());
+	public static Block COPPER_WIRE;
+	public static Block INSULATED_COPPER_WIRE;
+	public static Block TIN_ORE;
+	public static Block TITAN_ORE;
+	public static Block ACCUMULATIUM_ORE;
+	public static Block CREATIVIUM_ORE;
+	public static Block TIN_BLOCK;
+	public static Block BRONZE_BLOCK;
+	public static Block ACCUMULATIUM_BLOCK;
+	public static Block CREATIVIUM_BLOCK;
+	public static Block RESIN_LOG;
+	public static Block RSINLOGWITHRESIN;
+	public static Block RESIN_WOOD;
+	public static Block RESIN_PLANKS;
+	public static Block RESIN_STAIRS;
+	public static Block RESIN_SLAB;
+	public static Block RESIN_LEAVES;
+	public static Block RESIN_FENCE;
+	public static Block RESIN_FENCE_GATE;
+	public static Block TITAN_BLOCK;
+	public static Block MACHINECASE;
+	public static Block COALGENERATOR;
+	public static Block CRUSHER;
+	public static Block FAN;
+	public static Block BATTERYBLOCK;
+	public static Block SOLARPANEL;
+	public static Block ADVENCEDMACHINECASE;
+	public static Block ADVENCEDSOLARPANEL;
+	public static Block INFINITYENERGY;
+	public static Block QUANTUMTELEPORTERBLOCK;
+	public static Block QUANTUMTELEPORTERBLOCK_2;
+	public static Block STATIONARYPARTICLEBINDER;
+	public static Block RESINTREESAPLING;
+	public static Block COALGENERATOR_1;
+	public static Block BUG;
+
+	public static void load() {
+		COPPER_WIRE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "copper_wire"), new CopperWireBlock());
+		INSULATED_COPPER_WIRE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "insulated_copper_wire"), new InsulatedCopperWireBlock());
+		TIN_ORE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "tin_ore"), new TinOreBlock());
+		TITAN_ORE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "titan_ore"), new TitanOreBlock());
+		ACCUMULATIUM_ORE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "accumulatium_ore"), new AccumulatiumOreBlock());
+		CREATIVIUM_ORE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "creativium_ore"), new CreativiumOreBlock());
+		TIN_BLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "tin_block"), new TinBlockBlock());
+		BRONZE_BLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "bronze_block"), new BronzeBlockBlock());
+		ACCUMULATIUM_BLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "accumulatium_block"), new AccumulatiumBlockBlock());
+		CREATIVIUM_BLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "creativium_block"), new CreativiumBlockBlock());
+		RESIN_LOG = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_log"), new ResinLogBlock());
+		RSINLOGWITHRESIN = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "rsinlogwithresin"), new RsinlogwithresinBlock());
+		RESIN_WOOD = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_wood"), new ResinWoodBlock());
+		RESIN_PLANKS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_planks"), new ResinPlanksBlock());
+		RESIN_STAIRS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_stairs"), new ResinStairsBlock());
+		RESIN_SLAB = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_slab"), new ResinSlabBlock());
+		RESIN_LEAVES = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_leaves"), new ResinLeavesBlock());
+		RESIN_FENCE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_fence"), new ResinFenceBlock());
+		RESIN_FENCE_GATE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_fence_gate"), new ResinFenceGateBlock());
+		TITAN_BLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "titan_block"), new TitanBlockBlock());
+		MACHINECASE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "machinecase"), new MachinecaseBlock());
+		COALGENERATOR = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "coalgenerator"), new CoalgeneratorBlock());
+		CRUSHER = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "crusher"), new CrusherBlock());
+		FAN = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "fan"), new FanBlock());
+		BATTERYBLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "batteryblock"), new BatteryblockBlock());
+		SOLARPANEL = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "solarpanel"), new SolarpanelBlock());
+		ADVENCEDMACHINECASE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "advencedmachinecase"), new AdvencedmachinecaseBlock());
+		ADVENCEDSOLARPANEL = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "advencedsolarpanel"), new AdvencedsolarpanelBlock());
+		INFINITYENERGY = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "infinityenergy"), new InfinityenergyBlock());
+		QUANTUMTELEPORTERBLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "quantumteleporterblock"), new QuantumteleporterblockBlock());
+		QUANTUMTELEPORTERBLOCK_2 = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "quantumteleporterblock_2"), new Quantumteleporterblock2Block());
+		STATIONARYPARTICLEBINDER = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "stationaryparticlebinder"), new StationaryparticlebinderBlock());
+		RESINTREESAPLING = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resintreesapling"), new ResintreesaplingBlock());
+		COALGENERATOR_1 = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "coalgenerator_1"), new Coalgenerator1Block());
+		BUG = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "bug"), new BUGBlock());
+	}
+
+	public static void clientLoad() {
+		CopperWireBlock.clientInit();
+		InsulatedCopperWireBlock.clientInit();
+		TinOreBlock.clientInit();
+		TitanOreBlock.clientInit();
+		AccumulatiumOreBlock.clientInit();
+		CreativiumOreBlock.clientInit();
+		TinBlockBlock.clientInit();
+		BronzeBlockBlock.clientInit();
+		AccumulatiumBlockBlock.clientInit();
+		CreativiumBlockBlock.clientInit();
+		ResinLogBlock.clientInit();
+		RsinlogwithresinBlock.clientInit();
+		ResinWoodBlock.clientInit();
+		ResinPlanksBlock.clientInit();
+		ResinStairsBlock.clientInit();
+		ResinSlabBlock.clientInit();
+		ResinLeavesBlock.clientInit();
+		ResinFenceBlock.clientInit();
+		ResinFenceGateBlock.clientInit();
+		TitanBlockBlock.clientInit();
+		MachinecaseBlock.clientInit();
+		CoalgeneratorBlock.clientInit();
+		CrusherBlock.clientInit();
+		FanBlock.clientInit();
+		BatteryblockBlock.clientInit();
+		SolarpanelBlock.clientInit();
+		AdvencedmachinecaseBlock.clientInit();
+		AdvencedsolarpanelBlock.clientInit();
+		InfinityenergyBlock.clientInit();
+		QuantumteleporterblockBlock.clientInit();
+		Quantumteleporterblock2Block.clientInit();
+		StationaryparticlebinderBlock.clientInit();
+		ResintreesaplingBlock.clientInit();
+		Coalgenerator1Block.clientInit();
+		BUGBlock.clientInit();
+	}
 }

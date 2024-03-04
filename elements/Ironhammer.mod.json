@@ -22,13 +22,16 @@
     "damageVsEntity": 4.0,
     "usageCount": 80,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Items.IRON_INGOT"
       }
     ],
     "immuneToFire": false,
-    "stayInGridWhenCrafting": true,
-    "damageOnCrafting": true
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
   }
 }

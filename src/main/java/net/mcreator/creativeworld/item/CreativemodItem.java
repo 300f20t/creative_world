@@ -1,9 +1,6 @@
 
 package net.mcreator.creativeworld.item;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
@@ -16,12 +13,16 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.creativeworld.procedures.RtyuklProcedure;
+import net.mcreator.creativeworld.init.CreativeWorldModTabs;
+
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
 import java.util.List;
 
 public class CreativemodItem extends Item {
 	public CreativemodItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC));
+		ItemGroupEvents.modifyEntriesEvent(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).register(content -> content.accept(this));
 	}
 
 	@Override
@@ -30,9 +31,8 @@ public class CreativemodItem extends Item {
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
-	public boolean isFoil(ItemStack itemstack) {
-		return true;
+	public int getUseDuration(ItemStack itemstack) {
+		return 0;
 	}
 
 	@Override

@@ -36,9 +36,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedOnBlock": {
-      "name": "AlargebucketPriShchielchkiePKMPoBloku"
-    },
     "onItemInUseTick": {
       "name": "Alargebucketofwater9KazhdyiTikVRukie"
     },

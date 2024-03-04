@@ -8,30 +8,34 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.creativeworld.procedures.AdvancedelectricjetpackSobytiieTaktovKirasyProcedure;
+import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
+
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.api.Environment;
+import net.fabricmc.api.EnvType;
 
 import java.util.List;
 
-import com.google.common.collect.Iterables;
+import java.lang.reflect.Type;
 
 public abstract class AdvancedelectricjetpackItem extends ArmorItem {
-	public AdvancedelectricjetpackItem(ArmorItem.Type type, Item.Properties properties) {
+	public AdvancedelectricjetpackItem(Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
+			public int getDurabilityForType(Type type) {
 				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 200;
 			}
 
 			@Override
-			public int getDefenseForType(ArmorItem.Type type) {
+			public int getDefenseForType(Type type) {
 				return new int[]{2, 5, 6, 2}[type.getSlot().getIndex()];
 			}
 
@@ -42,17 +46,18 @@ public abstract class AdvancedelectricjetpackItem extends ArmorItem {
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return SoundEvents.EMPTY;
+				return null;
 			}
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(CreativeWorldModItems.ELECTRICALCIRCUIT.get()));
+				return Ingredient.of(new ItemStack(CreativeWorldModItems.ELECTRICALCIRCUIT));
 			}
 
+			@Environment(EnvType.CLIENT)
 			@Override
 			public String getName() {
-				return "advancedelectricjetpack";
+				return "apvkie";
 			}
 
 			@Override
@@ -68,8 +73,10 @@ public abstract class AdvancedelectricjetpackItem extends ArmorItem {
 	}
 
 	public static class Chestplate extends AdvancedelectricjetpackItem {
+
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
+			super(Type.CHESTPLATE, new Item.Properties());
+			ItemGroupEvents.modifyEntriesEvent(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT).register(content -> content.accept(this));
 		}
 
 		@Override
@@ -78,15 +85,14 @@ public abstract class AdvancedelectricjetpackItem extends ArmorItem {
 		}
 
 		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "creative_world:textures/models/armor/apvkie_layer_1.png";
-		}
-
-		@Override
-		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-			super.inventoryTick(itemstack, world, entity, slot, selected);
-			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				AdvancedelectricjetpackSobytiieTaktovKirasyProcedure.execute(entity, itemstack);
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slotinv, boolean selected) {
+			double unique = Math.random();
+			ItemStack stack = entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY;
+			if (stack.getItem() == (itemstack).getItem()) {
+				if (stack.getOrCreateTag().getDouble("_id") != unique)
+					stack.getOrCreateTag().putDouble("_id", unique);
+				if (itemstack.getOrCreateTag().getDouble("_id") == unique)
+					AdvancedelectricjetpackSobytiieTaktovKirasyProcedure.execute(entity, itemstack);
 			}
 		}
 	}

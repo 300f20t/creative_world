@@ -3,12 +3,8 @@
     "icon": {
       "item": "creative_world:endlesswatersource"
     },
-    "title": {
-      "translate": "advancements.infinity.title"
-    },
-    "description": {
-      "translate": "advancements.infinity.descr"
-    },
+    "title": "Infinity?",
+    "description": "water?",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

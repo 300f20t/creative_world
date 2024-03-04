@@ -3,12 +3,8 @@
     "icon": {
       "item": "minecraft:bedrock"
     },
-    "title": {
-      "translate": "advancements.bedrock.title"
-    },
-    "description": {
-      "translate": "advancements.bedrock.descr"
-    },
+    "title": "Bedrock?",
+    "description": "The bedrock cannot be broken",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

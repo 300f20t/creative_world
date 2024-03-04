@@ -119,9 +119,6 @@
     "isFluidTank": false,
     "fluidCapacity": 0,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "CoalgeneratorObnovitTakt"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],

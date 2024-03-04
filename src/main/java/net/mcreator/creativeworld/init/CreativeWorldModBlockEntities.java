@@ -1,15 +1,13 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package net.mcreator.creativeworld.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
 
 import net.mcreator.creativeworld.block.entity.SolarpanelBlockEntity;
 import net.mcreator.creativeworld.block.entity.InfinityenergyBlockEntity;
@@ -20,17 +18,28 @@ import net.mcreator.creativeworld.block.entity.Coalgenerator1BlockEntity;
 import net.mcreator.creativeworld.block.entity.BatteryblockBlockEntity;
 import net.mcreator.creativeworld.CreativeWorldMod;
 
-public class CreativeWorldModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, CreativeWorldMod.MODID);
-	public static final RegistryObject<BlockEntityType<?>> COALGENERATOR = register("coalgenerator", CreativeWorldModBlocks.COALGENERATOR, CoalgeneratorBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> CRUSHER = register("crusher", CreativeWorldModBlocks.CRUSHER, CrusherBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> FAN = register("fan", CreativeWorldModBlocks.FAN, FanBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> BATTERYBLOCK = register("batteryblock", CreativeWorldModBlocks.BATTERYBLOCK, BatteryblockBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> SOLARPANEL = register("solarpanel", CreativeWorldModBlocks.SOLARPANEL, SolarpanelBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> INFINITYENERGY = register("infinityenergy", CreativeWorldModBlocks.INFINITYENERGY, InfinityenergyBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> COALGENERATOR_1 = register("coalgenerator_1", CreativeWorldModBlocks.COALGENERATOR_1, Coalgenerator1BlockEntity::new);
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 
-	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
-		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
+public class CreativeWorldModBlockEntities {
+	public static BlockEntityType<?> COALGENERATOR;
+	public static BlockEntityType<?> CRUSHER;
+	public static BlockEntityType<?> FAN;
+	public static BlockEntityType<?> BATTERYBLOCK;
+	public static BlockEntityType<?> SOLARPANEL;
+	public static BlockEntityType<?> INFINITYENERGY;
+	public static BlockEntityType<?> COALGENERATOR_1;
+
+	public static void load() {
+		COALGENERATOR = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, new ResourceLocation(CreativeWorldMod.MODID, "coalgenerator"),
+				FabricBlockEntityTypeBuilder.create(CoalgeneratorBlockEntity::new, CreativeWorldModBlocks.COALGENERATOR).build(null));
+		CRUSHER = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, new ResourceLocation(CreativeWorldMod.MODID, "crusher"), FabricBlockEntityTypeBuilder.create(CrusherBlockEntity::new, CreativeWorldModBlocks.CRUSHER).build(null));
+		FAN = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, new ResourceLocation(CreativeWorldMod.MODID, "fan"), FabricBlockEntityTypeBuilder.create(FanBlockEntity::new, CreativeWorldModBlocks.FAN).build(null));
+		BATTERYBLOCK = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, new ResourceLocation(CreativeWorldMod.MODID, "batteryblock"),
+				FabricBlockEntityTypeBuilder.create(BatteryblockBlockEntity::new, CreativeWorldModBlocks.BATTERYBLOCK).build(null));
+		SOLARPANEL = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, new ResourceLocation(CreativeWorldMod.MODID, "solarpanel"), FabricBlockEntityTypeBuilder.create(SolarpanelBlockEntity::new, CreativeWorldModBlocks.SOLARPANEL).build(null));
+		INFINITYENERGY = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, new ResourceLocation(CreativeWorldMod.MODID, "infinityenergy"),
+				FabricBlockEntityTypeBuilder.create(InfinityenergyBlockEntity::new, CreativeWorldModBlocks.INFINITYENERGY).build(null));
+		COALGENERATOR_1 = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, new ResourceLocation(CreativeWorldMod.MODID, "coalgenerator_1"),
+				FabricBlockEntityTypeBuilder.create(Coalgenerator1BlockEntity::new, CreativeWorldModBlocks.COALGENERATOR_1).build(null));
 	}
 }

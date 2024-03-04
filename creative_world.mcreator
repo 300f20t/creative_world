@@ -291,7 +291,6 @@
       "registry_name": "tin_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/creative_world/forge/biome_modifier/tin_ore_biome_modifier.json",
           "src/main/resources/assets/creative_world/blockstates/tin_ore.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/tin_ore.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/tin_ore.json",
@@ -1340,38 +1339,6 @@
       "path": "~/Mekanisms"
     },
     {
-      "name": "SolarpanelObnovitTakt",
-      "type": "procedure",
-      "sortid": 185,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "solarpanel_obnovit_takt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/SolarpanelObnovitTaktProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mekanisms"
-    },
-    {
       "name": "Fdgdf",
       "type": "gui",
       "sortid": 186,
@@ -2165,46 +2132,6 @@
       "path": "~/Crafts/Materials"
     },
     {
-      "name": "Oil",
-      "type": "fluid",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oil",
-      "metadata": {
-        "gb": true,
-        "files": [
-          "src/main/resources/assets/creative_world/models/item/oil_bucket.json",
-          "src/main/java/net/mcreator/creativeworld/item/OilItem.java",
-          "src/main/java/net/mcreator/creativeworld/fluid/OilFluid.java",
-          "src/main/java/net/mcreator/creativeworld/block/OilBlock.java",
-          "src/main/resources/assets/creative_world/blockstates/oil.json",
-          "src/main/resources/assets/creative_world/models/block/oil.json",
-          "src/main/java/net/mcreator/creativeworld/fluid/types/OilFluidType.java"
-        ]
-      }
-    },
-    {
-      "name": "Gas",
-      "type": "fluid",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gas",
-      "metadata": {
-        "gb": true,
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/fluid/GasFluid.java",
-          "src/main/resources/assets/creative_world/models/item/gas_bucket.json",
-          "src/main/java/net/mcreator/creativeworld/block/GasBlock.java",
-          "src/main/java/net/mcreator/creativeworld/fluid/types/GasFluidType.java",
-          "src/main/java/net/mcreator/creativeworld/item/GasItem.java",
-          "src/main/resources/assets/creative_world/models/block/gas.json",
-          "src/main/resources/assets/creative_world/blockstates/gas.json"
-        ]
-      }
-    },
-    {
       "name": "Rawtin",
       "type": "item",
       "sortid": 18,
@@ -2277,37 +2204,6 @@
       "path": "~/Crafts/Materials"
     },
     {
-      "name": "CoalgeneratorObnovitTakt",
-      "type": "procedure",
-      "sortid": 227,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coalgenerator_obnovit_takt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/CoalgeneratorObnovitTaktProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Energydetector",
       "type": "item",
       "sortid": 88,
@@ -2321,38 +2217,6 @@
         ]
       },
       "path": "~/Tools"
-    },
-    {
-      "name": "FanObnovitTakt",
-      "type": "procedure",
-      "sortid": 228,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fan_obnovit_takt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/FanObnovitTaktProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mekanisms"
     },
     {
       "name": "Fan",
@@ -2371,77 +2235,6 @@
         ]
       },
       "path": "~/Mekanisms"
-    },
-    {
-      "name": "EnergydetectorKoghdaNazhataPKMPoBloku",
-      "type": "procedure",
-      "sortid": 229,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "energydetector_koghda_nazhata_pkm_po_bloku",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/EnergydetectorKoghdaNazhataPKMPoBlokuProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "direction",
-            "type": "direction"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Tools"
-    },
-    {
-      "name": "BatteryblockObnovitTakt",
-      "type": "procedure",
-      "sortid": 230,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "batteryblock_obnovit_takt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/BatteryblockObnovitTaktProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "Batteryblock",
@@ -2510,51 +2303,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/creativeworld/network/ElectricjetpackcontrolMessage.java"
-        ]
-      }
-    },
-    {
-      "name": "BlackscreenOtobrazhatOvierlieiVIghrie",
-      "type": "procedure",
-      "sortid": 233,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blackscreen_otobrazhat_ovierliei_v_ighrie",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/BlackscreenOtobrazhatOvierlieiVIghrieProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Blackscreen",
-      "type": "overlay",
-      "sortid": 234,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blackscreen",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/client/screens/BlackscreenOverlay.java"
         ]
       }
     },
@@ -2939,39 +2687,6 @@
       "path": "~/Tools"
     },
     {
-      "name": "Dsdf",
-      "type": "itemextension",
-      "sortid": 250,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dsdf",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "Pryvvpa",
-      "type": "itemextension",
-      "sortid": 251,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pryvvpa",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "Avprso",
-      "type": "itemextension",
-      "sortid": 252,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "avprso",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "Ironwrenchcraft",
       "type": "recipe",
       "sortid": 253,
@@ -3213,20 +2928,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Jetpackenergylow",
-      "type": "overlay",
-      "sortid": 266,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jetpackenergylow",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/client/screens/JetpackenergylowOverlay.java"
-        ]
-      },
-      "path": "~/Jetpacks"
-    },
-    {
       "name": "Hklklh",
       "type": "procedure",
       "sortid": 267,
@@ -3307,7 +3008,6 @@
           "src/main/resources/assets/creative_world/models/item/creativium_ore.json",
           "src/main/resources/assets/creative_world/models/block/creativium_ore.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/creativium_ore.json",
-          "src/main/resources/data/creative_world/forge/biome_modifier/creativium_ore_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/creativium_ore.json",
           "src/main/java/net/mcreator/creativeworld/block/CreativiumOreBlock.java",
           "src/main/resources/assets/creative_world/blockstates/creativium_ore.json"
@@ -3622,7 +3322,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/creative_world/worldgen/configured_feature/accumulatium_ore.json",
-          "src/main/resources/data/creative_world/forge/biome_modifier/accumulatium_ore_biome_modifier.json",
           "src/main/resources/assets/creative_world/blockstates/accumulatium_ore.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/accumulatium_ore.json",
           "src/main/resources/assets/creative_world/models/block/accumulatium_ore.json",
@@ -4152,7 +3851,6 @@
       "registry_name": "titan_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/creative_world/forge/biome_modifier/titan_ore_biome_modifier.json",
           "src/main/resources/assets/creative_world/blockstates/titan_ore.json",
           "src/main/resources/assets/creative_world/models/item/titan_ore.json",
           "src/main/java/net/mcreator/creativeworld/block/TitanOreBlock.java",
@@ -4839,19 +4537,6 @@
       }
     },
     {
-      "name": "QT",
-      "type": "command",
-      "sortid": 327,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "qt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/command/QTCommand.java"
-        ]
-      }
-    },
-    {
       "name": "QTclearall",
       "type": "procedure",
       "sortid": 328,
@@ -4866,6 +4551,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -4885,6 +4574,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -4904,6 +4597,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -5248,21 +4945,6 @@
       "path": "~/ResinTree"
     },
     {
-      "name": "SetWorldIndex",
-      "type": "procedure",
-      "sortid": 365,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_world_index",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/SetWorldIndexProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Legacy"
-    },
-    {
       "name": "DrillKazhdyiTikVRukie",
       "type": "procedure",
       "sortid": 366,
@@ -5279,20 +4961,6 @@
             "name": "entity",
             "type": "entity"
           }
-        ]
-      },
-      "path": "~/Tools/Drills"
-    },
-    {
-      "name": "DrillInHand",
-      "type": "overlay",
-      "sortid": 367,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "drill_in_hand",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/client/screens/DrillInHandOverlay.java"
         ]
       },
       "path": "~/Tools/Drills"
@@ -5342,7 +5010,6 @@
       "registry_name": "rubbertree_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/creative_world/forge/biome_modifier/rubbertree_feature_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/rubbertree_feature.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/rubbertree_feature.json"
         ],
@@ -5359,8 +5026,7 @@
       "metadata": {
         "files": [
           "src/main/resources/data/creative_world/worldgen/configured_feature/littleoilmine_feature.json",
-          "src/main/resources/data/creative_world/worldgen/placed_feature/littleoilmine_feature.json",
-          "src/main/resources/data/creative_world/forge/biome_modifier/littleoilmine_feature_biome_modifier.json"
+          "src/main/resources/data/creative_world/worldgen/placed_feature/littleoilmine_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -5374,7 +5040,6 @@
       "registry_name": "mediumoilmine_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/creative_world/forge/biome_modifier/mediumoilmine_feature_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/mediumoilmine_feature.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/mediumoilmine_feature.json"
         ],
@@ -5391,7 +5056,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/creative_world/worldgen/configured_feature/littlegasmine_feature.json",
-          "src/main/resources/data/creative_world/forge/biome_modifier/littlegasmine_feature_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/littlegasmine_feature.json"
         ],
         "has_nbt_structure": true
@@ -5406,7 +5070,6 @@
       "registry_name": "mediumgasmine_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/creative_world/forge/biome_modifier/mediumgasmine_feature_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/mediumgasmine_feature.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/mediumgasmine_feature.json"
         ],
@@ -5474,6 +5137,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5592,38 +5259,6 @@
       "path": "~/Wires"
     },
     {
-      "name": "InfinityenergyObnovlieniieTika",
-      "type": "procedure",
-      "sortid": 381,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "infinityenergy_obnovlieniie_tika",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/InfinityenergyObnovlieniieTikaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mekanisms"
-    },
-    {
       "name": "Alargebucketofwater9DopolnitielnaiaInformatsiia",
       "type": "procedure",
       "sortid": 382,
@@ -5639,50 +5274,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/LargeBucket"
-    },
-    {
-      "name": "AlargebucketPriShchielchkiePKMPoBloku",
-      "type": "procedure",
-      "sortid": 383,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "alargebucket_pri_shchielchkie_pkm_po_bloku",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/AlargebucketPriShchielchkiePKMPoBlokuProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "direction",
-            "type": "direction"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -5722,38 +5313,6 @@
         ]
       },
       "path": "~/LargeBucket"
-    },
-    {
-      "name": "WireEnergy",
-      "type": "procedure",
-      "sortid": 385,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wire_energy",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/WireEnergyProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Wires"
     },
     {
       "name": "WireEnergyUpdateTick",
@@ -5858,8 +5417,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5879,8 +5438,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5900,8 +5459,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -6069,35 +5628,6 @@
       "path": "~/Components"
     },
     {
-      "name": "Crushing",
-      "type": "jeirecipetype",
-      "sortid": 402,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crushing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/jei_recipes/CrushingRecipe.java",
-          "src/main/java/net/mcreator/creativeworld/jei_recipes/CrushingRecipeCategory.java"
-        ]
-      },
-      "path": "~/JEI"
-    },
-    {
-      "name": "TinCrushing",
-      "type": "jeirecipe",
-      "sortid": 403,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tin_crushing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipes/tin_crushing.json"
-        ]
-      },
-      "path": "~/JEI"
-    },
-    {
       "name": "FdgdfKazhdyiTikPokaIntierfieisOtkryt",
       "type": "procedure",
       "sortid": 404,
@@ -6111,34 +5641,6 @@
         "dependencies": []
       },
       "path": "~/Mekanisms"
-    },
-    {
-      "name": "IronCrushing",
-      "type": "jeirecipe",
-      "sortid": 405,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_crushing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipes/iron_crushing.json"
-        ]
-      },
-      "path": "~/JEI"
-    },
-    {
-      "name": "CopperCrushing",
-      "type": "jeirecipe",
-      "sortid": 406,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "copper_crushing",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipes/copper_crushing.json"
-        ]
-      },
-      "path": "~/JEI"
     },
     {
       "name": "AllowCheatItems",
@@ -6169,75 +5671,51 @@
   ],
   "variable_elements": [
     {
-      "name": "itemsInCrusherOutput",
-      "type": "arraylist",
-      "scope": "global",
-      "value": "new ArrayList\u003c\u003e()"
-    },
-    {
-      "name": "crusherPositionX",
-      "type": "arraylist",
-      "scope": "global",
-      "value": "new ArrayList\u003c\u003e()"
-    },
-    {
-      "name": "crusherPositionY",
-      "type": "arraylist",
-      "scope": "global",
-      "value": "new ArrayList\u003c\u003e()"
-    },
-    {
-      "name": "crusherPositionZ",
-      "type": "arraylist",
-      "scope": "global",
-      "value": "new ArrayList\u003c\u003e()"
-    },
-    {
       "name": "QT_1",
       "type": "logic",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "false"
     },
     {
       "name": "QT_2",
       "type": "logic",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "false"
     },
     {
       "name": "first_QT_ID_x",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "seckond_QT_ID_x",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "first_QT_ID_y",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "seckond_QT_ID_y",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "first_QT_ID_z",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "seckond_QT_ID_z",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "0"
     },
     {
@@ -6247,28 +5725,13 @@
       "value": "0.0"
     },
     {
-      "name": "worldIndex",
-      "type": "number",
-      "scope": "global",
-      "value": "0"
-    },
-    {
       "name": "drillMode",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "map",
       "value": "1.0"
     }
   ],
-  "sound_elements": [
-    {
-      "name": "qt.teleport",
-      "files": [
-        "4d0ffdd58b49367"
-      ],
-      "category": "voice",
-      "subtitle": ""
-    }
-  ],
+  "sound_elements": [],
   "language_map": {
     "ru_ru": {
       "item.creative_world.creativiumnugget": "Самородок Креативиума",
@@ -6281,11 +5744,13 @@
       "block.creative_world.resin_slab": "Плита из каучукового дерева",
       "gamerule.allowcreativemode.description": "позволяет создавать предметы в творческом режиме",
       "item.creative_world.titan_armor_chestplate": "Титановый нагрудник",
+      "item.creative_world.electricjetpack_leggings": "Electricjetpack ������",
       "item_group.creative_world.creativeworldblocks": "Creative world: блоки",
       "item.creative_world.battrey_1": "Аккумулятор",
       "item.creative_world.battrey_2": "Аккумулятор",
       "item.creative_world.battrey_3": "Аккумулятор",
       "block.creative_world.solarpanel": "Солнечная панель",
+      "item.creative_world.advancedelectricjetpack_leggings": "Advancedelectricjetpack Поножи",
       "item.creative_world.washedcrushedtinore": "Промытая измельченная оловянная руда",
       "item.creative_world.battrey_0": "Аккумулятор",
       "block.creative_world.coalgenerator_1": "Угольный генератор",
@@ -6304,6 +5769,7 @@
       "item.creative_world.creativium_armor_chestplate": "Креативиумный нагрудник",
       "item_group.creative_world.creativeworldcombat": "Creative world: бой",
       "advancements.my_first_drill.title": "Моя первая дрель",
+      "item.creative_world.advancedelectricjetpack_helmet": "Advancedelectricjetpack Шлем",
       "advancements.infinity.descr": "Вода?",
       "advancements.bedrock.descr": "Бедрок не может быть сломан.",
       "item.creative_world.tinplate": "Жестяная тарелка",
@@ -6311,6 +5777,7 @@
       "item.creative_world.bronze_hoe": "Бронзовая мотыга",
       "item.creative_world.washedcrushedcopperore": "Промытая дробленая медная руда",
       "item.creative_world.tinnugget": "Оловянный самородок",
+      "item.creative_world.advancedelectricjetpack_boots": "Advancedelectricjetpack Ботинки",
       "item.creative_world.crushedcopperore": "Дробленая медная руда",
       "item.creative_world.energydetector": "Датчик энергии",
       "block.creative_world.resin_fence_gate": "Ворота забора из каучукового дерева",
@@ -6343,6 +5810,7 @@
       "item.creative_world.copper_sword": "Медный меч",
       "item.creative_world.composite_plate_tool_hoe": "Composite_plate_tool Мотыга",
       "item.creative_world.electric_motor": "Электрический мотор",
+      "item.creative_world.electricjetpack_helmet": "Electricjetpack ����",
       "block.creative_world.rsinlogwithresin": "Бревно из каучукового дерева с латексом",
       "advancements.whatisit.descr": "craft sdfghn",
       "block.creative_world.resin_fence": "Забор из каучукового дерева",
@@ -6385,6 +5853,7 @@
       "item.creative_world.composite_plate_armor_armor_helmet": "Композитное_платье_армировочный шлем",
       "item.creative_world.accumulatium_armor_chestplate": "Аккумулятиумные нагрудник",
       "block.creative_world.creativium_block": "Блок Креативиума",
+      "gamerule.allow_cheat_items.description": "allow use cheat item",
       "advancements.whatisit.title": "Что это?",
       "item.creative_world.rawtin": "Необработанное олово",
       "item.creative_world.titan_armor_helmet": "Шлем титана",
@@ -6404,6 +5873,7 @@
       "block.creative_world.titan_ore": "Титановая руда",
       "item.creative_world.accumulatium_armor_leggings": "Аккумулятиумные поножи",
       "item.creative_world.bronze_axe": "Бронзовый топор",
+      "item.creative_world.electricjetpack_boots": "Electricjetpack �������",
       "gamerule.allowCheatItems.description": "allow use cheat item",
       "item.creative_world.accumulatium_axe": "Аккумулятиумный топор",
       "item.creative_world.accumulatium_armor_helmet": "Аккумулятиумный шлем",
@@ -6467,7 +5937,8 @@
       "fluid.creative_world.oil": "Нефть",
       "item.creative_world.accumulatium_armor_boots": "Аккумулятиумные ботинки",
       "item.creative_world.drill": "Дрель",
-      "item.creative_world.composite_plate_tool_axe": "Composite_plate_tool Топор"
+      "item.creative_world.composite_plate_tool_axe": "Composite_plate_tool Топор",
+      "gamerule.allow_cheat_items": "Allow cheat items"
     },
     "en_us": {
       "item.creative_world.creativiumnugget": "Creativium nugget",
@@ -6480,11 +5951,13 @@
       "block.creative_world.resin_slab": "Rubber tree slab",
       "gamerule.allowcreativemode.description": "allow use creative mode item",
       "item.creative_world.titan_armor_chestplate": "Titan Chestplate",
+      "item.creative_world.electricjetpack_leggings": "Electricjetpack ������",
       "item_group.creative_world.creativeworldblocks": "Creative world: blocks",
       "item.creative_world.battrey_1": "Battrey 1",
       "item.creative_world.battrey_2": "Battrey 2",
       "item.creative_world.battrey_3": "Battrey 3",
       "block.creative_world.solarpanel": "Solar panel",
+      "item.creative_world.advancedelectricjetpack_leggings": "Advancedelectricjetpack Поножи",
       "item.creative_world.washedcrushedtinore": "Washed crushed tin ore",
       "item.creative_world.battrey_0": "Battrey 0",
       "block.creative_world.coalgenerator_1": "Coal generator",
@@ -6503,6 +5976,7 @@
       "item.creative_world.creativium_armor_chestplate": "Creativium Chestplate",
       "item_group.creative_world.creativeworldcombat": "Creative world: combat",
       "advancements.my_first_drill.title": "My First Drill",
+      "item.creative_world.advancedelectricjetpack_helmet": "Advancedelectricjetpack Шлем",
       "advancements.bedrock.descr": "The bedrock cannot be broken",
       "advancements.infinity.descr": "water?",
       "item.creative_world.tinplate": "Tin plate",
@@ -6510,6 +5984,7 @@
       "item.creative_world.composite_plate_armor_armor_chestplate": "Composite_plate_armor Chestplate",
       "item.creative_world.washedcrushedcopperore": "Washed crushed copper ore",
       "item.creative_world.tinnugget": "Tin nugget",
+      "item.creative_world.advancedelectricjetpack_boots": "Advancedelectricjetpack Ботинки",
       "item.creative_world.crushedcopperore": "Crushed copper ore",
       "item.creative_world.energydetector": "Energydetector",
       "block.creative_world.resin_fence_gate": "Rubber tree fence gate",
@@ -6543,6 +6018,7 @@
       "item.creative_world.copper_sword": "Copper Sword",
       "item.creative_world.composite_plate_tool_hoe": "Composite_plate_tool Hoe",
       "item.creative_world.electric_motor": "Electric Motor",
+      "item.creative_world.electricjetpack_helmet": "Electricjetpack ����",
       "block.creative_world.rsinlogwithresin": "Rubber tree log with rubber",
       "advancements.whatisit.descr": "craft the core of the formation",
       "block.creative_world.resin_fence": "Rubber tree fence",
@@ -6585,6 +6061,7 @@
       "item.creative_world.composite_plate_armor_armor_helmet": "Composite_plate_armor Helmet",
       "item.creative_world.accumulatium_armor_chestplate": "Accumulatium Chestplate",
       "block.creative_world.creativium_block": "Block of Creativium",
+      "gamerule.allow_cheat_items.description": "allow use cheat item",
       "advancements.whatisit.title": "What is it?",
       "item.creative_world.rawtin": "Raw tin",
       "item.creative_world.titan_armor_helmet": "Titan Helmet",
@@ -6604,6 +6081,7 @@
       "block.creative_world.titan_ore": "Titan Ore",
       "item.creative_world.accumulatium_armor_leggings": "Accumulatium Leggings",
       "item.creative_world.bronze_axe": "Bronze Axe",
+      "item.creative_world.electricjetpack_boots": "Electricjetpack �������",
       "gamerule.allowCheatItems.description": "allow use cheat item",
       "item.creative_world.accumulatium_axe": "Accumulatium Axe",
       "item.creative_world.accumulatium_armor_helmet": "Accumulatium Helmet",
@@ -6667,7 +6145,8 @@
       "fluid.creative_world.oil": "Oil",
       "item.creative_world.accumulatium_armor_boots": "Accumulatium Boots",
       "item.creative_world.drill": "Drill",
-      "item.creative_world.composite_plate_tool_axe": "Composite_plate_tool Axe"
+      "item.creative_world.composite_plate_tool_axe": "Composite_plate_tool Axe",
+      "gamerule.allow_cheat_items": "Allow cheat items"
     }
   },
   "foldersRoot": {
@@ -6792,10 +6271,6 @@
       {
         "name": "Jetpacks",
         "children": []
-      },
-      {
-        "name": "JEI",
-        "children": []
       }
     ]
   },
@@ -6813,10 +6288,8 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "jei"
-    ],
-    "currentGenerator": "forge-1.20.1",
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.creativeworld",
     "lockBaseModFiles": false

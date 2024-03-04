@@ -8,24 +8,29 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.creativeworld.init.CreativeWorldModTabs;
+
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.api.Environment;
+import net.fabricmc.api.EnvType;
+
 import java.util.List;
 
+import java.lang.reflect.Type;
+
 public abstract class ElectricjetpackItem extends ArmorItem {
-	public ElectricjetpackItem(ArmorItem.Type type, Item.Properties properties) {
+	public ElectricjetpackItem(Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
+			public int getDurabilityForType(Type type) {
 				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 5;
 			}
 
 			@Override
-			public int getDefenseForType(ArmorItem.Type type) {
+			public int getDefenseForType(Type type) {
 				return new int[]{1, 4, 5, 1}[type.getSlot().getIndex()];
 			}
 
@@ -36,7 +41,7 @@ public abstract class ElectricjetpackItem extends ArmorItem {
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return SoundEvents.EMPTY;
+				return null;
 			}
 
 			@Override
@@ -44,9 +49,10 @@ public abstract class ElectricjetpackItem extends ArmorItem {
 				return Ingredient.of();
 			}
 
+			@Environment(EnvType.CLIENT)
 			@Override
 			public String getName() {
-				return "electricjetpack";
+				return "ej_1";
 			}
 
 			@Override
@@ -62,18 +68,15 @@ public abstract class ElectricjetpackItem extends ArmorItem {
 	}
 
 	public static class Chestplate extends ElectricjetpackItem {
+
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
+			super(Type.CHESTPLATE, new Item.Properties());
+			ItemGroupEvents.modifyEntriesEvent(CreativeWorldModTabs.TAB_CREATIVEWORLDCOMBAT).register(content -> content.accept(this));
 		}
 
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "creative_world:textures/models/armor/ej_1_layer_1.png";
 		}
 	}
 }

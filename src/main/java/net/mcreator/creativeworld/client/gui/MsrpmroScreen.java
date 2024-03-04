@@ -1,3 +1,4 @@
+
 package net.mcreator.creativeworld.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -51,7 +52,7 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 
 		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/hdugfbg.png"), this.leftPos + 51, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
-		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/gui_element_1_1.png"), this.leftPos + -14, this.topPos + 0, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/gui_element_1_1.png"), this.leftPos + -13, this.topPos + 0, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}

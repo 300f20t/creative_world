@@ -1,7 +1,5 @@
 package net.mcreator.creativeworld.procedures;
 
-import net.minecraftforge.items.ItemHandlerHelper;
-
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -18,7 +16,7 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
 				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				_player.getInventory().add(_setstack);
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			{
@@ -35,7 +33,7 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
 				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				_player.getInventory().add(_setstack);
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			{
@@ -52,7 +50,7 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
 				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				_player.getInventory().add(_setstack);
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			{
@@ -69,7 +67,7 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
 				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				_player.getInventory().add(_setstack);
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			{

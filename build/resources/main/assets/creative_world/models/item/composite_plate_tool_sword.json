@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "creative_world:item/composite_plate_tool_sword"
-  }
-}

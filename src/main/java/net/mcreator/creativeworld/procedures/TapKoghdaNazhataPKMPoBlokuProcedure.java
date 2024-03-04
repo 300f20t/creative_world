@@ -18,16 +18,16 @@ public class TapKoghdaNazhataPKMPoBlokuProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.RSINLOGWITHRESIN.get()) {
-			world.setBlock(BlockPos.containing(x, y, z), CreativeWorldModBlocks.RESIN_LOG.get().defaultBlockState(), 3);
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.RSINLOGWITHRESIN) {
+			world.setBlock(BlockPos.containing(x, y, z), CreativeWorldModBlocks.RESIN_LOG.defaultBlockState(), 3);
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (x + (entity.getX() - x) / 3), (y + (entity.getY() - y) / 3), (z + (entity.getZ() - z) / 3), new ItemStack(CreativeWorldModItems.LATEX.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (x + (entity.getX() - x) / 3), (y + (entity.getY() - y) / 3), (z + (entity.getZ() - z) / 3), new ItemStack(CreativeWorldModItems.LATEX));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
 			if (1 == Mth.nextInt(RandomSource.create(), 1, 2)) {
 				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (x + (entity.getX() - x) / 3), (y + (entity.getY() - y) / 3), (z + (entity.getZ() - z) / 3), new ItemStack(CreativeWorldModItems.LATEX.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (x + (entity.getX() - x) / 3), (y + (entity.getY() - y) / 3), (z + (entity.getZ() - z) / 3), new ItemStack(CreativeWorldModItems.LATEX));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

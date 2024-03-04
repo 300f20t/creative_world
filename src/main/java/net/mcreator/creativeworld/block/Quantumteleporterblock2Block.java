@@ -10,28 +10,29 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.RenderType;
 
 import net.mcreator.creativeworld.procedures.Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure;
+import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
+
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.api.Environment;
+import net.fabricmc.api.EnvType;
 
 import java.util.List;
 import java.util.Collections;
 
 public class Quantumteleporterblock2Block extends Block {
-	public Quantumteleporterblock2Block() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1f, 10f));
-	}
+	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1f, 10f);
 
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public Quantumteleporterblock2Block() {
+		super(PROPERTIES);
 	}
 
 	@Override
@@ -59,5 +60,10 @@ public class Quantumteleporterblock2Block extends Block {
 		Direction direction = hit.getDirection();
 		Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
+	}
+
+	@Environment(EnvType.CLIENT)
+	public static void clientInit() {
+		BlockRenderLayerMap.INSTANCE.putBlock(CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2, RenderType.solid());
 	}
 }

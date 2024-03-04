@@ -1,63 +1,40 @@
 
 package net.mcreator.creativeworld.network;
 
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.server.network.ServerGamePacketListenerImpl;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.creativeworld.procedures.DrillModeSwitchPriNazhatiiKlavishiProcedure;
-import net.mcreator.creativeworld.CreativeWorldMod;
 
-import java.util.function.Supplier;
+import net.fabricmc.fabric.api.networking.v1.PacketSender;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class DrillModeSwitchMessage {
-	int type, pressedms;
+import io.netty.buffer.Unpooled;
 
-	public DrillModeSwitchMessage(int type, int pressedms) {
-		this.type = type;
-		this.pressedms = pressedms;
+public class DrillModeSwitchMessage extends FriendlyByteBuf {
+	public DrillModeSwitchMessage(boolean pressed, boolean released) {
+		super(Unpooled.buffer());
+		writeBoolean(pressed);
+		writeBoolean(released);
 	}
 
-	public DrillModeSwitchMessage(FriendlyByteBuf buffer) {
-		this.type = buffer.readInt();
-		this.pressedms = buffer.readInt();
-	}
+	public static void apply(MinecraftServer server, ServerPlayer entity, ServerGamePacketListenerImpl handler, FriendlyByteBuf buf, PacketSender responseSender) {
+		boolean pressed = buf.readBoolean();
+		boolean released = buf.readBoolean();
+		server.execute(() -> {
+			Level world = entity.level();
+			double x = entity.getX();
+			double y = entity.getY();
+			double z = entity.getZ();
+			// security measure to prevent arbitrary chunk generation
+			if (!world.hasChunkAt(entity.blockPosition()))
+				return;
+			if (pressed) {
 
-	public static void buffer(DrillModeSwitchMessage message, FriendlyByteBuf buffer) {
-		buffer.writeInt(message.type);
-		buffer.writeInt(message.pressedms);
-	}
-
-	public static void handler(DrillModeSwitchMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-		NetworkEvent.Context context = contextSupplier.get();
-		context.enqueueWork(() -> {
-			pressAction(context.getSender(), message.type, message.pressedms);
+				DrillModeSwitchPriNazhatiiKlavishiProcedure.execute(world, entity);
+			}
 		});
-		context.setPacketHandled(true);
-	}
-
-	public static void pressAction(Player entity, int type, int pressedms) {
-		Level world = entity.level();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		// security measure to prevent arbitrary chunk generation
-		if (!world.hasChunkAt(entity.blockPosition()))
-			return;
-		if (type == 0) {
-
-			DrillModeSwitchPriNazhatiiKlavishiProcedure.execute(entity);
-		}
-	}
-
-	@SubscribeEvent
-	public static void registerMessage(FMLCommonSetupEvent event) {
-		CreativeWorldMod.addNetworkMessage(DrillModeSwitchMessage.class, DrillModeSwitchMessage::buffer, DrillModeSwitchMessage::new, DrillModeSwitchMessage::handler);
 	}
 }

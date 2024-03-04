@@ -4,12 +4,8 @@
     "icon": {
       "item": "minecraft:barrier"
     },
-    "title": {
-      "translate": "advancements.creativeworld.title"
-    },
-    "description": {
-      "translate": "advancements.creativeworld.descr"
-    },
+    "title": "Creative world",
+    "description": "let's start",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

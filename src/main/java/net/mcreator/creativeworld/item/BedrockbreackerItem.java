@@ -15,6 +15,9 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.creativeworld.procedures.BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure;
+import net.mcreator.creativeworld.init.CreativeWorldModTabs;
+
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
 import java.util.List;
 
@@ -45,6 +48,7 @@ public class BedrockbreackerItem extends PickaxeItem {
 				return Ingredient.of(new ItemStack(Blocks.CRYING_OBSIDIAN), new ItemStack(Items.DIAMOND));
 			}
 		}, 1, -2.4f, new Item.Properties().fireResistant());
+		ItemGroupEvents.modifyEntriesEvent(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).register(content -> content.accept(this));
 	}
 
 	@Override
@@ -55,8 +59,8 @@ public class BedrockbreackerItem extends PickaxeItem {
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
-		super.useOn(context);
+		InteractionResult retval = super.useOn(context);
 		BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
-		return InteractionResult.SUCCESS;
+		return retval;
 	}
 }

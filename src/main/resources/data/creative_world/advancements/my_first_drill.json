@@ -3,12 +3,8 @@
     "icon": {
       "item": "creative_world:drill"
     },
-    "title": {
-      "translate": "advancements.my_first_drill.title"
-    },
-    "description": {
-      "translate": "advancements.my_first_drill.descr"
-    },
+    "title": "My First Drill",
+    "description": "Craft drill",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

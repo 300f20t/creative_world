@@ -1,10 +1,6 @@
 package net.mcreator.creativeworld.block.entity;
 
-import net.minecraftforge.items.wrapper.SidedInvWrapper;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.common.capabilities.Capability;
+import org.jetbrains.annotations.Nullable;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
@@ -13,6 +9,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.WorldlyContainer;
 import net.minecraft.world.ContainerHelper;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
@@ -24,18 +21,15 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.creativeworld.world.inventory.MsrpmroMenu;
 import net.mcreator.creativeworld.init.CreativeWorldModBlockEntities;
 
-import javax.annotation.Nullable;
+import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 
 import java.util.stream.IntStream;
 
-import io.netty.buffer.Unpooled;
-
-public class Coalgenerator1BlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class Coalgenerator1BlockEntity extends RandomizableContainerBlockEntity implements ExtendedScreenHandlerFactory, WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
-	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public Coalgenerator1BlockEntity(BlockPos position, BlockState state) {
-		super(CreativeWorldModBlockEntities.COALGENERATOR_1.get(), position, state);
+		super(CreativeWorldModBlockEntities.COALGENERATOR_1, position, state);
 	}
 
 	@Override
@@ -49,9 +43,8 @@ public class Coalgenerator1BlockEntity extends RandomizableContainerBlockEntity 
 	@Override
 	public void saveAdditional(CompoundTag compound) {
 		super.saveAdditional(compound);
-		if (!this.trySaveLootTable(compound)) {
+		if (!this.trySaveLootTable(compound))
 			ContainerHelper.saveAllItems(compound, this.stacks);
-		}
 	}
 
 	@Override
@@ -61,7 +54,7 @@ public class Coalgenerator1BlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public CompoundTag getUpdateTag() {
-		return this.saveWithFullMetadata();
+		return this.saveWithoutMetadata();
 	}
 
 	@Override
@@ -89,7 +82,7 @@ public class Coalgenerator1BlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new MsrpmroMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new MsrpmroMenu(id, inventory, this);
 	}
 
 	@Override
@@ -128,16 +121,7 @@ public class Coalgenerator1BlockEntity extends RandomizableContainerBlockEntity 
 	}
 
 	@Override
-	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
-		if (!this.remove && facing != null && capability == ForgeCapabilities.ITEM_HANDLER)
-			return handlers[facing.ordinal()].cast();
-		return super.getCapability(capability, facing);
-	}
-
-	@Override
-	public void setRemoved() {
-		super.setRemoved();
-		for (LazyOptional<? extends IItemHandler> handler : handlers)
-			handler.invalidate();
+	public void writeScreenOpeningData(ServerPlayer player, FriendlyByteBuf buf) {
+		buf.writeBlockPos(worldPosition);
 	}
 }

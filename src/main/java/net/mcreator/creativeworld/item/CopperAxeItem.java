@@ -10,6 +10,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.creativeworld.init.CreativeWorldModTabs;
+
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+
 import java.util.List;
 
 public class CopperAxeItem extends AxeItem {
@@ -39,6 +43,7 @@ public class CopperAxeItem extends AxeItem {
 				return Ingredient.of();
 			}
 		}, 1, -3.1f, new Item.Properties());
+		ItemGroupEvents.modifyEntriesEvent(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).register(content -> content.accept(this));
 	}
 
 	@Override

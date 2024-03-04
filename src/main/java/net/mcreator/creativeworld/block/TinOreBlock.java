@@ -7,23 +7,28 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.network.chat.Component;
+import net.minecraft.tags.TagKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.RenderType;
 
-import java.util.List;
+import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
+
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectionContext;
+import net.fabricmc.api.Environment;
+import net.fabricmc.api.EnvType;
+
+import java.util.function.Predicate;
 
 public class TinOreBlock extends Block {
-	public TinOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2.4f, 4.1825582104f).requiresCorrectToolForDrops());
-	}
+	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().sound(SoundType.STONE).strength(2.4f, 4.1825582104f).requiresCorrectToolForDrops();
+	public static final Predicate<BiomeSelectionContext> GENERATE_BIOMES = BiomeSelectors.tag(TagKey.create(Registries.BIOME, new ResourceLocation("is_overworld")));
 
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public TinOreBlock() {
+		super(PROPERTIES);
 	}
 
 	@Override
@@ -31,10 +36,8 @@ public class TinOreBlock extends Block {
 		return 15;
 	}
 
-	@Override
-	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 2;
-		return false;
+	@Environment(EnvType.CLIENT)
+	public static void clientInit() {
+		BlockRenderLayerMap.INSTANCE.putBlock(CreativeWorldModBlocks.TIN_ORE, RenderType.solid());
 	}
 }

@@ -13,39 +13,50 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
-import net.mcreator.creativeworld.CreativeWorldMod;
+
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 
 public class ResintreesaplingPriDobavlieniiRastieniiaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		CreativeWorldMod.queueServerWork((int) (Mth.nextInt(RandomSource.create(), 50, 200) * 20), () -> {
-			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.RESINTREESAPLING.get()) {
-				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				if (1 == Mth.nextInt(RandomSource.create(), 1, 2)) {
-					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("creative_world", "resin_tree_1"));
-						if (template != null) {
-							template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
-									3);
+		new Object() {
+			private int ticks = 0;
+
+			public void startDelay(LevelAccessor world) {
+				ServerTickEvents.END_SERVER_TICK.register((server) -> {
+					this.ticks++;
+					if (this.ticks == (int) (Mth.nextInt(RandomSource.create(), 50, 200) * 20)) {
+						if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.RESINTREESAPLING) {
+							world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+							if (1 == Mth.nextInt(RandomSource.create(), 1, 2)) {
+								if (world instanceof ServerLevel _serverworld) {
+									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("creative_world", "resin_tree_1"));
+									if (template != null) {
+										template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+												_serverworld.random, 3);
+									}
+								}
+							} else if (1 == Mth.nextInt(RandomSource.create(), 1, 2)) {
+								if (world instanceof ServerLevel _serverworld) {
+									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("creative_world", "resin_tree_2"));
+									if (template != null) {
+										template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+												_serverworld.random, 3);
+									}
+								}
+							} else {
+								if (world instanceof ServerLevel _serverworld) {
+									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("creative_world", "resin_tree_3"));
+									if (template != null) {
+										template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+												_serverworld.random, 3);
+									}
+								}
+							}
 						}
+						return;
 					}
-				} else if (1 == Mth.nextInt(RandomSource.create(), 1, 2)) {
-					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("creative_world", "resin_tree_2"));
-						if (template != null) {
-							template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
-									3);
-						}
-					}
-				} else {
-					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("creative_world", "resin_tree_3"));
-						if (template != null) {
-							template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
-									3);
-						}
-					}
-				}
+				});
 			}
-		});
+		}.startDelay(world);
 	}
 }

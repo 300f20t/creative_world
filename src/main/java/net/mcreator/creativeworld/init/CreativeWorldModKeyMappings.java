@@ -6,62 +6,58 @@ package net.mcreator.creativeworld.init;
 
 import org.lwjgl.glfw.GLFW;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.client.Minecraft;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.creativeworld.network.ElectricjetpackcontrolMessage;
 import net.mcreator.creativeworld.network.DrillModeSwitchMessage;
 import net.mcreator.creativeworld.CreativeWorldMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+
+import com.mojang.blaze3d.platform.InputConstants;
+
 public class CreativeWorldModKeyMappings {
-	public static final KeyMapping ELECTRICJETPACKCONTROL = new KeyMapping("key.creative_world.electricjetpackcontrol", GLFW.GLFW_KEY_SPACE, "key.categories.misc") {
-		private boolean isDownOld = false;
+	public static class CreativeWorldModKeyMapping extends KeyMapping {
+		private boolean isDownOld;
 
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				CreativeWorldMod.PACKET_HANDLER.sendToServer(new ElectricjetpackcontrolMessage(0, 0));
-				ElectricjetpackcontrolMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
+		public CreativeWorldModKeyMapping(String string, int i, String string2) {
+			super(string, InputConstants.Type.KEYSYM, i, string2);
 		}
-	};
-	public static final KeyMapping DRILL_MODE_SWITCH = new KeyMapping("key.creative_world.drill_mode_switch", GLFW.GLFW_KEY_M, "key.categories.misc") {
-		private boolean isDownOld = false;
 
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				CreativeWorldMod.PACKET_HANDLER.sendToServer(new DrillModeSwitchMessage(0, 0));
-				DrillModeSwitchMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+		public int action() {
+			if (isDownOld != isDown() && isDown()) {
+				isDownOld = isDown();
+				return 1;
+			} else if (isDownOld != isDown() && !isDown()) {
+				isDownOld = isDown();
+				return 2;
 			}
-			isDownOld = isDown;
+			isDownOld = isDown();
+			return 0;
 		}
-	};
-
-	@SubscribeEvent
-	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
-		event.register(ELECTRICJETPACKCONTROL);
-		event.register(DRILL_MODE_SWITCH);
 	}
 
-	@Mod.EventBusSubscriber({Dist.CLIENT})
-	public static class KeyEventListener {
-		@SubscribeEvent
-		public static void onClientTick(TickEvent.ClientTickEvent event) {
-			if (Minecraft.getInstance().screen == null) {
-				ELECTRICJETPACKCONTROL.consumeClick();
-				DRILL_MODE_SWITCH.consumeClick();
+	public static CreativeWorldModKeyMapping ELECTRICJETPACKCONTROL = (CreativeWorldModKeyMapping) KeyBindingHelper
+			.registerKeyBinding(new CreativeWorldModKeyMapping("key.creative_world.electricjetpackcontrol", GLFW.GLFW_KEY_SPACE, "key.categories.misc"));
+	public static CreativeWorldModKeyMapping DRILL_MODE_SWITCH = (CreativeWorldModKeyMapping) KeyBindingHelper.registerKeyBinding(new CreativeWorldModKeyMapping("key.creative_world.drill_mode_switch", GLFW.GLFW_KEY_M, "key.categories.misc"));
+
+	public static void load() {
+		ClientTickEvents.END_CLIENT_TICK.register((client) -> {
+			int ELECTRICJETPACKCONTROLaction = ELECTRICJETPACKCONTROL.action();
+			if (ELECTRICJETPACKCONTROLaction == 1) {
+				ClientPlayNetworking.send(new ResourceLocation(CreativeWorldMod.MODID, "electricjetpackcontrol"), new ElectricjetpackcontrolMessage(true, false));
+			} else if (ELECTRICJETPACKCONTROLaction == 2) {
+				ClientPlayNetworking.send(new ResourceLocation(CreativeWorldMod.MODID, "electricjetpackcontrol"), new ElectricjetpackcontrolMessage(false, true));
 			}
-		}
+			int DRILL_MODE_SWITCHaction = DRILL_MODE_SWITCH.action();
+			if (DRILL_MODE_SWITCHaction == 1) {
+				ClientPlayNetworking.send(new ResourceLocation(CreativeWorldMod.MODID, "drill_mode_switch"), new DrillModeSwitchMessage(true, false));
+			} else if (DRILL_MODE_SWITCHaction == 2) {
+				ClientPlayNetworking.send(new ResourceLocation(CreativeWorldMod.MODID, "drill_mode_switch"), new DrillModeSwitchMessage(false, true));
+			}
+		});
 	}
 }

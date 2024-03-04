@@ -4,23 +4,29 @@
 */
 package net.mcreator.creativeworld.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.village.VillagerTradesEvent;
-import net.minecraftforge.common.BasicItemListing;
+import org.jetbrains.annotations.NotNull;
 
+import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.npc.VillagerProfession;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE)
+import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
+
 public class CreativeWorldModTrades {
-	@SubscribeEvent
-	public static void registerTrades(VillagerTradesEvent event) {
-		if (event.getType() == VillagerProfession.LEATHERWORKER) {
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD),
+	public static void registerTrades() {
+		TradeOfferHelper.registerVillagerOffers(VillagerProfession.LEATHERWORKER, 1, factories -> {
+			factories.add(new BasicTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(CreativeWorldModItems.RUBBER, 5), 10, 5, 0.05f));
+		});
+	}
 
-					new ItemStack(CreativeWorldModItems.RUBBER.get(), 5), 10, 5, 0.05f));
+	private record BasicTrade(ItemStack price, ItemStack price2, ItemStack offer, int maxTrades, int xp, float priceMult) implements VillagerTrades.ItemListing {
+		@Override
+		public @NotNull MerchantOffer getOffer(Entity entity, RandomSource random) {
+			return new MerchantOffer(price, price2, offer, maxTrades, xp, priceMult);
 		}
 	}
 }

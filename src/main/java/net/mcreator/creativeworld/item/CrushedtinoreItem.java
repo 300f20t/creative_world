@@ -12,17 +12,26 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.creativeworld.procedures.CrushedtinoreKoghdaNazhataPKMPoBlokuProcedure;
+import net.mcreator.creativeworld.init.CreativeWorldModTabs;
+
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
 import java.util.List;
 
 public class CrushedtinoreItem extends Item {
 	public CrushedtinoreItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+		ItemGroupEvents.modifyEntriesEvent(CreativeWorldModTabs.TAB_CREATIVEWORLDITEMS).register(content -> content.accept(this));
 	}
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
 		return UseAnim.EAT;
+	}
+
+	@Override
+	public int getUseDuration(ItemStack itemstack) {
+		return 0;
 	}
 
 	@Override
@@ -32,8 +41,8 @@ public class CrushedtinoreItem extends Item {
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
-		super.useOn(context);
+		InteractionResult retval = super.useOn(context);
 		CrushedtinoreKoghdaNazhataPKMPoBlokuProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer());
-		return InteractionResult.SUCCESS;
+		return retval;
 	}
 }

@@ -13,7 +13,7 @@ public class ResinLeavesPriRazrushieniiBlokaIghrokomProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (1 == Mth.nextInt(RandomSource.create(), 1, 10)) {
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(CreativeWorldModBlocks.RESINTREESAPLING.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(CreativeWorldModBlocks.RESINTREESAPLING));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}

@@ -10,6 +10,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.creativeworld.init.CreativeWorldModTabs;
+
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+
 import java.util.List;
 
 public class CopperShovelItem extends ShovelItem {
@@ -39,6 +43,7 @@ public class CopperShovelItem extends ShovelItem {
 				return Ingredient.of();
 			}
 		}, 1, -3f, new Item.Properties());
+		ItemGroupEvents.modifyEntriesEvent(CreativeWorldModTabs.TAB_CREATIVEWORLDTOOLS).register(content -> content.accept(this));
 	}
 
 	@Override

@@ -119,9 +119,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "FanObnovitTakt"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

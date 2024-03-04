@@ -22,14 +22,17 @@
     "damageVsEntity": 6.0,
     "usageCount": 200,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Items.IRON_INGOT"
       }
     ],
     "immuneToFire": false,
-    "stayInGridWhenCrafting": true,
-    "damageOnCrafting": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
     "onRightClickedOnBlock": {
       "name": "IronwrenchKoghdaNazhataPKMPoBloku"
     }
