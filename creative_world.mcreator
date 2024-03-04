@@ -6814,6 +6814,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
+      "patchouliapi",
       "jei"
     ],
     "currentGenerator": "forge-1.20.1",
