@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:electric_motor"
+    },
+    "b": {
+      "item": "minecraft:flint"
+    },
+    "c": {
+      "item": "creative_world:machinecase"
+    },
+    "d": {
+      "item": "creative_world:electricalcircuit"
+    }
+  },
+  "result": {
+    "item": "creative_world:crusher",
+    "count": 1
+  }
+}
