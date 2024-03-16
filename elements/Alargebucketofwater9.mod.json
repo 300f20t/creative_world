@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "a_large_bucket_filled_with_water",
+    "texture": "large_bucket_with_wather",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

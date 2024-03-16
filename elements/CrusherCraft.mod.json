@@ -15,34 +15,34 @@
         "value": ""
       },
       {
-        "value": "TAG:forge:battery"
+        "value": "CUSTOM:ElectricMotor"
       },
       {
         "value": ""
       },
       {
-        "value": "TAG:forge:battery"
+        "value": "Items.FLINT"
       },
       {
         "value": "CUSTOM:Machinecase"
       },
       {
-        "value": "TAG:forge:battery"
+        "value": "Items.FLINT"
       },
       {
         "value": ""
       },
       {
-        "value": "TAG:forge:battery"
+        "value": "CUSTOM:Electricalcircuit"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Batteryblock"
+      "value": "CUSTOM:Crusher"
     },
-    "name": "batteryblockcraft",
+    "name": "crusher_craft",
     "namespace": "mod"
   }
 }

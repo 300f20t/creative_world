@@ -1,6 +1,10 @@
 {
   "pack": {
     "pack_format": 15,
+<<<<<<< HEAD
     "description": "creative_world resources"
+=======
+    "description": "This is Beta!"
+>>>>>>> main
   }
 }

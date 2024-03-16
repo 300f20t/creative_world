@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "a_large_bucket",
+    "texture": "large_bucket",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "tag": "minecraft:battery"
+      "tag": "forge:battery"
     },
     "b": {
       "item": "creative_world:machinecase"

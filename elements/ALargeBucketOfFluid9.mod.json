@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "alargebucketoffluid9",
+    "texture": "large_bucket_with_fluid",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

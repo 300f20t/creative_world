@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "creative_world:item/alargebucketoffluid9"
+    "layer0": "creative_world:item/large_bucket_with_fluid"
   }
 }
