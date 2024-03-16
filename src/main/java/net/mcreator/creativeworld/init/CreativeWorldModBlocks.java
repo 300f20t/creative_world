@@ -84,41 +84,41 @@ public class CreativeWorldModBlocks {
 	public static Block BUG;
 
 	public static void load() {
-		COPPER_WIRE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "copper_wire"), new CopperWireBlock());
-		INSULATED_COPPER_WIRE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "insulated_copper_wire"), new InsulatedCopperWireBlock());
-		TIN_ORE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "tin_ore"), new TinOreBlock());
-		TITAN_ORE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "titan_ore"), new TitanOreBlock());
-		ACCUMULATIUM_ORE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "accumulatium_ore"), new AccumulatiumOreBlock());
-		CREATIVIUM_ORE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "creativium_ore"), new CreativiumOreBlock());
-		TIN_BLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "tin_block"), new TinBlockBlock());
-		BRONZE_BLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "bronze_block"), new BronzeBlockBlock());
-		ACCUMULATIUM_BLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "accumulatium_block"), new AccumulatiumBlockBlock());
-		CREATIVIUM_BLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "creativium_block"), new CreativiumBlockBlock());
-		RESIN_LOG = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_log"), new ResinLogBlock());
-		RSINLOGWITHRESIN = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "rsinlogwithresin"), new RsinlogwithresinBlock());
-		RESIN_WOOD = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_wood"), new ResinWoodBlock());
-		RESIN_PLANKS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_planks"), new ResinPlanksBlock());
-		RESIN_STAIRS = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_stairs"), new ResinStairsBlock());
-		RESIN_SLAB = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_slab"), new ResinSlabBlock());
-		RESIN_LEAVES = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_leaves"), new ResinLeavesBlock());
-		RESIN_FENCE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_fence"), new ResinFenceBlock());
-		RESIN_FENCE_GATE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resin_fence_gate"), new ResinFenceGateBlock());
-		TITAN_BLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "titan_block"), new TitanBlockBlock());
-		MACHINECASE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "machinecase"), new MachinecaseBlock());
-		COALGENERATOR = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "coalgenerator"), new CoalgeneratorBlock());
-		CRUSHER = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "crusher"), new CrusherBlock());
-		FAN = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "fan"), new FanBlock());
-		BATTERYBLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "batteryblock"), new BatteryblockBlock());
-		SOLARPANEL = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "solarpanel"), new SolarpanelBlock());
-		ADVENCEDMACHINECASE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "advencedmachinecase"), new AdvencedmachinecaseBlock());
-		ADVENCEDSOLARPANEL = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "advencedsolarpanel"), new AdvencedsolarpanelBlock());
-		INFINITYENERGY = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "infinityenergy"), new InfinityenergyBlock());
-		QUANTUMTELEPORTERBLOCK = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "quantumteleporterblock"), new QuantumteleporterblockBlock());
-		QUANTUMTELEPORTERBLOCK_2 = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "quantumteleporterblock_2"), new Quantumteleporterblock2Block());
-		STATIONARYPARTICLEBINDER = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "stationaryparticlebinder"), new StationaryparticlebinderBlock());
-		RESINTREESAPLING = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "resintreesapling"), new ResintreesaplingBlock());
-		COALGENERATOR_1 = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "coalgenerator_1"), new Coalgenerator1Block());
-		BUG = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, "bug"), new BUGBlock());
+		COPPER_WIRE = register("copper_wire", new CopperWireBlock());
+		INSULATED_COPPER_WIRE = register("insulated_copper_wire", new InsulatedCopperWireBlock());
+		TIN_ORE = register("tin_ore", new TinOreBlock());
+		TITAN_ORE = register("titan_ore", new TitanOreBlock());
+		ACCUMULATIUM_ORE = register("accumulatium_ore", new AccumulatiumOreBlock());
+		CREATIVIUM_ORE = register("creativium_ore", new CreativiumOreBlock());
+		TIN_BLOCK = register("tin_block", new TinBlockBlock());
+		BRONZE_BLOCK = register("bronze_block", new BronzeBlockBlock());
+		ACCUMULATIUM_BLOCK = register("accumulatium_block", new AccumulatiumBlockBlock());
+		CREATIVIUM_BLOCK = register("creativium_block", new CreativiumBlockBlock());
+		RESIN_LOG = register("resin_log", new ResinLogBlock());
+		RSINLOGWITHRESIN = register("rsinlogwithresin", new RsinlogwithresinBlock());
+		RESIN_WOOD = register("resin_wood", new ResinWoodBlock());
+		RESIN_PLANKS = register("resin_planks", new ResinPlanksBlock());
+		RESIN_STAIRS = register("resin_stairs", new ResinStairsBlock());
+		RESIN_SLAB = register("resin_slab", new ResinSlabBlock());
+		RESIN_LEAVES = register("resin_leaves", new ResinLeavesBlock());
+		RESIN_FENCE = register("resin_fence", new ResinFenceBlock());
+		RESIN_FENCE_GATE = register("resin_fence_gate", new ResinFenceGateBlock());
+		TITAN_BLOCK = register("titan_block", new TitanBlockBlock());
+		MACHINECASE = register("machinecase", new MachinecaseBlock());
+		COALGENERATOR = register("coalgenerator", new CoalgeneratorBlock());
+		CRUSHER = register("crusher", new CrusherBlock());
+		FAN = register("fan", new FanBlock());
+		BATTERYBLOCK = register("batteryblock", new BatteryblockBlock());
+		SOLARPANEL = register("solarpanel", new SolarpanelBlock());
+		ADVENCEDMACHINECASE = register("advencedmachinecase", new AdvencedmachinecaseBlock());
+		ADVENCEDSOLARPANEL = register("advencedsolarpanel", new AdvencedsolarpanelBlock());
+		INFINITYENERGY = register("infinityenergy", new InfinityenergyBlock());
+		QUANTUMTELEPORTERBLOCK = register("quantumteleporterblock", new QuantumteleporterblockBlock());
+		QUANTUMTELEPORTERBLOCK_2 = register("quantumteleporterblock_2", new Quantumteleporterblock2Block());
+		STATIONARYPARTICLEBINDER = register("stationaryparticlebinder", new StationaryparticlebinderBlock());
+		RESINTREESAPLING = register("resintreesapling", new ResintreesaplingBlock());
+		COALGENERATOR_1 = register("coalgenerator_1", new Coalgenerator1Block());
+		BUG = register("bug", new BUGBlock());
 	}
 
 	public static void clientLoad() {
@@ -157,5 +157,9 @@ public class CreativeWorldModBlocks {
 		ResintreesaplingBlock.clientInit();
 		Coalgenerator1Block.clientInit();
 		BUGBlock.clientInit();
+	}
+
+	private static Block register(String registryName, Block block) {
+		return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(CreativeWorldMod.MODID, registryName), block);
 	}
 }

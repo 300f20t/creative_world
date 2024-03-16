@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "creative_world",
-  "version": "0.2.4.2_alpha",
+  "version": "0.2.4.1_beta",
   "name": "Creative world",
-  "description": "This is Alpha!",
+  "description": "This is Beta!",
   "authors": [
     "300f20t, MCreator."
   ],

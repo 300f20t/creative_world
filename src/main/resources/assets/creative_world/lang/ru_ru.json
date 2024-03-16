@@ -28,23 +28,15 @@
   "block.creative_world.accumulatium_ore": "Аккумулятивная руда",
   "item.creative_world.bronzeplate": "Бронзовая пластина",
   "item.creative_world.composite_plate_tool_sword": "Композитное_платье_тул Меч",
-  "item.creative_world.creativium_pickaxe": "Креативная кирка",
   "item.creative_world.thecoreofmatter": "Ядро материи",
+  "item.creative_world.creativium_pickaxe": "Креативная кирка",
   "block.creative_world.accumulatium_block": "Блок аккумулятиума",
   "item.creative_world.creativium_armor_chestplate": "Креативиумный нагрудник",
   "item_group.creative_world.creativeworldcombat": "Creative world: бой",
   "advancements.my_first_drill.title": "Моя первая дрель",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "item.creative_world.advancedelectricjetpack_helmet": "Advancedelectricjetpack Шлем",
   "advancements.infinity.descr": "Вода?",
-=======
->>>>>>> 1.20.1-forge
-  "advancements.bedrock.descr": "Бедрок не может быть сломан.",
-=======
   "advancements.bedrock.descr": "Бедрок не может быть сломан",
->>>>>>> main
-  "advancements.infinity.descr": "Вода?",
   "item.creative_world.tinplate": "Жестяная тарелка",
   "item.creative_world.composite_plate_armor_armor_chestplate": "Композитный нагрудник",
   "item.creative_world.bronze_hoe": "Бронзовая мотыга",
@@ -78,15 +70,12 @@
   "item.creative_world.creativium_shovel": "Лопата для творчества",
   "block.creative_world.coalgenerator": "Угольный генератор",
   "block.creative_world.advencedmachinecase": "Усовершенствованный корпус машины",
-  "item.creative_world.creativedrill": "Творческое упражнение",
   "item.creative_world.alargebucketofwater_9": "Большое ведро с водой",
+  "item.creative_world.creativedrill": "Творческое упражнение",
   "item.creative_world.copper_sword": "Медный меч",
   "item.creative_world.composite_plate_tool_hoe": "Composite_plate_tool Мотыга",
   "item.creative_world.electric_motor": "Электрический мотор",
-<<<<<<< HEAD
   "item.creative_world.electricjetpack_helmet": "Electricjetpack ����",
-=======
->>>>>>> 1.20.1-forge
   "block.creative_world.rsinlogwithresin": "Бревно из каучукового дерева с латексом",
   "advancements.whatisit.descr": "craft sdfghn",
   "block.creative_world.resin_fence": "Забор из каучукового дерева",
@@ -95,8 +84,8 @@
   "item.creative_world.tin_ingot": "Слиток олова",
   "item.creative_world.ironhammer": "Железный молоток",
   "item.creative_world.copper_armor_boots": "Медные сапоги",
-  "item.creative_world.advanceddrill": "Усовершенствованная дрель",
   "item.creative_world.copper_pickaxe": "Медная кирка",
+  "item.creative_world.advanceddrill": "Усовершенствованная дрель",
   "block.creative_world.crusher": "Дробилка",
   "item.creative_world.alargebucket": "Большое ведро",
   "itemGroup.tabcreativeworldtools": "Creative world: инструменты",
@@ -213,10 +202,6 @@
   "fluid.creative_world.oil": "Нефть",
   "item.creative_world.accumulatium_armor_boots": "Аккумулятиумные ботинки",
   "item.creative_world.drill": "Дрель",
-<<<<<<< HEAD
-  "item.creative_world.composite_plate_tool_axe": "Composite_plate_tool Топор",
+  "item.creative_world.composite_plate_tool_axe": "Композитный топор",
   "gamerule.allow_cheat_items": "Allow cheat items"
-=======
-  "item.creative_world.composite_plate_tool_axe": "Композитный топор"
->>>>>>> main
 }
