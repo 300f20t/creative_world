@@ -21,7 +21,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:Tinwire"
+        "value": "CUSTOM:CopperWire"
       },
       {
         "value": "CUSTOM:Rubber"
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tinwirewithrubber"
+      "value": "CUSTOM:InsulatedCopperWire"
     },
     "name": "tinwirewithrubbercraft",
     "namespace": "mod"

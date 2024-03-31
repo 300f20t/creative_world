@@ -48,8 +48,7 @@
           "src/main/resources/assets/creative_world/models/item/endlesswatersource.json",
           "src/main/java/net/mcreator/creativeworld/item/EndlesswatersourceItem.java"
         ]
-      },
-      "path": "~/Legacy"
+      }
     },
     {
       "name": "Qqqqq",
@@ -540,7 +539,7 @@
           "src/main/resources/data/creative_world/recipes/tin_armor_helmet_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Smelting"
     },
     {
       "name": "TinArmorBodyRecipe",
@@ -554,7 +553,7 @@
           "src/main/resources/data/creative_world/recipes/tin_armor_body_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Smelting"
     },
     {
       "name": "TinArmorLeggingsRecipe",
@@ -568,7 +567,7 @@
           "src/main/resources/data/creative_world/recipes/tin_armor_leggings_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Materials"
     },
     {
       "name": "TinArmorBootsRecipe",
@@ -582,7 +581,7 @@
           "src/main/resources/data/creative_world/recipes/tin_armor_boots_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Materials"
     },
     {
       "name": "CopperPickaxe",
@@ -671,7 +670,7 @@
           "src/main/resources/data/creative_world/recipes/copper_pickaxe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Materials"
     },
     {
       "name": "CopperAxeRecipe",
@@ -685,7 +684,7 @@
           "src/main/resources/data/creative_world/recipes/copper_axe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Materials"
     },
     {
       "name": "CopperSwordRecipe",
@@ -699,7 +698,7 @@
           "src/main/resources/data/creative_world/recipes/copper_sword_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Materials"
     },
     {
       "name": "CopperShovelRecipe",
@@ -713,7 +712,7 @@
           "src/main/resources/data/creative_world/recipes/copper_shovel_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Materials"
     },
     {
       "name": "CopperHoeRecipe",
@@ -727,7 +726,7 @@
           "src/main/resources/data/creative_world/recipes/copper_hoe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Materials"
     },
     {
       "name": "CopperArmor",
@@ -805,7 +804,7 @@
           "src/main/resources/data/creative_world/recipes/copper_armor_boots_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Materials"
     },
     {
       "name": "Fyutiy",
@@ -6165,6 +6164,20 @@
         ]
       },
       "path": "~/Achievements"
+    },
+    {
+      "name": "CrusherCraft",
+      "type": "recipe",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crusher_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creative_world/recipes/crusher_craft.json"
+        ]
+      },
+      "path": "~/Crafts"
     }
   ],
   "variable_elements": [
@@ -6298,14 +6311,14 @@
       "block.creative_world.accumulatium_ore": "Аккумулятивная руда",
       "item.creative_world.bronzeplate": "Бронзовая пластина",
       "item.creative_world.composite_plate_tool_sword": "Композитное_платье_тул Меч",
-      "item.creative_world.creativium_pickaxe": "Креативная кирка",
       "item.creative_world.thecoreofmatter": "Ядро материи",
+      "item.creative_world.creativium_pickaxe": "Креативная кирка",
       "block.creative_world.accumulatium_block": "Блок аккумулятиума",
       "item.creative_world.creativium_armor_chestplate": "Креативиумный нагрудник",
       "item_group.creative_world.creativeworldcombat": "Creative world: бой",
       "advancements.my_first_drill.title": "Моя первая дрель",
-      "advancements.bedrock.descr": "Бедрок не может быть сломан.",
       "advancements.infinity.descr": "Вода?",
+      "advancements.bedrock.descr": "Бедрок не может быть сломан",
       "item.creative_world.tinplate": "Жестяная тарелка",
       "item.creative_world.composite_plate_armor_armor_chestplate": "Композитный нагрудник",
       "item.creative_world.bronze_hoe": "Бронзовая мотыга",
@@ -6315,14 +6328,14 @@
       "item.creative_world.energydetector": "Датчик энергии",
       "block.creative_world.resin_fence_gate": "Ворота забора из каучукового дерева",
       "advancements.become_immortal.descr": "Создайте ядро неуязвимости",
-      "item.creative_world.tap": "Нажмите",
+      "item.creative_world.tap": "Краник",
       "item.creative_world.copperplate": "Медная пластина",
       "item.creative_world.copper_hoe": "Медная мотыга",
       "item.creative_world.accumulatium_shovel": "Накопительная лопата",
       "block.creative_world.creativium_ore": "Креативиевая руда",
-      "key.creative_world.drill_mode_switch": "Drill Mode Switch",
+      "key.creative_world.drill_mode_switch": "Изменение режима дрели",
       "item.creative_world.gas_bucket": "Газовое ведро",
-      "key.creative_world.electricjetpackcontrol": "Управление электрическим струйным пакетом",
+      "key.creative_world.electricjetpackcontrol": "Управление электрическим реактивным ранцем",
       "gui.creative_world.fgfhffhghkjkkytwqa.label_fe": "FE",
       "item.creative_world.bronze_pickaxe": "Бронзовая кирка",
       "item.creative_world.copper_shovel": "Медная лопата",
@@ -6333,13 +6346,13 @@
       "item_group.creative_world.creativeworlditems": "Creative world: предметы",
       "item.creative_world.accumulatium_hoe": "Аккумулятиумныая мотыга",
       "item.creative_world.bronze_sword": "Бронзовый меч",
-      "item.creative_world.titan_ingot": "Титан",
+      "item.creative_world.titan_ingot": "Титановый слиток",
       "item.creative_world.latex": "Латекс",
       "item.creative_world.creativium_shovel": "Лопата для творчества",
       "block.creative_world.coalgenerator": "Угольный генератор",
       "block.creative_world.advencedmachinecase": "Усовершенствованный корпус машины",
-      "item.creative_world.creativedrill": "Творческое упражнение",
       "item.creative_world.alargebucketofwater_9": "Большое ведро с водой",
+      "item.creative_world.creativedrill": "Творческое упражнение",
       "item.creative_world.copper_sword": "Медный меч",
       "item.creative_world.composite_plate_tool_hoe": "Composite_plate_tool Мотыга",
       "item.creative_world.electric_motor": "Электрический мотор",
@@ -6351,19 +6364,19 @@
       "item.creative_world.tin_ingot": "Слиток олова",
       "item.creative_world.ironhammer": "Железный молоток",
       "item.creative_world.copper_armor_boots": "Медные сапоги",
-      "item.creative_world.advanceddrill": "Усовершенствованная дрель",
       "item.creative_world.copper_pickaxe": "Медная кирка",
+      "item.creative_world.advanceddrill": "Усовершенствованная дрель",
       "block.creative_world.crusher": "Дробилка",
       "item.creative_world.alargebucket": "Большое ведро",
-      "itemGroup.tabcreativeworldtools": "Creativeworldtools",
+      "itemGroup.tabcreativeworldtools": "Creative world: инструменты",
       "item.creative_world.tin_armor_chestplate": "Жестяной нагрудник",
       "item.creative_world.creativium_armor_boots": "Креативиумные ботинки",
       "block.creative_world.resintreesapling": "Сажанец каучукового дерева",
-      "item.creative_world.thecoreofinvulnerability": "Принцип неуязвимости",
+      "item.creative_world.thecoreofinvulnerability": "Ядро неуязвимости",
       "gamerule.allowCheatItems": "Allow cheat items",
       "item.creative_world.a_large_bucket_of_fluid_9": "Большое ведро с жидкостью",
       "item.creative_world.particlebinder": "Связующее для частиц",
-      "item.creative_world.rubber": "Резинка",
+      "item.creative_world.rubber": "Резина",
       "block.creative_world.resin_planks": "Доски из каучукового дерева",
       "item.creative_world.creativium_sword": "Меч Креативиума",
       "fluid.creative_world.gas": "Газ",
@@ -6391,7 +6404,7 @@
       "item.creative_world.rawtitan": "Сырой титан",
       "block.creative_world.stationaryparticlebinder": "Стационарный превязыватель частиц",
       "item.creative_world.tin_armor_helmet": "Жестяной шлем",
-      "advancements.creativeworld.descr": "Давайте начнем",
+      "advancements.creativeworld.descr": "Давайте начнем!",
       "gui.creative_world.fgfhffhghkjkkytwqa.label_energy": "\u003cenergy\u003e",
       "item.creative_world.copper_axe": "Медный топор",
       "item.creative_world.bronze_armor_leggings": "Бронзовые поножи",
@@ -6431,7 +6444,7 @@
       "item.creative_world.accumulatiumnugget": "Накопительный самородок",
       "item.creative_world.titanplate": "Титановая пластина",
       "item.creative_world.creativereel": "Творческая катушки",
-      "block.creative_world.resin_wood": "каучуковое дерево",
+      "block.creative_world.resin_wood": "Каучуковое дерево",
       "item.creative_world.creativemod": "Креативный мод",
       "item.creative_world.accumulatium_ingot": "Аккумулятиумный слиток",
       "gui.creative_world.msrpmro.button_empty": "!",
@@ -6440,10 +6453,10 @@
       "item.creative_world.copper_armor_helmet": "Медный шлем",
       "block.creative_world.bug": "БАГ",
       "advancements.bedrock.title": "Бедрок?",
-      "item.creative_world.titan_sword": "Меч титана",
+      "item.creative_world.titan_sword": "Титановый меч",
       "item.creative_world.creatingcore": "Создание ядра",
       "item.creative_world.titan_pickaxe": "Титановая кирка",
-      "advancements.my_first_drill.descr": "Craft drill",
+      "advancements.my_first_drill.descr": "Создайте дрель",
       "item.creative_world.reel": "Катушка",
       "item.creative_world.tin_armor_boots": "Жестяные сапоги",
       "block.creative_world.tin_ore": "Оловянная руда",
@@ -6455,12 +6468,12 @@
       "item.creative_world.creativium_armor_helmet": "Креативиумный шлем",
       "item.creative_world.copper_armor_leggings": "Медные леггинсы",
       "item.creative_world.electricjetpack_chestplate": "Электрический реактивный ранец",
-      "itemGroup.tabcreativeworlditems": "Творческий мир: предметы",
+      "itemGroup.tabcreativeworlditems": "Creative world: предметы",
       "item.creative_world.keycard": "Карточка-ключ",
       "item.creative_world.bronze_armor_helmet": "Бронзовый шлем",
       "itemGroup.tabcreativeworldcombat": "Creative world: бой",
       "block.creative_world.gas": "Газ",
-      "item.creative_world.titan_armor_leggings": "Титановые леггинсы",
+      "item.creative_world.titan_armor_leggings": "Титановые поножи",
       "item.creative_world.crushedtinore": "Измельченная оловянная руда",
       "block.creative_world.resin_leaves": "Листья каучукового дерева",
       "item.creative_world.wirecutters": "Кусачки для проволоки",
@@ -6802,8 +6815,8 @@
   "workspaceSettings": {
     "modid": "creative_world",
     "modName": "Creative world",
-    "version": "0.2.4.2_alpha",
-    "description": "This is Alpha!",
+    "version": "0.2.4.1_beta",
+    "description": "This is Beta!",
     "author": "300f20t, MCreator.",
     "websiteURL": "https://mcreator.net",
     "license": "MIT License",
