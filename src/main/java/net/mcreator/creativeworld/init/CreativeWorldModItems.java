@@ -282,6 +282,7 @@ public class CreativeWorldModItems {
 	public static final RegistryObject<Item> BUG = block(CreativeWorldModBlocks.BUG);
 	public static final RegistryObject<Item> ELECTRIC_MOTOR = REGISTRY.register("electric_motor", () -> new ElectricMotorItem());
 	public static final RegistryObject<Item> CREATIVE_ELECTRIC_MOTOR = REGISTRY.register("creative_electric_motor", () -> new CreativeElectricMotorItem());
+	public static final RegistryObject<Item> NUCLEAR_REACTOR = block(CreativeWorldModBlocks.NUCLEAR_REACTOR);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

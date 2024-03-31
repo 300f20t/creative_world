@@ -29,6 +29,7 @@ import net.mcreator.creativeworld.block.ResinFenceBlock;
 import net.mcreator.creativeworld.block.QuantumteleporterblockBlock;
 import net.mcreator.creativeworld.block.Quantumteleporterblock2Block;
 import net.mcreator.creativeworld.block.OilBlock;
+import net.mcreator.creativeworld.block.NuclearReactorBlock;
 import net.mcreator.creativeworld.block.MachinecaseBlock;
 import net.mcreator.creativeworld.block.InsulatedCopperWireBlock;
 import net.mcreator.creativeworld.block.InfinityenergyBlock;
@@ -88,4 +89,5 @@ public class CreativeWorldModBlocks {
 	public static final RegistryObject<Block> RESINTREESAPLING = REGISTRY.register("resintreesapling", () -> new ResintreesaplingBlock());
 	public static final RegistryObject<Block> COALGENERATOR_1 = REGISTRY.register("coalgenerator_1", () -> new Coalgenerator1Block());
 	public static final RegistryObject<Block> BUG = REGISTRY.register("bug", () -> new BUGBlock());
+	public static final RegistryObject<Block> NUCLEAR_REACTOR = REGISTRY.register("nuclear_reactor", () -> new NuclearReactorBlock());
 }
