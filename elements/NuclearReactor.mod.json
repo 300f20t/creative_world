@@ -39,16 +39,16 @@
     },
     "hardness": 1.0,
     "resistance": 10.0,
-    "hasGravity": false,
+    "hasGravity": true,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Creativeworlditems"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.PLANKS#4"
     },
-    "dropAmount": 1,
+    "dropAmount": 2,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
@@ -61,9 +61,9 @@
     "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "emittedRedstonePower": {
-      "fixedValue": 15.0
+      "fixedValue": 5.0
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
@@ -74,14 +74,14 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.6,
+    "slipperiness": 1.0,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
