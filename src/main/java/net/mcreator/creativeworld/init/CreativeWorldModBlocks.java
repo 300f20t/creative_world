@@ -88,4 +88,5 @@ public class CreativeWorldModBlocks {
 	public static final RegistryObject<Block> RESINTREESAPLING = REGISTRY.register("resintreesapling", () -> new ResintreesaplingBlock());
 	public static final RegistryObject<Block> COALGENERATOR_1 = REGISTRY.register("coalgenerator_1", () -> new Coalgenerator1Block());
 	public static final RegistryObject<Block> BUG = REGISTRY.register("bug", () -> new BUGBlock());
+	public static final RegistryObject<Block> NUCLEAR_REACTOR = REGISTRY.register("nuclear_reactor", () -> new NuclearReactorBlock());
 }

@@ -69,6 +69,7 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModItems.BATTREY_3.get());
 				tabData.accept(CreativeWorldModItems.ELECTRIC_MOTOR.get());
 				tabData.accept(CreativeWorldModItems.CREATIVE_ELECTRIC_MOTOR.get());
+				tabData.accept(CreativeWorldModBlocks.NUCLEAR_REACTOR.get().asItem());
 			})
 
 					.build());
