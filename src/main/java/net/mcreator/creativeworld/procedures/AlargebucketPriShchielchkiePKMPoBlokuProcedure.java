@@ -1,7 +1,5 @@
 package net.mcreator.creativeworld.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
@@ -12,6 +10,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -43,11 +42,11 @@ public class AlargebucketPriShchielchkiePKMPoBlokuProcedure {
 		if (((world.getBlockState(BlockPos.containing(sx, sy, sz))).getBlock() instanceof LiquidBlock || !((world.getBlockState(BlockPos.containing(sx, sy, sz))).getBlock() == Blocks.AIR))
 				&& (world.getFluidState(BlockPos.containing(sx, sy, sz)).createLegacyBlock()).getFluidState().isSource()
 				&& ((itemstack.getOrCreateTag().getString("fluid_full_name")).equals("")
-						|| (itemstack.getOrCreateTag().getString("fluid_full_name")).equals(ForgeRegistries.ITEMS
+						|| (itemstack.getOrCreateTag().getString("fluid_full_name")).equals(BuiltInRegistries.ITEM
 								.getKey(((world.getFluidState(BlockPos.containing(sx, sy, sz)).createLegacyBlock()).getBlock() instanceof LiquidBlock _liquid ? new ItemStack(_liquid.getFluid().getBucket()) : ItemStack.EMPTY).getItem()).toString())
 						|| itemstack.getOrCreateTag().getDouble("mb") == 0)) {
 			itemstack.getOrCreateTag().putDouble("mb", (itemstack.getOrCreateTag().getDouble("mb") + 1000));
-			itemstack.getOrCreateTag().putString("fluid_full_name", (ForgeRegistries.ITEMS
+			itemstack.getOrCreateTag().putString("fluid_full_name", (BuiltInRegistries.ITEM
 					.getKey(((world.getFluidState(BlockPos.containing(sx, sy, sz)).createLegacyBlock()).getBlock() instanceof LiquidBlock _liquid ? new ItemStack(_liquid.getFluid().getBucket()) : ItemStack.EMPTY).getItem()).toString()));
 			itemstack.getOrCreateTag().putString("fluid_name",
 					(((world.getFluidState(BlockPos.containing(sx, sy, sz)).createLegacyBlock()).getBlock() instanceof LiquidBlock _liquid ? new ItemStack(_liquid.getFluid().getBucket()) : ItemStack.EMPTY).getDisplayName().getString()));
@@ -56,7 +55,7 @@ public class AlargebucketPriShchielchkiePKMPoBlokuProcedure {
 			if (itemstack.getOrCreateTag().getDouble("mb") != 0) {
 				itemstack.getOrCreateTag().putDouble("mb", (itemstack.getOrCreateTag().getDouble("mb") - 1000));
 				world.setBlock(BlockPos.containing(sx, sy, sz),
-						(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((itemstack.getOrCreateTag().getString("fluid_full_name"))).toLowerCase(java.util.Locale.ENGLISH))) instanceof BucketItem _bucket
+						(BuiltInRegistries.ITEM.get(new ResourceLocation(((itemstack.getOrCreateTag().getString("fluid_full_name"))).toLowerCase(java.util.Locale.ENGLISH))) instanceof BucketItem _bucket
 								? _bucket.getFluid().defaultFluidState().createLegacyBlock()
 								: Blocks.AIR.defaultBlockState()),
 						3);

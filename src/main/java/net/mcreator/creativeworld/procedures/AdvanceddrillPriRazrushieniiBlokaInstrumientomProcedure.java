@@ -13,7 +13,7 @@ public class AdvanceddrillPriRazrushieniiBlokaInstrumientomProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).drillMode == 1) {
+		if (entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).drillMode == 1) {
 			if ((entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getDirection()) == Direction.NORTH
 					|| (entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getDirection()) == Direction.SOUTH) {
 				{

@@ -1,33 +1,29 @@
 package net.mcreator.creativeworld.network;
 
-import net.minecraftforge.network.PacketDistributor;
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.event.AttachCapabilitiesEvent;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.util.FakePlayer;
-import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
-import net.minecraftforge.common.capabilities.ICapabilitySerializable;
-import net.minecraftforge.common.capabilities.CapabilityToken;
-import net.minecraftforge.common.capabilities.CapabilityManager;
-import net.minecraftforge.common.capabilities.Capability;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.network.handling.PlayPayloadContext;
+import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
+import net.neoforged.neoforge.common.util.INBTSerializable;
+import net.neoforged.neoforge.attachment.AttachmentType;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.nbt.Tag;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.Direction;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.creativeworld.CreativeWorldMod;
@@ -38,6 +34,8 @@ import java.util.ArrayList;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CreativeWorldModVariables {
+	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, CreativeWorldMod.MODID);
+	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
 	public static List<Object> itemsInCrusherOutput = new ArrayList<>();
 	public static List<Object> crusherPositionX = new ArrayList<>();
 	public static List<Object> crusherPositionY = new ArrayList<>();
@@ -46,40 +44,34 @@ public class CreativeWorldModVariables {
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
-		CreativeWorldMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new, SavedDataSyncMessage::handler);
-		CreativeWorldMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
-	}
-
-	@SubscribeEvent
-	public static void init(RegisterCapabilitiesEvent event) {
-		event.register(PlayerVariables.class);
+		CreativeWorldMod.addNetworkMessage(SavedDataSyncMessage.ID, SavedDataSyncMessage::new, SavedDataSyncMessage::handleData);
+		CreativeWorldMod.addNetworkMessage(PlayerVariablesSyncMessage.ID, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handleData);
 	}
 
 	@Mod.EventBusSubscriber
 	public static class EventBusVariableHandlers {
 		@SubscribeEvent
 		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (event.getEntity() instanceof ServerPlayer player)
+				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
 		}
 
 		@SubscribeEvent
 		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (event.getEntity() instanceof ServerPlayer player)
+				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
 		}
 
 		@SubscribeEvent
 		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (event.getEntity() instanceof ServerPlayer player)
+				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
 		}
 
 		@SubscribeEvent
 		public static void clonePlayer(PlayerEvent.Clone event) {
-			event.getOriginal().revive();
-			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
+			PlayerVariables clone = new PlayerVariables();
 			clone.QT_1 = original.QT_1;
 			clone.QT_2 = original.QT_2;
 			clone.first_QT_ID_x = original.first_QT_ID_x;
@@ -91,26 +83,27 @@ public class CreativeWorldModVariables {
 			clone.drillMode = original.drillMode;
 			if (!event.isWasDeath()) {
 			}
+			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
 
 		@SubscribeEvent
 		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getEntity().level().isClientSide()) {
+			if (event.getEntity() instanceof ServerPlayer player) {
 				SavedData mapdata = MapVariables.get(event.getEntity().level());
 				SavedData worlddata = WorldVariables.get(event.getEntity().level());
 				if (mapdata != null)
-					CreativeWorldMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(0, mapdata));
+					PacketDistributor.PLAYER.with(player).send(new SavedDataSyncMessage(0, mapdata));
 				if (worlddata != null)
-					CreativeWorldMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(1, worlddata));
+					PacketDistributor.PLAYER.with(player).send(new SavedDataSyncMessage(1, worlddata));
 			}
 		}
 
 		@SubscribeEvent
 		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getEntity().level().isClientSide()) {
+			if (event.getEntity() instanceof ServerPlayer player) {
 				SavedData worlddata = WorldVariables.get(event.getEntity().level());
 				if (worlddata != null)
-					CreativeWorldMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getEntity()), new SavedDataSyncMessage(1, worlddata));
+					PacketDistributor.PLAYER.with(player).send(new SavedDataSyncMessage(1, worlddata));
 			}
 		}
 	}
@@ -135,14 +128,14 @@ public class CreativeWorldModVariables {
 		public void syncData(LevelAccessor world) {
 			this.setDirty();
 			if (world instanceof Level level && !level.isClientSide())
-				CreativeWorldMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(level::dimension), new SavedDataSyncMessage(1, this));
+				PacketDistributor.DIMENSION.with(level.dimension()).send(new SavedDataSyncMessage(1, this));
 		}
 
 		static WorldVariables clientSide = new WorldVariables();
 
 		public static WorldVariables get(LevelAccessor world) {
 			if (world instanceof ServerLevel level) {
-				return level.getDataStorage().computeIfAbsent(e -> WorldVariables.load(e), WorldVariables::new, DATA_NAME);
+				return level.getDataStorage().computeIfAbsent(new SavedData.Factory<>(WorldVariables::new, WorldVariables::load), DATA_NAME);
 			} else {
 				return clientSide;
 			}
@@ -172,21 +165,22 @@ public class CreativeWorldModVariables {
 		public void syncData(LevelAccessor world) {
 			this.setDirty();
 			if (world instanceof Level && !world.isClientSide())
-				CreativeWorldMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new SavedDataSyncMessage(0, this));
+				PacketDistributor.ALL.noArg().send(new SavedDataSyncMessage(0, this));
 		}
 
 		static MapVariables clientSide = new MapVariables();
 
 		public static MapVariables get(LevelAccessor world) {
 			if (world instanceof ServerLevelAccessor serverLevelAcc) {
-				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(e -> MapVariables.load(e), MapVariables::new, DATA_NAME);
+				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(new SavedData.Factory<>(MapVariables::new, MapVariables::load), DATA_NAME);
 			} else {
 				return clientSide;
 			}
 		}
 	}
 
-	public static class SavedDataSyncMessage {
+	public static class SavedDataSyncMessage implements CustomPacketPayload {
+		public static final ResourceLocation ID = new ResourceLocation(CreativeWorldMod.MODID, "saved_data_sync");
 		private final int type;
 		private SavedData data;
 
@@ -207,57 +201,34 @@ public class CreativeWorldModVariables {
 			this.data = data;
 		}
 
-		public static void buffer(SavedDataSyncMessage message, FriendlyByteBuf buffer) {
-			buffer.writeInt(message.type);
-			if (message.data != null)
-				buffer.writeNbt(message.data.save(new CompoundTag()));
+		@Override
+		public void write(final FriendlyByteBuf buffer) {
+			buffer.writeInt(type);
+			if (data != null)
+				buffer.writeNbt(data.save(new CompoundTag()));
 		}
 
-		public static void handler(SavedDataSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-			NetworkEvent.Context context = contextSupplier.get();
-			context.enqueueWork(() -> {
-				if (!context.getDirection().getReceptionSide().isServer() && message.data != null) {
+		@Override
+		public ResourceLocation id() {
+			return ID;
+		}
+
+		public static void handleData(final SavedDataSyncMessage message, final PlayPayloadContext context) {
+			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
+				context.workHandler().submitAsync(() -> {
 					if (message.type == 0)
-						MapVariables.clientSide = (MapVariables) message.data;
+						MapVariables.clientSide.read(message.data.save(new CompoundTag()));
 					else
-						WorldVariables.clientSide = (WorldVariables) message.data;
-				}
-			});
-			context.setPacketHandled(true);
+						WorldVariables.clientSide.read(message.data.save(new CompoundTag()));
+				}).exceptionally(e -> {
+					context.packetHandler().disconnect(Component.literal(e.getMessage()));
+					return null;
+				});
+			}
 		}
 	}
 
-	public static final Capability<PlayerVariables> PLAYER_VARIABLES_CAPABILITY = CapabilityManager.get(new CapabilityToken<PlayerVariables>() {
-	});
-
-	@Mod.EventBusSubscriber
-	private static class PlayerVariablesProvider implements ICapabilitySerializable<Tag> {
-		@SubscribeEvent
-		public static void onAttachCapabilities(AttachCapabilitiesEvent<Entity> event) {
-			if (event.getObject() instanceof Player && !(event.getObject() instanceof FakePlayer))
-				event.addCapability(new ResourceLocation("creative_world", "player_variables"), new PlayerVariablesProvider());
-		}
-
-		private final PlayerVariables playerVariables = new PlayerVariables();
-		private final LazyOptional<PlayerVariables> instance = LazyOptional.of(() -> playerVariables);
-
-		@Override
-		public <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {
-			return cap == PLAYER_VARIABLES_CAPABILITY ? instance.cast() : LazyOptional.empty();
-		}
-
-		@Override
-		public Tag serializeNBT() {
-			return playerVariables.writeNBT();
-		}
-
-		@Override
-		public void deserializeNBT(Tag nbt) {
-			playerVariables.readNBT(nbt);
-		}
-	}
-
-	public static class PlayerVariables {
+	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		public boolean QT_1 = false;
 		public boolean QT_2 = false;
 		public double first_QT_ID_x = 0;
@@ -268,12 +239,8 @@ public class CreativeWorldModVariables {
 		public double seckond_QT_ID_z = 0;
 		public double drillMode = 1.0;
 
-		public void syncPlayerVariables(Entity entity) {
-			if (entity instanceof ServerPlayer serverPlayer)
-				CreativeWorldMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new PlayerVariablesSyncMessage(this));
-		}
-
-		public Tag writeNBT() {
+		@Override
+		public CompoundTag serializeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("QT_1", QT_1);
 			nbt.putBoolean("QT_2", QT_2);
@@ -287,8 +254,8 @@ public class CreativeWorldModVariables {
 			return nbt;
 		}
 
-		public void readNBT(Tag tag) {
-			CompoundTag nbt = (CompoundTag) tag;
+		@Override
+		public void deserializeNBT(CompoundTag nbt) {
 			QT_1 = nbt.getBoolean("QT_1");
 			QT_2 = nbt.getBoolean("QT_2");
 			first_QT_ID_x = nbt.getDouble("first_QT_ID_x");
@@ -299,41 +266,38 @@ public class CreativeWorldModVariables {
 			seckond_QT_ID_z = nbt.getDouble("seckond_QT_ID_z");
 			drillMode = nbt.getDouble("drillMode");
 		}
+
+		public void syncPlayerVariables(Entity entity) {
+			if (entity instanceof ServerPlayer serverPlayer)
+				PacketDistributor.PLAYER.with(serverPlayer).send(new PlayerVariablesSyncMessage(this));
+		}
 	}
 
-	public static class PlayerVariablesSyncMessage {
-		private final PlayerVariables data;
+	public record PlayerVariablesSyncMessage(PlayerVariables data) implements CustomPacketPayload {
+		public static final ResourceLocation ID = new ResourceLocation(CreativeWorldMod.MODID, "player_variables_sync");
 
 		public PlayerVariablesSyncMessage(FriendlyByteBuf buffer) {
-			this.data = new PlayerVariables();
-			this.data.readNBT(buffer.readNbt());
+			this(new PlayerVariables());
+			this.data.deserializeNBT(buffer.readNbt());
 		}
 
-		public PlayerVariablesSyncMessage(PlayerVariables data) {
-			this.data = data;
+		@Override
+		public void write(final FriendlyByteBuf buffer) {
+			buffer.writeNbt(data.serializeNBT());
 		}
 
-		public static void buffer(PlayerVariablesSyncMessage message, FriendlyByteBuf buffer) {
-			buffer.writeNbt((CompoundTag) message.data.writeNBT());
+		@Override
+		public ResourceLocation id() {
+			return ID;
 		}
 
-		public static void handler(PlayerVariablesSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-			NetworkEvent.Context context = contextSupplier.get();
-			context.enqueueWork(() -> {
-				if (!context.getDirection().getReceptionSide().isServer()) {
-					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-					variables.QT_1 = message.data.QT_1;
-					variables.QT_2 = message.data.QT_2;
-					variables.first_QT_ID_x = message.data.first_QT_ID_x;
-					variables.seckond_QT_ID_x = message.data.seckond_QT_ID_x;
-					variables.first_QT_ID_y = message.data.first_QT_ID_y;
-					variables.seckond_QT_ID_y = message.data.seckond_QT_ID_y;
-					variables.first_QT_ID_z = message.data.first_QT_ID_z;
-					variables.seckond_QT_ID_z = message.data.seckond_QT_ID_z;
-					variables.drillMode = message.data.drillMode;
-				}
-			});
-			context.setPacketHandled(true);
+		public static void handleData(final PlayerVariablesSyncMessage message, final PlayPayloadContext context) {
+			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
+				context.workHandler().submitAsync(() -> Minecraft.getInstance().player.getData(PLAYER_VARIABLES).deserializeNBT(message.data.serializeNBT())).exceptionally(e -> {
+					context.packetHandler().disconnect(Component.literal(e.getMessage()));
+					return null;
+				});
+			}
 		}
 	}
 }

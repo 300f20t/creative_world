@@ -1,13 +1,14 @@
 package net.mcreator.creativeworld.procedures;
 
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.energy.IEnergyStorage;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
+import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -16,25 +17,24 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.Comparator;
 
 public class FanObnovitTaktProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (new Object() {
 			public int getEnergyStored(LevelAccessor level, BlockPos pos) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.getEnergyStored();
+				}
+				return 0;
 			}
 		}.getEnergyStored(world, BlockPos.containing(x, y, z)) >= 50) {
-			{
-				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-				int _amount = 50;
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.extractEnergy(_amount, false));
+			if (world instanceof ILevelExtension _ext) {
+				IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
+				if (_entityStorage != null)
+					_entityStorage.extractEnergy(50, false);
 			}
 			if ((new Object() {
 				public Direction getDirection(BlockPos pos) {

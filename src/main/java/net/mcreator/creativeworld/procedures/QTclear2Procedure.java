@@ -9,11 +9,9 @@ public class QTclear2Procedure {
 		if (entity == null)
 			return;
 		{
-			boolean _setval = false;
-			entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.QT_2 = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CreativeWorldModVariables.PlayerVariables _vars = entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES);
+			_vars.QT_2 = false;
+			_vars.syncPlayerVariables(entity);
 		}
 	}
 }

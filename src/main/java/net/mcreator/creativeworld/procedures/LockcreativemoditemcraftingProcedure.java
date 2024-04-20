@@ -1,9 +1,9 @@
 package net.mcreator.creativeworld.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.TickEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
@@ -38,7 +38,7 @@ public class LockcreativemoditemcraftingProcedure {
 		}
 		if (world.getLevelData().getGameRules().getBoolean(CreativeWorldModGameRules.ALLOWCREATIVEMODE)) {
 			if (entity instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("xcdfvgbhnj")});
+				_serverPlayer.awardRecipesByKey(Collections.singletonList(new ResourceLocation("xcdfvgbhnj")));
 		}
 	}
 }

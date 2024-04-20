@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[47,)"
+loaderVersion="[2,)"
 license="MIT License"
 
 [[mods]]
@@ -16,17 +16,27 @@ description="This is Release!"
 # End of user code block mod configuration
 
 [[dependencies.creative_world]]
+    modId="neoforge"
+    type="required"
+    versionRange="[20.4.223,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.creative_world]]
     modId="minecraft"
-    mandatory=true
-    versionRange="[1.20.1]"
+    type="required"
+    versionRange="[1.20.4]"
     ordering="NONE"
     side="BOTH"
 
 
 [[dependencies.creative_world]]
     modId="jei"
-    mandatory=false
+    type="optional"
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
 
+
+[[mixins]]
+    config="mixins.creative_world.json"

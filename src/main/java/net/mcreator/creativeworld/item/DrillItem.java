@@ -1,8 +1,8 @@
 
 package net.mcreator.creativeworld.item;
 
-import net.minecraftforge.common.ToolActions;
-import net.minecraftforge.common.ToolAction;
+import net.neoforged.neoforge.common.ToolActions;
+import net.neoforged.neoforge.common.ToolAction;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;

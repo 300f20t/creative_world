@@ -1,7 +1,7 @@
 
 package net.mcreator.creativeworld.fluid;
 
-import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
@@ -13,8 +13,8 @@ import net.mcreator.creativeworld.init.CreativeWorldModFluids;
 import net.mcreator.creativeworld.init.CreativeWorldModFluidTypes;
 import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
 
-public abstract class OilFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> CreativeWorldModFluidTypes.OIL_TYPE.get(), () -> CreativeWorldModFluids.OIL.get(), () -> CreativeWorldModFluids.FLOWING_OIL.get())
+public abstract class OilFluid extends BaseFlowingFluid {
+	public static final BaseFlowingFluid.Properties PROPERTIES = new BaseFlowingFluid.Properties(() -> CreativeWorldModFluidTypes.OIL_TYPE.get(), () -> CreativeWorldModFluids.OIL.get(), () -> CreativeWorldModFluids.FLOWING_OIL.get())
 			.explosionResistance(100f).tickRate(50).slopeFindDistance(3).bucket(() -> CreativeWorldModItems.OIL_BUCKET.get()).block(() -> (LiquidBlock) CreativeWorldModBlocks.OIL.get());
 
 	private OilFluid() {

@@ -1,142 +1,122 @@
 package net.mcreator.creativeworld.procedures;
 
-import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.energy.IEnergyStorage;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
+import net.neoforged.neoforge.capabilities.Capabilities;
 
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
 
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class CoalgeneratorObnovitTaktProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (Items.COAL == (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-				return _retval.get();
+				if (world instanceof ILevelExtension _ext) {
+					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+					if (_itemHandler != null)
+						return _itemHandler.getStackInSlot(slotid).copy();
+				}
+				return ItemStack.EMPTY;
 			}
 		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem()) {
 			if (new Object() {
 				public int getEnergyStored(LevelAccessor level, BlockPos pos) {
-					AtomicInteger _retval = new AtomicInteger(0);
-					BlockEntity _ent = level.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-					return _retval.get();
+					if (level instanceof ILevelExtension _ext) {
+						IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+						if (_entityStorage != null)
+							return _entityStorage.getEnergyStored();
+					}
+					return 0;
 				}
 			}.getEnergyStored(world, BlockPos.containing(x, y, z)) < 1024) {
-				{
-					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-					if (_ent != null) {
-						final int _slotid = 1;
-						final int _amount = 1;
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
-								_stk.shrink(_amount);
-								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
-							}
-						});
-					}
+				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+					int _slotid = 1;
+					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+					_stk.shrink(1);
+					_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
 				}
-				{
-					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-					int _amount = 64;
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+				if (world instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
+					if (_entityStorage != null)
+						_entityStorage.receiveEnergy(64, false);
 				}
 			}
 		} else if (Items.CHARCOAL == (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-				return _retval.get();
+				if (world instanceof ILevelExtension _ext) {
+					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+					if (_itemHandler != null)
+						return _itemHandler.getStackInSlot(slotid).copy();
+				}
+				return ItemStack.EMPTY;
 			}
 		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem()) {
 			if (new Object() {
 				public int getEnergyStored(LevelAccessor level, BlockPos pos) {
-					AtomicInteger _retval = new AtomicInteger(0);
-					BlockEntity _ent = level.getBlockEntity(pos);
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-					return _retval.get();
+					if (level instanceof ILevelExtension _ext) {
+						IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+						if (_entityStorage != null)
+							return _entityStorage.getEnergyStored();
+					}
+					return 0;
 				}
 			}.getEnergyStored(world, BlockPos.containing(x, y, z)) < 1024) {
-				{
-					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-					if (_ent != null) {
-						final int _slotid = 1;
-						final int _amount = 1;
-						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
-								_stk.shrink(_amount);
-								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
-							}
-						});
-					}
+				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+					int _slotid = 1;
+					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+					_stk.shrink(1);
+					_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
 				}
-				{
-					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-					int _amount = 64;
-					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+				if (world instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
+					if (_entityStorage != null)
+						_entityStorage.receiveEnergy(64, false);
 				}
 			}
 		}
 		if (new Object() {
 			public int getEnergyStored(LevelAccessor level, BlockPos pos) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.getEnergyStored();
+				}
+				return 0;
 			}
 		}.getEnergyStored(world, BlockPos.containing(x, y, z)) > 128) {
-			{
-				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y + 1, z));
-				int _amount = 128;
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+			if (world instanceof ILevelExtension _ext) {
+				IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y + 1, z), null);
+				if (_entityStorage != null)
+					_entityStorage.receiveEnergy(128, false);
 			}
-			{
-				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y - 1, z));
-				int _amount = 128;
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+			if (world instanceof ILevelExtension _ext) {
+				IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y - 1, z), null);
+				if (_entityStorage != null)
+					_entityStorage.receiveEnergy(128, false);
 			}
-			{
-				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z + 1));
-				int _amount = 128;
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+			if (world instanceof ILevelExtension _ext) {
+				IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z + 1), null);
+				if (_entityStorage != null)
+					_entityStorage.receiveEnergy(128, false);
 			}
-			{
-				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z - 1));
-				int _amount = 128;
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+			if (world instanceof ILevelExtension _ext) {
+				IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z - 1), null);
+				if (_entityStorage != null)
+					_entityStorage.receiveEnergy(128, false);
 			}
-			{
-				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x + 1, y, z));
-				int _amount = 128;
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+			if (world instanceof ILevelExtension _ext) {
+				IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x + 1, y, z), null);
+				if (_entityStorage != null)
+					_entityStorage.receiveEnergy(128, false);
 			}
-			{
-				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x - 1, y, z));
-				int _amount = 128;
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+			if (world instanceof ILevelExtension _ext) {
+				IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x - 1, y, z), null);
+				if (_entityStorage != null)
+					_entityStorage.receiveEnergy(128, false);
 			}
 		}
 	}

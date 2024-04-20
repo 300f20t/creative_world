@@ -3,21 +3,23 @@ package net.mcreator.creativeworld;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.network.simple.SimpleChannel;
-import net.minecraftforge.network.NetworkRegistry;
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.util.thread.SidedThreadGroups;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
+import net.neoforged.neoforge.network.registration.IPayloadRegistrar;
+import net.neoforged.neoforge.network.handling.IPlayPayloadHandler;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlerEvent;
+import net.neoforged.neoforge.event.TickEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.fml.util.thread.SidedThreadGroups;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.IEventBus;
 
+import net.minecraft.util.Tuple;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.creativeworld.world.features.StructureFeature;
+import net.mcreator.creativeworld.network.CreativeWorldModVariables;
 import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 import net.mcreator.creativeworld.init.CreativeWorldModSounds;
 import net.mcreator.creativeworld.init.CreativeWorldModMenus;
@@ -27,67 +29,77 @@ import net.mcreator.creativeworld.init.CreativeWorldModFluidTypes;
 import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
 import net.mcreator.creativeworld.init.CreativeWorldModBlockEntities;
 
-import java.util.function.Supplier;
-import java.util.function.Function;
-import java.util.function.BiConsumer;
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collection;
 import java.util.ArrayList;
-import java.util.AbstractMap;
 
 @Mod("creative_world")
 public class CreativeWorldMod {
 	public static final Logger LOGGER = LogManager.getLogger(CreativeWorldMod.class);
 	public static final String MODID = "creative_world";
 
-	public CreativeWorldMod() {
-		MinecraftForge.EVENT_BUS.register(this);
-		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		CreativeWorldModSounds.REGISTRY.register(bus);
-		CreativeWorldModBlocks.REGISTRY.register(bus);
-		CreativeWorldModBlockEntities.REGISTRY.register(bus);
-		CreativeWorldModItems.REGISTRY.register(bus);
+	public CreativeWorldMod(IEventBus modEventBus) {
+		NeoForge.EVENT_BUS.register(this);
+		modEventBus.addListener(this::registerNetworking);
+		CreativeWorldModSounds.REGISTRY.register(modEventBus);
+		CreativeWorldModBlocks.REGISTRY.register(modEventBus);
+		CreativeWorldModBlockEntities.REGISTRY.register(modEventBus);
+		CreativeWorldModItems.register(modEventBus);
 
-		CreativeWorldModTabs.REGISTRY.register(bus);
+		CreativeWorldModTabs.REGISTRY.register(modEventBus);
+		CreativeWorldModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
-		StructureFeature.REGISTRY.register(bus);
+		StructureFeature.REGISTRY.register(modEventBus);
 
-		CreativeWorldModMenus.REGISTRY.register(bus);
-		CreativeWorldModFluids.REGISTRY.register(bus);
-		CreativeWorldModFluidTypes.REGISTRY.register(bus);
+		CreativeWorldModMenus.REGISTRY.register(modEventBus);
+
+		CreativeWorldModFluids.REGISTRY.register(modEventBus);
+		CreativeWorldModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
 
 	// Start of user code block mod methods
 	// End of user code block mod methods
-	private static final String PROTOCOL_VERSION = "1";
-	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
-	private static int messageID = 0;
+	private static boolean networkingRegistered = false;
+	private static final Map<ResourceLocation, NetworkMessage<?>> MESSAGES = new HashMap<>();
 
-	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
-		PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
-		messageID++;
+	private record NetworkMessage<T extends CustomPacketPayload>(FriendlyByteBuf.Reader<T> reader, IPlayPayloadHandler<T> handler) {
 	}
 
-	private static final Collection<AbstractMap.SimpleEntry<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
+	public static <T extends CustomPacketPayload> void addNetworkMessage(ResourceLocation id, FriendlyByteBuf.Reader<T> reader, IPlayPayloadHandler<T> handler) {
+		if (networkingRegistered)
+			throw new IllegalStateException("Cannot register new network messages after networking has been registered");
+		MESSAGES.put(id, new NetworkMessage<>(reader, handler));
+	}
+
+	@SuppressWarnings({"rawtypes", "unchecked"})
+	private void registerNetworking(final RegisterPayloadHandlerEvent event) {
+		final IPayloadRegistrar registrar = event.registrar(MODID);
+		MESSAGES.forEach((id, networkMessage) -> registrar.play(id, ((NetworkMessage) networkMessage).reader(), networkMessage.handler()));
+		networkingRegistered = true;
+	}
+
+	private static final Collection<Tuple<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
 
 	public static void queueServerWork(int tick, Runnable action) {
 		if (Thread.currentThread().getThreadGroup() == SidedThreadGroups.SERVER)
-			workQueue.add(new AbstractMap.SimpleEntry<>(action, tick));
+			workQueue.add(new Tuple<>(action, tick));
 	}
 
 	@SubscribeEvent
 	public void tick(TickEvent.ServerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			List<AbstractMap.SimpleEntry<Runnable, Integer>> actions = new ArrayList<>();
+			List<Tuple<Runnable, Integer>> actions = new ArrayList<>();
 			workQueue.forEach(work -> {
-				work.setValue(work.getValue() - 1);
-				if (work.getValue() == 0)
+				work.setB(work.getB() - 1);
+				if (work.getB() == 0)
 					actions.add(work);
 			});
-			actions.forEach(e -> e.getKey().run());
+			actions.forEach(e -> e.getA().run());
 			workQueue.removeAll(actions);
 		}
 	}

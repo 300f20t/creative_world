@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#is_overworld",
-  "features": "creative_world:accumulatium_ore",
-  "step": "underground_ores"
-}

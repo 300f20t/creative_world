@@ -5,6 +5,7 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SuspiciousEffectHolder;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.Blocks;
@@ -24,12 +25,8 @@ import java.util.List;
 
 public class ResintreesaplingBlock extends FlowerBlock {
 	public ResintreesaplingBlock() {
-		super(() -> MobEffects.UNLUCK, 100, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
-	}
-
-	@Override
-	public int getEffectDuration() {
-		return 100;
+		super(List.of(new SuspiciousEffectHolder.EffectEntry(MobEffects.UNLUCK, 100)),
+				BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

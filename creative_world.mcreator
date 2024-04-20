@@ -292,7 +292,7 @@
       "registry_name": "tin_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/creative_world/forge/biome_modifier/tin_ore_biome_modifier.json",
+          "src/main/resources/data/creative_world/neoforge/biome_modifier/tin_ore_biome_modifier.json",
           "src/main/resources/assets/creative_world/blockstates/tin_ore.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/tin_ore.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/tin_ore.json",
@@ -3290,8 +3290,8 @@
           "src/main/resources/assets/creative_world/models/item/creativium_ore.json",
           "src/main/resources/assets/creative_world/models/block/creativium_ore.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/creativium_ore.json",
-          "src/main/resources/data/creative_world/forge/biome_modifier/creativium_ore_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/creativium_ore.json",
+          "src/main/resources/data/creative_world/neoforge/biome_modifier/creativium_ore_biome_modifier.json",
           "src/main/java/net/mcreator/creativeworld/block/CreativiumOreBlock.java",
           "src/main/resources/data/creative_world/loot_tables/blocks/creativium_ore.json",
           "src/main/resources/assets/creative_world/blockstates/creativium_ore.json"
@@ -3608,7 +3608,7 @@
         "files": [
           "src/main/resources/data/creative_world/worldgen/configured_feature/accumulatium_ore.json",
           "src/main/resources/data/creative_world/loot_tables/blocks/accumulatium_ore.json",
-          "src/main/resources/data/creative_world/forge/biome_modifier/accumulatium_ore_biome_modifier.json",
+          "src/main/resources/data/creative_world/neoforge/biome_modifier/accumulatium_ore_biome_modifier.json",
           "src/main/resources/assets/creative_world/blockstates/accumulatium_ore.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/accumulatium_ore.json",
           "src/main/resources/assets/creative_world/models/block/accumulatium_ore.json",
@@ -4139,14 +4139,14 @@
       "registry_name": "titan_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/creative_world/forge/biome_modifier/titan_ore_biome_modifier.json",
           "src/main/resources/assets/creative_world/blockstates/titan_ore.json",
           "src/main/resources/assets/creative_world/models/item/titan_ore.json",
           "src/main/java/net/mcreator/creativeworld/block/TitanOreBlock.java",
           "src/main/resources/assets/creative_world/models/block/titan_ore.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/titan_ore.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/titan_ore.json",
-          "src/main/resources/data/creative_world/loot_tables/blocks/titan_ore.json"
+          "src/main/resources/data/creative_world/loot_tables/blocks/titan_ore.json",
+          "src/main/resources/data/creative_world/neoforge/biome_modifier/titan_ore_biome_modifier.json"
         ]
       },
       "path": "~/Materials/Ores"
@@ -5335,9 +5335,9 @@
       "registry_name": "rubbertree_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/creative_world/forge/biome_modifier/rubbertree_feature_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/rubbertree_feature.json",
-          "src/main/resources/data/creative_world/worldgen/placed_feature/rubbertree_feature.json"
+          "src/main/resources/data/creative_world/worldgen/placed_feature/rubbertree_feature.json",
+          "src/main/resources/data/creative_world/neoforge/biome_modifier/rubbertree_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -5353,7 +5353,7 @@
         "files": [
           "src/main/resources/data/creative_world/worldgen/configured_feature/littleoilmine_feature.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/littleoilmine_feature.json",
-          "src/main/resources/data/creative_world/forge/biome_modifier/littleoilmine_feature_biome_modifier.json"
+          "src/main/resources/data/creative_world/neoforge/biome_modifier/littleoilmine_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -5367,7 +5367,7 @@
       "registry_name": "mediumoilmine_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/creative_world/forge/biome_modifier/mediumoilmine_feature_biome_modifier.json",
+          "src/main/resources/data/creative_world/neoforge/biome_modifier/mediumoilmine_feature_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/mediumoilmine_feature.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/mediumoilmine_feature.json"
         ],
@@ -5384,7 +5384,7 @@
       "metadata": {
         "files": [
           "src/main/resources/data/creative_world/worldgen/configured_feature/littlegasmine_feature.json",
-          "src/main/resources/data/creative_world/forge/biome_modifier/littlegasmine_feature_biome_modifier.json",
+          "src/main/resources/data/creative_world/neoforge/biome_modifier/littlegasmine_feature_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/littlegasmine_feature.json"
         ],
         "has_nbt_structure": true
@@ -5399,8 +5399,8 @@
       "registry_name": "mediumgasmine_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/creative_world/forge/biome_modifier/mediumgasmine_feature_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/placed_feature/mediumgasmine_feature.json",
+          "src/main/resources/data/creative_world/neoforge/biome_modifier/mediumgasmine_feature_biome_modifier.json",
           "src/main/resources/data/creative_world/worldgen/configured_feature/mediumgasmine_feature.json"
         ],
         "has_nbt_structure": true
@@ -6149,20 +6149,6 @@
       "path": "~/Achievements"
     },
     {
-      "name": "CrusherCraft",
-      "type": "recipe",
-      "sortid": 409,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crusher_craft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipes/crusher_craft.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
       "name": "NuclearReactor",
       "type": "block",
       "sortid": 410,
@@ -6896,7 +6882,7 @@
     "mcreatorDependencies": [
       "jei"
     ],
-    "currentGenerator": "forge-1.20.1",
+    "currentGenerator": "neoforge-1.20.4",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.creativeworld"
   },

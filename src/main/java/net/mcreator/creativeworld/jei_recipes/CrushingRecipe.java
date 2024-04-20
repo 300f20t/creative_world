@@ -1,32 +1,27 @@
 package net.mcreator.creativeworld.jei_recipes;
 
-import net.minecraft.world.level.storage.loot.Serializer;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.SimpleContainer;
-import net.minecraft.util.GsonHelper;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.NonNullList;
 
 import javax.annotation.Nullable;
 
-import com.google.gson.JsonObject;
-import com.google.gson.JsonArray;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
+import com.mojang.serialization.DataResult;
+import com.mojang.serialization.Codec;
 
 public class CrushingRecipe implements Recipe<SimpleContainer> {
-	private final ResourceLocation id;
 	private final ItemStack output;
 	private final NonNullList<Ingredient> recipeItems;
 
-	public CrushingRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> recipeItems) {
-		this.id = id;
+	public CrushingRecipe(ItemStack output, NonNullList<Ingredient> recipeItems) {
 		this.output = output;
 		this.recipeItems = recipeItems;
 	}
@@ -37,7 +32,6 @@ public class CrushingRecipe implements Recipe<SimpleContainer> {
 			return false;
 		}
 		return false;
-		//return recipeItems.get(0).test(pContainer.getItem(1));
 	}
 
 	@Override
@@ -61,11 +55,6 @@ public class CrushingRecipe implements Recipe<SimpleContainer> {
 	}
 
 	@Override
-	public ResourceLocation getId() {
-		return id;
-	}
-
-	@Override
 	public RecipeType<?> getType() {
 		return Type.INSTANCE;
 	}
@@ -85,27 +74,28 @@ public class CrushingRecipe implements Recipe<SimpleContainer> {
 
 	public static class Serializer implements RecipeSerializer<CrushingRecipe> {
 		public static final Serializer INSTANCE = new Serializer();
-		public static final ResourceLocation ID = new ResourceLocation("creative_world", "crushing");
+		private static final Codec<CrushingRecipe> CODEC = RecordCodecBuilder
+				.create(builder -> builder.group(ItemStack.ITEM_WITH_COUNT_CODEC.fieldOf("output").forGetter(recipe -> recipe.output), Ingredient.CODEC_NONEMPTY.listOf().fieldOf("ingredients").flatXmap(ingredients -> {
+					Ingredient[] aingredient = ingredients.toArray(Ingredient[]::new); // Skip the empty check and create the array.
+					if (aingredient.length == 0) {
+						return DataResult.error(() -> "No ingredients found in custom recipe");
+					} else {
+						return DataResult.success(NonNullList.of(Ingredient.EMPTY, aingredient));
+					}
+				}, DataResult::success).forGetter(recipe -> recipe.recipeItems)).apply(builder, CrushingRecipe::new));
 
 		@Override
-		public CrushingRecipe fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {
-			ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe, "output"));
-			JsonArray ingredients = GsonHelper.getAsJsonArray(pSerializedRecipe, "ingredients");
-			NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY);
-			for (int i = 0; i < inputs.size(); i++) {
-				inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
-			}
-			return new CrushingRecipe(pRecipeId, output, inputs);
+		public Codec<CrushingRecipe> codec() {
+			return CODEC;
 		}
 
 		@Override
-		public @Nullable CrushingRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
+		public @Nullable CrushingRecipe fromNetwork(FriendlyByteBuf buf) {
 			NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readInt(), Ingredient.EMPTY);
 			for (int i = 0; i < inputs.size(); i++) {
 				inputs.set(i, Ingredient.fromNetwork(buf));
 			}
-			ItemStack output = buf.readItem();
-			return new CrushingRecipe(id, output, inputs);
+			return new CrushingRecipe(buf.readItem(), inputs);
 		}
 
 		@Override
@@ -114,7 +104,7 @@ public class CrushingRecipe implements Recipe<SimpleContainer> {
 			for (Ingredient ing : recipe.getIngredients()) {
 				ing.toNetwork(buf);
 			}
-			buf.writeItemStack(recipe.getResultItem(null), false);
+			buf.writeItem(recipe.getResultItem(null));
 		}
 	}
 }

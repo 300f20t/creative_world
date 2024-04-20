@@ -8,7 +8,7 @@ public class DrillModeCustomProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		if ((entity.getCapability(CreativeWorldModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreativeWorldModVariables.PlayerVariables())).drillMode == 2) {
+		if (entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).drillMode == 2) {
 			return true;
 		}
 		return false;

@@ -1,8 +1,6 @@
 
 package net.mcreator.creativeworld.block;
 
-import net.minecraftforge.network.NetworkHooks;
-
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -71,7 +69,7 @@ public class Coalgenerator1Block extends Block implements EntityBlock {
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
 		if (entity instanceof ServerPlayer player) {
-			NetworkHooks.openScreen(player, new MenuProvider() {
+			player.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
 					return Component.literal("Coal generator");

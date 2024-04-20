@@ -4,16 +4,16 @@
  */
 package net.mcreator.creativeworld.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FlowingFluid;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
@@ -22,11 +22,11 @@ import net.mcreator.creativeworld.fluid.GasFluid;
 import net.mcreator.creativeworld.CreativeWorldMod;
 
 public class CreativeWorldModFluids {
-	public static final DeferredRegister<Fluid> REGISTRY = DeferredRegister.create(ForgeRegistries.FLUIDS, CreativeWorldMod.MODID);
-	public static final RegistryObject<FlowingFluid> OIL = REGISTRY.register("oil", () -> new OilFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_OIL = REGISTRY.register("flowing_oil", () -> new OilFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> GAS = REGISTRY.register("gas", () -> new GasFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_GAS = REGISTRY.register("flowing_gas", () -> new GasFluid.Flowing());
+	public static final DeferredRegister<Fluid> REGISTRY = DeferredRegister.create(BuiltInRegistries.FLUID, CreativeWorldMod.MODID);
+	public static final DeferredHolder<Fluid, FlowingFluid> OIL = REGISTRY.register("oil", () -> new OilFluid.Source());
+	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_OIL = REGISTRY.register("flowing_oil", () -> new OilFluid.Flowing());
+	public static final DeferredHolder<Fluid, FlowingFluid> GAS = REGISTRY.register("gas", () -> new GasFluid.Source());
+	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_GAS = REGISTRY.register("flowing_gas", () -> new GasFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

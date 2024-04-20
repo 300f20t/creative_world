@@ -22,11 +22,6 @@ public class ResinStairsBlock extends StairBlock {
 	}
 
 	@Override
-	public boolean isRandomlyTicking(BlockState state) {
-		return false;
-	}
-
-	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
 	}

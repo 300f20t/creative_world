@@ -1,11 +1,7 @@
 package net.mcreator.creativeworld.block.entity;
 
-import net.minecraftforge.items.wrapper.SidedInvWrapper;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.energy.EnergyStorage;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.common.capabilities.Capability;
+import net.neoforged.neoforge.items.wrapper.SidedInvWrapper;
+import net.neoforged.neoforge.energy.EnergyStorage;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
@@ -34,7 +30,7 @@ import io.netty.buffer.Unpooled;
 
 public class CoalgeneratorBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
-	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
 
 	public CoalgeneratorBlockEntity(BlockPos position, BlockState state) {
 		super(CreativeWorldModBlockEntities.COALGENERATOR.get(), position, state);
@@ -132,6 +128,10 @@ public class CoalgeneratorBlockEntity extends RandomizableContainerBlockEntity i
 		return true;
 	}
 
+	public SidedInvWrapper getItemHandler() {
+		return handler;
+	}
+
 	private final EnergyStorage energyStorage = new EnergyStorage(1024, 64, 64, 0) {
 		@Override
 		public int receiveEnergy(int maxReceive, boolean simulate) {
@@ -154,19 +154,7 @@ public class CoalgeneratorBlockEntity extends RandomizableContainerBlockEntity i
 		}
 	};
 
-	@Override
-	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
-		if (!this.remove && facing != null && capability == ForgeCapabilities.ITEM_HANDLER)
-			return handlers[facing.ordinal()].cast();
-		if (!this.remove && capability == ForgeCapabilities.ENERGY)
-			return LazyOptional.of(() -> energyStorage).cast();
-		return super.getCapability(capability, facing);
-	}
-
-	@Override
-	public void setRemoved() {
-		super.setRemoved();
-		for (LazyOptional<? extends IItemHandler> handler : handlers)
-			handler.invalidate();
+	public EnergyStorage getEnergyStorage() {
+		return energyStorage;
 	}
 }

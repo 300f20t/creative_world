@@ -1,6 +1,8 @@
 package net.mcreator.creativeworld.procedures;
 
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.energy.IEnergyStorage;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
+import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -8,17 +10,16 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
-import java.util.concurrent.atomic.AtomicBoolean;
-
 public class WireEnergyProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x + 1, y, z))) {
 			if (!world.isClientSide()) {
@@ -32,11 +33,12 @@ public class WireEnergyProcedure {
 			}
 		} else if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x - 1, y, z))) {
 			if (!world.isClientSide()) {
@@ -50,11 +52,12 @@ public class WireEnergyProcedure {
 			}
 		} else if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x, y + 1, z))) {
 			if (!world.isClientSide()) {
@@ -68,11 +71,12 @@ public class WireEnergyProcedure {
 			}
 		} else if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x, y - 1, z))) {
 			if (!world.isClientSide()) {
@@ -86,11 +90,12 @@ public class WireEnergyProcedure {
 			}
 		} else if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x, y, z + 1))) {
 			if (!world.isClientSide()) {
@@ -104,11 +109,12 @@ public class WireEnergyProcedure {
 			}
 		} else if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x, y, z - 1))) {
 			if (!world.isClientSide()) {
@@ -133,11 +139,12 @@ public class WireEnergyProcedure {
 		}
 		if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x + 1, y, z))) {
 			if (!world.isClientSide()) {
@@ -151,11 +158,12 @@ public class WireEnergyProcedure {
 			}
 		} else if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x - 1, y, z))) {
 			if (!world.isClientSide()) {
@@ -169,11 +177,12 @@ public class WireEnergyProcedure {
 			}
 		} else if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x, y + 1, z))) {
 			if (!world.isClientSide()) {
@@ -187,11 +196,12 @@ public class WireEnergyProcedure {
 			}
 		} else if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x, y - 1, z))) {
 			if (!world.isClientSide()) {
@@ -205,11 +215,12 @@ public class WireEnergyProcedure {
 			}
 		} else if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x, y, z + 1))) {
 			if (!world.isClientSide()) {
@@ -223,11 +234,12 @@ public class WireEnergyProcedure {
 			}
 		} else if (new Object() {
 			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canExtract()));
-				return _retval.get();
+				if (level instanceof ILevelExtension _ext) {
+					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
+					if (_entityStorage != null)
+						return _entityStorage.canExtract();
+				}
+				return false;
 			}
 		}.canExtractEnergy(world, BlockPos.containing(x, y, z - 1))) {
 			if (!world.isClientSide()) {

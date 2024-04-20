@@ -1,8 +1,6 @@
 
 package net.mcreator.creativeworld.block;
 
-import net.minecraftforge.network.NetworkHooks;
-
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -79,10 +77,7 @@ public class CoalgeneratorBlock extends Block implements EntityBlock {
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		CoalgeneratorObnovitTaktProcedure.execute(world, x, y, z);
+		CoalgeneratorObnovitTaktProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		world.scheduleTick(pos, this, 10);
 	}
 
@@ -90,7 +85,7 @@ public class CoalgeneratorBlock extends Block implements EntityBlock {
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
 		if (entity instanceof ServerPlayer player) {
-			NetworkHooks.openScreen(player, new MenuProvider() {
+			player.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
 					return Component.literal("Coal generator");

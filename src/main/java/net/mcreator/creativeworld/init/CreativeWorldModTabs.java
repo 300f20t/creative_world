@@ -4,8 +4,8 @@
  */
 package net.mcreator.creativeworld.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,7 +16,7 @@ import net.mcreator.creativeworld.CreativeWorldMod;
 
 public class CreativeWorldModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreativeWorldMod.MODID);
-	public static final RegistryObject<CreativeModeTab> CREATIVEWORLDITEMS = REGISTRY.register("creativeworlditems",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATIVEWORLDITEMS = REGISTRY.register("creativeworlditems",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.creative_world.creativeworlditems")).icon(() -> new ItemStack(CreativeWorldModItems.CARBONPLATE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CreativeWorldModItems.ENDLESSWATERSOURCE.get());
 				tabData.accept(CreativeWorldModItems.ALARGEBUCKET.get());
@@ -72,7 +72,7 @@ public class CreativeWorldModTabs {
 			})
 
 					.build());
-	public static final RegistryObject<CreativeModeTab> CREATIVEWORLDTOOLS = REGISTRY.register("creativeworldtools",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATIVEWORLDTOOLS = REGISTRY.register("creativeworldtools",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.creative_world.creativeworldtools")).icon(() -> new ItemStack(CreativeWorldModItems.BEDROCKBREACKER.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CreativeWorldModItems.TIN_PICKAXE.get());
 				tabData.accept(CreativeWorldModItems.TIN_AXE.get());
@@ -117,7 +117,7 @@ public class CreativeWorldModTabs {
 			})
 
 					.build());
-	public static final RegistryObject<CreativeModeTab> CREATIVEWORLDBLOCKS = REGISTRY.register("creativeworldblocks",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATIVEWORLDBLOCKS = REGISTRY.register("creativeworldblocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.creative_world.creativeworldblocks")).icon(() -> new ItemStack(CreativeWorldModBlocks.ADVENCEDMACHINECASE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CreativeWorldModBlocks.TIN_ORE.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.TITAN_ORE.get().asItem());
@@ -154,7 +154,7 @@ public class CreativeWorldModTabs {
 			})
 
 					.build());
-	public static final RegistryObject<CreativeModeTab> CREATIVEWORLDCOMBAT = REGISTRY.register("creativeworldcombat",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATIVEWORLDCOMBAT = REGISTRY.register("creativeworldcombat",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.creative_world.creativeworldcombat")).icon(() -> new ItemStack(CreativeWorldModItems.CREATIVIUM_SWORD.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CreativeWorldModItems.TIN_SWORD.get());
 				tabData.accept(CreativeWorldModItems.TIN_ARMOR_HELMET.get());
