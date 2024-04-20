@@ -6883,8 +6883,8 @@
   "workspaceSettings": {
     "modid": "creative_world",
     "modName": "Creative world",
-    "version": "0.2.4.3_beta",
-    "description": "This is Beta!",
+    "version": "0.2.4_release",
+    "description": "This is Release!",
     "author": "300f20t, MCreator.",
     "websiteURL": "https://mcreator.net",
     "license": "MIT License",
