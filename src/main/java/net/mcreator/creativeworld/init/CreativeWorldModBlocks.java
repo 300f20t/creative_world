@@ -87,13 +87,9 @@ public class CreativeWorldModBlocks {
 	public static final RegistryObject<Block> QUANTUMTELEPORTERBLOCK_2 = REGISTRY.register("quantumteleporterblock_2", () -> new Quantumteleporterblock2Block());
 	public static final RegistryObject<Block> RESINTREESAPLING = REGISTRY.register("resintreesapling", () -> new ResintreesaplingBlock());
 	public static final RegistryObject<Block> BUG = REGISTRY.register("bug", () -> new BUGBlock());
-<<<<<<< HEAD
-	public static final RegistryObject<Block> NUCLEAR_REACTOR = REGISTRY.register("nuclear_reactor", () -> new NuclearReactorBlock());
-=======
 	public static final RegistryObject<Block> COPPER_WIRE = REGISTRY.register("copper_wire", () -> new CopperWireBlock());
 	public static final RegistryObject<Block> INSULATED_COPPER_WIRE = REGISTRY.register("insulated_copper_wire", () -> new InsulatedCopperWireBlock());
 	public static final RegistryObject<Block> NUCLEAR_REACTOR = REGISTRY.register("nuclear_reactor", () -> new NuclearReactorBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
->>>>>>> experemental
 }
