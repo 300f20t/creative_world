@@ -1,5 +1,9 @@
 #
+<<<<<<< HEAD
 #Sat Mar 16 20:36:25 MSK 2024
+=======
+#Sat Apr 20 15:27:03 MSK 2024
+>>>>>>> experemental
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
 org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=17

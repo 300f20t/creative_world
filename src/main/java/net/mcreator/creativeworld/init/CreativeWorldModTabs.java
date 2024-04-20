@@ -73,42 +73,6 @@ public class CreativeWorldModTabs {
 			})
 
 					.build());
-	public static final RegistryObject<CreativeModeTab> CREATIVEWORLDBLOCKS = REGISTRY.register("creativeworldblocks",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.creative_world.creativeworldblocks")).icon(() -> new ItemStack(CreativeWorldModBlocks.ADVENCEDMACHINECASE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(CreativeWorldModBlocks.TIN_ORE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.TITAN_ORE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.ACCUMULATIUM_ORE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.CREATIVIUM_ORE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.TIN_BLOCK.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.BRONZE_BLOCK.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.ACCUMULATIUM_BLOCK.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.CREATIVIUM_BLOCK.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.RESIN_LOG.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.RSINLOGWITHRESIN.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.RESIN_WOOD.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.RESIN_PLANKS.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.RESIN_STAIRS.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.RESIN_SLAB.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.RESIN_LEAVES.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.RESIN_FENCE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.RESIN_FENCE_GATE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.TITAN_BLOCK.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.MACHINECASE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.COALGENERATOR.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.CRUSHER.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.FAN.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.BATTERYBLOCK.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.SOLARPANEL.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.ADVENCEDMACHINECASE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.ADVENCEDSOLARPANEL.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.INFINITYENERGY.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.RESINTREESAPLING.get().asItem());
-			})
-
-					.build());
 	public static final RegistryObject<CreativeModeTab> CREATIVEWORLDTOOLS = REGISTRY.register("creativeworldtools",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.creative_world.creativeworldtools")).icon(() -> new ItemStack(CreativeWorldModItems.BEDROCKBREACKER.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CreativeWorldModItems.TIN_PICKAXE.get());
@@ -151,6 +115,43 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModItems.ENERGYDETECTOR.get());
 				tabData.accept(CreativeWorldModItems.PARTICLEBINDER.get());
 				tabData.accept(CreativeWorldModItems.KEYCARD.get());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> CREATIVEWORLDBLOCKS = REGISTRY.register("creativeworldblocks",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.creative_world.creativeworldblocks")).icon(() -> new ItemStack(CreativeWorldModBlocks.ADVENCEDMACHINECASE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(CreativeWorldModBlocks.TIN_ORE.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.TITAN_ORE.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.ACCUMULATIUM_ORE.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.CREATIVIUM_ORE.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.TIN_BLOCK.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.BRONZE_BLOCK.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.ACCUMULATIUM_BLOCK.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.CREATIVIUM_BLOCK.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.RESIN_LOG.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.RSINLOGWITHRESIN.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.RESIN_WOOD.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.RESIN_PLANKS.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.RESIN_STAIRS.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.RESIN_SLAB.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.RESIN_LEAVES.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.RESIN_FENCE.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.RESIN_FENCE_GATE.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.TITAN_BLOCK.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.MACHINECASE.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.COALGENERATOR.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.CRUSHER.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.FAN.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.BATTERYBLOCK.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.SOLARPANEL.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.ADVENCEDMACHINECASE.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.ADVENCEDSOLARPANEL.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.INFINITYENERGY.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.RESINTREESAPLING.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.NUCLEAR_REACTOR.get().asItem());
 			})
 
 					.build());

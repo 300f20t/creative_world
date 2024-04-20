@@ -66,7 +66,7 @@ public class AlargebucketPriShchielchkiePKMPoBlokuProcedure {
 			if (itemstack.getOrCreateTag().getDouble("mb") != 0) {
 				if (itemstack.getOrCreateTag().getDouble("mb") >= 10000) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get());
+						ItemStack _setstack = new ItemStack(CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get()).copy();
 						_setstack.setCount(1);
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
@@ -76,7 +76,7 @@ public class AlargebucketPriShchielchkiePKMPoBlokuProcedure {
 				}
 				if (itemstack.getOrCreateTag().getDouble("mb") == 9000 && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get()) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CreativeWorldModItems.ALARGEBUCKET.get());
+						ItemStack _setstack = new ItemStack(CreativeWorldModItems.ALARGEBUCKET.get()).copy();
 						_setstack.setCount(1);
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
@@ -91,7 +91,7 @@ public class AlargebucketPriShchielchkiePKMPoBlokuProcedure {
 			if (itemstack.getOrCreateTag().getDouble("mb") != 0) {
 				if (itemstack.getOrCreateTag().getDouble("mb") >= 10000) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CreativeWorldModItems.A_LARGE_BUCKET_OF_FLUID_9.get());
+						ItemStack _setstack = new ItemStack(CreativeWorldModItems.A_LARGE_BUCKET_OF_FLUID_9.get()).copy();
 						_setstack.setCount(1);
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
@@ -101,7 +101,7 @@ public class AlargebucketPriShchielchkiePKMPoBlokuProcedure {
 				}
 				if (itemstack.getOrCreateTag().getDouble("mb") == 9000 && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.A_LARGE_BUCKET_OF_FLUID_9.get()) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CreativeWorldModItems.ALARGEBUCKET.get());
+						ItemStack _setstack = new ItemStack(CreativeWorldModItems.ALARGEBUCKET.get()).copy();
 						_setstack.setCount(1);
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)

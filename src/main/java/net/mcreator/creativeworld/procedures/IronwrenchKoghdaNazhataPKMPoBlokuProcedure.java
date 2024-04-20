@@ -32,7 +32,7 @@ public class IronwrenchKoghdaNazhataPKMPoBlokuProcedure {
 				}
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.COALGENERATOR.get());
+					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.COALGENERATOR.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
@@ -48,7 +48,7 @@ public class IronwrenchKoghdaNazhataPKMPoBlokuProcedure {
 				}
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.CRUSHER.get());
+					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.CRUSHER.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
@@ -64,7 +64,7 @@ public class IronwrenchKoghdaNazhataPKMPoBlokuProcedure {
 				}
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.FAN.get());
+					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.FAN.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
@@ -80,7 +80,7 @@ public class IronwrenchKoghdaNazhataPKMPoBlokuProcedure {
 				}
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.BATTERYBLOCK.get());
+					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.BATTERYBLOCK.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
@@ -96,7 +96,7 @@ public class IronwrenchKoghdaNazhataPKMPoBlokuProcedure {
 				}
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.SOLARPANEL.get());
+					ItemStack _setstack = new ItemStack(CreativeWorldModBlocks.SOLARPANEL.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}

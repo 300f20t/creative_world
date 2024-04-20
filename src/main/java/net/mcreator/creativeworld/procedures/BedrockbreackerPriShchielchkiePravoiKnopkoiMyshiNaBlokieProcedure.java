@@ -16,7 +16,7 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 			return;
 		if (Blocks.BEDROCK == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
+				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock())).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
@@ -33,7 +33,7 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 		}
 		if (Blocks.COMMAND_BLOCK == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
+				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock())).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
@@ -50,7 +50,7 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 		}
 		if (Blocks.REPEATING_COMMAND_BLOCK == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
+				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock())).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
@@ -67,7 +67,7 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 		}
 		if (Blocks.CHAIN_COMMAND_BLOCK == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()));
+				ItemStack _setstack = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock())).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}

@@ -1,18 +1,13 @@
 
 package net.mcreator.creativeworld.item;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.Component;
 
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
-
-import java.util.List;
 
 public class AccumulatiumSwordItem extends SwordItem {
 	public AccumulatiumSwordItem() {
@@ -26,7 +21,7 @@ public class AccumulatiumSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 34f;
+				return 32f;
 			}
 
 			public int getLevel() {
@@ -41,10 +36,5 @@ public class AccumulatiumSwordItem extends SwordItem {
 				return Ingredient.of(new ItemStack(CreativeWorldModItems.ACCUMULATIUM_INGOT.get()));
 			}
 		}, 3, -1.6f, new Item.Properties());
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 }

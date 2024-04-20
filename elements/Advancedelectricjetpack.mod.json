@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -10,9 +10,6 @@
     "textureLeggings": "",
     "enableBoots": false,
     "textureBoots": "",
-    "onBodyTick": {
-      "name": "AdvancedelectricjetpackSobytiieTaktovKirasy"
-    },
     "creativeTab": {
       "value": "CUSTOM:Creativeworldcombat"
     },
@@ -61,6 +58,18 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 200,
     "damageValueHelmet": 2,
     "damageValueBody": 6,
