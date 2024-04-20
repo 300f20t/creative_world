@@ -33,7 +33,7 @@ public class CrushedcopperoreKoghdaNazhataPKMPoBlokuProcedure {
 					.createLegacyBlock()).getBlock() == Blocks.WATER) {
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CreativeWorldModItems.CRUSHEDCOPPERORE.get());
+						ItemStack _setstack = new ItemStack(CreativeWorldModItems.CRUSHEDCOPPERORE.get()).copy();
 						_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
@@ -43,12 +43,12 @@ public class CrushedcopperoreKoghdaNazhataPKMPoBlokuProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(CreativeWorldModItems.WASHEDCRUSHEDCOPPERORE.get());
+					ItemStack _setstack = new ItemStack(CreativeWorldModItems.WASHEDCRUSHEDCOPPERORE.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(CreativeWorldModItems.COPPERNUGGET.get());
+					ItemStack _setstack = new ItemStack(CreativeWorldModItems.COPPERNUGGET.get()).copy();
 					_setstack.setCount((int) (Math.random() + Math.random() + Math.random()));
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}

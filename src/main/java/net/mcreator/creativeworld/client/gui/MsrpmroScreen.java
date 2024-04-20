@@ -75,11 +75,6 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		button_empty = Button.builder(Component.translatable("gui.creative_world.msrpmro.button_empty"), e -> {

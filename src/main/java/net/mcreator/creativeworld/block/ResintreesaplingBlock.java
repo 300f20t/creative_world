@@ -1,7 +1,6 @@
 
 package net.mcreator.creativeworld.block;
 
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,7 +21,6 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.creativeworld.procedures.ResintreesaplingPriDobavlieniiRastieniiaProcedure;
 
 import java.util.List;
-import java.util.Collections;
 
 public class ResintreesaplingBlock extends FlowerBlock {
 	public ResintreesaplingBlock() {
@@ -40,22 +38,14 @@ public class ResintreesaplingBlock extends FlowerBlock {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7ehas incomplete functionality (in development)"));
 	}
 
 	@Override
 	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 60;
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this));
 	}
 
 	@Override

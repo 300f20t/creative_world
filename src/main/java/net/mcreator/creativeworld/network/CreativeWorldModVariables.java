@@ -287,8 +287,8 @@ public class CreativeWorldModVariables {
 			return nbt;
 		}
 
-		public void readNBT(Tag Tag) {
-			CompoundTag nbt = (CompoundTag) Tag;
+		public void readNBT(Tag tag) {
+			CompoundTag nbt = (CompoundTag) tag;
 			QT_1 = nbt.getBoolean("QT_1");
 			QT_2 = nbt.getBoolean("QT_2");
 			first_QT_ID_x = nbt.getDouble("first_QT_ID_x");

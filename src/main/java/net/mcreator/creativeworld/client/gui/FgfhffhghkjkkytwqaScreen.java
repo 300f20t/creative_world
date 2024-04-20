@@ -73,11 +73,6 @@ public class FgfhffhghkjkkytwqaScreen extends AbstractContainerScreen<Fgfhffhghk
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

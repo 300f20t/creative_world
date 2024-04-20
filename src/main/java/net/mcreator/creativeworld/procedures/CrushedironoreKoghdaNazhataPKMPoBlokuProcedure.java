@@ -34,7 +34,7 @@ public class CrushedironoreKoghdaNazhataPKMPoBlokuProcedure {
 					.createLegacyBlock()).getBlock() == Blocks.WATER) {
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CreativeWorldModItems.CRUSHEDIRONORE.get());
+						ItemStack _setstack = new ItemStack(CreativeWorldModItems.CRUSHEDIRONORE.get()).copy();
 						_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
 						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 						if (_entity instanceof Player _player)
@@ -44,12 +44,12 @@ public class CrushedironoreKoghdaNazhataPKMPoBlokuProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(CreativeWorldModItems.WASHEDCRUSHEDIRONORE.get());
+					ItemStack _setstack = new ItemStack(CreativeWorldModItems.WASHEDCRUSHEDIRONORE.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(Items.IRON_NUGGET);
+					ItemStack _setstack = new ItemStack(Items.IRON_NUGGET).copy();
 					_setstack.setCount((int) (Math.random() + Math.random() + Math.random()));
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
