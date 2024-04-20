@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:acacia_planks",
+          "name": "creative_world:machinecase",
           "functions": [
             {
               "count": 2,

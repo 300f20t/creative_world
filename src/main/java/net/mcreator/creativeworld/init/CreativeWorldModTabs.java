@@ -69,7 +69,6 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModItems.BATTREY_3.get());
 				tabData.accept(CreativeWorldModItems.ELECTRIC_MOTOR.get());
 				tabData.accept(CreativeWorldModItems.CREATIVE_ELECTRIC_MOTOR.get());
-				tabData.accept(CreativeWorldModBlocks.NUCLEAR_REACTOR.get().asItem());
 			})
 
 					.build());
@@ -151,6 +150,7 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.RESINTREESAPLING.get().asItem());
+				tabData.accept(CreativeWorldModBlocks.NUCLEAR_REACTOR.get().asItem());
 			})
 
 					.build());
