@@ -6181,19 +6181,6 @@
       "path": "~/Mekanisms"
     },
     {
-      "name": "Imba",
-      "type": "recipe",
-      "sortid": 411,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "imba",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipes/imba.json"
-        ]
-      }
-    },
-    {
       "name": "AdvancedelectricjetpackKazhdyiTikDliaNaghrudnika",
       "type": "procedure",
       "sortid": 412,

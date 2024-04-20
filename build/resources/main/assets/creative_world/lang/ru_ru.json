@@ -26,22 +26,15 @@
   "block.creative_world.accumulatium_ore": "Аккумулятивная руда",
   "item.creative_world.bronzeplate": "Бронзовая пластина",
   "item.creative_world.composite_plate_tool_sword": "Композитное_платье_тул Меч",
-<<<<<<< HEAD
-=======
-  "block.creative_world.nuclear_reactor": "ЯДЕРКАААААА",
->>>>>>> experemental
+  "block.creative_world.nuclear_reactor": "Ядерный реактор",
   "item.creative_world.thecoreofmatter": "Ядро материи",
   "item.creative_world.creativium_pickaxe": "Креативная кирка",
   "block.creative_world.accumulatium_block": "Блок аккумулятиума",
   "item.creative_world.creativium_armor_chestplate": "Креативиумный нагрудник",
   "item_group.creative_world.creativeworldcombat": "Creative world: бой",
   "advancements.my_first_drill.title": "Моя первая дрель",
-<<<<<<< HEAD
-=======
   "advancements.bedrock.descr": "Бедрок не может быть сломан",
->>>>>>> experemental
   "advancements.infinity.descr": "Вода?",
-  "advancements.bedrock.descr": "Бедрок не может быть сломан",
   "item.creative_world.tinplate": "Жестяная тарелка",
   "item.creative_world.composite_plate_armor_armor_chestplate": "Композитный нагрудник",
   "item.creative_world.bronze_hoe": "Бронзовая мотыга",
