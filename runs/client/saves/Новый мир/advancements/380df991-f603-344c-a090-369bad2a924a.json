@@ -1,15 +1,22 @@
 {
-  "minecraft:recipes/food/cooked_mutton_from_smoking": {
+  "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "has_mutton": "2024-04-21 02:16:01 +0300"
+      "unlock_right_away": "2024-04-21 02:10:05 +0300"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_mutton": {
+  "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "has_mutton": "2024-04-21 02:16:01 +0300"
+      "minecraft:old_growth_birch_forest": "2024-04-21 02:13:35 +0300",
+      "minecraft:forest": "2024-04-21 02:10:08 +0300",
+      "minecraft:taiga": "2024-06-14 18:00:00 +0300",
+      "minecraft:river": "2024-06-14 17:59:32 +0300",
+      "minecraft:meadow": "2024-06-14 18:05:53 +0300",
+      "minecraft:birch_forest": "2024-06-14 18:00:09 +0300",
+      "minecraft:stony_shore": "2024-06-14 18:00:33 +0300",
+      "minecraft:plains": "2024-06-14 18:05:56 +0300"
     },
-    "done": true
+    "done": false
   },
   "minecraft:recipes/decorations/white_banner": {
     "criteria": {
@@ -23,25 +30,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_mutton_from_campfire_cooking": {
-    "criteria": {
-      "has_mutton": "2024-04-21 02:16:01 +0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/crafting_table": {
-    "criteria": {
-      "unlock_right_away": "2024-04-21 02:10:05 +0300"
-    },
-    "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:old_growth_birch_forest": "2024-04-21 02:13:35 +0300",
-      "minecraft:forest": "2024-04-21 02:10:08 +0300"
-    },
-    "done": false
-  },
   "minecraft:recipes/decorations/white_bed": {
     "criteria": {
       "has_white_wool": "2024-04-21 02:16:00 +0300"
@@ -51,6 +39,75 @@
   "minecraft:recipes/decorations/white_carpet": {
     "criteria": {
       "has_white_wool": "2024-04-21 02:16:00 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_mutton_from_smoking": {
+    "criteria": {
+      "has_mutton": "2024-04-21 02:16:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_mutton": {
+    "criteria": {
+      "has_mutton": "2024-04-21 02:16:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_mutton_from_campfire_cooking": {
+    "criteria": {
+      "has_mutton": "2024-04-21 02:16:01 +0300"
+    },
+    "done": true
+  },
+  "ae2:main/presses": {
+    "criteria": {
+      "calculation": "2024-06-14 18:04:53 +0300",
+      "silicon": "2024-06-14 18:04:53 +0300",
+      "engineering": "2024-06-14 18:04:53 +0300",
+      "logic": "2024-06-14 18:04:54 +0300"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/shaped/not_so_mysterious_cube": {
+    "criteria": {
+      "press": "2024-06-14 18:04:53 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2024-06-14 18:04:54 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_iron_block": {
+    "criteria": {
+      "has_raw_iron": "2024-07-16 02:09:21 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2024-07-16 02:09:21 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2024-07-16 02:09:21 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2024-07-16 02:09:21 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2024-07-16 02:09:21 +0300"
     },
     "done": true
   },

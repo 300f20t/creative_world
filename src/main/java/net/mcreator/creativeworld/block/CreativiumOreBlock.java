@@ -25,6 +25,7 @@ public class CreativiumOreBlock extends Block {
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
 		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 16;
-		return false;
+		else
+			return super.canHarvestBlock(state, world, pos, player);
 	}
 }

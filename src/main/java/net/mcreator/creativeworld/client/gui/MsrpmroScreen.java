@@ -6,7 +6,6 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.creativeworld.world.inventory.MsrpmroMenu;
@@ -20,7 +19,6 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_empty;
 
 	public MsrpmroScreen(MsrpmroMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -72,9 +70,5 @@ public class MsrpmroScreen extends AbstractContainerScreen<MsrpmroMenu> {
 	@Override
 	public void init() {
 		super.init();
-		button_empty = Button.builder(Component.translatable("gui.creative_world.msrpmro.button_empty"), e -> {
-		}).bounds(this.leftPos + -14, this.topPos + -19, 30, 20).build();
-		guistate.put("button:button_empty", button_empty);
-		this.addRenderableWidget(button_empty);
 	}
 }

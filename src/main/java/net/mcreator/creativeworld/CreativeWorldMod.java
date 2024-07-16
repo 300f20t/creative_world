@@ -42,6 +42,8 @@ public class CreativeWorldMod {
 	public static final String MODID = "creative_world";
 
 	public CreativeWorldMod(IEventBus modEventBus) {
+		// Start of user code block mod constructor
+		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		CreativeWorldModSounds.REGISTRY.register(modEventBus);
