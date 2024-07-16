@@ -4,6 +4,7 @@ import net.neoforged.neoforge.energy.IEnergyStorage;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
@@ -34,6 +35,13 @@ public class EnergydetectorKoghdaNazhataPKMPoBlokuProcedure {
 					}
 					return 0;
 				}
-			}.getMaxEnergyStored(world, BlockPos.containing(x, y, z))) + "energy at" + direction)), true);
+			}.getMaxEnergyStored(world, BlockPos.containing(x, y, z))) + " energy at " + direction + " fuel " + (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), "FuelPower")))), true);
 	}
 }

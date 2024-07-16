@@ -1,7 +1,12 @@
 
 package net.mcreator.creativeworld.block;
 
+import org.checkerframework.checker.units.qual.s;
+
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -39,10 +44,17 @@ import net.mcreator.creativeworld.block.entity.CoalgeneratorBlockEntity;
 import io.netty.buffer.Unpooled;
 
 public class CoalgeneratorBlock extends Block implements EntityBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public CoalgeneratorBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(5f, 10f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(5f, 10f).lightLevel(s -> (new Object() {
+			public int getLightLevel() {
+				if (s.getValue(BLOCKSTATE) == 1)
+					return 15;
+				return 0;
+			}
+		}.getLightLevel())));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -52,8 +64,18 @@ public class CoalgeneratorBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> box(0, 0, 0, 16, 16, 16);
+			case NORTH -> box(0, 0, 0, 16, 16, 16);
+			case EAST -> box(0, 0, 0, 16, 16, 16);
+			case WEST -> box(0, 0, 0, 16, 16, 16);
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING);
+		builder.add(FACING, BLOCKSTATE);
 	}
 
 	@Override
@@ -72,7 +94,7 @@ public class CoalgeneratorBlock extends Block implements EntityBlock {
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 10);
+		world.scheduleTick(pos, this, 1);
 		CoalgeneratorPriDobavlieniiBlokaProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
@@ -80,7 +102,7 @@ public class CoalgeneratorBlock extends Block implements EntityBlock {
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		CoalGeneratorGUIOnChangeItemInSlotProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-		world.scheduleTick(pos, this, 10);
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override

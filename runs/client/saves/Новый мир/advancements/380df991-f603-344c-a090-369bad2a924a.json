@@ -7,6 +7,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:flower_forest": "2024-07-16 11:27:36 +0300",
       "minecraft:old_growth_birch_forest": "2024-04-21 02:13:35 +0300",
       "minecraft:forest": "2024-04-21 02:10:08 +0300",
       "minecraft:taiga": "2024-06-14 18:00:00 +0300",

@@ -129,7 +129,7 @@ public class InfinityenergyBlockEntity extends RandomizableContainerBlockEntity 
 		return handler;
 	}
 
-	private final EnergyStorage energyStorage = new EnergyStorage(400000, 2000, 2000, 400000) {
+	private final EnergyStorage energyStorage = new EnergyStorage(400000, 1024, 1024, 400000) {
 		@Override
 		public int receiveEnergy(int maxReceive, boolean simulate) {
 			int retval = super.receiveEnergy(maxReceive, simulate);

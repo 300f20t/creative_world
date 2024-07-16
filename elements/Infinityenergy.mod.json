@@ -58,7 +58,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 10,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -114,8 +114,8 @@
     "hasEnergyStorage": true,
     "energyInitial": 400000,
     "energyCapacity": 400000,
-    "energyMaxReceive": 2000,
-    "energyMaxExtract": 2000,
+    "energyMaxReceive": 1024,
+    "energyMaxExtract": 1024,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],

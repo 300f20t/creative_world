@@ -1302,25 +1302,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Coalgenerator1",
-      "type": "block",
-      "sortid": 183,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coalgenerator_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/block/Coalgenerator1Block.java",
-          "src/main/resources/assets/creative_world/models/block/coalgenerator_1.json",
-          "src/main/resources/assets/creative_world/models/item/coalgenerator_1.json",
-          "src/main/java/net/mcreator/creativeworld/block/entity/Coalgenerator1BlockEntity.java",
-          "src/main/resources/data/creative_world/loot_tables/blocks/coalgenerator_1.json",
-          "src/main/resources/assets/creative_world/blockstates/coalgenerator_1.json"
-        ]
-      },
-      "path": "~/Mechanisms"
-    },
-    {
       "name": "Solarpanel",
       "type": "block",
       "sortid": 116,
@@ -6250,6 +6231,20 @@
         ]
       },
       "path": "~/Mechanisms"
+    },
+    {
+      "name": "CoalGeneratorBlockstates",
+      "type": "blockstates",
+      "sortid": 415,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_generator_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creative_world/models/block/coal_generator_blockstates_blockstate_0.json"
+        ]
+      },
+      "path": "~/Mechanisms"
     }
   ],
   "variable_elements": [
@@ -6423,7 +6418,6 @@
       "block.creative_world.solarpanel": "Солнечная панель",
       "item.creative_world.washedcrushedtinore": "Промытая измельченная оловянная руда",
       "item.creative_world.battrey_0": "Аккумулятор",
-      "block.creative_world.coalgenerator_1": "Угольный генератор",
       "gamerule.allowcreativemode": "позволяет использовать творческий режим",
       "advancements.infinity.title": "Бесконечность?",
       "block.creative_world.fan": "Вентилятор",
@@ -6434,8 +6428,8 @@
       "item.creative_world.bronzeplate": "Бронзовая пластина",
       "item.creative_world.composite_plate_tool_sword": "Композитное_платье_тул Меч",
       "block.creative_world.nuclear_reactor": "Ядерный реактор",
-      "item.creative_world.creativium_pickaxe": "Креативная кирка",
       "item.creative_world.thecoreofmatter": "Ядро материи",
+      "item.creative_world.creativium_pickaxe": "Креативная кирка",
       "block.creative_world.accumulatium_block": "Блок аккумулятиума",
       "item.creative_world.creativium_armor_chestplate": "Креативиумный нагрудник",
       "item_group.creative_world.creativeworldcombat": "Creative world: бой",
@@ -6474,8 +6468,8 @@
       "item.creative_world.creativium_shovel": "Лопата для творчества",
       "block.creative_world.coalgenerator": "Угольный генератор",
       "block.creative_world.advencedmachinecase": "Усовершенствованный корпус машины",
-      "item.creative_world.creativedrill": "Творческое упражнение",
       "item.creative_world.alargebucketofwater_9": "Большое ведро с водой",
+      "item.creative_world.creativedrill": "Творческое упражнение",
       "item.creative_world.copper_sword": "Медный меч",
       "item.creative_world.composite_plate_tool_hoe": "Composite_plate_tool Мотыга",
       "item.creative_world.electric_motor": "Электрический мотор",
@@ -6487,8 +6481,8 @@
       "item.creative_world.tin_ingot": "Слиток олова",
       "item.creative_world.ironhammer": "Железный молоток",
       "item.creative_world.copper_armor_boots": "Медные сапоги",
-      "item.creative_world.advanceddrill": "Усовершенствованная дрель",
       "item.creative_world.copper_pickaxe": "Медная кирка",
+      "item.creative_world.advanceddrill": "Усовершенствованная дрель",
       "block.creative_world.crusher": "Дробилка",
       "item.creative_world.alargebucket": "Большое ведро",
       "itemGroup.tabcreativeworldtools": "Creative world: инструменты",
@@ -6623,7 +6617,6 @@
       "block.creative_world.solarpanel": "Solar panel",
       "item.creative_world.washedcrushedtinore": "Washed crushed tin ore",
       "item.creative_world.battrey_0": "Battrey 0",
-      "block.creative_world.coalgenerator_1": "Coal generator",
       "gamerule.allowcreativemode": "allow creative mode",
       "advancements.infinity.title": "Infinity?",
       "block.creative_world.fan": "Fan",
@@ -6634,8 +6627,8 @@
       "item.creative_world.bronzeplate": "Bronze plate",
       "item.creative_world.composite_plate_tool_sword": "Composite_plate_tool Sword",
       "block.creative_world.nuclear_reactor": "Nuclear Reactor",
-      "item.creative_world.creativium_pickaxe": "Creativium Pickaxe",
       "item.creative_world.thecoreofmatter": "The core of matter",
+      "item.creative_world.creativium_pickaxe": "Creativium Pickaxe",
       "block.creative_world.accumulatium_block": "Block of Accumulatium",
       "item.creative_world.creativium_armor_chestplate": "Creativium Chestplate",
       "item_group.creative_world.creativeworldcombat": "Creative world: combat",
@@ -6675,8 +6668,8 @@
       "item.creative_world.creativium_shovel": "Creativium Shovel",
       "block.creative_world.coalgenerator": "Coal generator",
       "block.creative_world.advencedmachinecase": "Advenced machine case",
-      "item.creative_world.alargebucketofwater_9": "A large bucket of water",
       "item.creative_world.creativedrill": "Creative drill",
+      "item.creative_world.alargebucketofwater_9": "A large bucket of water",
       "item.creative_world.copper_sword": "Copper Sword",
       "item.creative_world.composite_plate_tool_hoe": "Composite_plate_tool Hoe",
       "item.creative_world.electric_motor": "Electric Motor",
@@ -6688,8 +6681,8 @@
       "item.creative_world.tin_ingot": "Tin ingot",
       "item.creative_world.ironhammer": "Iron hammer",
       "item.creative_world.copper_armor_boots": "Copper Boots",
-      "item.creative_world.copper_pickaxe": "Copper Pickaxe",
       "item.creative_world.advanceddrill": "Advanced drill",
+      "item.creative_world.copper_pickaxe": "Copper Pickaxe",
       "block.creative_world.crusher": "Crusher",
       "item.creative_world.alargebucket": "A large bucket",
       "itemGroup.tabcreativeworldtools": "Creative world: tools",

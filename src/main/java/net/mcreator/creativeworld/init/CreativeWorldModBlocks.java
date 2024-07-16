@@ -40,7 +40,6 @@ import net.mcreator.creativeworld.block.CreativiumOreBlock;
 import net.mcreator.creativeworld.block.CreativiumBlockBlock;
 import net.mcreator.creativeworld.block.CopperWireBlock;
 import net.mcreator.creativeworld.block.CoalgeneratorBlock;
-import net.mcreator.creativeworld.block.Coalgenerator1Block;
 import net.mcreator.creativeworld.block.BronzeBlockBlock;
 import net.mcreator.creativeworld.block.BatteryblockBlock;
 import net.mcreator.creativeworld.block.BUGBlock;
@@ -66,7 +65,6 @@ public class CreativeWorldModBlocks {
 	public static final DeferredHolder<Block, Block> RESIN_FENCE_GATE = REGISTRY.register("resin_fence_gate", () -> new ResinFenceGateBlock());
 	public static final DeferredHolder<Block, Block> CRUSHER = REGISTRY.register("crusher", () -> new CrusherBlock());
 	public static final DeferredHolder<Block, Block> RSINLOGWITHRESIN = REGISTRY.register("rsinlogwithresin", () -> new RsinlogwithresinBlock());
-	public static final DeferredHolder<Block, Block> COALGENERATOR_1 = REGISTRY.register("coalgenerator_1", () -> new Coalgenerator1Block());
 	public static final DeferredHolder<Block, Block> SOLARPANEL = REGISTRY.register("solarpanel", () -> new SolarpanelBlock());
 	public static final DeferredHolder<Block, Block> OIL = REGISTRY.register("oil", () -> new OilBlock());
 	public static final DeferredHolder<Block, Block> GAS = REGISTRY.register("gas", () -> new GasBlock());

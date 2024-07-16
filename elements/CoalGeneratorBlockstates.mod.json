@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Coalgenerator",
+    "blockstateList": [
+      {
+        "texture": "tffyuiui",
+        "textureTop": "tffyuiui",
+        "textureLeft": "tffyuiui",
+        "textureFront": "cxcvbvfv",
+        "textureRight": "tffyuiui",
+        "textureBack": "tffyuiui",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 15,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

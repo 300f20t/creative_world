@@ -26,7 +26,7 @@ import javax.annotation.Nullable;
 import java.util.stream.IntStream;
 
 public class CrusherBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(2, ItemStack.EMPTY);
 	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
 
 	public CrusherBlockEntity(BlockPos position, BlockState state) {
@@ -129,7 +129,7 @@ public class CrusherBlockEntity extends RandomizableContainerBlockEntity impleme
 		return handler;
 	}
 
-	private final EnergyStorage energyStorage = new EnergyStorage(4000, 200, 200, 0) {
+	private final EnergyStorage energyStorage = new EnergyStorage(2048, 32, 32, 0) {
 		@Override
 		public int receiveEnergy(int maxReceive, boolean simulate) {
 			int retval = super.receiveEnergy(maxReceive, simulate);

@@ -12,32 +12,32 @@ public class InfinityenergyObnovlieniieTikaProcedure {
 		if (world instanceof ILevelExtension _ext) {
 			IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x + 1, y, z), null);
 			if (_entityStorage != null)
-				_entityStorage.receiveEnergy(999999999, false);
+				_entityStorage.receiveEnergy(1024, false);
 		}
 		if (world instanceof ILevelExtension _ext) {
 			IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x - 1, y, z), null);
 			if (_entityStorage != null)
-				_entityStorage.receiveEnergy(999999999, false);
+				_entityStorage.receiveEnergy(1024, false);
 		}
 		if (world instanceof ILevelExtension _ext) {
 			IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y + 1, z), null);
 			if (_entityStorage != null)
-				_entityStorage.receiveEnergy(999999999, false);
+				_entityStorage.receiveEnergy(1024, false);
 		}
 		if (world instanceof ILevelExtension _ext) {
 			IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y - 1, z), null);
 			if (_entityStorage != null)
-				_entityStorage.receiveEnergy(999999999, false);
+				_entityStorage.receiveEnergy(1024, false);
 		}
 		if (world instanceof ILevelExtension _ext) {
 			IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z + 1), null);
 			if (_entityStorage != null)
-				_entityStorage.receiveEnergy(999999999, false);
+				_entityStorage.receiveEnergy(1024, false);
 		}
 		if (world instanceof ILevelExtension _ext) {
 			IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z - 1), null);
 			if (_entityStorage != null)
-				_entityStorage.receiveEnergy(999999999, false);
+				_entityStorage.receiveEnergy(1024, false);
 		}
 	}
 }

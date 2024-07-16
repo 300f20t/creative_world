@@ -168,7 +168,6 @@ public class CreativeWorldModItems {
 	public static final DeferredHolder<Item, Item> THECOREOFMATTER = REGISTRY.register("thecoreofmatter", () -> new ThecoreofmatterItem());
 	public static final DeferredHolder<Item, Item> CREATINGCORE = REGISTRY.register("creatingcore", () -> new CreatingcoreItem());
 	public static final DeferredHolder<Item, Item> BEDROCKBREACKER = REGISTRY.register("bedrockbreacker", () -> new BedrockbreackerItem());
-	public static final DeferredHolder<Item, Item> COALGENERATOR_1 = block(CreativeWorldModBlocks.COALGENERATOR_1);
 	public static final DeferredHolder<Item, Item> SOLARPANEL = block(CreativeWorldModBlocks.SOLARPANEL);
 	public static final DeferredHolder<Item, Item> CRUSHEDIRONORE = REGISTRY.register("crushedironore", () -> new CrushedironoreItem());
 	public static final DeferredHolder<Item, Item> CRUSHEDCOPPERORE = REGISTRY.register("crushedcopperore", () -> new CrushedcopperoreItem());
