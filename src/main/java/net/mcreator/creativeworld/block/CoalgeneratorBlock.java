@@ -32,7 +32,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.creativeworld.world.inventory.FgfhffhghkjkkytwqaMenu;
-import net.mcreator.creativeworld.procedures.CoalgeneratorObnovitTaktProcedure;
+import net.mcreator.creativeworld.procedures.CoalgeneratorPriDobavlieniiBlokaProcedure;
+import net.mcreator.creativeworld.procedures.CoalGeneratorGUIOnChangeItemInSlotProcedure;
 import net.mcreator.creativeworld.block.entity.CoalgeneratorBlockEntity;
 
 import io.netty.buffer.Unpooled;
@@ -72,12 +73,13 @@ public class CoalgeneratorBlock extends Block implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 10);
+		CoalgeneratorPriDobavlieniiBlokaProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
-		CoalgeneratorObnovitTaktProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		CoalGeneratorGUIOnChangeItemInSlotProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		world.scheduleTick(pos, this, 10);
 	}
 

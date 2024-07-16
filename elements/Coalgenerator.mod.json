@@ -105,7 +105,7 @@
     "hasInventory": true,
     "guiBoundTo": "Fgfhffhghkjkkytwqa",
     "openGUIOnRightClick": true,
-    "inventorySize": 9,
+    "inventorySize": 1,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -119,8 +119,11 @@
     "isFluidTank": false,
     "fluidCapacity": 0,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "CoalgeneratorPriDobavlieniiBloka"
+    },
     "onTickUpdate": {
-      "name": "CoalgeneratorObnovitTakt"
+      "name": "CoalGeneratorGUIOnChangeItemInSlot"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

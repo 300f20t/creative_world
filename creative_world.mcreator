@@ -140,7 +140,7 @@
           "src/main/resources/assets/creative_world/blockstates/coalgenerator.json"
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "Machinecase",
@@ -1135,7 +1135,7 @@
           "src/main/resources/data/creative_world/loot_tables/blocks/crusher.json"
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "Rsinlogwithresin",
@@ -1168,7 +1168,7 @@
           "src/main/java/net/mcreator/creativeworld/world/inventory/MsrpmroMenu.java"
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "Wirecutters",
@@ -1318,7 +1318,7 @@
           "src/main/resources/assets/creative_world/blockstates/coalgenerator_1.json"
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "Solarpanel",
@@ -1337,7 +1337,7 @@
           "src/main/resources/assets/creative_world/models/item/solarpanel.json"
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "SolarpanelObnovitTakt",
@@ -1369,7 +1369,7 @@
           }
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "Fdgdf",
@@ -1384,7 +1384,7 @@
           "src/main/java/net/mcreator/creativeworld/client/gui/FdgdfScreen.java"
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "Crushedironore",
@@ -1435,7 +1435,7 @@
           }
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "Defdf",
@@ -1555,7 +1555,8 @@
           "src/main/java/net/mcreator/creativeworld/world/inventory/FgfhffhghkjkkytwqaMenu.java",
           "src/main/java/net/mcreator/creativeworld/client/gui/FgfhffhghkjkkytwqaScreen.java"
         ]
-      }
+      },
+      "path": "~/Mechanisms"
     },
     {
       "name": "Crushedcopperore",
@@ -2352,7 +2353,7 @@
           }
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "Fan",
@@ -2371,7 +2372,7 @@
           "src/main/resources/assets/creative_world/models/item/fan.json"
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "EnergydetectorKoghdaNazhataPKMPoBloku",
@@ -2461,7 +2462,7 @@
           "src/main/resources/assets/creative_world/models/item/batteryblock.json"
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "Electricjetpack",
@@ -2901,7 +2902,7 @@
           "src/main/resources/assets/creative_world/models/block/infinityenergy.json"
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokie",
@@ -3261,7 +3262,7 @@
           "src/main/resources/data/creative_world/loot_tables/blocks/advencedsolarpanel.json"
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "CreativiumIngot",
@@ -5617,7 +5618,7 @@
           }
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "Alargebucketofwater9DopolnitielnaiaInformatsiia",
@@ -6092,7 +6093,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "IronCrushing",
@@ -6164,7 +6165,7 @@
           "src/main/resources/assets/creative_world/models/block/nuclear_reactor.json"
         ]
       },
-      "path": "~/Mekanisms"
+      "path": "~/Mechanisms"
     },
     {
       "name": "AdvancedelectricjetpackKazhdyiTikDliaNaghrudnika",
@@ -6185,6 +6186,70 @@
         ]
       },
       "path": "~/Jetpacks"
+    },
+    {
+      "name": "CoalGeneratorGUIOnChangeItemInSlot",
+      "type": "procedure",
+      "sortid": 413,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_generator_gui_on_change_item_in_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/CoalGeneratorGUIOnChangeItemInSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mechanisms"
+    },
+    {
+      "name": "CoalgeneratorPriDobavlieniiBloka",
+      "type": "procedure",
+      "sortid": 414,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coalgenerator_pri_dobavlienii_bloka",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/CoalgeneratorPriDobavlieniiBlokaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mechanisms"
     }
   ],
   "variable_elements": [
@@ -6746,7 +6811,7 @@
     "name": "~",
     "children": [
       {
-        "name": "Mekanisms",
+        "name": "Mechanisms",
         "children": []
       },
       {

@@ -29,7 +29,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.creativeworld.world.inventory.MsrpmroMenu;
+import net.mcreator.creativeworld.world.inventory.FgfhffhghkjkkytwqaMenu;
 import net.mcreator.creativeworld.block.entity.Coalgenerator1BlockEntity;
 
 import io.netty.buffer.Unpooled;
@@ -77,7 +77,7 @@ public class Coalgenerator1Block extends Block implements EntityBlock {
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new MsrpmroMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+					return new FgfhffhghkjkkytwqaMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
 				}
 			}, pos);
 		}

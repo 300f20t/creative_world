@@ -46,6 +46,7 @@ public class CreativeWorldModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CRUSHER.get(), (blockEntity, side) -> ((CrusherBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, CRUSHER.get(), (blockEntity, side) -> ((CrusherBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, COALGENERATOR_1.get(), (blockEntity, side) -> ((Coalgenerator1BlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, COALGENERATOR_1.get(), (blockEntity, side) -> ((Coalgenerator1BlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SOLARPANEL.get(), (blockEntity, side) -> ((SolarpanelBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, SOLARPANEL.get(), (blockEntity, side) -> ((SolarpanelBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, FAN.get(), (blockEntity, side) -> ((FanBlockEntity) blockEntity).getItemHandler());
