@@ -46,7 +46,8 @@
           "src/main/resources/assets/creative_world/models/item/endlesswatersource.json",
           "src/main/java/net/mcreator/creativeworld/item/EndlesswatersourceItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Qqqqq",
@@ -73,7 +74,7 @@
           "src/main/resources/assets/creative_world/models/item/alargebucket.json"
         ]
       },
-      "path": "~/LargeBucket"
+      "path": "~/Items/LargeBucket"
     },
     {
       "name": "Alargebucketofwater9",
@@ -87,7 +88,7 @@
           "src/main/resources/assets/creative_world/models/item/alargebucketofwater_9.json"
         ]
       },
-      "path": "~/LargeBucket"
+      "path": "~/Items/LargeBucket"
     },
     {
       "name": "Prprprp",
@@ -100,7 +101,7 @@
           "src/main/resources/data/creative_world/recipe/prprprp.json"
         ]
       },
-      "path": "~/LargeBucket"
+      "path": "~/Items/LargeBucket"
     },
     {
       "name": "Ironwrench",
@@ -114,7 +115,7 @@
           "src/main/java/net/mcreator/creativeworld/item/IronwrenchItem.java"
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Coalgenerator",
@@ -132,7 +133,7 @@
           "src/main/resources/assets/creative_world/blockstates/coalgenerator.json"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Machinecase",
@@ -149,7 +150,7 @@
           "src/main/resources/assets/creative_world/models/block/machinecase.json"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "IronwrenchKoghdaNazhataPKMPoBloku",
@@ -184,7 +185,7 @@
           }
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Ironhammer",
@@ -198,7 +199,7 @@
           "src/main/resources/assets/creative_world/models/item/ironhammer.json"
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Wradsdsds",
@@ -225,7 +226,7 @@
           "src/main/java/net/mcreator/creativeworld/item/IronplateItem.java"
         ]
       },
-      "path": "~/Materials/Plates"
+      "path": "~/Items/Plates"
     },
     {
       "name": "Nrpnpghn",
@@ -238,7 +239,7 @@
           "src/main/resources/data/creative_world/recipe/nrpnpghn.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Ingridients"
     },
     {
       "name": "Dfdfdfd",
@@ -251,7 +252,7 @@
           "src/main/resources/data/creative_world/recipe/dfdfdfd.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Ingridients"
     },
     {
       "name": "TinIngot",
@@ -265,7 +266,7 @@
           "src/main/java/net/mcreator/creativeworld/item/TinIngotItem.java"
         ]
       },
-      "path": "~/Materials/Ingots"
+      "path": "~/Items/Ingots"
     },
     {
       "name": "TinOre",
@@ -284,7 +285,7 @@
           "src/main/resources/assets/creative_world/models/item/tin_ore.json"
         ]
       },
-      "path": "~/Materials/Ores"
+      "path": "~/Blocks/Ores"
     },
     {
       "name": "TinBlock",
@@ -301,7 +302,7 @@
           "src/main/resources/assets/creative_world/models/block/tin_block.json"
         ]
       },
-      "path": "~/Materials/Blocks"
+      "path": "~/Blocks"
     },
     {
       "name": "TinOreBlockRecipe",
@@ -314,7 +315,7 @@
           "src/main/resources/data/creative_world/recipe/tin_ore_block_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Ingridients"
     },
     {
       "name": "TinBlockOreRecipe",
@@ -327,7 +328,7 @@
           "src/main/resources/data/creative_world/recipe/tin_block_ore_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Ingridients"
     },
     {
       "name": "TinOreSmelting",
@@ -340,7 +341,7 @@
           "src/main/resources/data/creative_world/recipe/tin_ore_smelting.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Smelting"
     },
     {
       "name": "TinPickaxe",
@@ -354,7 +355,7 @@
           "src/main/java/net/mcreator/creativeworld/item/TinPickaxeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "TinAxe",
@@ -368,7 +369,7 @@
           "src/main/java/net/mcreator/creativeworld/item/TinAxeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "TinSword",
@@ -382,7 +383,7 @@
           "src/main/resources/assets/creative_world/models/item/tin_sword.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "TinShovel",
@@ -396,7 +397,7 @@
           "src/main/java/net/mcreator/creativeworld/item/TinShovelItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "TinHoe",
@@ -410,7 +411,7 @@
           "src/main/resources/assets/creative_world/models/item/tin_hoe.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "TinPickaxeRecipe",
@@ -423,7 +424,7 @@
           "src/main/resources/data/creative_world/recipe/tin_pickaxe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "TinAxeRecipe",
@@ -436,7 +437,7 @@
           "src/main/resources/data/creative_world/recipe/tin_axe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "TinSwordRecipe",
@@ -449,7 +450,7 @@
           "src/main/resources/data/creative_world/recipe/tin_sword_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "TinShovelRecipe",
@@ -462,7 +463,7 @@
           "src/main/resources/data/creative_world/recipe/tin_shovel_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "TinHoeRecipe",
@@ -475,7 +476,7 @@
           "src/main/resources/data/creative_world/recipe/tin_hoe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "TinArmor",
@@ -496,7 +497,7 @@
           "src/main/resources/assets/creative_world/models/item/tin_armor_boots.json"
         ]
       },
-      "path": "~/Materials/Armors"
+      "path": "~/Items/Armors"
     },
     {
       "name": "TinArmorHelmetRecipe",
@@ -509,7 +510,7 @@
           "src/main/resources/data/creative_world/recipe/tin_armor_helmet_recipe.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "TinArmorBodyRecipe",
@@ -522,7 +523,7 @@
           "src/main/resources/data/creative_world/recipe/tin_armor_body_recipe.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "TinArmorLeggingsRecipe",
@@ -535,7 +536,7 @@
           "src/main/resources/data/creative_world/recipe/tin_armor_leggings_recipe.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "TinArmorBootsRecipe",
@@ -548,7 +549,7 @@
           "src/main/resources/data/creative_world/recipe/tin_armor_boots_recipe.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "CopperPickaxe",
@@ -562,7 +563,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CopperPickaxeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "CopperAxe",
@@ -576,7 +577,7 @@
           "src/main/resources/assets/creative_world/models/item/copper_axe.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "CopperSword",
@@ -590,7 +591,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CopperSwordItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "CopperShovel",
@@ -604,7 +605,7 @@
           "src/main/resources/assets/creative_world/models/item/copper_shovel.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "CopperHoe",
@@ -618,7 +619,7 @@
           "src/main/resources/assets/creative_world/models/item/copper_hoe.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "CopperPickaxeRecipe",
@@ -631,7 +632,7 @@
           "src/main/resources/data/creative_world/recipe/copper_pickaxe_recipe.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "CopperAxeRecipe",
@@ -644,7 +645,7 @@
           "src/main/resources/data/creative_world/recipe/copper_axe_recipe.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "CopperSwordRecipe",
@@ -657,7 +658,7 @@
           "src/main/resources/data/creative_world/recipe/copper_sword_recipe.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "CopperShovelRecipe",
@@ -670,7 +671,7 @@
           "src/main/resources/data/creative_world/recipe/copper_shovel_recipe.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "CopperHoeRecipe",
@@ -683,7 +684,7 @@
           "src/main/resources/data/creative_world/recipe/copper_hoe_recipe.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "CopperArmor",
@@ -704,7 +705,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CopperArmorItem.java"
         ]
       },
-      "path": "~/Materials/Armors"
+      "path": "~/Items/Armors"
     },
     {
       "name": "CopperArmorHelmetRecipe",
@@ -717,7 +718,7 @@
           "src/main/resources/data/creative_world/recipe/copper_armor_helmet_recipe.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "CopperArmorBodyRecipe",
@@ -730,7 +731,7 @@
           "src/main/resources/data/creative_world/recipe/copper_armor_body_recipe.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "CopperArmorLeggingsRecipe",
@@ -743,7 +744,7 @@
           "src/main/resources/data/creative_world/recipe/copper_armor_leggings_recipe.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "CopperArmorBootsRecipe",
@@ -756,7 +757,7 @@
           "src/main/resources/data/creative_world/recipe/copper_armor_boots_recipe.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "Fyutiy",
@@ -769,7 +770,7 @@
           "src/main/resources/data/creative_world/recipe/fyutiy.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Ingridients"
     },
     {
       "name": "Ghkggh",
@@ -782,7 +783,7 @@
           "src/main/resources/data/creative_world/recipe/ghkggh.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Ingridients"
     },
     {
       "name": "Tinplate",
@@ -796,7 +797,7 @@
           "src/main/resources/assets/creative_world/models/item/tinplate.json"
         ]
       },
-      "path": "~/Materials/Plates"
+      "path": "~/Items/Plates"
     },
     {
       "name": "Copperplate",
@@ -810,7 +811,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CopperplateItem.java"
         ]
       },
-      "path": "~/Materials/Plates"
+      "path": "~/Items/Plates"
     },
     {
       "name": "ResinWood",
@@ -827,7 +828,7 @@
           "src/main/resources/assets/creative_world/models/item/resin_wood.json"
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "ResinLog",
@@ -844,7 +845,7 @@
           "src/main/resources/assets/creative_world/blockstates/resin_log.json"
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "ResinPlanks",
@@ -861,7 +862,7 @@
           "src/main/java/net/mcreator/creativeworld/block/ResinPlanksBlock.java"
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "ResinLeaves",
@@ -878,7 +879,7 @@
           "src/main/resources/assets/creative_world/models/item/resin_leaves.json"
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "ResinStairs",
@@ -897,7 +898,7 @@
           "src/main/resources/assets/creative_world/models/block/resin_stairs.json"
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "ResinSlab",
@@ -916,7 +917,7 @@
           "src/main/resources/assets/creative_world/blockstates/resin_slab.json"
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "ResinFence",
@@ -935,7 +936,7 @@
           "src/main/resources/assets/creative_world/models/block/resin_fence_inventory.json"
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "ResinFenceGate",
@@ -955,7 +956,7 @@
           "src/main/resources/assets/creative_world/models/block/resin_fence_gate_wall_open.json"
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "ResinWoodRecipe",
@@ -1064,7 +1065,7 @@
           "src/main/resources/assets/creative_world/models/item/crusher.json"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Rsinlogwithresin",
@@ -1081,7 +1082,7 @@
           "src/main/resources/assets/creative_world/models/item/rsinlogwithresin.json"
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "Msrpmro",
@@ -1095,7 +1096,7 @@
           "src/main/java/net/mcreator/creativeworld/world/inventory/MsrpmroMenu.java"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Wirecutters",
@@ -1109,7 +1110,7 @@
           "src/main/java/net/mcreator/creativeworld/item/WirecuttersItem.java"
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Thecoreoftheformation",
@@ -1123,7 +1124,7 @@
           "src/main/java/net/mcreator/creativeworld/item/ThecoreoftheformationItem.java"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "Thecoreofmatter",
@@ -1137,7 +1138,7 @@
           "src/main/java/net/mcreator/creativeworld/item/ThecoreofmatterItem.java"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "Creatingcore",
@@ -1151,7 +1152,7 @@
           "src/main/resources/assets/creative_world/models/item/creatingcore.json"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "Gfg",
@@ -1204,7 +1205,7 @@
           "src/main/java/net/mcreator/creativeworld/item/BedrockbreackerItem.java"
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Gttyju",
@@ -1235,7 +1236,7 @@
           "src/main/resources/assets/creative_world/models/item/solarpanel.json"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "SolarpanelObnovitTakt",
@@ -1266,7 +1267,7 @@
           }
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Fdgdf",
@@ -1280,7 +1281,7 @@
           "src/main/java/net/mcreator/creativeworld/client/gui/FdgdfScreen.java"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Crushedironore",
@@ -1294,7 +1295,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CrushedironoreItem.java"
         ]
       },
-      "path": "~/Materials/Crushed ores"
+      "path": "~/Items/Crushed ores"
     },
     {
       "name": "CrusherNaBlokieNazhataPravaiaKnopkaMyshi",
@@ -1329,7 +1330,7 @@
           }
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Defdf",
@@ -1377,7 +1378,7 @@
           }
         ]
       },
-      "path": "~/Materials/Washing of crushed ores"
+      "path": "~/Blocks/Ores/Washing of crushed ores"
     },
     {
       "name": "Infinity",
@@ -1443,7 +1444,7 @@
           "src/main/java/net/mcreator/creativeworld/client/gui/FgfhffhghkjkkytwqaScreen.java"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Crushedcopperore",
@@ -1457,7 +1458,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CrushedcopperoreItem.java"
         ]
       },
-      "path": "~/Materials/Crushed ores"
+      "path": "~/Items/Crushed ores"
     },
     {
       "name": "Crushedtinore",
@@ -1471,7 +1472,7 @@
           "src/main/resources/assets/creative_world/models/item/crushedtinore.json"
         ]
       },
-      "path": "~/Materials/Crushed ores"
+      "path": "~/Items/Crushed ores"
     },
     {
       "name": "CrushedcopperoreKoghdaNazhataPKMPoBloku",
@@ -1506,7 +1507,7 @@
           }
         ]
       },
-      "path": "~/Materials/Washing of crushed ores"
+      "path": "~/Blocks/Ores/Washing of crushed ores"
     },
     {
       "name": "CrushedtinoreKoghdaNazhataPKMPoBloku",
@@ -1541,7 +1542,7 @@
           }
         ]
       },
-      "path": "~/Materials/Washing of crushed ores"
+      "path": "~/Blocks/Ores/Washing of crushed ores"
     },
     {
       "name": "Tinnugget",
@@ -1555,7 +1556,7 @@
           "src/main/resources/assets/creative_world/models/item/tinnugget.json"
         ]
       },
-      "path": "~/Materials/Nuggets"
+      "path": "~/Items/Nuggets"
     },
     {
       "name": "Coppernugget",
@@ -1569,7 +1570,7 @@
           "src/main/resources/assets/creative_world/models/item/coppernugget.json"
         ]
       },
-      "path": "~/Materials/Nuggets"
+      "path": "~/Items/Nuggets"
     },
     {
       "name": "Ggthg",
@@ -1609,7 +1610,7 @@
           "src/main/java/net/mcreator/creativeworld/item/WashedcrushedironoreItem.java"
         ]
       },
-      "path": "~/Materials/Washed crushed ores"
+      "path": "~/Blocks/Ores/Washed crushed ores"
     },
     {
       "name": "Washedcrushedcopperore",
@@ -1623,7 +1624,7 @@
           "src/main/java/net/mcreator/creativeworld/item/WashedcrushedcopperoreItem.java"
         ]
       },
-      "path": "~/Materials/Washed crushed ores"
+      "path": "~/Blocks/Ores/Washed crushed ores"
     },
     {
       "name": "Washedcrushedtinore",
@@ -1637,7 +1638,7 @@
           "src/main/resources/assets/creative_world/models/item/washedcrushedtinore.json"
         ]
       },
-      "path": "~/Materials/Washed crushed ores"
+      "path": "~/Blocks/Ores/Washed crushed ores"
     },
     {
       "name": "Ghhgfd",
@@ -1650,7 +1651,7 @@
           "src/main/resources/data/creative_world/recipe/ghhgfd.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts/Smelting/Ores"
     },
     {
       "name": "Upnieu",
@@ -1663,7 +1664,7 @@
           "src/main/resources/data/creative_world/recipe/upnieu.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts/Smelting/Ores"
     },
     {
       "name": "Cghsdd",
@@ -1676,7 +1677,7 @@
           "src/main/resources/data/creative_world/recipe/cghsdd.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts/Smelting/Ores"
     },
     {
       "name": "Xrdg",
@@ -1689,7 +1690,7 @@
           "src/main/resources/data/creative_world/recipe/xrdg.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts/Smelting/Ores"
     },
     {
       "name": "Rtedfgfgd",
@@ -1702,7 +1703,7 @@
           "src/main/resources/data/creative_world/recipe/rtedfgfgd.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts/Smelting/Ores"
     },
     {
       "name": "Gsdgfrewdefgyy",
@@ -1715,7 +1716,7 @@
           "src/main/resources/data/creative_world/recipe/gsdgfrewdefgyy.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts"
     },
     {
       "name": "Zfdgfdfs",
@@ -1728,7 +1729,7 @@
           "src/main/resources/data/creative_world/recipe/zfdgfdfs.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts"
     },
     {
       "name": "Dgttrwased",
@@ -1793,7 +1794,8 @@
           "src/main/resources/assets/creative_world/models/item/creativemod.json",
           "src/main/java/net/mcreator/creativeworld/item/CreativemodItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Rtyukl",
@@ -1815,7 +1817,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Xcdfvgbhnj",
@@ -1855,7 +1858,7 @@
           "src/main/resources/assets/creative_world/models/item/latex.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Items"
     },
     {
       "name": "TapKoghdaNazhataPKMPoBloku",
@@ -1893,7 +1896,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Tap",
@@ -1907,7 +1911,7 @@
           "src/main/java/net/mcreator/creativeworld/item/TapItem.java"
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Asdfgh",
@@ -1934,7 +1938,7 @@
           "src/main/resources/assets/creative_world/models/item/rubber.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Items"
     },
     {
       "name": "Dfgch",
@@ -1961,7 +1965,7 @@
           "src/main/resources/assets/creative_world/models/item/tincover.json"
         ]
       },
-      "path": "~/Materials/Covers"
+      "path": "~/Blocks/Covers"
     },
     {
       "name": "Vhgfhjk",
@@ -2000,7 +2004,7 @@
           "src/main/resources/data/creative_world/recipe/ukap.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts"
     },
     {
       "name": "Tsukvaiepn",
@@ -2013,7 +2017,7 @@
           "src/main/resources/data/creative_world/recipe/tsukvaiepn.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts"
     },
     {
       "name": "Oil",
@@ -2032,7 +2036,8 @@
           "src/main/resources/assets/creative_world/models/block/oil.json",
           "src/main/java/net/mcreator/creativeworld/fluid/types/OilFluidType.java"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Gas",
@@ -2051,7 +2056,8 @@
           "src/main/resources/assets/creative_world/models/block/gas.json",
           "src/main/resources/assets/creative_world/blockstates/gas.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Rawtin",
@@ -2065,7 +2071,7 @@
           "src/main/java/net/mcreator/creativeworld/item/RawtinItem.java"
         ]
       },
-      "path": "~/Materials/RawOres"
+      "path": "~/Blocks/Ores/RawOres"
     },
     {
       "name": "Vyapr",
@@ -2078,7 +2084,7 @@
           "src/main/resources/data/creative_world/recipe/vyapr.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts/Smelting/Ores"
     },
     {
       "name": "Bronzedust",
@@ -2092,7 +2098,7 @@
           "src/main/java/net/mcreator/creativeworld/item/BronzedustItem.java"
         ]
       },
-      "path": "~/Materials/Dusts"
+      "path": "~/Items/Dusts"
     },
     {
       "name": "Qwertyuhjtcf",
@@ -2105,7 +2111,7 @@
           "src/main/resources/data/creative_world/recipe/qwertyuhjtcf.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts"
     },
     {
       "name": "Kiepnrghsh",
@@ -2118,7 +2124,7 @@
           "src/main/resources/data/creative_world/recipe/kiepnrghsh.json"
         ]
       },
-      "path": "~/Crafts/Materials"
+      "path": "~/Crafts"
     },
     {
       "name": "CoalgeneratorObnovitTakt",
@@ -2148,7 +2154,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Energydetector",
@@ -2162,7 +2169,7 @@
           "src/main/resources/assets/creative_world/models/item/energydetector.json"
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "FanObnovitTakt",
@@ -2193,7 +2200,7 @@
           }
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Fan",
@@ -2211,7 +2218,7 @@
           "src/main/resources/assets/creative_world/models/item/fan.json"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "EnergydetectorKoghdaNazhataPKMPoBloku",
@@ -2250,7 +2257,7 @@
           }
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "BatteryblockObnovitTakt",
@@ -2280,7 +2287,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Batteryblock",
@@ -2298,7 +2306,7 @@
           "src/main/resources/data/creative_world/loot_table/blocks/batteryblock.json"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Electricjetpack",
@@ -2316,7 +2324,7 @@
           "src/main/resources/assets/creative_world/models/item/electricjetpack_chestplate.json"
         ]
       },
-      "path": "~/Jetpacks"
+      "path": "~/Items/Jetpacks"
     },
     {
       "name": "ElectricjetpackcontrolPriNazhatiiKlavishi",
@@ -2335,7 +2343,7 @@
           }
         ]
       },
-      "path": "~/Jetpacks"
+      "path": "~/Items/Jetpacks"
     },
     {
       "name": "Electricjetpackcontrol",
@@ -2348,7 +2356,7 @@
           "src/main/java/net/mcreator/creativeworld/network/ElectricjetpackcontrolMessage.java"
         ]
       },
-      "path": "~/Jetpacks"
+      "path": "~/Items/Jetpacks"
     },
     {
       "name": "BlackscreenOtobrazhatOvierlieiVIghrie",
@@ -2379,7 +2387,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Blackscreen",
@@ -2418,7 +2427,7 @@
           "src/main/java/net/mcreator/creativeworld/item/BronzeIngotItem.java"
         ]
       },
-      "path": "~/Materials/Ingots"
+      "path": "~/Items/Ingots"
     },
     {
       "name": "BronzeBlock",
@@ -2435,7 +2444,7 @@
           "src/main/resources/data/creative_world/loot_table/blocks/bronze_block.json"
         ]
       },
-      "path": "~/Materials/Blocks"
+      "path": "~/Blocks"
     },
     {
       "name": "BronzeOreBlockRecipe",
@@ -2474,7 +2483,7 @@
           "src/main/resources/data/creative_world/recipe/bronze_ore_smelting.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts/Smelting/Ores"
     },
     {
       "name": "BronzePickaxe",
@@ -2488,7 +2497,7 @@
           "src/main/java/net/mcreator/creativeworld/item/BronzePickaxeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "BronzeAxe",
@@ -2502,7 +2511,7 @@
           "src/main/java/net/mcreator/creativeworld/item/BronzeAxeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "BronzeSword",
@@ -2516,7 +2525,7 @@
           "src/main/java/net/mcreator/creativeworld/item/BronzeSwordItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "BronzeShovel",
@@ -2530,7 +2539,7 @@
           "src/main/resources/assets/creative_world/models/item/bronze_shovel.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "BronzeHoe",
@@ -2544,7 +2553,7 @@
           "src/main/resources/assets/creative_world/models/item/bronze_hoe.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "BronzePickaxeRecipe",
@@ -2630,7 +2639,7 @@
           "src/main/resources/assets/creative_world/models/item/bronze_armor_boots.json"
         ]
       },
-      "path": "~/Materials/Armors"
+      "path": "~/Items/Armors"
     },
     {
       "name": "BronzeArmorHelmetRecipe",
@@ -2643,7 +2652,7 @@
           "src/main/resources/data/creative_world/recipe/bronze_armor_helmet_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "BronzeArmorBodyRecipe",
@@ -2656,7 +2665,7 @@
           "src/main/resources/data/creative_world/recipe/bronze_armor_body_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "BronzeArmorLeggingsRecipe",
@@ -2669,7 +2678,7 @@
           "src/main/resources/data/creative_world/recipe/bronze_armor_leggings_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "BronzeArmorBootsRecipe",
@@ -2682,7 +2691,7 @@
           "src/main/resources/data/creative_world/recipe/bronze_armor_boots_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "Rubbertrade",
@@ -2710,7 +2719,7 @@
           "src/main/resources/assets/creative_world/models/block/infinityenergy.json"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokie",
@@ -2749,7 +2758,7 @@
           }
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Dsdf",
@@ -2759,7 +2768,8 @@
       "registry_name": "dsdf",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Pryvvpa",
@@ -2769,7 +2779,8 @@
       "registry_name": "pryvvpa",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Avprso",
@@ -2779,7 +2790,8 @@
       "registry_name": "avprso",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Ironwrenchcraft",
@@ -2819,7 +2831,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CoaldustItem.java"
         ]
       },
-      "path": "~/Materials/Dusts"
+      "path": "~/Items/Dusts"
     },
     {
       "name": "Coaldustcraft",
@@ -2846,7 +2858,7 @@
           "src/main/resources/assets/creative_world/models/item/electricalcircuit.json"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "Solarpanelcraft",
@@ -2955,7 +2967,7 @@
           "src/main/resources/assets/creative_world/models/item/advancedelectricjetpack_chestplate.json"
         ]
       },
-      "path": "~/Jetpacks"
+      "path": "~/Items/Jetpacks"
     },
     {
       "name": "Aejetpackcraft",
@@ -2994,7 +3006,7 @@
           "src/main/java/net/mcreator/creativeworld/client/screens/JetpackenergylowOverlay.java"
         ]
       },
-      "path": "~/Jetpacks"
+      "path": "~/Items/Jetpacks"
     },
     {
       "name": "Hklklh",
@@ -3013,7 +3025,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Advencedmachinecase",
@@ -3030,7 +3043,7 @@
           "src/main/resources/assets/creative_world/models/item/advencedmachinecase.json"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "Advencedsolarpanel",
@@ -3047,7 +3060,7 @@
           "src/main/resources/data/creative_world/loot_table/blocks/advencedsolarpanel.json"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "CreativiumIngot",
@@ -3061,7 +3074,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CreativiumIngotItem.java"
         ]
       },
-      "path": "~/Materials/Ingots"
+      "path": "~/Items/Ingots"
     },
     {
       "name": "CreativiumOre",
@@ -3081,7 +3094,7 @@
           "src/main/resources/assets/creative_world/blockstates/creativium_ore.json"
         ]
       },
-      "path": "~/Materials/Ores"
+      "path": "~/Blocks/Ores"
     },
     {
       "name": "CreativiumBlock",
@@ -3098,7 +3111,7 @@
           "src/main/resources/assets/creative_world/blockstates/creativium_block.json"
         ]
       },
-      "path": "~/Materials/Blocks"
+      "path": "~/Blocks"
     },
     {
       "name": "CreativiumOreBlockRecipe",
@@ -3137,7 +3150,7 @@
           "src/main/resources/data/creative_world/recipe/creativium_ore_smelting.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts/Smelting/Ores"
     },
     {
       "name": "CreativiumPickaxe",
@@ -3151,7 +3164,7 @@
           "src/main/resources/assets/creative_world/models/item/creativium_pickaxe.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "CreativiumAxe",
@@ -3165,7 +3178,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CreativiumAxeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "CreativiumSword",
@@ -3179,7 +3192,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CreativiumSwordItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "CreativiumShovel",
@@ -3193,7 +3206,7 @@
           "src/main/resources/assets/creative_world/models/item/creativium_shovel.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "CreativiumHoe",
@@ -3207,7 +3220,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CreativiumHoeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "CreativiumPickaxeRecipe",
@@ -3293,7 +3306,7 @@
           "src/main/resources/assets/creative_world/models/item/creativium_armor_helmet.json"
         ]
       },
-      "path": "~/Materials/Armors"
+      "path": "~/Items/Armors"
     },
     {
       "name": "CreativiumArmorHelmetRecipe",
@@ -3359,7 +3372,7 @@
           "src/main/resources/assets/creative_world/models/item/accumulatium_ingot.json"
         ]
       },
-      "path": "~/Materials/Ingots"
+      "path": "~/Items/Ingots"
     },
     {
       "name": "AccumulatiumOre",
@@ -3379,7 +3392,7 @@
           "src/main/resources/assets/creative_world/models/item/accumulatium_ore.json"
         ]
       },
-      "path": "~/Materials/Ores"
+      "path": "~/Blocks/Ores"
     },
     {
       "name": "AccumulatiumBlock",
@@ -3396,7 +3409,7 @@
           "src/main/resources/assets/creative_world/models/block/accumulatium_block.json"
         ]
       },
-      "path": "~/Materials/Blocks"
+      "path": "~/Blocks"
     },
     {
       "name": "AccumulatiumOreBlockRecipe",
@@ -3449,7 +3462,7 @@
           "src/main/resources/assets/creative_world/models/item/accumulatium_pickaxe.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "AccumulatiumAxe",
@@ -3463,7 +3476,7 @@
           "src/main/java/net/mcreator/creativeworld/item/AccumulatiumAxeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "AccumulatiumSword",
@@ -3477,7 +3490,7 @@
           "src/main/java/net/mcreator/creativeworld/item/AccumulatiumSwordItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "AccumulatiumShovel",
@@ -3491,7 +3504,7 @@
           "src/main/resources/assets/creative_world/models/item/accumulatium_shovel.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "AccumulatiumHoe",
@@ -3505,7 +3518,7 @@
           "src/main/java/net/mcreator/creativeworld/item/AccumulatiumHoeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "AccumulatiumPickaxeRecipe",
@@ -3591,7 +3604,7 @@
           "src/main/java/net/mcreator/creativeworld/item/AccumulatiumArmorItem.java"
         ]
       },
-      "path": "~/Materials/Armors"
+      "path": "~/Items/Armors"
     },
     {
       "name": "AccumulatiumArmorHelmetRecipe",
@@ -3657,7 +3670,7 @@
           "src/main/resources/assets/creative_world/models/item/creativiumnugget.json"
         ]
       },
-      "path": "~/Materials/Nuggets"
+      "path": "~/Items/Nuggets"
     },
     {
       "name": "Creativiumnuggetcraft",
@@ -3697,7 +3710,7 @@
           "src/main/java/net/mcreator/creativeworld/item/AccumulatiumnuggetItem.java"
         ]
       },
-      "path": "~/Materials/Nuggets"
+      "path": "~/Items/Nuggets"
     },
     {
       "name": "Accumulatiumnuggetcraft",
@@ -3737,7 +3750,7 @@
           "src/main/java/net/mcreator/creativeworld/item/CarbonplateItem.java"
         ]
       },
-      "path": "~/Materials/Plates"
+      "path": "~/Items/Plates"
     },
     {
       "name": "Advencedmachinecasecraft",
@@ -3802,7 +3815,8 @@
           "src/main/resources/assets/creative_world/models/item/thecoreofinvulnerability.json",
           "src/main/java/net/mcreator/creativeworld/item/ThecoreofinvulnerabilityItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Thecoreofinvulnerabilitycraft",
@@ -3829,7 +3843,7 @@
           "src/main/java/net/mcreator/creativeworld/item/BronzeplateItem.java"
         ]
       },
-      "path": "~/Materials/Plates"
+      "path": "~/Items/Plates"
     },
     {
       "name": "Bronzeplatecraft",
@@ -3856,7 +3870,7 @@
           "src/main/resources/assets/creative_world/models/item/titan_ingot.json"
         ]
       },
-      "path": "~/Materials/Ingots"
+      "path": "~/Items/Ingots"
     },
     {
       "name": "TitanOre",
@@ -3876,7 +3890,7 @@
           "src/main/resources/data/creative_world/loot_table/blocks/titan_ore.json"
         ]
       },
-      "path": "~/Materials/Ores"
+      "path": "~/Blocks/Ores"
     },
     {
       "name": "TitanBlock",
@@ -3893,7 +3907,7 @@
           "src/main/resources/assets/creative_world/models/block/titan_block.json"
         ]
       },
-      "path": "~/Materials/Blocks"
+      "path": "~/Blocks"
     },
     {
       "name": "TitanOreBlockRecipe",
@@ -3932,7 +3946,7 @@
           "src/main/resources/data/creative_world/recipe/titan_ore_smelting.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts"
     },
     {
       "name": "TitanPickaxe",
@@ -3946,7 +3960,7 @@
           "src/main/resources/assets/creative_world/models/item/titan_pickaxe.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "TitanAxe",
@@ -3960,7 +3974,7 @@
           "src/main/java/net/mcreator/creativeworld/item/TitanAxeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "TitanSword",
@@ -3974,7 +3988,7 @@
           "src/main/resources/assets/creative_world/models/item/titan_sword.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "TitanShovel",
@@ -3988,7 +4002,7 @@
           "src/main/java/net/mcreator/creativeworld/item/TitanShovelItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "TitanHoe",
@@ -4002,7 +4016,7 @@
           "src/main/java/net/mcreator/creativeworld/item/TitanHoeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "TitanPickaxeRecipe",
@@ -4088,7 +4102,7 @@
           "src/main/java/net/mcreator/creativeworld/item/TitanArmorItem.java"
         ]
       },
-      "path": "~/Materials/Armors"
+      "path": "~/Items/Armors"
     },
     {
       "name": "TitanArmorHelmetRecipe",
@@ -4154,7 +4168,7 @@
           "src/main/java/net/mcreator/creativeworld/item/TitanplateItem.java"
         ]
       },
-      "path": "~/Materials/Plates"
+      "path": "~/Items/Plates"
     },
     {
       "name": "Compositeplate",
@@ -4168,7 +4182,7 @@
           "src/main/resources/assets/creative_world/models/item/compositeplate.json"
         ]
       },
-      "path": "~/Materials/Plates"
+      "path": "~/Items/Plates"
     },
     {
       "name": "Compositeplatecraft",
@@ -4202,7 +4216,7 @@
           "src/main/java/net/mcreator/creativeworld/item/Composite_plate_armorArmorItem.java"
         ]
       },
-      "path": "~/Materials/Armors"
+      "path": "~/Items/Armors"
     },
     {
       "name": "Composite_plate_armorArmorHelmetRecipe",
@@ -4268,7 +4282,7 @@
           "src/main/resources/assets/creative_world/models/item/composite_plate_tool_pickaxe.json"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Composite_plate_toolAxe",
@@ -4282,7 +4296,7 @@
           "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolAxeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Composite_plate_toolSword",
@@ -4296,7 +4310,7 @@
           "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolSwordItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Composite_plate_toolShovel",
@@ -4310,7 +4324,7 @@
           "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolShovelItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Composite_plate_toolHoe",
@@ -4324,7 +4338,7 @@
           "src/main/java/net/mcreator/creativeworld/item/Composite_plate_toolHoeItem.java"
         ]
       },
-      "path": "~/Materials/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Composite_plate_toolPickaxeRecipe",
@@ -4403,7 +4417,7 @@
           "src/main/java/net/mcreator/creativeworld/item/ParticlebinderItem.java"
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Particlebindercraft",
@@ -4432,7 +4446,8 @@
           "src/main/resources/assets/creative_world/models/item/stationaryparticlebinder.json",
           "src/main/resources/assets/creative_world/blockstates/stationaryparticlebinder.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Stationaryparticlebindercraft",
@@ -4461,7 +4476,8 @@
           "src/main/resources/assets/creative_world/blockstates/quantumteleporterblock.json",
           "src/main/java/net/mcreator/creativeworld/block/QuantumteleporterblockBlock.java"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Quantumteleporterblock2",
@@ -4477,7 +4493,8 @@
           "src/main/resources/assets/creative_world/blockstates/quantumteleporterblock_2.json",
           "src/main/resources/assets/creative_world/models/block/quantumteleporterblock_2.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshi",
@@ -4511,7 +4528,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Legacy"
     },
     {
       "name": "QT",
@@ -4523,7 +4541,8 @@
         "files": [
           "src/main/java/net/mcreator/creativeworld/command/QTCommand.java"
         ]
-      }
+      },
+      "path": "~/Legacy"
     },
     {
       "name": "QTclearall",
@@ -4541,7 +4560,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Legacy"
     },
     {
       "name": "QTclear1",
@@ -4559,7 +4579,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Legacy"
     },
     {
       "name": "QTclear2",
@@ -4577,7 +4598,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Legacy"
     },
     {
       "name": "Quantumteleporterblock2craft",
@@ -4617,7 +4639,7 @@
           "src/main/resources/assets/creative_world/models/item/keycard.json"
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "Keycardcraft",
@@ -4644,7 +4666,7 @@
           "src/main/resources/assets/creative_world/models/item/drill.json"
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "Advanceddrill",
@@ -4658,7 +4680,7 @@
           "src/main/java/net/mcreator/creativeworld/item/AdvanceddrillItem.java"
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "Creativedrill",
@@ -4672,7 +4694,7 @@
           "src/main/resources/assets/creative_world/models/item/creativedrill.json"
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "Allowcreativemode",
@@ -4683,7 +4705,8 @@
       "metadata": {
         "files": [],
         "type": "logic"
-      }
+      },
+      "path": "~/Gamerules"
     },
     {
       "name": "Lockcreativemoditemcrafting",
@@ -4705,7 +4728,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Gamerules"
     },
     {
       "name": "Creativeworlditems",
@@ -4763,7 +4787,7 @@
           "src/main/resources/assets/creative_world/models/item/reel.json"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "Creativereel",
@@ -4777,7 +4801,7 @@
           "src/main/resources/assets/creative_world/models/item/creativereel.json"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "TinOreDrop",
@@ -4790,7 +4814,7 @@
           "src/main/resources/data/creative_world/loot_table/blocks/tin_ore.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Blocks"
     },
     {
       "name": "Rawtitan",
@@ -4804,7 +4828,7 @@
           "src/main/resources/assets/creative_world/models/item/rawtitan.json"
         ]
       },
-      "path": "~/Materials/RawOres"
+      "path": "~/Blocks/Ores/RawOres"
     },
     {
       "name": "TitanOreDrop",
@@ -4817,7 +4841,7 @@
           "src/main/resources/data/creative_world/loot_table/blocks/titan_ore.json"
         ]
       },
-      "path": "~/Materials"
+      "path": "~/Blocks"
     },
     {
       "name": "ResintreesaplingPriDobavlieniiRastieniia",
@@ -4848,7 +4872,7 @@
           }
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "Resintreesapling",
@@ -4865,7 +4889,7 @@
           "src/main/resources/assets/creative_world/models/item/resintreesapling.json"
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "ResinLeavesPriRazrushieniiBlokaIghrokom",
@@ -4896,7 +4920,7 @@
           }
         ]
       },
-      "path": "~/ResinTree"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "SetWorldIndex",
@@ -4930,7 +4954,7 @@
           }
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "DrillInHand",
@@ -4943,7 +4967,7 @@
           "src/main/java/net/mcreator/creativeworld/client/screens/DrillInHandOverlay.java"
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "AdvanceddrillPriRazrushieniiBlokaInstrumientom",
@@ -4978,7 +5002,7 @@
           }
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "RubbertreeFeature",
@@ -4993,7 +5017,8 @@
           "src/main/resources/data/creative_world/neoforge/biome_modifier/rubbertree_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "LittleoilmineFeature",
@@ -5008,7 +5033,8 @@
           "src/main/resources/data/creative_world/neoforge/biome_modifier/littleoilmine_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "MediumoilmineFeature",
@@ -5023,7 +5049,8 @@
           "src/main/resources/data/creative_world/worldgen/placed_feature/mediumoilmine_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "LittlegasmineFeature",
@@ -5038,7 +5065,8 @@
           "src/main/resources/data/creative_world/worldgen/placed_feature/littlegasmine_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "MediumgasmineFeature",
@@ -5053,7 +5081,8 @@
           "src/main/resources/data/creative_world/worldgen/configured_feature/mediumgasmine_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "IronMortar",
@@ -5067,7 +5096,7 @@
           "src/main/resources/assets/creative_world/models/item/iron_mortar.json"
         ]
       },
-      "path": "~/Tools"
+      "path": "~/Items/Tools"
     },
     {
       "name": "IronMortarCraft",
@@ -5116,7 +5145,7 @@
           }
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "DrillModeSwitch",
@@ -5129,7 +5158,7 @@
           "src/main/java/net/mcreator/creativeworld/network/DrillModeSwitchMessage.java"
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "CreativedrillPriRazrushieniiBlokaInstrumientom",
@@ -5164,7 +5193,7 @@
           }
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "CopperWire",
@@ -5181,7 +5210,7 @@
           "src/main/resources/assets/creative_world/blockstates/copper_wire.json"
         ]
       },
-      "path": "~/Wires"
+      "path": "~/Blocks/Wires"
     },
     {
       "name": "InsulatedCopperWire",
@@ -5198,7 +5227,7 @@
           "src/main/resources/assets/creative_world/blockstates/insulated_copper_wire.json"
         ]
       },
-      "path": "~/Wires"
+      "path": "~/Blocks/Wires"
     },
     {
       "name": "CopperWireCraft",
@@ -5211,7 +5240,7 @@
           "src/main/resources/data/creative_world/recipe/copper_wire_craft.json"
         ]
       },
-      "path": "~/Wires"
+      "path": "~/Blocks/Wires"
     },
     {
       "name": "InsulatedCopperWireCraft",
@@ -5224,7 +5253,7 @@
           "src/main/resources/data/creative_world/recipe/insulated_copper_wire_craft.json"
         ]
       },
-      "path": "~/Wires"
+      "path": "~/Blocks/Wires"
     },
     {
       "name": "InfinityenergyObnovlieniieTika",
@@ -5255,7 +5284,7 @@
           }
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Alargebucketofwater9DopolnitielnaiaInformatsiia",
@@ -5275,7 +5304,7 @@
           }
         ]
       },
-      "path": "~/LargeBucket"
+      "path": "~/Items/LargeBucket"
     },
     {
       "name": "AlargebucketPriShchielchkiePKMPoBloku",
@@ -5318,7 +5347,7 @@
           }
         ]
       },
-      "path": "~/LargeBucket"
+      "path": "~/Items/LargeBucket"
     },
     {
       "name": "ALargeBucketOfFluid9",
@@ -5332,7 +5361,7 @@
           "src/main/resources/assets/creative_world/models/item/a_large_bucket_of_fluid_9.json"
         ]
       },
-      "path": "~/LargeBucket"
+      "path": "~/Items/LargeBucket"
     },
     {
       "name": "Alargebucketofwater9KazhdyiTikVRukie",
@@ -5351,7 +5380,7 @@
           }
         ]
       },
-      "path": "~/LargeBucket"
+      "path": "~/Items/LargeBucket"
     },
     {
       "name": "WireEnergy",
@@ -5382,7 +5411,7 @@
           }
         ]
       },
-      "path": "~/Wires"
+      "path": "~/Blocks/Wires"
     },
     {
       "name": "WireEnergyUpdateTick",
@@ -5396,7 +5425,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Wires"
+      "path": "~/Blocks/Wires"
     },
     {
       "name": "Battrey0",
@@ -5410,7 +5439,7 @@
           "src/main/java/net/mcreator/creativeworld/item/Battrey0Item.java"
         ]
       },
-      "path": "~/Components/Battery"
+      "path": "~/Items/Ingridients/Battery"
     },
     {
       "name": "Battrey1",
@@ -5424,7 +5453,7 @@
           "src/main/java/net/mcreator/creativeworld/item/Battrey1Item.java"
         ]
       },
-      "path": "~/Components/Battery"
+      "path": "~/Items/Ingridients/Battery"
     },
     {
       "name": "Battrey2",
@@ -5438,7 +5467,7 @@
           "src/main/java/net/mcreator/creativeworld/item/Battrey2Item.java"
         ]
       },
-      "path": "~/Components/Battery"
+      "path": "~/Items/Ingridients/Battery"
     },
     {
       "name": "Battrey3",
@@ -5452,7 +5481,7 @@
           "src/main/resources/assets/creative_world/models/item/battrey_3.json"
         ]
       },
-      "path": "~/Components/Battery"
+      "path": "~/Items/Ingridients/Battery"
     },
     {
       "name": "DrillMode1x1",
@@ -5472,7 +5501,7 @@
           }
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "DrillMode3x3",
@@ -5492,7 +5521,7 @@
           }
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "DrillModeCustom",
@@ -5512,7 +5541,7 @@
           }
         ]
       },
-      "path": "~/Tools/Drills"
+      "path": "~/Items/Tools/Drills"
     },
     {
       "name": "ThecoreofinvulnerabilityKazhdyiTikVInvientarie",
@@ -5530,7 +5559,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "BecomeImmortal",
@@ -5557,7 +5587,7 @@
           "src/main/java/net/mcreator/creativeworld/item/ElectricMotorItem.java"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "CreativeElectricMotor",
@@ -5571,7 +5601,7 @@
           "src/main/resources/assets/creative_world/models/item/creative_electric_motor.json"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "DrillCraft",
@@ -5649,7 +5679,7 @@
           "src/main/resources/data/creative_world/recipe/reel_craft.json"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "CreativeReelCraft",
@@ -5662,12 +5692,12 @@
           "src/main/resources/data/creative_world/recipe/creative_reel_craft.json"
         ]
       },
-      "path": "~/Components"
+      "path": "~/Items/Ingridients"
     },
     {
       "name": "Crushing",
       "type": "jeirecipetype",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crushing",
       "metadata": {
@@ -5676,7 +5706,7 @@
           "src/main/java/net/mcreator/creativeworld/jei_recipes/CrushingRecipeCategory.java"
         ]
       },
-      "path": "~/JEI"
+      "path": "~/JEI/Crushing"
     },
     {
       "name": "TinCrushing",
@@ -5689,7 +5719,7 @@
           "src/main/resources/data/creative_world/recipe/tin_crushing.json"
         ]
       },
-      "path": "~/JEI"
+      "path": "~/JEI/Crushing"
     },
     {
       "name": "FdgdfKazhdyiTikPokaIntierfieisOtkryt",
@@ -5703,7 +5733,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "IronCrushing",
@@ -5716,7 +5746,7 @@
           "src/main/resources/data/creative_world/recipe/iron_crushing.json"
         ]
       },
-      "path": "~/JEI"
+      "path": "~/JEI/Crushing"
     },
     {
       "name": "CopperCrushing",
@@ -5729,7 +5759,7 @@
           "src/main/resources/data/creative_world/recipe/copper_crushing.json"
         ]
       },
-      "path": "~/JEI"
+      "path": "~/JEI/Crushing"
     },
     {
       "name": "AllowCheatItems",
@@ -5740,7 +5770,8 @@
       "metadata": {
         "files": [],
         "type": "logic"
-      }
+      },
+      "path": "~/Gamerules"
     },
     {
       "name": "MyFirstDrill",
@@ -5770,7 +5801,7 @@
           "src/main/resources/assets/creative_world/models/block/nuclear_reactor.json"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "AdvancedelectricjetpackKazhdyiTikDliaNaghrudnika",
@@ -5793,7 +5824,7 @@
           }
         ]
       },
-      "path": "~/Jetpacks"
+      "path": "~/Items/Jetpacks"
     },
     {
       "name": "CoalGeneratorGUIOnChangeItemInSlot",
@@ -5824,7 +5855,7 @@
           }
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "CoalgeneratorPriDobavlieniiBloka",
@@ -5855,7 +5886,7 @@
           }
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "CoalGeneratorBlockstates",
@@ -5868,7 +5899,7 @@
           "src/main/resources/assets/creative_world/models/block/coal_generator_blockstates_blockstate_0.json"
         ]
       },
-      "path": "~/Mechanisms"
+      "path": "~/Blocks/Mechanisms"
     }
   ],
   "variable_elements": [
@@ -6567,19 +6598,6 @@
     "name": "~",
     "children": [
       {
-        "name": "Mechanisms",
-        "children": []
-      },
-      {
-        "name": "Tools",
-        "children": [
-          {
-            "name": "Drills",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "Legacy",
         "children": []
       },
@@ -6588,47 +6606,87 @@
         "children": []
       },
       {
-        "name": "Wires",
-        "children": []
-      },
-      {
-        "name": "LargeBucket",
-        "children": []
-      },
-      {
         "name": "Crafts",
         "children": [
           {
             "name": "Smelting",
+            "children": [
+              {
+                "name": "Ores",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Ingridients",
             "children": []
           },
           {
-            "name": "Materials",
+            "name": "Armor",
+            "children": []
+          },
+          {
+            "name": "Tools",
             "children": []
           }
         ]
       },
       {
-        "name": "Materials",
+        "name": "Achievements",
+        "children": []
+      },
+      {
+        "name": "JEI",
+        "children": [
+          {
+            "name": "Crushing",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Blocks",
         "children": [
           {
             "name": "Ores",
+            "children": [
+              {
+                "name": "RawOres",
+                "children": []
+              },
+              {
+                "name": "Washed crushed ores",
+                "children": []
+              },
+              {
+                "name": "Washing of crushed ores",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Covers",
             "children": []
           },
           {
-            "name": "RawOres",
+            "name": "Mechanisms",
             "children": []
           },
           {
-            "name": "Blocks",
+            "name": "Wires",
             "children": []
           },
+          {
+            "name": "ResinTree",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": [
           {
             "name": "Ingots",
-            "children": []
-          },
-          {
-            "name": "Tools",
             "children": []
           },
           {
@@ -6644,7 +6702,24 @@
             "children": []
           },
           {
-            "name": "Covers",
+            "name": "Ingridients",
+            "children": [
+              {
+                "name": "Battery",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Jetpacks",
+            "children": []
+          },
+          {
+            "name": "Dusts",
+            "children": []
+          },
+          {
+            "name": "LargeBucket",
             "children": []
           },
           {
@@ -6652,42 +6727,18 @@
             "children": []
           },
           {
-            "name": "Washed crushed ores",
-            "children": []
-          },
-          {
-            "name": "Washing of crushed ores",
-            "children": []
-          },
-          {
-            "name": "Dusts",
-            "children": []
+            "name": "Tools",
+            "children": [
+              {
+                "name": "Drills",
+                "children": []
+              }
+            ]
           }
         ]
       },
       {
-        "name": "ResinTree",
-        "children": []
-      },
-      {
-        "name": "Achievements",
-        "children": []
-      },
-      {
-        "name": "Components",
-        "children": [
-          {
-            "name": "Battery",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Jetpacks",
-        "children": []
-      },
-      {
-        "name": "JEI",
+        "name": "Gamerules",
         "children": []
       }
     ]

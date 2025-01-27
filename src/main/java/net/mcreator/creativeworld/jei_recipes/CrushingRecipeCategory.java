@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.GuiGraphics;
 
+import net.mcreator.creativeworld.init.CreativeWorldModJeiPlugin;
 import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
 
 import mezz.jei.api.recipe.category.IRecipeCategory;
