@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -12,22 +12,24 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:Creativeworldtools"
-    },
-    "harvestLevel": 12,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Creativeworldtools"
+      }
+    ],
     "efficiency": 18.0,
     "attackSpeed": 1.2,
     "enchantability": 84,
     "damageVsEntity": 12.0,
     "usageCount": 1675,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:AccumulatiumIngot"
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

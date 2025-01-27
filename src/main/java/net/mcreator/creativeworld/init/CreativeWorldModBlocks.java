@@ -5,10 +5,9 @@
 package net.mcreator.creativeworld.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.creativeworld.block.TitanOreBlock;
 import net.mcreator.creativeworld.block.TitanBlockBlock;
@@ -50,44 +49,44 @@ import net.mcreator.creativeworld.block.AccumulatiumBlockBlock;
 import net.mcreator.creativeworld.CreativeWorldMod;
 
 public class CreativeWorldModBlocks {
-	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK, CreativeWorldMod.MODID);
-	public static final DeferredHolder<Block, Block> COALGENERATOR = REGISTRY.register("coalgenerator", () -> new CoalgeneratorBlock());
-	public static final DeferredHolder<Block, Block> MACHINECASE = REGISTRY.register("machinecase", () -> new MachinecaseBlock());
-	public static final DeferredHolder<Block, Block> TIN_ORE = REGISTRY.register("tin_ore", () -> new TinOreBlock());
-	public static final DeferredHolder<Block, Block> TIN_BLOCK = REGISTRY.register("tin_block", () -> new TinBlockBlock());
-	public static final DeferredHolder<Block, Block> RESIN_WOOD = REGISTRY.register("resin_wood", () -> new ResinWoodBlock());
-	public static final DeferredHolder<Block, Block> RESIN_LOG = REGISTRY.register("resin_log", () -> new ResinLogBlock());
-	public static final DeferredHolder<Block, Block> RESIN_PLANKS = REGISTRY.register("resin_planks", () -> new ResinPlanksBlock());
-	public static final DeferredHolder<Block, Block> RESIN_LEAVES = REGISTRY.register("resin_leaves", () -> new ResinLeavesBlock());
-	public static final DeferredHolder<Block, Block> RESIN_STAIRS = REGISTRY.register("resin_stairs", () -> new ResinStairsBlock());
-	public static final DeferredHolder<Block, Block> RESIN_SLAB = REGISTRY.register("resin_slab", () -> new ResinSlabBlock());
-	public static final DeferredHolder<Block, Block> RESIN_FENCE = REGISTRY.register("resin_fence", () -> new ResinFenceBlock());
-	public static final DeferredHolder<Block, Block> RESIN_FENCE_GATE = REGISTRY.register("resin_fence_gate", () -> new ResinFenceGateBlock());
-	public static final DeferredHolder<Block, Block> CRUSHER = REGISTRY.register("crusher", () -> new CrusherBlock());
-	public static final DeferredHolder<Block, Block> RSINLOGWITHRESIN = REGISTRY.register("rsinlogwithresin", () -> new RsinlogwithresinBlock());
-	public static final DeferredHolder<Block, Block> SOLARPANEL = REGISTRY.register("solarpanel", () -> new SolarpanelBlock());
-	public static final DeferredHolder<Block, Block> OIL = REGISTRY.register("oil", () -> new OilBlock());
-	public static final DeferredHolder<Block, Block> GAS = REGISTRY.register("gas", () -> new GasBlock());
-	public static final DeferredHolder<Block, Block> FAN = REGISTRY.register("fan", () -> new FanBlock());
-	public static final DeferredHolder<Block, Block> BATTERYBLOCK = REGISTRY.register("batteryblock", () -> new BatteryblockBlock());
-	public static final DeferredHolder<Block, Block> BRONZE_BLOCK = REGISTRY.register("bronze_block", () -> new BronzeBlockBlock());
-	public static final DeferredHolder<Block, Block> INFINITYENERGY = REGISTRY.register("infinityenergy", () -> new InfinityenergyBlock());
-	public static final DeferredHolder<Block, Block> ADVENCEDMACHINECASE = REGISTRY.register("advencedmachinecase", () -> new AdvencedmachinecaseBlock());
-	public static final DeferredHolder<Block, Block> ADVENCEDSOLARPANEL = REGISTRY.register("advencedsolarpanel", () -> new AdvencedsolarpanelBlock());
-	public static final DeferredHolder<Block, Block> CREATIVIUM_ORE = REGISTRY.register("creativium_ore", () -> new CreativiumOreBlock());
-	public static final DeferredHolder<Block, Block> CREATIVIUM_BLOCK = REGISTRY.register("creativium_block", () -> new CreativiumBlockBlock());
-	public static final DeferredHolder<Block, Block> ACCUMULATIUM_ORE = REGISTRY.register("accumulatium_ore", () -> new AccumulatiumOreBlock());
-	public static final DeferredHolder<Block, Block> ACCUMULATIUM_BLOCK = REGISTRY.register("accumulatium_block", () -> new AccumulatiumBlockBlock());
-	public static final DeferredHolder<Block, Block> TITAN_ORE = REGISTRY.register("titan_ore", () -> new TitanOreBlock());
-	public static final DeferredHolder<Block, Block> TITAN_BLOCK = REGISTRY.register("titan_block", () -> new TitanBlockBlock());
-	public static final DeferredHolder<Block, Block> STATIONARYPARTICLEBINDER = REGISTRY.register("stationaryparticlebinder", () -> new StationaryparticlebinderBlock());
-	public static final DeferredHolder<Block, Block> QUANTUMTELEPORTERBLOCK = REGISTRY.register("quantumteleporterblock", () -> new QuantumteleporterblockBlock());
-	public static final DeferredHolder<Block, Block> QUANTUMTELEPORTERBLOCK_2 = REGISTRY.register("quantumteleporterblock_2", () -> new Quantumteleporterblock2Block());
-	public static final DeferredHolder<Block, Block> RESINTREESAPLING = REGISTRY.register("resintreesapling", () -> new ResintreesaplingBlock());
-	public static final DeferredHolder<Block, Block> BUG = REGISTRY.register("bug", () -> new BUGBlock());
-	public static final DeferredHolder<Block, Block> COPPER_WIRE = REGISTRY.register("copper_wire", () -> new CopperWireBlock());
-	public static final DeferredHolder<Block, Block> INSULATED_COPPER_WIRE = REGISTRY.register("insulated_copper_wire", () -> new InsulatedCopperWireBlock());
-	public static final DeferredHolder<Block, Block> NUCLEAR_REACTOR = REGISTRY.register("nuclear_reactor", () -> new NuclearReactorBlock());
+	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(CreativeWorldMod.MODID);
+	public static final DeferredBlock<Block> COALGENERATOR = REGISTRY.register("coalgenerator", CoalgeneratorBlock::new);
+	public static final DeferredBlock<Block> MACHINECASE = REGISTRY.register("machinecase", MachinecaseBlock::new);
+	public static final DeferredBlock<Block> TIN_ORE = REGISTRY.register("tin_ore", TinOreBlock::new);
+	public static final DeferredBlock<Block> TIN_BLOCK = REGISTRY.register("tin_block", TinBlockBlock::new);
+	public static final DeferredBlock<Block> RESIN_WOOD = REGISTRY.register("resin_wood", ResinWoodBlock::new);
+	public static final DeferredBlock<Block> RESIN_LOG = REGISTRY.register("resin_log", ResinLogBlock::new);
+	public static final DeferredBlock<Block> RESIN_PLANKS = REGISTRY.register("resin_planks", ResinPlanksBlock::new);
+	public static final DeferredBlock<Block> RESIN_LEAVES = REGISTRY.register("resin_leaves", ResinLeavesBlock::new);
+	public static final DeferredBlock<Block> RESIN_STAIRS = REGISTRY.register("resin_stairs", ResinStairsBlock::new);
+	public static final DeferredBlock<Block> RESIN_SLAB = REGISTRY.register("resin_slab", ResinSlabBlock::new);
+	public static final DeferredBlock<Block> RESIN_FENCE = REGISTRY.register("resin_fence", ResinFenceBlock::new);
+	public static final DeferredBlock<Block> RESIN_FENCE_GATE = REGISTRY.register("resin_fence_gate", ResinFenceGateBlock::new);
+	public static final DeferredBlock<Block> CRUSHER = REGISTRY.register("crusher", CrusherBlock::new);
+	public static final DeferredBlock<Block> RSINLOGWITHRESIN = REGISTRY.register("rsinlogwithresin", RsinlogwithresinBlock::new);
+	public static final DeferredBlock<Block> SOLARPANEL = REGISTRY.register("solarpanel", SolarpanelBlock::new);
+	public static final DeferredBlock<Block> OIL = REGISTRY.register("oil", OilBlock::new);
+	public static final DeferredBlock<Block> GAS = REGISTRY.register("gas", GasBlock::new);
+	public static final DeferredBlock<Block> FAN = REGISTRY.register("fan", FanBlock::new);
+	public static final DeferredBlock<Block> BATTERYBLOCK = REGISTRY.register("batteryblock", BatteryblockBlock::new);
+	public static final DeferredBlock<Block> BRONZE_BLOCK = REGISTRY.register("bronze_block", BronzeBlockBlock::new);
+	public static final DeferredBlock<Block> INFINITYENERGY = REGISTRY.register("infinityenergy", InfinityenergyBlock::new);
+	public static final DeferredBlock<Block> ADVENCEDMACHINECASE = REGISTRY.register("advencedmachinecase", AdvencedmachinecaseBlock::new);
+	public static final DeferredBlock<Block> ADVENCEDSOLARPANEL = REGISTRY.register("advencedsolarpanel", AdvencedsolarpanelBlock::new);
+	public static final DeferredBlock<Block> CREATIVIUM_ORE = REGISTRY.register("creativium_ore", CreativiumOreBlock::new);
+	public static final DeferredBlock<Block> CREATIVIUM_BLOCK = REGISTRY.register("creativium_block", CreativiumBlockBlock::new);
+	public static final DeferredBlock<Block> ACCUMULATIUM_ORE = REGISTRY.register("accumulatium_ore", AccumulatiumOreBlock::new);
+	public static final DeferredBlock<Block> ACCUMULATIUM_BLOCK = REGISTRY.register("accumulatium_block", AccumulatiumBlockBlock::new);
+	public static final DeferredBlock<Block> TITAN_ORE = REGISTRY.register("titan_ore", TitanOreBlock::new);
+	public static final DeferredBlock<Block> TITAN_BLOCK = REGISTRY.register("titan_block", TitanBlockBlock::new);
+	public static final DeferredBlock<Block> STATIONARYPARTICLEBINDER = REGISTRY.register("stationaryparticlebinder", StationaryparticlebinderBlock::new);
+	public static final DeferredBlock<Block> QUANTUMTELEPORTERBLOCK = REGISTRY.register("quantumteleporterblock", QuantumteleporterblockBlock::new);
+	public static final DeferredBlock<Block> QUANTUMTELEPORTERBLOCK_2 = REGISTRY.register("quantumteleporterblock_2", Quantumteleporterblock2Block::new);
+	public static final DeferredBlock<Block> RESINTREESAPLING = REGISTRY.register("resintreesapling", ResintreesaplingBlock::new);
+	public static final DeferredBlock<Block> BUG = REGISTRY.register("bug", BUGBlock::new);
+	public static final DeferredBlock<Block> COPPER_WIRE = REGISTRY.register("copper_wire", CopperWireBlock::new);
+	public static final DeferredBlock<Block> INSULATED_COPPER_WIRE = REGISTRY.register("insulated_copper_wire", InsulatedCopperWireBlock::new);
+	public static final DeferredBlock<Block> NUCLEAR_REACTOR = REGISTRY.register("nuclear_reactor", NuclearReactorBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

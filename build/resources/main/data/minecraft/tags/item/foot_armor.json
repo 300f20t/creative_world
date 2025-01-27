@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "creative_world:composite_plate_armor_armor_boots",
+    "creative_world:titan_armor_boots",
+    "creative_world:accumulatium_armor_boots",
+    "creative_world:creativium_armor_boots",
+    "creative_world:bronze_armor_boots",
+    "creative_world:copper_armor_boots",
+    "creative_world:tin_armor_boots"
+  ]
+}

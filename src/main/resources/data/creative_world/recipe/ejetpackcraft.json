@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "d d"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:ironplate"
+    },
+    "b": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "c": {
+      "item": "creative_world:batteryblock"
+    },
+    "d": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "id": "creative_world:electricjetpack_chestplate",
+    "count": 1
+  }
+}

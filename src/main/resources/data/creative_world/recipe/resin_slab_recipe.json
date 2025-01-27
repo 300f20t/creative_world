@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:resin_planks"
+    }
+  },
+  "result": {
+    "id": "creative_world:resin_slab",
+    "count": 6
+  }
+}

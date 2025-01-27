@@ -22,7 +22,7 @@ public class ResintreesaplingPriDobavlieniiRastieniiaProcedure {
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (1 == Mth.nextInt(RandomSource.create(), 1, 2)) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("creative_world", "resin_tree_1"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("creative_world", "resin_tree_1"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
 									3);
@@ -30,7 +30,7 @@ public class ResintreesaplingPriDobavlieniiRastieniiaProcedure {
 					}
 				} else if (1 == Mth.nextInt(RandomSource.create(), 1, 2)) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("creative_world", "resin_tree_2"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("creative_world", "resin_tree_2"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
 									3);
@@ -38,7 +38,7 @@ public class ResintreesaplingPriDobavlieniiRastieniiaProcedure {
 					}
 				} else {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("creative_world", "resin_tree_3"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("creative_world", "resin_tree_3"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
 									3);

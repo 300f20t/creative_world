@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a ",
+    " a"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:alargebucketofwater_9"
+    }
+  },
+  "result": {
+    "id": "creative_world:endlesswatersource",
+    "count": 1
+  }
+}

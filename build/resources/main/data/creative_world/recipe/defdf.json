@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_iron"
+    },
+    {
+      "item": "creative_world:iron_mortar"
+    }
+  ],
+  "result": {
+    "id": "creative_world:crushedironore",
+    "count": 1
+  }
+}

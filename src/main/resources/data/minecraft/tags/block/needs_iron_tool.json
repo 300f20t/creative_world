@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "creative_world:bronze_block",
+    "creative_world:tin_block",
+    "creative_world:tin_ore"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "creative_world:tinplate"
+    },
+    {
+      "item": "creative_world:ironhammer"
+    }
+  ],
+  "result": {
+    "id": "creative_world:deleted_mod_element",
+    "count": 3
+  }
+}

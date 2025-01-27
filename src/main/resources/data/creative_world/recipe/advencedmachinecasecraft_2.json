@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:carbonplate"
+    },
+    "b": {
+      "item": "creative_world:creativiumnugget"
+    },
+    "c": {
+      "item": "creative_world:accumulatiumnugget"
+    },
+    "d": {
+      "item": "creative_world:machinecase"
+    }
+  },
+  "result": {
+    "id": "creative_world:advencedmachinecase",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "creative_world:ironhammer"
+    }
+  ],
+  "result": {
+    "id": "creative_world:copperplate",
+    "count": 1
+  }
+}

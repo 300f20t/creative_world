@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "aaa",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:carbonplate"
+    },
+    "b": {
+      "item": "creative_world:accumulatiumnugget"
+    },
+    "c": {
+      "item": "creative_world:creativiumnugget"
+    }
+  },
+  "result": {
+    "id": "creative_world:particlebinder",
+    "count": 1
+  }
+}

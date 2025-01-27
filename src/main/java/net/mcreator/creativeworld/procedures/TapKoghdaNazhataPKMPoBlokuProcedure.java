@@ -32,12 +32,9 @@ public class TapKoghdaNazhataPKMPoBlokuProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-			{
-				ItemStack _ist = itemstack;
-				if (_ist.hurt(1, RandomSource.create(), null)) {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
-				}
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
+				});
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);

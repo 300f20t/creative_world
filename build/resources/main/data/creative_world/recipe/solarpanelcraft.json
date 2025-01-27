@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bab",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:coaldust"
+    },
+    "b": {
+      "item": "minecraft:glass"
+    },
+    "c": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "d": {
+      "item": "creative_world:coalgenerator"
+    }
+  },
+  "result": {
+    "id": "creative_world:solarpanel",
+    "count": 1
+  }
+}

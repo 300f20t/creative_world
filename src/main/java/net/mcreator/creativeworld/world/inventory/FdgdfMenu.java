@@ -1,15 +1,19 @@
 
 package net.mcreator.creativeworld.world.inventory;
 
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.neoforge.items.wrapper.InvWrapper;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.event.TickEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -19,17 +23,24 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.ComponentSerialization;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.creativeworld.procedures.FdgdfKazhdyiTikPokaIntierfieisOtkrytProcedure;
 import net.mcreator.creativeworld.init.CreativeWorldModMenus;
+import net.mcreator.creativeworld.CreativeWorldMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-@Mod.EventBusSubscriber
 public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -78,12 +89,9 @@ public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Int
 				}
 			} else { // might be bound to block
 				boundBlockEntity = this.world.getBlockEntity(pos);
-				if (boundBlockEntity != null) {
-					IItemHandler cap = this.world.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (cap != null) {
-						this.internal = cap;
-						this.bound = true;
-					}
+				if (boundBlockEntity instanceof BaseContainerBlockEntity baseContainerBlockEntity) {
+					this.internal = new InvWrapper(baseContainerBlockEntity);
+					this.bound = true;
 				}
 			}
 		}
@@ -161,25 +169,25 @@ public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Int
 			while (!p_38904_.isEmpty() && (p_38907_ ? i >= p_38905_ : i < p_38906_)) {
 				Slot slot = this.slots.get(i);
 				ItemStack itemstack = slot.getItem();
-				if (slot.mayPlace(itemstack) && !itemstack.isEmpty() && ItemStack.isSameItemSameTags(p_38904_, itemstack)) {
+				if (slot.mayPlace(itemstack) && !itemstack.isEmpty() && ItemStack.isSameItemSameComponents(p_38904_, itemstack)) {
 					int j = itemstack.getCount() + p_38904_.getCount();
-					int maxSize = Math.min(slot.getMaxStackSize(), p_38904_.getMaxStackSize());
-					if (j <= maxSize) {
+					int k = slot.getMaxStackSize(itemstack);
+					if (j <= k) {
 						p_38904_.setCount(0);
 						itemstack.setCount(j);
 						slot.set(itemstack);
 						flag = true;
-					} else if (itemstack.getCount() < maxSize) {
-						p_38904_.shrink(maxSize - itemstack.getCount());
-						itemstack.setCount(maxSize);
+					} else if (itemstack.getCount() < k) {
+						p_38904_.shrink(k - itemstack.getCount());
+						itemstack.setCount(k);
 						slot.set(itemstack);
 						flag = true;
 					}
 				}
 				if (p_38907_) {
-					--i;
+					i--;
 				} else {
-					++i;
+					i++;
 				}
 			}
 		}
@@ -193,19 +201,16 @@ public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Int
 				Slot slot1 = this.slots.get(i);
 				ItemStack itemstack1 = slot1.getItem();
 				if (itemstack1.isEmpty() && slot1.mayPlace(p_38904_)) {
-					if (p_38904_.getCount() > slot1.getMaxStackSize()) {
-						slot1.setByPlayer(p_38904_.split(slot1.getMaxStackSize()));
-					} else {
-						slot1.setByPlayer(p_38904_.split(p_38904_.getCount()));
-					}
+					int l = slot1.getMaxStackSize(p_38904_);
+					slot1.setByPlayer(p_38904_.split(Math.min(p_38904_.getCount(), l)));
 					slot1.setChanged();
 					flag = true;
 					break;
 				}
 				if (p_38907_) {
-					--i;
+					i--;
 				} else {
-					++i;
+					i++;
 				}
 			}
 		}
@@ -218,11 +223,15 @@ public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Int
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
-					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
+					playerIn.drop(internal.getStackInSlot(j), false);
+					if (internal instanceof IItemHandlerModifiable ihm)
+						ihm.setStackInSlot(j, ItemStack.EMPTY);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
-					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
+					playerIn.getInventory().placeItemBackInInventory(internal.getStackInSlot(i));
+					if (internal instanceof IItemHandlerModifiable ihm)
+						ihm.setStackInSlot(i, ItemStack.EMPTY);
 				}
 			}
 		}
@@ -232,15 +241,86 @@ public class FdgdfMenu extends AbstractContainerMenu implements Supplier<Map<Int
 		return customSlots;
 	}
 
-	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		Player entity = event.player;
-		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof FdgdfMenu) {
+	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+	public static record FdgdfSyncMessage(int mode, int x, int y, int z, HashMap<String, String> textstate) implements CustomPacketPayload {
+
+		public static final Type<FdgdfSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CreativeWorldMod.MODID, "fdgdf_sync"));
+		public static final StreamCodec<RegistryFriendlyByteBuf, FdgdfSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, FdgdfSyncMessage message) -> {
+			buffer.writeInt(message.mode);
+			buffer.writeInt(message.x);
+			buffer.writeInt(message.y);
+			buffer.writeInt(message.z);
+			writeTextState(message.textstate, buffer);
+		}, (RegistryFriendlyByteBuf buffer) -> new FdgdfSyncMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), readTextState(buffer)));
+		@Override
+		public Type<FdgdfSyncMessage> type() {
+			return TYPE;
+		}
+
+		public static void handleData(final FdgdfSyncMessage message, final IPayloadContext context) {
+			if (context.flow() == PacketFlow.SERVERBOUND) {
+				context.enqueueWork(() -> {
+					Player entity = context.player();
+					int mode = message.mode;
+					int x = message.x;
+					int y = message.y;
+					int z = message.z;
+					HashMap<String, String> textstate = message.textstate;
+					handleSyncAction(entity, mode, x, y, z, textstate);
+				}).exceptionally(e -> {
+					context.connection().disconnect(Component.literal(e.getMessage()));
+					return null;
+				});
+			}
+		}
+
+		public static void handleSyncAction(Player entity, int mode, int x, int y, int z, HashMap<String, String> textstate) {
 			Level world = entity.level();
-			double x = entity.getX();
-			double y = entity.getY();
-			double z = entity.getZ();
-			FdgdfKazhdyiTikPokaIntierfieisOtkrytProcedure.execute();
+			HashMap guistate = FdgdfMenu.guistate;
+			// connect EditBox and CheckBox to guistate
+			for (Map.Entry<String, String> entry : textstate.entrySet()) {
+				String key = entry.getKey();
+				String value = entry.getValue();
+				guistate.put(key, value);
+			}
+			// security measure to prevent arbitrary chunk generation
+			if (!world.hasChunkAt(new BlockPos(x, y, z)))
+				return;
+			//code
+			if (mode == 0)
+				FdgdfKazhdyiTikPokaIntierfieisOtkrytProcedure.execute();
+		}
+
+		private static void writeTextState(HashMap<String, String> map, RegistryFriendlyByteBuf buffer) {
+			buffer.writeInt(map.size());
+			for (Map.Entry<String, String> entry : map.entrySet()) {
+				writeComponent(buffer, Component.literal(entry.getKey()));
+				writeComponent(buffer, Component.literal(entry.getValue()));
+			}
+		}
+
+		private static HashMap<String, String> readTextState(RegistryFriendlyByteBuf buffer) {
+			int size = buffer.readInt();
+			HashMap<String, String> map = new HashMap<>();
+			for (int i = 0; i < size; i++) {
+				String key = readComponent(buffer).getString();
+				String value = readComponent(buffer).getString();
+				map.put(key, value);
+			}
+			return map;
+		}
+
+		private static Component readComponent(RegistryFriendlyByteBuf buffer) {
+			return ComponentSerialization.TRUSTED_STREAM_CODEC.decode(buffer);
+		}
+
+		private static void writeComponent(RegistryFriendlyByteBuf buffer, Component component) {
+			ComponentSerialization.TRUSTED_STREAM_CODEC.encode(buffer, component);
+		}
+
+		@SubscribeEvent
+		public static void registerMessage(FMLCommonSetupEvent event) {
+			CreativeWorldMod.addNetworkMessage(FdgdfSyncMessage.TYPE, FdgdfSyncMessage.STREAM_CODEC, FdgdfSyncMessage::handleData);
 		}
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
@@ -12,22 +12,24 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:Creativeworldtools"
-    },
-    "harvestLevel": 10,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Creativeworldtools"
+      }
+    ],
     "efficiency": 16.0,
     "attackSpeed": 1.0,
     "enchantability": 70,
     "damageVsEntity": 10.0,
     "usageCount": 2380,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:TitanIngot"
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

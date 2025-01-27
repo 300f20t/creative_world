@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:copper_wire"
+    },
+    "b": {
+      "item": "creative_world:rubber"
+    }
+  },
+  "result": {
+    "id": "creative_world:insulated_copper_wire",
+    "count": 1
+  }
+}

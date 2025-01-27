@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "creative_world:coaldust"
+    },
+    {
+      "item": "creative_world:ironhammer"
+    },
+    {
+      "item": "creative_world:coaldust"
+    },
+    {
+      "item": "creative_world:coaldust"
+    }
+  ],
+  "result": {
+    "id": "creative_world:carbonplate",
+    "count": 1
+  }
+}

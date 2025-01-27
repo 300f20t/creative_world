@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    " a ",
+    "b b"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:tinplate"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "creative_world:wirecutters",
+    "count": 1
+  }
+}

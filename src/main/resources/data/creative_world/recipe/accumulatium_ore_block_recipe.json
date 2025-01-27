@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:accumulatium_ingot"
+    }
+  },
+  "result": {
+    "id": "creative_world:accumulatium_block",
+    "count": 1
+  }
+}

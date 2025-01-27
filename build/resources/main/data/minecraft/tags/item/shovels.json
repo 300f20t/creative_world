@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "creative_world:composite_plate_tool_shovel",
+    "creative_world:titan_shovel",
+    "creative_world:accumulatium_shovel",
+    "creative_world:creativium_shovel",
+    "creative_world:bronze_shovel",
+    "creative_world:copper_shovel",
+    "creative_world:tin_shovel"
+  ]
+}

@@ -7,14 +7,16 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.creativeworld.world.inventory.FgfhffhghkjkkytwqaMenu;
+import net.mcreator.creativeworld.init.CreativeWorldModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class FgfhffhghkjkkytwqaScreen extends AbstractContainerScreen<FgfhffhghkjkkytwqaMenu> {
+public class FgfhffhghkjkkytwqaScreen extends AbstractContainerScreen<FgfhffhghkjkkytwqaMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = FgfhffhghkjkkytwqaMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -31,7 +33,19 @@ public class FgfhffhghkjkkytwqaScreen extends AbstractContainerScreen<Fgfhffhghk
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("creative_world:textures/screens/fgfhffhghkjkkytwqa.png");
+	public static HashMap<String, String> getEditBoxAndCheckBoxValues() {
+		HashMap<String, String> textstate = new HashMap<>();
+		if (Minecraft.getInstance().screen instanceof FgfhffhghkjkkytwqaScreen sc) {
+
+		}
+		return textstate;
+	}
+
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
+	private static final ResourceLocation texture = ResourceLocation.parse("creative_world:textures/screens/fgfhffhghkjkkytwqa.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -47,7 +61,7 @@ public class FgfhffhghkjkkytwqaScreen extends AbstractContainerScreen<Fgfhffhghk
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("creative_world:textures/screens/hfgfgf.png"), this.leftPos + 317, this.topPos + 186, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(ResourceLocation.parse("creative_world:textures/screens/hfgfgf.png"), this.leftPos + 317, this.topPos + 186, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}

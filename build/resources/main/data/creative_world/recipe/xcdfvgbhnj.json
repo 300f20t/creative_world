@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:command_block"
+    },
+    "b": {
+      "item": "creative_world:creativedrill"
+    },
+    "c": {
+      "item": "minecraft:netherite_block"
+    },
+    "d": {
+      "item": "creative_world:thecoreofinvulnerability"
+    },
+    "e": {
+      "item": "creative_world:advancedelectricjetpack_chestplate"
+    }
+  },
+  "result": {
+    "id": "creative_world:creativemod",
+    "count": 1
+  }
+}

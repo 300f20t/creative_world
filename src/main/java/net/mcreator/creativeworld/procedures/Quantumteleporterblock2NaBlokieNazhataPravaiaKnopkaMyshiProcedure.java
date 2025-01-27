@@ -161,10 +161,10 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).first_QT_ID_x, entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).first_QT_ID_y + 1,
-									entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).first_QT_ID_z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1);
+									entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).first_QT_ID_z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1);
 						} else {
 							_level.playLocalSound(entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).first_QT_ID_x, (entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).first_QT_ID_y + 1),
-									entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).first_QT_ID_z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1, false);
+									entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).first_QT_ID_z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1, false);
 						}
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -185,10 +185,10 @@ public class Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).seckond_QT_ID_x, entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).seckond_QT_ID_y + 1,
-									entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).seckond_QT_ID_z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1);
+									entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).seckond_QT_ID_z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1);
 						} else {
 							_level.playLocalSound(entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).seckond_QT_ID_x, (entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).seckond_QT_ID_y + 1),
-									entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).seckond_QT_ID_z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1, false);
+									entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES).seckond_QT_ID_z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("creative_world:qt.teleport")), SoundSource.VOICE, 3, 1, false);
 						}
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

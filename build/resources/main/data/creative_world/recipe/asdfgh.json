@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aaa",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "id": "creative_world:tap",
+    "count": 1
+  }
+}

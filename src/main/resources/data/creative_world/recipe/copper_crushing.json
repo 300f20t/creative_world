@@ -1,0 +1,12 @@
+{
+  "type": "creative_world:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_copper"
+    }
+  ],
+  "output": {
+    "id": "creative_world:crushedcopperore",
+    "count": 2
+  }
+}

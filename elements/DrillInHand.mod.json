@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -14,7 +14,8 @@
           },
           "anchorPoint": "CENTER",
           "x": 78,
-          "y": 224
+          "y": 224,
+          "locked": false
         }
       },
       {
@@ -24,7 +25,8 @@
           "use1Xscale": false,
           "anchorPoint": "CENTER",
           "x": 96,
-          "y": 224
+          "y": 224,
+          "locked": false
         }
       },
       {
@@ -37,7 +39,8 @@
           },
           "anchorPoint": "CENTER",
           "x": 78,
-          "y": 224
+          "y": 224,
+          "locked": false
         }
       },
       {
@@ -50,7 +53,8 @@
           },
           "anchorPoint": "CENTER",
           "x": 78,
-          "y": 224
+          "y": 224,
+          "locked": false
         }
       },
       {
@@ -60,7 +64,8 @@
           "use1Xscale": false,
           "anchorPoint": "CENTER",
           "x": 96,
-          "y": 224
+          "y": 224,
+          "locked": false
         }
       },
       {
@@ -70,7 +75,8 @@
           "use1Xscale": false,
           "anchorPoint": "CENTER",
           "x": 96,
-          "y": 224
+          "y": 224,
+          "locked": false
         }
       },
       {
@@ -80,7 +86,8 @@
           "use1Xscale": false,
           "anchorPoint": "CENTER",
           "x": 96,
-          "y": 224
+          "y": 224,
+          "locked": false
         }
       }
     ],

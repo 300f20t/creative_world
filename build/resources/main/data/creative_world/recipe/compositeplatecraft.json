@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bbb",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:bronzeplate"
+    },
+    "b": {
+      "item": "creative_world:carbonplate"
+    },
+    "c": {
+      "item": "creative_world:ironplate"
+    }
+  },
+  "result": {
+    "id": "creative_world:compositeplate",
+    "count": 1
+  }
+}

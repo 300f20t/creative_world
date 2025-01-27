@@ -5,12 +5,12 @@
 package net.mcreator.creativeworld.init;
 
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.GameRules;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class CreativeWorldModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> ALLOWCREATIVEMODE;
 	public static GameRules.Key<GameRules.BooleanValue> ALLOW_CHEAT_ITEMS;

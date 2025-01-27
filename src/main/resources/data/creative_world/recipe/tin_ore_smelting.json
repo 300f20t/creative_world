@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 0.56,
+  "cookingtime": 175,
+  "ingredient": {
+    "item": "creative_world:rawtin"
+  },
+  "result": {
+    "id": "creative_world:tin_ingot"
+  }
+}

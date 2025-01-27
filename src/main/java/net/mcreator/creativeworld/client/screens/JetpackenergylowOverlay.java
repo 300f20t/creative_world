@@ -4,7 +4,7 @@ package net.mcreator.creativeworld.client.screens;
 import org.checkerframework.checker.units.qual.h;
 
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.api.distmarker.Dist;
@@ -20,12 +20,12 @@ import net.mcreator.creativeworld.procedures.HklklhProcedure;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
 
-@Mod.EventBusSubscriber({Dist.CLIENT})
+@EventBusSubscriber({Dist.CLIENT})
 public class JetpackenergylowOverlay {
 	@SubscribeEvent(priority = EventPriority.NORMAL)
 	public static void eventHandler(RenderGuiEvent.Pre event) {
-		int w = event.getWindow().getGuiScaledWidth();
-		int h = event.getWindow().getGuiScaledHeight();
+		int w = event.getGuiGraphics().guiWidth();
+		int h = event.getGuiGraphics().guiHeight();
 		Level world = null;
 		double x = 0;
 		double y = 0;
@@ -44,9 +44,9 @@ public class JetpackenergylowOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (HklklhProcedure.execute(entity)) {
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/jetpack_e_l.png"), w / 2 + -153, h / 2 + 113, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/jetpack_e_l.png"), w / 2 + -153, h / 2 + 113, 0, 0, 16, 16, 16, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/l_energy_jp.png"), w / 2 + -135, h / 2 + 104, 0, 0, 32, 32, 32, 32);
+			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/l_energy_jp.png"), w / 2 + -135, h / 2 + 104, 0, 0, 32, 32, 32, 32);
 
 		}
 		RenderSystem.depthMask(true);

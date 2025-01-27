@@ -1,11 +1,12 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "fluid",
   "definition": {
     "name": "Gas",
     "bucketName": "Gas Bucket",
     "textureStill": "sapro",
     "textureFlowing": "apr",
+    "hasFog": false,
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 5,
@@ -23,9 +24,11 @@
     "type": "WATER",
     "generateBucket": true,
     "textureBucket": "",
-    "creativeTab": {
-      "value": "CUSTOM:Creativeworlditems"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Creativeworlditems"
+      }
+    ],
     "emptySound": {
       "value": ""
     },

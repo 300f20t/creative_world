@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "creative_world:washedcrushedcopperore"
+    },
+    {
+      "item": "creative_world:washedcrushedcopperore"
+    },
+    {
+      "item": "creative_world:washedcrushedcopperore"
+    },
+    {
+      "item": "creative_world:washedcrushedtinore"
+    }
+  ],
+  "result": {
+    "id": "creative_world:bronzedust",
+    "count": 4
+  }
+}

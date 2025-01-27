@@ -10,6 +10,6 @@ import net.mcreator.creativeworld.init.CreativeWorldModFluids;
 
 public class OilItem extends BucketItem {
 	public OilItem() {
-		super(CreativeWorldModFluids.OIL, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.UNCOMMON));
+		super(CreativeWorldModFluids.OIL.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.UNCOMMON));
 	}
 }

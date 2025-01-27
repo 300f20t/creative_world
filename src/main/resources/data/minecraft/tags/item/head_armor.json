@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "creative_world:composite_plate_armor_armor_helmet",
+    "creative_world:titan_armor_helmet",
+    "creative_world:accumulatium_armor_helmet",
+    "creative_world:creativium_armor_helmet",
+    "creative_world:bronze_armor_helmet",
+    "creative_world:copper_armor_helmet",
+    "creative_world:tin_armor_helmet"
+  ]
+}

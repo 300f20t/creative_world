@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "dee",
+    "abc"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:tincover"
+    },
+    "b": {
+      "item": "creative_world:reel"
+    },
+    "c": {
+      "item": "creative_world:insulated_copper_wire"
+    },
+    "d": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "e": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "creative_world:electric_motor",
+    "count": 1
+  }
+}

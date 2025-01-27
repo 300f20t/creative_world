@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:insulated_copper_wire"
+    },
+    "b": {
+      "item": "creative_world:tincover"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "creative_world:battrey_0",
+    "count": 1
+  }
+}

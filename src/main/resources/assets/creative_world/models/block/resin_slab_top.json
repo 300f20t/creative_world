@@ -1,6 +1,7 @@
 {
   "parent": "block/slab_top",
   "textures": {
+    "particle": "creative_world:block/resin_planks",
     "bottom": "creative_world:block/resin_planks",
     "top": "creative_world:block/resin_planks",
     "side": "creative_world:block/resin_planks"

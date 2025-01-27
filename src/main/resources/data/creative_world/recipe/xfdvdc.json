@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "b": {
+      "item": "creative_world:thecoreoftheformation"
+    },
+    "c": {
+      "item": "minecraft:bedrock"
+    },
+    "d": {
+      "item": "minecraft:diamond_block"
+    },
+    "e": {
+      "item": "creative_world:thecoreofmatter"
+    }
+  },
+  "result": {
+    "id": "creative_world:creatingcore",
+    "count": 1
+  }
+}

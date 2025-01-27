@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "creative_world:iron_mortar"
+    },
+    {
+      "item": "creative_world:rawtin"
+    }
+  ],
+  "result": {
+    "id": "creative_world:crushedtinore",
+    "count": 1
+  }
+}

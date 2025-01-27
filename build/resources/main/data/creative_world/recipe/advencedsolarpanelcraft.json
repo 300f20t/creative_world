@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:solarpanel"
+    },
+    "b": {
+      "item": "creative_world:batteryblock"
+    },
+    "c": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "d": {
+      "item": "creative_world:advencedmachinecase"
+    }
+  },
+  "result": {
+    "id": "creative_world:advencedsolarpanel",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:resin_log"
+    }
+  ],
+  "result": {
+    "id": "creative_world:resin_planks",
+    "count": 4
+  }
+}

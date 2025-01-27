@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "creative_world:thecoreoftheformation"
+    }
+  ],
+  "result": {
+    "id": "minecraft:debug_stick",
+    "count": 1
+  }
+}

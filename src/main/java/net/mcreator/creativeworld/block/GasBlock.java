@@ -15,7 +15,7 @@ import net.mcreator.creativeworld.init.CreativeWorldModFluids;
 
 public class GasBlock extends LiquidBlock {
 	public GasBlock() {
-		super(() -> CreativeWorldModFluids.GAS.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(CreativeWorldModFluids.GAS.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

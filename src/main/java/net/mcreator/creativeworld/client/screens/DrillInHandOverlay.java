@@ -4,7 +4,7 @@ package net.mcreator.creativeworld.client.screens;
 import org.checkerframework.checker.units.qual.h;
 
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.api.distmarker.Dist;
@@ -23,12 +23,12 @@ import net.mcreator.creativeworld.procedures.DrillKazhdyiTikVRukieProcedure;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
 
-@Mod.EventBusSubscriber({Dist.CLIENT})
+@EventBusSubscriber({Dist.CLIENT})
 public class DrillInHandOverlay {
 	@SubscribeEvent(priority = EventPriority.NORMAL)
 	public static void eventHandler(RenderGuiEvent.Pre event) {
-		int w = event.getWindow().getGuiScaledWidth();
-		int h = event.getWindow().getGuiScaledHeight();
+		int w = event.getGuiGraphics().guiWidth();
+		int h = event.getGuiGraphics().guiHeight();
 		Level world = null;
 		double x = 0;
 		double y = 0;
@@ -48,21 +48,21 @@ public class DrillInHandOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (DrillKazhdyiTikVRukieProcedure.execute(entity)) {
 			if (DrillMode1x1Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/drill_extraction_mode_1x1.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+				event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/drill_extraction_mode_1x1.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
 			}
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_0.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_0.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
 
 			if (DrillMode3x3Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/drill_extraction_mode_3x3.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+				event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/drill_extraction_mode_3x3.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
 			}
 			if (DrillModeCustomProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/drill_extraction_mode_custom.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+				event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/drill_extraction_mode_custom.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
 			}
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_1.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_1.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_2.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_2.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
 
-			event.getGuiGraphics().blit(new ResourceLocation("creative_world:textures/screens/battery_3.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_3.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
 
 		}
 		RenderSystem.depthMask(true);

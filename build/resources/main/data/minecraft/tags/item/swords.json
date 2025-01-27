@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "creative_world:creativedrill",
+    "creative_world:advanceddrill",
+    "creative_world:drill",
+    "creative_world:composite_plate_tool_sword",
+    "creative_world:titan_sword",
+    "creative_world:accumulatium_sword",
+    "creative_world:creativium_sword",
+    "creative_world:bronze_sword",
+    "creative_world:copper_sword",
+    "creative_world:tin_sword"
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -12,22 +12,24 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:Creativeworldcombat"
-    },
-    "harvestLevel": 12,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Creativeworldcombat"
+      }
+    ],
     "efficiency": 18.0,
     "attackSpeed": 2.4,
     "enchantability": 84,
     "damageVsEntity": 36.0,
     "usageCount": 1675,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:AccumulatiumIngot"
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

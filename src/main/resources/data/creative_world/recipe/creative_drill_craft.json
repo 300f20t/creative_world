@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "abc"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:carbonplate"
+    },
+    "b": {
+      "item": "creative_world:creative_electric_motor"
+    },
+    "c": {
+      "item": "creative_world:electricalcircuit"
+    },
+    "d": {
+      "item": "creative_world:accumulatium_ingot"
+    },
+    "e": {
+      "item": "creative_world:advanceddrill"
+    },
+    "f": {
+      "item": "creative_world:creativium_ingot"
+    }
+  },
+  "result": {
+    "id": "creative_world:creativedrill",
+    "count": 1
+  }
+}

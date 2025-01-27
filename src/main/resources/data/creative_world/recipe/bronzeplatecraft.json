@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "creative_world:bronze_ingot"
+    },
+    {
+      "item": "creative_world:ironhammer"
+    }
+  ],
+  "result": {
+    "id": "creative_world:bronzeplate",
+    "count": 1
+  }
+}

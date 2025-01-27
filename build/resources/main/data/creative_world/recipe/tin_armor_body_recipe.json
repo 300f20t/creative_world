@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "creative_world:tin_ingot"
+    }
+  },
+  "result": {
+    "id": "creative_world:tin_armor_chestplate",
+    "count": 1
+  }
+}

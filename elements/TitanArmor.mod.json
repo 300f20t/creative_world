@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 73,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "titan_leggings",
     "enableBoots": true,
     "textureBoots": "titan_boots",
-    "creativeTab": {
-      "value": "CUSTOM:Creativeworldcombat"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Creativeworldcombat"
+      }
+    ],
     "armorTextureFile": "titan",
     "helmetName": "Titan Helmet",
     "bodyName": "Titan Chestplate",

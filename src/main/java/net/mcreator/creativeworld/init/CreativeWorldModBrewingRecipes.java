@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class CreativeWorldModBrewingRecipes implements IModPlugin {
 	@Override
 	public ResourceLocation getPluginUid() {
-		return new ResourceLocation("creative_world:brewing_recipes");
+		return ResourceLocation.parse("creative_world:brewing_recipes");
 	}
 
 	@Override

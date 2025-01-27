@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "creative_world:copper_wire"
+    },
+    {
+      "item": "creative_world:rubber"
+    }
+  ],
+  "result": {
+    "id": "creative_world:insulated_copper_wire",
+    "count": 1
+  }
+}

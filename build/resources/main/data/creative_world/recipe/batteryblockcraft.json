@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:battery"
+    },
+    "b": {
+      "item": "creative_world:machinecase"
+    }
+  },
+  "result": {
+    "id": "creative_world:batteryblock",
+    "count": 1
+  }
+}

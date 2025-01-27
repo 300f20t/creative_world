@@ -15,7 +15,7 @@ import net.mcreator.creativeworld.init.CreativeWorldModFluids;
 
 public class OilBlock extends LiquidBlock {
 	public OilBlock() {
-		super(() -> CreativeWorldModFluids.OIL.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(CreativeWorldModFluids.OIL.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

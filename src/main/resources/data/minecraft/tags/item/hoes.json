@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "creative_world:composite_plate_tool_hoe",
+    "creative_world:titan_hoe",
+    "creative_world:accumulatium_hoe",
+    "creative_world:creativium_hoe",
+    "creative_world:bronze_hoe",
+    "creative_world:copper_hoe",
+    "creative_world:tin_hoe"
+  ]
+}

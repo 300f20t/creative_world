@@ -7,7 +7,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
@@ -21,12 +21,9 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-			{
-				ItemStack _ist = itemstack;
-				if (_ist.hurt(1, RandomSource.create(), null)) {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
-				}
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
+				});
 			}
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
@@ -38,12 +35,9 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-			{
-				ItemStack _ist = itemstack;
-				if (_ist.hurt(1, RandomSource.create(), null)) {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
-				}
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
+				});
 			}
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
@@ -55,12 +49,9 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-			{
-				ItemStack _ist = itemstack;
-				if (_ist.hurt(1, RandomSource.create(), null)) {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
-				}
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
+				});
 			}
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
@@ -72,12 +63,9 @@ public class BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokieProcedure {
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-			{
-				ItemStack _ist = itemstack;
-				if (_ist.hurt(1, RandomSource.create(), null)) {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
-				}
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
+				});
 			}
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 40);

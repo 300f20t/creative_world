@@ -1,0 +1,12 @@
+{
+  "type": "creative_world:crushing",
+  "ingredients": [
+    {
+      "item": "creative_world:rawtin"
+    }
+  ],
+  "output": {
+    "id": "creative_world:crushedtinore",
+    "count": 2
+  }
+}
