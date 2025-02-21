@@ -48,21 +48,21 @@ public class DrillInHandOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (DrillKazhdyiTikVRukieProcedure.execute(entity)) {
 			if (DrillMode1x1Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/drill_extraction_mode_1x1.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+				event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/drill_extraction_mode_1x1.png"), 78, h - 16, 0, 0, 16, 16, 16, 16);
 			}
-			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_0.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_0.png"), 96, h - 16, 0, 0, 16, 16, 16, 16);
 
 			if (DrillMode3x3Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/drill_extraction_mode_3x3.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+				event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/drill_extraction_mode_3x3.png"), 78, h - 16, 0, 0, 16, 16, 16, 16);
 			}
 			if (DrillModeCustomProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/drill_extraction_mode_custom.png"), w / 2 + -135, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+				event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/drill_extraction_mode_custom.png"), 78, h - 16, 0, 0, 16, 16, 16, 16);
 			}
-			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_1.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_1.png"), 96, h - 16, 0, 0, 16, 16, 16, 16);
 
-			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_2.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_2.png"), 96, h - 16, 0, 0, 16, 16, 16, 16);
 
-			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_3.png"), w / 2 + -117, h / 2 + 104, 0, 0, 16, 16, 16, 16);
+			event.getGuiGraphics().blit(ResourceLocation.parse("creative_world:textures/screens/battery_3.png"), 96, h - 16, 0, 0, 16, 16, 16, 16);
 
 		}
 		RenderSystem.depthMask(true);
