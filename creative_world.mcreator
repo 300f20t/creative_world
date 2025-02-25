@@ -155,7 +155,7 @@
     {
       "name": "IronwrenchKoghdaNazhataPKMPoBloku",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "ironwrench_koghda_nazhata_pkm_po_bloku",
       "metadata": {

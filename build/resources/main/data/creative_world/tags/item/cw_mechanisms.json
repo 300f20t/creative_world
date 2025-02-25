@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "creative_world:machinecase",
+    "creative_world:advencedmachinecase",
+    "creative_world:coalgenerator",
+    "creative_world:solarpanel",
+    "creative_world:crusher",
+    "creative_world:nuclear_reactor",
+    "creative_world:batteryblock",
+    "creative_world:bug"
+  ]
+}
