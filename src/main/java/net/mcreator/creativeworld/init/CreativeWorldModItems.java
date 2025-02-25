@@ -186,7 +186,6 @@ public class CreativeWorldModItems {
 	public static final DeferredItem<Item> RAWTIN = REGISTRY.register("rawtin", RawtinItem::new);
 	public static final DeferredItem<Item> BRONZEDUST = REGISTRY.register("bronzedust", BronzedustItem::new);
 	public static final DeferredItem<Item> ENERGYDETECTOR = REGISTRY.register("energydetector", EnergydetectorItem::new);
-	public static final DeferredItem<Item> FAN = block(CreativeWorldModBlocks.FAN);
 	public static final DeferredItem<Item> BATTERYBLOCK = block(CreativeWorldModBlocks.BATTERYBLOCK);
 	public static final DeferredItem<Item> ELECTRICJETPACK_CHESTPLATE = REGISTRY.register("electricjetpack_chestplate", ElectricjetpackItem.Chestplate::new);
 	public static final DeferredItem<Item> BRONZE_INGOT = REGISTRY.register("bronze_ingot", BronzeIngotItem::new);

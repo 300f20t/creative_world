@@ -33,7 +33,6 @@ import net.mcreator.creativeworld.block.MachinecaseBlock;
 import net.mcreator.creativeworld.block.InsulatedCopperWireBlock;
 import net.mcreator.creativeworld.block.InfinityenergyBlock;
 import net.mcreator.creativeworld.block.GasBlock;
-import net.mcreator.creativeworld.block.FanBlock;
 import net.mcreator.creativeworld.block.CrusherBlock;
 import net.mcreator.creativeworld.block.CreativiumOreBlock;
 import net.mcreator.creativeworld.block.CreativiumBlockBlock;
@@ -67,7 +66,6 @@ public class CreativeWorldModBlocks {
 	public static final DeferredBlock<Block> SOLARPANEL = REGISTRY.register("solarpanel", SolarpanelBlock::new);
 	public static final DeferredBlock<Block> OIL = REGISTRY.register("oil", OilBlock::new);
 	public static final DeferredBlock<Block> GAS = REGISTRY.register("gas", GasBlock::new);
-	public static final DeferredBlock<Block> FAN = REGISTRY.register("fan", FanBlock::new);
 	public static final DeferredBlock<Block> BATTERYBLOCK = REGISTRY.register("batteryblock", BatteryblockBlock::new);
 	public static final DeferredBlock<Block> BRONZE_BLOCK = REGISTRY.register("bronze_block", BronzeBlockBlock::new);
 	public static final DeferredBlock<Block> INFINITYENERGY = REGISTRY.register("infinityenergy", InfinityenergyBlock::new);

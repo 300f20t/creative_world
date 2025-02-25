@@ -17,7 +17,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.creativeworld.block.entity.SolarpanelBlockEntity;
 import net.mcreator.creativeworld.block.entity.InfinityenergyBlockEntity;
-import net.mcreator.creativeworld.block.entity.FanBlockEntity;
 import net.mcreator.creativeworld.block.entity.CrusherBlockEntity;
 import net.mcreator.creativeworld.block.entity.CoalgeneratorBlockEntity;
 import net.mcreator.creativeworld.block.entity.BatteryblockBlockEntity;
@@ -29,7 +28,6 @@ public class CreativeWorldModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> COALGENERATOR = register("coalgenerator", CreativeWorldModBlocks.COALGENERATOR, CoalgeneratorBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> CRUSHER = register("crusher", CreativeWorldModBlocks.CRUSHER, CrusherBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> SOLARPANEL = register("solarpanel", CreativeWorldModBlocks.SOLARPANEL, SolarpanelBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> FAN = register("fan", CreativeWorldModBlocks.FAN, FanBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BATTERYBLOCK = register("batteryblock", CreativeWorldModBlocks.BATTERYBLOCK, BatteryblockBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> INFINITYENERGY = register("infinityenergy", CreativeWorldModBlocks.INFINITYENERGY, InfinityenergyBlockEntity::new);
 
@@ -47,8 +45,6 @@ public class CreativeWorldModBlockEntities {
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, CRUSHER.get(), (blockEntity, side) -> ((CrusherBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SOLARPANEL.get(), (blockEntity, side) -> ((SolarpanelBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, SOLARPANEL.get(), (blockEntity, side) -> ((SolarpanelBlockEntity) blockEntity).getEnergyStorage());
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, FAN.get(), (blockEntity, side) -> ((FanBlockEntity) blockEntity).getItemHandler());
-		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, FAN.get(), (blockEntity, side) -> ((FanBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BATTERYBLOCK.get(), (blockEntity, side) -> ((BatteryblockBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, BATTERYBLOCK.get(), (blockEntity, side) -> ((BatteryblockBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, INFINITYENERGY.get(), (blockEntity, side) -> ((InfinityenergyBlockEntity) blockEntity).getItemHandler());

@@ -130,7 +130,6 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModBlocks.CRUSHER.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.RSINLOGWITHRESIN.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.SOLARPANEL.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.FAN.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.BATTERYBLOCK.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.BRONZE_BLOCK.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.INFINITYENERGY.get().asItem());
