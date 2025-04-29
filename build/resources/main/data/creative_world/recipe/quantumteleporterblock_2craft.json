@@ -8,14 +8,14 @@
   ],
   "key": {
     "a": {
-      "item": "creative_world:quantumteleporterblock"
+      "item": "creative_world:deleted_mod_element"
     },
     "b": {
       "item": "creative_world:accumulatium_ingot"
     }
   },
   "result": {
-    "id": "creative_world:quantumteleporterblock_2",
+    "id": "creative_world:deleted_mod_element",
     "count": 1
   }
 }

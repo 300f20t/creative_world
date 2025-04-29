@@ -18,7 +18,6 @@ public class CreativeWorldModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreativeWorldMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATIVEWORLDITEMS = REGISTRY.register("creativeworlditems",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.creative_world.creativeworlditems")).icon(() -> new ItemStack(CreativeWorldModItems.CARBONPLATE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(CreativeWorldModItems.ENDLESSWATERSOURCE.get());
 				tabData.accept(CreativeWorldModItems.ALARGEBUCKET.get());
 				tabData.accept(CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get());
 				tabData.accept(CreativeWorldModItems.IRONPLATE.get());
@@ -106,7 +105,6 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModItems.COMPOSITE_PLATE_TOOL_AXE.get());
 				tabData.accept(CreativeWorldModItems.COMPOSITE_PLATE_TOOL_SHOVEL.get());
 				tabData.accept(CreativeWorldModItems.COMPOSITE_PLATE_TOOL_HOE.get());
-				tabData.accept(CreativeWorldModItems.PARTICLEBINDER.get());
 				tabData.accept(CreativeWorldModItems.KEYCARD.get());
 				tabData.accept(CreativeWorldModItems.DRILL.get());
 				tabData.accept(CreativeWorldModItems.ADVANCEDDRILL.get());
@@ -115,7 +113,6 @@ public class CreativeWorldModTabs {
 			}).withTabsBefore(CREATIVEWORLDITEMS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATIVEWORLDBLOCKS = REGISTRY.register("creativeworldblocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.creative_world.creativeworldblocks")).icon(() -> new ItemStack(CreativeWorldModBlocks.ADVENCEDMACHINECASE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(CreativeWorldModBlocks.COALGENERATOR.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.MACHINECASE.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.TIN_ORE.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.TIN_BLOCK.get().asItem());
@@ -127,25 +124,16 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModBlocks.RESIN_SLAB.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.RESIN_FENCE.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.RESIN_FENCE_GATE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.CRUSHER.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.RSINLOGWITHRESIN.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.SOLARPANEL.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.BATTERYBLOCK.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.BRONZE_BLOCK.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.INFINITYENERGY.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.ADVENCEDMACHINECASE.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.ADVENCEDSOLARPANEL.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.CREATIVIUM_ORE.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.CREATIVIUM_BLOCK.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.ACCUMULATIUM_ORE.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.ACCUMULATIUM_BLOCK.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.TITAN_ORE.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.TITAN_BLOCK.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.STATIONARYPARTICLEBINDER.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2.get().asItem());
 				tabData.accept(CreativeWorldModBlocks.RESINTREESAPLING.get().asItem());
-				tabData.accept(CreativeWorldModBlocks.NUCLEAR_REACTOR.get().asItem());
 			}).withTabsBefore(CREATIVEWORLDTOOLS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATIVEWORLDCOMBAT = REGISTRY.register("creativeworldcombat",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.creative_world.creativeworldcombat")).icon(() -> new ItemStack(CreativeWorldModItems.CREATIVIUM_SWORD.get())).displayItems((parameters, tabData) -> {

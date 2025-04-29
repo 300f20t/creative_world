@@ -42,7 +42,6 @@ import net.mcreator.creativeworld.item.RubberItem;
 import net.mcreator.creativeworld.item.ReelItem;
 import net.mcreator.creativeworld.item.RawtitanItem;
 import net.mcreator.creativeworld.item.RawtinItem;
-import net.mcreator.creativeworld.item.ParticlebinderItem;
 import net.mcreator.creativeworld.item.OilItem;
 import net.mcreator.creativeworld.item.LatexItem;
 import net.mcreator.creativeworld.item.KeycardItem;
@@ -52,7 +51,6 @@ import net.mcreator.creativeworld.item.IronhammerItem;
 import net.mcreator.creativeworld.item.IronMortarItem;
 import net.mcreator.creativeworld.item.GasItem;
 import net.mcreator.creativeworld.item.EnergydetectorItem;
-import net.mcreator.creativeworld.item.EndlesswatersourceItem;
 import net.mcreator.creativeworld.item.ElectricjetpackItem;
 import net.mcreator.creativeworld.item.ElectricalcircuitItem;
 import net.mcreator.creativeworld.item.ElectricMotorItem;
@@ -121,11 +119,9 @@ import net.mcreator.creativeworld.CreativeWorldMod;
 
 public class CreativeWorldModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(CreativeWorldMod.MODID);
-	public static final DeferredItem<Item> ENDLESSWATERSOURCE = REGISTRY.register("endlesswatersource", EndlesswatersourceItem::new);
 	public static final DeferredItem<Item> ALARGEBUCKET = REGISTRY.register("alargebucket", AlargebucketItem::new);
 	public static final DeferredItem<Item> ALARGEBUCKETOFWATER_9 = REGISTRY.register("alargebucketofwater_9", Alargebucketofwater9Item::new);
 	public static final DeferredItem<Item> IRONWRENCH = REGISTRY.register("ironwrench", IronwrenchItem::new);
-	public static final DeferredItem<Item> COALGENERATOR = block(CreativeWorldModBlocks.COALGENERATOR);
 	public static final DeferredItem<Item> MACHINECASE = block(CreativeWorldModBlocks.MACHINECASE);
 	public static final DeferredItem<Item> IRONHAMMER = REGISTRY.register("ironhammer", IronhammerItem::new);
 	public static final DeferredItem<Item> IRONPLATE = REGISTRY.register("ironplate", IronplateItem::new);
@@ -160,14 +156,12 @@ public class CreativeWorldModItems {
 	public static final DeferredItem<Item> RESIN_SLAB = block(CreativeWorldModBlocks.RESIN_SLAB);
 	public static final DeferredItem<Item> RESIN_FENCE = block(CreativeWorldModBlocks.RESIN_FENCE);
 	public static final DeferredItem<Item> RESIN_FENCE_GATE = block(CreativeWorldModBlocks.RESIN_FENCE_GATE);
-	public static final DeferredItem<Item> CRUSHER = block(CreativeWorldModBlocks.CRUSHER);
 	public static final DeferredItem<Item> RSINLOGWITHRESIN = block(CreativeWorldModBlocks.RSINLOGWITHRESIN);
 	public static final DeferredItem<Item> WIRECUTTERS = REGISTRY.register("wirecutters", WirecuttersItem::new);
 	public static final DeferredItem<Item> THECOREOFTHEFORMATION = REGISTRY.register("thecoreoftheformation", ThecoreoftheformationItem::new);
 	public static final DeferredItem<Item> THECOREOFMATTER = REGISTRY.register("thecoreofmatter", ThecoreofmatterItem::new);
 	public static final DeferredItem<Item> CREATINGCORE = REGISTRY.register("creatingcore", CreatingcoreItem::new);
 	public static final DeferredItem<Item> BEDROCKBREACKER = REGISTRY.register("bedrockbreacker", BedrockbreackerItem::new);
-	public static final DeferredItem<Item> SOLARPANEL = block(CreativeWorldModBlocks.SOLARPANEL);
 	public static final DeferredItem<Item> CRUSHEDIRONORE = REGISTRY.register("crushedironore", CrushedironoreItem::new);
 	public static final DeferredItem<Item> CRUSHEDCOPPERORE = REGISTRY.register("crushedcopperore", CrushedcopperoreItem::new);
 	public static final DeferredItem<Item> CRUSHEDTINORE = REGISTRY.register("crushedtinore", CrushedtinoreItem::new);
@@ -186,7 +180,6 @@ public class CreativeWorldModItems {
 	public static final DeferredItem<Item> RAWTIN = REGISTRY.register("rawtin", RawtinItem::new);
 	public static final DeferredItem<Item> BRONZEDUST = REGISTRY.register("bronzedust", BronzedustItem::new);
 	public static final DeferredItem<Item> ENERGYDETECTOR = REGISTRY.register("energydetector", EnergydetectorItem::new);
-	public static final DeferredItem<Item> BATTERYBLOCK = block(CreativeWorldModBlocks.BATTERYBLOCK);
 	public static final DeferredItem<Item> ELECTRICJETPACK_CHESTPLATE = REGISTRY.register("electricjetpack_chestplate", ElectricjetpackItem.Chestplate::new);
 	public static final DeferredItem<Item> BRONZE_INGOT = REGISTRY.register("bronze_ingot", BronzeIngotItem::new);
 	public static final DeferredItem<Item> BRONZE_BLOCK = block(CreativeWorldModBlocks.BRONZE_BLOCK);
@@ -199,12 +192,10 @@ public class CreativeWorldModItems {
 	public static final DeferredItem<Item> BRONZE_ARMOR_CHESTPLATE = REGISTRY.register("bronze_armor_chestplate", BronzeArmorItem.Chestplate::new);
 	public static final DeferredItem<Item> BRONZE_ARMOR_LEGGINGS = REGISTRY.register("bronze_armor_leggings", BronzeArmorItem.Leggings::new);
 	public static final DeferredItem<Item> BRONZE_ARMOR_BOOTS = REGISTRY.register("bronze_armor_boots", BronzeArmorItem.Boots::new);
-	public static final DeferredItem<Item> INFINITYENERGY = block(CreativeWorldModBlocks.INFINITYENERGY);
 	public static final DeferredItem<Item> COALDUST = REGISTRY.register("coaldust", CoaldustItem::new);
 	public static final DeferredItem<Item> ELECTRICALCIRCUIT = REGISTRY.register("electricalcircuit", ElectricalcircuitItem::new);
 	public static final DeferredItem<Item> ADVANCEDELECTRICJETPACK_CHESTPLATE = REGISTRY.register("advancedelectricjetpack_chestplate", AdvancedelectricjetpackItem.Chestplate::new);
 	public static final DeferredItem<Item> ADVENCEDMACHINECASE = block(CreativeWorldModBlocks.ADVENCEDMACHINECASE);
-	public static final DeferredItem<Item> ADVENCEDSOLARPANEL = block(CreativeWorldModBlocks.ADVENCEDSOLARPANEL);
 	public static final DeferredItem<Item> CREATIVIUM_INGOT = REGISTRY.register("creativium_ingot", CreativiumIngotItem::new);
 	public static final DeferredItem<Item> CREATIVIUM_ORE = block(CreativeWorldModBlocks.CREATIVIUM_ORE);
 	public static final DeferredItem<Item> CREATIVIUM_BLOCK = block(CreativeWorldModBlocks.CREATIVIUM_BLOCK);
@@ -257,10 +248,6 @@ public class CreativeWorldModItems {
 	public static final DeferredItem<Item> COMPOSITE_PLATE_TOOL_SWORD = REGISTRY.register("composite_plate_tool_sword", Composite_plate_toolSwordItem::new);
 	public static final DeferredItem<Item> COMPOSITE_PLATE_TOOL_SHOVEL = REGISTRY.register("composite_plate_tool_shovel", Composite_plate_toolShovelItem::new);
 	public static final DeferredItem<Item> COMPOSITE_PLATE_TOOL_HOE = REGISTRY.register("composite_plate_tool_hoe", Composite_plate_toolHoeItem::new);
-	public static final DeferredItem<Item> PARTICLEBINDER = REGISTRY.register("particlebinder", ParticlebinderItem::new);
-	public static final DeferredItem<Item> STATIONARYPARTICLEBINDER = block(CreativeWorldModBlocks.STATIONARYPARTICLEBINDER);
-	public static final DeferredItem<Item> QUANTUMTELEPORTERBLOCK = block(CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK);
-	public static final DeferredItem<Item> QUANTUMTELEPORTERBLOCK_2 = block(CreativeWorldModBlocks.QUANTUMTELEPORTERBLOCK_2);
 	public static final DeferredItem<Item> KEYCARD = REGISTRY.register("keycard", KeycardItem::new);
 	public static final DeferredItem<Item> DRILL = REGISTRY.register("drill", DrillItem::new);
 	public static final DeferredItem<Item> ADVANCEDDRILL = REGISTRY.register("advanceddrill", AdvanceddrillItem::new);
@@ -270,7 +257,6 @@ public class CreativeWorldModItems {
 	public static final DeferredItem<Item> RAWTITAN = REGISTRY.register("rawtitan", RawtitanItem::new);
 	public static final DeferredItem<Item> RESINTREESAPLING = block(CreativeWorldModBlocks.RESINTREESAPLING);
 	public static final DeferredItem<Item> IRON_MORTAR = REGISTRY.register("iron_mortar", IronMortarItem::new);
-	public static final DeferredItem<Item> BUG = block(CreativeWorldModBlocks.BUG);
 	public static final DeferredItem<Item> COPPER_WIRE = block(CreativeWorldModBlocks.COPPER_WIRE);
 	public static final DeferredItem<Item> INSULATED_COPPER_WIRE = block(CreativeWorldModBlocks.INSULATED_COPPER_WIRE);
 	public static final DeferredItem<Item> A_LARGE_BUCKET_OF_FLUID_9 = REGISTRY.register("a_large_bucket_of_fluid_9", ALargeBucketOfFluid9Item::new);
@@ -280,7 +266,6 @@ public class CreativeWorldModItems {
 	public static final DeferredItem<Item> BATTREY_3 = REGISTRY.register("battrey_3", Battrey3Item::new);
 	public static final DeferredItem<Item> ELECTRIC_MOTOR = REGISTRY.register("electric_motor", ElectricMotorItem::new);
 	public static final DeferredItem<Item> CREATIVE_ELECTRIC_MOTOR = REGISTRY.register("creative_electric_motor", CreativeElectricMotorItem::new);
-	public static final DeferredItem<Item> NUCLEAR_REACTOR = block(CreativeWorldModBlocks.NUCLEAR_REACTOR);
 
 	// Start of user code block custom items
 	// End of user code block custom items

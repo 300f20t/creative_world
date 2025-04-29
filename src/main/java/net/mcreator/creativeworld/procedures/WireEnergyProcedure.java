@@ -8,20 +8,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class WireEnergyProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x + 1, y, z))) {
+		if (canExtractEnergy(world, BlockPos.containing(x + 1, y, z), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -31,16 +23,7 @@ public class WireEnergyProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-		} else if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x - 1, y, z))) {
+		} else if (canExtractEnergy(world, BlockPos.containing(x - 1, y, z), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -50,16 +33,7 @@ public class WireEnergyProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-		} else if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x, y + 1, z))) {
+		} else if (canExtractEnergy(world, BlockPos.containing(x, y + 1, z), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -69,16 +43,7 @@ public class WireEnergyProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-		} else if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x, y - 1, z))) {
+		} else if (canExtractEnergy(world, BlockPos.containing(x, y - 1, z), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -88,16 +53,7 @@ public class WireEnergyProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-		} else if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x, y, z + 1))) {
+		} else if (canExtractEnergy(world, BlockPos.containing(x, y, z + 1), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -107,16 +63,7 @@ public class WireEnergyProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-		} else if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x, y, z - 1))) {
+		} else if (canExtractEnergy(world, BlockPos.containing(x, y, z - 1), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -137,16 +84,7 @@ public class WireEnergyProcedure {
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		}
-		if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x + 1, y, z))) {
+		if (canExtractEnergy(world, BlockPos.containing(x + 1, y, z), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -156,16 +94,7 @@ public class WireEnergyProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-		} else if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x - 1, y, z))) {
+		} else if (canExtractEnergy(world, BlockPos.containing(x - 1, y, z), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -175,16 +104,7 @@ public class WireEnergyProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-		} else if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x, y + 1, z))) {
+		} else if (canExtractEnergy(world, BlockPos.containing(x, y + 1, z), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -194,16 +114,7 @@ public class WireEnergyProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-		} else if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x, y - 1, z))) {
+		} else if (canExtractEnergy(world, BlockPos.containing(x, y - 1, z), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -213,16 +124,7 @@ public class WireEnergyProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-		} else if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x, y, z + 1))) {
+		} else if (canExtractEnergy(world, BlockPos.containing(x, y, z + 1), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -232,16 +134,7 @@ public class WireEnergyProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-		} else if (new Object() {
-			public boolean canExtractEnergy(LevelAccessor level, BlockPos pos) {
-				if (level instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, null);
-					if (_entityStorage != null)
-						return _entityStorage.canExtract();
-				}
-				return false;
-			}
-		}.canExtractEnergy(world, BlockPos.containing(x, y, z - 1))) {
+		} else if (canExtractEnergy(world, BlockPos.containing(x, y, z - 1), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -262,5 +155,14 @@ public class WireEnergyProcedure {
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		}
+	}
+
+	private static boolean canExtractEnergy(LevelAccessor level, BlockPos pos, Direction direction) {
+		if (level instanceof ILevelExtension levelExtension) {
+			IEnergyStorage energyStorage = levelExtension.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
+			if (energyStorage != null)
+				return energyStorage.canExtract();
+		}
+		return false;
 	}
 }

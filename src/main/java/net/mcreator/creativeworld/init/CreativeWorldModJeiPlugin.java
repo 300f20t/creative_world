@@ -43,6 +43,6 @@ public class CreativeWorldModJeiPlugin implements IModPlugin {
 
 	@Override
 	public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
-		registration.addRecipeCatalyst(new ItemStack(CreativeWorldModBlocks.CRUSHER.get().asItem()), Crushing_Type);
+		registration.addRecipeCatalyst(new ItemStack(CreativeWorldModBlocks.MACHINECASE.get().asItem()), Crushing_Type);
 	}
 }

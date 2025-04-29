@@ -7,7 +7,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.creativeworld.init.CreativeWorldModJeiPlugin;
-import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
+import net.mcreator.creativeworld.init.CreativeWorldModItems;
 
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import mezz.jei.api.recipe.RecipeIngredientRole;
@@ -26,7 +26,7 @@ public class CrushingRecipeCategory implements IRecipeCategory<CrushingRecipe> {
 
 	public CrushingRecipeCategory(IGuiHelper helper) {
 		this.background = helper.createDrawable(TEXTURE, 0, 0, 176, 83);
-		this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(CreativeWorldModBlocks.CRUSHER.get().asItem()));
+		this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(CreativeWorldModItems.IRONHAMMER.get()));
 	}
 
 	@Override

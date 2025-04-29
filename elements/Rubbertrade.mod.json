@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "villagertrade",
   "definition": {
     "tradeEntries": [
@@ -20,7 +20,7 @@
             "offer": {
               "value": "CUSTOM:Rubber"
             },
-            "countOffer": 5,
+            "countOffer": 2,
             "level": 1,
             "maxTrades": 10,
             "xp": 5,

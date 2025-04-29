@@ -1,55 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "EndlesswatersourceKoghdaNazhataPKMPoBloku",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "endlesswatersource_koghda_nazhata_pkm_po_bloku",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/EndlesswatersourceKoghdaNazhataPKMPoBlokuProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Legacy"
-    },
-    {
-      "name": "Endlesswatersource",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "endlesswatersource",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/creative_world/models/item/endlesswatersource.json",
-          "src/main/java/net/mcreator/creativeworld/item/EndlesswatersourceItem.java"
-        ]
-      },
-      "path": "~/Items"
-    },
-    {
       "name": "Qqqqq",
       "type": "recipe",
       "compiles": true,
@@ -118,24 +69,6 @@
       "path": "~/Items/Tools"
     },
     {
-      "name": "Coalgenerator",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coalgenerator",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/block/entity/CoalgeneratorBlockEntity.java",
-          "src/main/java/net/mcreator/creativeworld/block/CoalgeneratorBlock.java",
-          "src/main/resources/assets/creative_world/models/block/coalgenerator.json",
-          "src/main/resources/data/creative_world/loot_table/blocks/coalgenerator.json",
-          "src/main/resources/assets/creative_world/models/item/coalgenerator.json",
-          "src/main/resources/assets/creative_world/blockstates/coalgenerator.json"
-        ]
-      },
-      "path": "~/Blocks/Mechanisms"
-    },
-    {
       "name": "Machinecase",
       "type": "block",
       "compiles": true,
@@ -150,7 +83,7 @@
           "src/main/resources/assets/creative_world/models/block/machinecase.json"
         ]
       },
-      "path": "~/Items/Ingridients"
+      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "IronwrenchKoghdaNazhataPKMPoBloku",
@@ -285,7 +218,7 @@
           "src/main/resources/assets/creative_world/models/item/tin_ore.json"
         ]
       },
-      "path": "~/Blocks/Ores"
+      "path": "~/Blocks/MaterialBlocks/Ores"
     },
     {
       "name": "TinBlock",
@@ -302,7 +235,7 @@
           "src/main/resources/assets/creative_world/models/block/tin_block.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/MaterialBlocks"
     },
     {
       "name": "TinOreBlockRecipe",
@@ -341,7 +274,7 @@
           "src/main/resources/data/creative_world/recipe/tin_ore_smelting.json"
         ]
       },
-      "path": "~/Crafts/Smelting"
+      "path": "~/Crafts/Smelting/Ores"
     },
     {
       "name": "TinPickaxe",
@@ -1050,24 +983,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Crusher",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crusher",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/creative_world/blockstates/crusher.json",
-          "src/main/java/net/mcreator/creativeworld/block/entity/CrusherBlockEntity.java",
-          "src/main/resources/data/creative_world/loot_table/blocks/crusher.json",
-          "src/main/java/net/mcreator/creativeworld/block/CrusherBlock.java",
-          "src/main/resources/assets/creative_world/models/block/crusher.json",
-          "src/main/resources/assets/creative_world/models/item/crusher.json"
-        ]
-      },
-      "path": "~/Blocks/Mechanisms"
-    },
-    {
       "name": "Rsinlogwithresin",
       "type": "block",
       "compiles": true,
@@ -1083,20 +998,6 @@
         ]
       },
       "path": "~/Blocks/ResinTree"
-    },
-    {
-      "name": "Msrpmro",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "msrpmro",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/client/gui/MsrpmroScreen.java",
-          "src/main/java/net/mcreator/creativeworld/world/inventory/MsrpmroMenu.java"
-        ]
-      },
-      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Wirecutters",
@@ -1221,69 +1122,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Solarpanel",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "solarpanel",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/block/entity/SolarpanelBlockEntity.java",
-          "src/main/resources/assets/creative_world/blockstates/solarpanel.json",
-          "src/main/resources/data/creative_world/loot_table/blocks/solarpanel.json",
-          "src/main/java/net/mcreator/creativeworld/block/SolarpanelBlock.java",
-          "src/main/resources/assets/creative_world/models/block/solarpanel.json",
-          "src/main/resources/assets/creative_world/models/item/solarpanel.json"
-        ]
-      },
-      "path": "~/Blocks/Mechanisms"
-    },
-    {
-      "name": "SolarpanelObnovitTakt",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "solarpanel_obnovit_takt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/SolarpanelObnovitTaktProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocks/Mechanisms"
-    },
-    {
-      "name": "Fdgdf",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fdgdf",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/world/inventory/FdgdfMenu.java",
-          "src/main/java/net/mcreator/creativeworld/client/gui/FdgdfScreen.java"
-        ]
-      },
-      "path": "~/Blocks/Mechanisms"
-    },
-    {
       "name": "Crushedironore",
       "type": "item",
       "compiles": true,
@@ -1296,41 +1134,6 @@
         ]
       },
       "path": "~/Items/Crushed ores"
-    },
-    {
-      "name": "CrusherNaBlokieNazhataPravaiaKnopkaMyshi",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crusher_na_blokie_nazhata_pravaia_knopka_myshi",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/CrusherNaBlokieNazhataPravaiaKnopkaMyshiProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Defdf",
@@ -1378,7 +1181,7 @@
           }
         ]
       },
-      "path": "~/Blocks/Ores/Washing of crushed ores"
+      "path": "~/Blocks/MaterialBlocks/Ores/Washing of crushed ores"
     },
     {
       "name": "Infinity",
@@ -1431,20 +1234,6 @@
         ]
       },
       "path": "~/Achievements"
-    },
-    {
-      "name": "Fgfhffhghkjkkytwqa",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fgfhffhghkjkkytwqa",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/world/inventory/FgfhffhghkjkkytwqaMenu.java",
-          "src/main/java/net/mcreator/creativeworld/client/gui/FgfhffhghkjkkytwqaScreen.java"
-        ]
-      },
-      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Crushedcopperore",
@@ -1507,7 +1296,7 @@
           }
         ]
       },
-      "path": "~/Blocks/Ores/Washing of crushed ores"
+      "path": "~/Blocks/MaterialBlocks/Ores/Washing of crushed ores"
     },
     {
       "name": "CrushedtinoreKoghdaNazhataPKMPoBloku",
@@ -1542,7 +1331,7 @@
           }
         ]
       },
-      "path": "~/Blocks/Ores/Washing of crushed ores"
+      "path": "~/Blocks/MaterialBlocks/Ores/Washing of crushed ores"
     },
     {
       "name": "Tinnugget",
@@ -1610,7 +1399,7 @@
           "src/main/java/net/mcreator/creativeworld/item/WashedcrushedironoreItem.java"
         ]
       },
-      "path": "~/Blocks/Ores/Washed crushed ores"
+      "path": "~/Blocks/MaterialBlocks/Ores/Washed crushed ores"
     },
     {
       "name": "Washedcrushedcopperore",
@@ -1624,7 +1413,7 @@
           "src/main/java/net/mcreator/creativeworld/item/WashedcrushedcopperoreItem.java"
         ]
       },
-      "path": "~/Blocks/Ores/Washed crushed ores"
+      "path": "~/Blocks/MaterialBlocks/Ores/Washed crushed ores"
     },
     {
       "name": "Washedcrushedtinore",
@@ -1638,7 +1427,7 @@
           "src/main/resources/assets/creative_world/models/item/washedcrushedtinore.json"
         ]
       },
-      "path": "~/Blocks/Ores/Washed crushed ores"
+      "path": "~/Blocks/MaterialBlocks/Ores/Washed crushed ores"
     },
     {
       "name": "Ghhgfd",
@@ -1771,19 +1560,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Dhjhgfd",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dhjhgfd",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/dhjhgfd.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
       "name": "Creativemod",
       "type": "item",
       "compiles": true,
@@ -1819,32 +1595,6 @@
         ]
       },
       "path": "~/Items"
-    },
-    {
-      "name": "Xcdfvgbhnj",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "xcdfvgbhnj",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/xcdfvgbhnj.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
-      "name": "Sdfgbhnjmk",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sdfgbhnjmk",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/sdfgbhnjmk.json"
-        ]
-      },
-      "path": "~/Legacy"
     },
     {
       "name": "Latex",
@@ -1897,7 +1647,7 @@
           }
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/ResinTree"
     },
     {
       "name": "Tap",
@@ -1965,7 +1715,7 @@
           "src/main/resources/assets/creative_world/models/item/tincover.json"
         ]
       },
-      "path": "~/Blocks/Covers"
+      "path": "~/Items/Covers"
     },
     {
       "name": "Vhgfhjk",
@@ -2037,7 +1787,7 @@
           "src/main/java/net/mcreator/creativeworld/fluid/types/OilFluidType.java"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/MaterialBlocks/Fluids"
     },
     {
       "name": "Gas",
@@ -2057,7 +1807,7 @@
           "src/main/resources/assets/creative_world/blockstates/gas.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/MaterialBlocks/Fluids"
     },
     {
       "name": "Rawtin",
@@ -2071,7 +1821,7 @@
           "src/main/java/net/mcreator/creativeworld/item/RawtinItem.java"
         ]
       },
-      "path": "~/Blocks/Ores/RawOres"
+      "path": "~/Blocks/MaterialBlocks/Ores/RawOres"
     },
     {
       "name": "Vyapr",
@@ -2127,37 +1877,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "CoalgeneratorObnovitTakt",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coalgenerator_obnovit_takt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/CoalgeneratorObnovitTaktProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
       "name": "Energydetector",
       "type": "item",
       "compiles": true,
@@ -2209,55 +1928,6 @@
         ]
       },
       "path": "~/Items/Tools"
-    },
-    {
-      "name": "BatteryblockObnovitTakt",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "batteryblock_obnovit_takt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/BatteryblockObnovitTaktProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "Batteryblock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "batteryblock",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/block/BatteryblockBlock.java",
-          "src/main/resources/assets/creative_world/blockstates/batteryblock.json",
-          "src/main/resources/assets/creative_world/models/block/batteryblock.json",
-          "src/main/java/net/mcreator/creativeworld/block/entity/BatteryblockBlockEntity.java",
-          "src/main/resources/assets/creative_world/models/item/batteryblock.json",
-          "src/main/resources/data/creative_world/loot_table/blocks/batteryblock.json"
-        ]
-      },
-      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Electricjetpack",
@@ -2339,7 +2009,7 @@
           }
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/MaterialBlocks"
     },
     {
       "name": "Blackscreen",
@@ -2351,7 +2021,8 @@
         "files": [
           "src/main/java/net/mcreator/creativeworld/client/screens/BlackscreenOverlay.java"
         ]
-      }
+      },
+      "path": "~/Overlays"
     },
     {
       "name": "Gdfgdxf",
@@ -2395,7 +2066,7 @@
           "src/main/resources/data/creative_world/loot_table/blocks/bronze_block.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/MaterialBlocks"
     },
     {
       "name": "BronzeOreBlockRecipe",
@@ -2517,7 +2188,7 @@
           "src/main/resources/data/creative_world/recipe/bronze_pickaxe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "BronzeAxeRecipe",
@@ -2530,7 +2201,7 @@
           "src/main/resources/data/creative_world/recipe/bronze_axe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "BronzeSwordRecipe",
@@ -2543,7 +2214,7 @@
           "src/main/resources/data/creative_world/recipe/bronze_sword_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "BronzeShovelRecipe",
@@ -2556,7 +2227,7 @@
           "src/main/resources/data/creative_world/recipe/bronze_shovel_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "BronzeHoeRecipe",
@@ -2569,7 +2240,7 @@
           "src/main/resources/data/creative_world/recipe/bronze_hoe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "BronzeArmor",
@@ -2652,25 +2323,8 @@
       "registry_name": "rubbertrade",
       "metadata": {
         "files": []
-      }
-    },
-    {
-      "name": "Infinityenergy",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "infinityenergy",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/block/InfinityenergyBlock.java",
-          "src/main/resources/data/creative_world/loot_table/blocks/infinityenergy.json",
-          "src/main/java/net/mcreator/creativeworld/block/entity/InfinityenergyBlockEntity.java",
-          "src/main/resources/assets/creative_world/models/item/infinityenergy.json",
-          "src/main/resources/assets/creative_world/blockstates/infinityenergy.json",
-          "src/main/resources/assets/creative_world/models/block/infinityenergy.json"
-        ]
       },
-      "path": "~/Blocks/Mechanisms"
+      "path": "~/Trades"
     },
     {
       "name": "BedrockbreackerPriShchielchkiePravoiKnopkoiMyshiNaBlokie",
@@ -2890,19 +2544,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Whatisit",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "whatisit",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/advancement/whatisit.json"
-        ]
-      },
-      "path": "~/Achievements"
-    },
-    {
       "name": "Advancedelectricjetpack",
       "type": "armor",
       "compiles": true,
@@ -2994,23 +2635,6 @@
           "src/main/resources/assets/creative_world/models/item/advencedmachinecase.json"
         ]
       },
-      "path": "~/Items/Ingridients"
-    },
-    {
-      "name": "Advencedsolarpanel",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "advencedsolarpanel",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/creative_world/blockstates/advencedsolarpanel.json",
-          "src/main/resources/assets/creative_world/models/item/advencedsolarpanel.json",
-          "src/main/resources/assets/creative_world/models/block/advencedsolarpanel.json",
-          "src/main/java/net/mcreator/creativeworld/block/AdvencedsolarpanelBlock.java",
-          "src/main/resources/data/creative_world/loot_table/blocks/advencedsolarpanel.json"
-        ]
-      },
       "path": "~/Blocks/Mechanisms"
     },
     {
@@ -3045,7 +2669,7 @@
           "src/main/resources/assets/creative_world/blockstates/creativium_ore.json"
         ]
       },
-      "path": "~/Blocks/Ores"
+      "path": "~/Blocks/MaterialBlocks/Ores"
     },
     {
       "name": "CreativiumBlock",
@@ -3062,7 +2686,7 @@
           "src/main/resources/assets/creative_world/blockstates/creativium_block.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/MaterialBlocks"
     },
     {
       "name": "CreativiumOreBlockRecipe",
@@ -3184,7 +2808,7 @@
           "src/main/resources/data/creative_world/recipe/creativium_pickaxe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "CreativiumAxeRecipe",
@@ -3197,7 +2821,7 @@
           "src/main/resources/data/creative_world/recipe/creativium_axe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "CreativiumSwordRecipe",
@@ -3210,7 +2834,7 @@
           "src/main/resources/data/creative_world/recipe/creativium_sword_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "CreativiumShovelRecipe",
@@ -3223,7 +2847,7 @@
           "src/main/resources/data/creative_world/recipe/creativium_shovel_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "CreativiumHoeRecipe",
@@ -3236,7 +2860,7 @@
           "src/main/resources/data/creative_world/recipe/creativium_hoe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "CreativiumArmor",
@@ -3270,7 +2894,7 @@
           "src/main/resources/data/creative_world/recipe/creativium_armor_helmet_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "CreativiumArmorBodyRecipe",
@@ -3283,7 +2907,7 @@
           "src/main/resources/data/creative_world/recipe/creativium_armor_body_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "CreativiumArmorLeggingsRecipe",
@@ -3296,7 +2920,7 @@
           "src/main/resources/data/creative_world/recipe/creativium_armor_leggings_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "CreativiumArmorBootsRecipe",
@@ -3309,7 +2933,7 @@
           "src/main/resources/data/creative_world/recipe/creativium_armor_boots_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "AccumulatiumIngot",
@@ -3343,7 +2967,7 @@
           "src/main/resources/assets/creative_world/models/item/accumulatium_ore.json"
         ]
       },
-      "path": "~/Blocks/Ores"
+      "path": "~/Blocks/MaterialBlocks/Ores"
     },
     {
       "name": "AccumulatiumBlock",
@@ -3360,7 +2984,7 @@
           "src/main/resources/assets/creative_world/models/block/accumulatium_block.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/MaterialBlocks"
     },
     {
       "name": "AccumulatiumOreBlockRecipe",
@@ -3495,7 +3119,7 @@
           "src/main/resources/data/creative_world/recipe/accumulatium_axe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "AccumulatiumSwordRecipe",
@@ -3508,7 +3132,7 @@
           "src/main/resources/data/creative_world/recipe/accumulatium_sword_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "AccumulatiumShovelRecipe",
@@ -3521,7 +3145,7 @@
           "src/main/resources/data/creative_world/recipe/accumulatium_shovel_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "AccumulatiumHoeRecipe",
@@ -3534,7 +3158,7 @@
           "src/main/resources/data/creative_world/recipe/accumulatium_hoe_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Tools"
     },
     {
       "name": "AccumulatiumArmor",
@@ -3841,7 +3465,7 @@
           "src/main/resources/data/creative_world/loot_table/blocks/titan_ore.json"
         ]
       },
-      "path": "~/Blocks/Ores"
+      "path": "~/Blocks/MaterialBlocks/Ores"
     },
     {
       "name": "TitanBlock",
@@ -3858,7 +3482,7 @@
           "src/main/resources/assets/creative_world/models/block/titan_block.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/MaterialBlocks"
     },
     {
       "name": "TitanOreBlockRecipe",
@@ -4180,7 +3804,7 @@
           "src/main/resources/data/creative_world/recipe/composite_plate_armor_armor_helmet_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "Composite_plate_armorArmorBodyRecipe",
@@ -4193,7 +3817,7 @@
           "src/main/resources/data/creative_world/recipe/composite_plate_armor_armor_body_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "Composite_plate_armorArmorLeggingsRecipe",
@@ -4206,7 +3830,7 @@
           "src/main/resources/data/creative_world/recipe/composite_plate_armor_armor_leggings_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "Composite_plate_armorArmorBootsRecipe",
@@ -4219,7 +3843,7 @@
           "src/main/resources/data/creative_world/recipe/composite_plate_armor_armor_boots_recipe.json"
         ]
       },
-      "path": "~/Crafts"
+      "path": "~/Crafts/Armor"
     },
     {
       "name": "Composite_plate_toolPickaxe",
@@ -4357,20 +3981,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Particlebinder",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "particlebinder",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/creative_world/models/item/particlebinder.json",
-          "src/main/java/net/mcreator/creativeworld/item/ParticlebinderItem.java"
-        ]
-      },
-      "path": "~/Items/Tools"
-    },
-    {
       "name": "Particlebindercraft",
       "type": "recipe",
       "compiles": true,
@@ -4384,23 +3994,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Stationaryparticlebinder",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stationaryparticlebinder",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/loot_table/blocks/stationaryparticlebinder.json",
-          "src/main/java/net/mcreator/creativeworld/block/StationaryparticlebinderBlock.java",
-          "src/main/resources/assets/creative_world/models/block/stationaryparticlebinder.json",
-          "src/main/resources/assets/creative_world/models/item/stationaryparticlebinder.json",
-          "src/main/resources/assets/creative_world/blockstates/stationaryparticlebinder.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
       "name": "Stationaryparticlebindercraft",
       "type": "recipe",
       "compiles": true,
@@ -4412,145 +4005,6 @@
         ]
       },
       "path": "~/Crafts"
-    },
-    {
-      "name": "Quantumteleporterblock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "quantumteleporterblock",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/loot_table/blocks/quantumteleporterblock.json",
-          "src/main/resources/assets/creative_world/models/block/quantumteleporterblock.json",
-          "src/main/resources/assets/creative_world/models/item/quantumteleporterblock.json",
-          "src/main/resources/assets/creative_world/blockstates/quantumteleporterblock.json",
-          "src/main/java/net/mcreator/creativeworld/block/QuantumteleporterblockBlock.java"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "Quantumteleporterblock2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "quantumteleporterblock_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/creative_world/models/item/quantumteleporterblock_2.json",
-          "src/main/resources/data/creative_world/loot_table/blocks/quantumteleporterblock_2.json",
-          "src/main/java/net/mcreator/creativeworld/block/Quantumteleporterblock2Block.java",
-          "src/main/resources/assets/creative_world/blockstates/quantumteleporterblock_2.json",
-          "src/main/resources/assets/creative_world/models/block/quantumteleporterblock_2.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshi",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "quantumteleporterblock_2_na_blokie_nazhata_pravaia_knopka_myshi",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/Quantumteleporterblock2NaBlokieNazhataPravaiaKnopkaMyshiProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Legacy"
-    },
-    {
-      "name": "QT",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "qt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/command/QTCommand.java"
-        ]
-      },
-      "path": "~/Legacy"
-    },
-    {
-      "name": "QTclearall",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "q_tclearall",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/QTclearallProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Legacy"
-    },
-    {
-      "name": "QTclear1",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "q_tclear_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/QTclear1Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Legacy"
-    },
-    {
-      "name": "QTclear2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "q_tclear_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/QTclear2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Legacy"
     },
     {
       "name": "Quantumteleporterblock2craft",
@@ -4765,7 +4219,7 @@
           "src/main/resources/data/creative_world/loot_table/blocks/tin_ore.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/MaterialBlocks/Ores"
     },
     {
       "name": "Rawtitan",
@@ -4779,7 +4233,7 @@
           "src/main/resources/assets/creative_world/models/item/rawtitan.json"
         ]
       },
-      "path": "~/Blocks/Ores/RawOres"
+      "path": "~/Blocks/MaterialBlocks/Ores/RawOres"
     },
     {
       "name": "TitanOreDrop",
@@ -4792,7 +4246,7 @@
           "src/main/resources/data/creative_world/loot_table/blocks/titan_ore.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/MaterialBlocks/Ores"
     },
     {
       "name": "ResintreesaplingPriDobavlieniiRastieniia",
@@ -4872,20 +4326,6 @@
         ]
       },
       "path": "~/Blocks/ResinTree"
-    },
-    {
-      "name": "SetWorldIndex",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "set_world_index",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/SetWorldIndexProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Legacy"
     },
     {
       "name": "DrillKazhdyiTikVRukie",
@@ -4969,7 +4409,7 @@
         ],
         "has_nbt_structure": true
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Features"
     },
     {
       "name": "LittleoilmineFeature",
@@ -4985,7 +4425,7 @@
         ],
         "has_nbt_structure": true
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Features"
     },
     {
       "name": "MediumoilmineFeature",
@@ -5001,7 +4441,7 @@
         ],
         "has_nbt_structure": true
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Features"
     },
     {
       "name": "LittlegasmineFeature",
@@ -5017,7 +4457,7 @@
         ],
         "has_nbt_structure": true
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Features"
     },
     {
       "name": "MediumgasmineFeature",
@@ -5033,7 +4473,7 @@
         ],
         "has_nbt_structure": true
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Features"
     },
     {
       "name": "IronMortar",
@@ -5061,23 +4501,6 @@
         ]
       },
       "path": "~/Crafts"
-    },
-    {
-      "name": "BUG",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bug",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/creative_world/models/block/bug.json",
-          "src/main/resources/assets/creative_world/models/item/bug.json",
-          "src/main/java/net/mcreator/creativeworld/block/BUGBlock.java",
-          "src/main/resources/data/creative_world/loot_table/blocks/bug.json",
-          "src/main/resources/assets/creative_world/blockstates/bug.json"
-        ]
-      },
-      "path": "~/Legacy"
     },
     {
       "name": "DrillModeSwitchPriNazhatiiKlavishi",
@@ -5205,37 +4628,6 @@
         ]
       },
       "path": "~/Blocks/Wires"
-    },
-    {
-      "name": "InfinityenergyObnovlieniieTika",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "infinityenergy_obnovlieniie_tika",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/InfinityenergyObnovlieniieTikaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocks/Mechanisms"
     },
     {
       "name": "Alargebucketofwater9DopolnitielnaiaInformatsiia",
@@ -5673,20 +5065,6 @@
       "path": "~/JEI/Crushing"
     },
     {
-      "name": "FdgdfKazhdyiTikPokaIntierfieisOtkryt",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fdgdf_kazhdyi_tik_poka_intierfieis_otkryt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/FdgdfKazhdyiTikPokaIntierfieisOtkrytProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Blocks/Mechanisms"
-    },
-    {
       "name": "IronCrushing",
       "type": "jeirecipe",
       "compiles": true,
@@ -5738,23 +5116,6 @@
       "path": "~/Achievements"
     },
     {
-      "name": "NuclearReactor",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_reactor",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/creative_world/blockstates/nuclear_reactor.json",
-          "src/main/java/net/mcreator/creativeworld/block/NuclearReactorBlock.java",
-          "src/main/resources/assets/creative_world/models/item/nuclear_reactor.json",
-          "src/main/resources/data/creative_world/loot_table/blocks/nuclear_reactor.json",
-          "src/main/resources/assets/creative_world/models/block/nuclear_reactor.json"
-        ]
-      },
-      "path": "~/Blocks/Mechanisms"
-    },
-    {
       "name": "AdvancedelectricjetpackKazhdyiTikDliaNaghrudnika",
       "type": "procedure",
       "compiles": true,
@@ -5778,79 +5139,41 @@
       "path": "~/Items/Jetpacks"
     },
     {
-      "name": "CoalGeneratorGUIOnChangeItemInSlot",
-      "type": "procedure",
+      "name": "MySecondDrill",
+      "type": "achievement",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coal_generator_gui_on_change_item_in_slot",
+      "registry_name": "my_second_drill",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/CoalGeneratorGUIOnChangeItemInSlotProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
+          "src/main/resources/data/creative_world/advancement/my_second_drill.json"
         ]
       },
-      "path": "~/Blocks/Mechanisms"
+      "path": "~/Achievements"
     },
     {
-      "name": "CoalgeneratorPriDobavlieniiBloka",
-      "type": "procedure",
+      "name": "MyFinalDrill",
+      "type": "achievement",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coalgenerator_pri_dobavlienii_bloka",
+      "registry_name": "my_final_drill",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/CoalgeneratorPriDobavlieniiBlokaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
+          "src/main/resources/data/creative_world/advancement/my_final_drill.json"
         ]
       },
-      "path": "~/Blocks/Mechanisms"
+      "path": "~/Achievements"
     },
     {
-      "name": "CoalGeneratorBlockstates",
-      "type": "blockstates",
+      "name": "CreativiumTrade",
+      "type": "villagertrade",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coal_generator_blockstates",
+      "registry_name": "creativium_trade",
       "metadata": {
-        "files": [
-          "src/main/resources/assets/creative_world/models/block/coal_generator_blockstates_blockstate_0.json"
-        ]
+        "files": []
       },
-      "path": "~/Blocks/Mechanisms"
+      "path": "~/Trades"
     }
   ],
   "variable_elements": [
@@ -6080,6 +5403,16 @@
       "~CUSTOM:CreativiumBlock",
       "~CUSTOM:CreativiumOre"
     ],
+    "ITEMS:mod:cw_mechanisms": [
+      "CUSTOM:Machinecase",
+      "CUSTOM:Advencedmachinecase",
+      "CUSTOM:Coalgenerator",
+      "CUSTOM:Solarpanel",
+      "CUSTOM:Crusher",
+      "CUSTOM:NuclearReactor",
+      "CUSTOM:Batteryblock",
+      "CUSTOM:BUG"
+    ],
     "ITEMS:minecraft:axes": [
       "~CUSTOM:Creativedrill",
       "~CUSTOM:Advanceddrill",
@@ -6091,16 +5424,6 @@
       "~CUSTOM:BronzeAxe",
       "~CUSTOM:CopperAxe",
       "~CUSTOM:TinAxe"
-    ],
-    "ITEMS:mod:cw_mechanisms": [
-      "CUSTOM:Machinecase",
-      "CUSTOM:Advencedmachinecase",
-      "CUSTOM:Coalgenerator",
-      "CUSTOM:Solarpanel",
-      "CUSTOM:Crusher",
-      "CUSTOM:NuclearReactor",
-      "CUSTOM:Batteryblock",
-      "CUSTOM:BUG"
     ],
     "ITEMS:minecraft:chest_armor": [
       "~CUSTOM:Composite_plate_armorArmor.body",
@@ -6133,8 +5456,8 @@
       "item.creative_world.creativiumnugget": "Самородок Креативиума",
       "block.creative_world.insulated_copper_wire": "Изолированный медный провод",
       "item.creative_world.titan_hoe": "Титановая мотыга",
-      "item_group.creative_world.creativeworldtools": "Creative world: инструменты",
       "item.creative_world.thecoreofinvulnerability.description_0": "§eимеет незавершённый функционал (в разработке)",
+      "item_group.creative_world.creativeworldtools": "Creative world: инструменты",
       "item.creative_world.thecoreoftheformation": "Ядро формирования",
       "item.creative_world.copper_armor_chestplate": "Медный нагрудник",
       "item.creative_world.composite_plate_tool_pickaxe": "Композитная кирка",
@@ -6145,7 +5468,6 @@
       "item.creative_world.battrey_1": "Аккумулятор",
       "item.creative_world.battrey_2": "Аккумулятор",
       "item.creative_world.battrey_3": "Аккумулятор",
-      "block.creative_world.solarpanel": "Солнечная панель",
       "item.creative_world.washedcrushedtinore": "Промытая измельченная оловянная руда",
       "item.creative_world.reel.description_0": "§cdoes not work correctly (in development)",
       "item.creative_world.battrey_0": "Аккумулятор",
@@ -6158,15 +5480,14 @@
       "block.creative_world.accumulatium_ore": "Аккумулятивная руда",
       "item.creative_world.bronzeplate": "Бронзовая пластина",
       "item.creative_world.composite_plate_tool_sword": "Композитный меч",
-      "block.creative_world.nuclear_reactor": "Ядерный реактор",
-      "item.creative_world.creativium_pickaxe": "Креативная кирка",
       "item.creative_world.thecoreofmatter": "Ядро материи",
+      "item.creative_world.creativium_pickaxe": "Креативная кирка",
       "block.creative_world.accumulatium_block": "Блок аккумулятиума",
       "item.creative_world.creativium_armor_chestplate": "Креативиумный нагрудник",
       "item_group.creative_world.creativeworldcombat": "Creative world: бой",
-      "advancements.my_first_drill.title": "Моя первая дрель",
-      "advancements.infinity.descr": "Вода?",
+      "advancements.my_first_drill.title": "Мой первый бур",
       "advancements.bedrock.descr": "Бедрок не может быть сломан",
+      "advancements.infinity.descr": "Вода?",
       "item.creative_world.tinplate": "Жестяная тарелка",
       "item.creative_world.composite_plate_armor_armor_chestplate": "Композитный нагрудник",
       "item.creative_world.bronze_hoe": "Бронзовая мотыга",
@@ -6185,7 +5506,6 @@
       "item.creative_world.gas_bucket": "Газовое ведро",
       "item.creative_world.bedrockbreacker.description_0": "Уничтожте бедрок!",
       "key.creative_world.electricjetpackcontrol": "Управление электрическим реактивным ранцем",
-      "gui.creative_world.fgfhffhghkjkkytwqa.label_fe": "FE",
       "item.creative_world.bronze_pickaxe": "Бронзовая кирка",
       "item.creative_world.copper_shovel": "Медная лопата",
       "item.creative_world.tin_axe": "Оловянный топор",
@@ -6194,29 +5514,27 @@
       "item.creative_world.bronze_shovel": "Бронзовая лопата",
       "item_group.creative_world.creativeworlditems": "Creative world: предметы",
       "item.creative_world.accumulatium_hoe": "Аккумулятиумныая мотыга",
-      "item.creative_world.bronze_sword": "Бронзовый меч",
       "item.creative_world.titan_ingot": "Титановый слиток",
+      "item.creative_world.bronze_sword": "Бронзовый меч",
       "item.creative_world.latex": "Латекс",
       "item.creative_world.creativium_shovel": "Лопата для творчества",
-      "block.creative_world.coalgenerator": "Угольный генератор",
       "block.creative_world.advencedmachinecase": "Усовершенствованный корпус машины",
-      "item.creative_world.creativedrill": "Креативный бур",
       "item.creative_world.alargebucketofwater_9": "Большое ведро с водой",
+      "item.creative_world.creativedrill": "Креативный бур",
       "item.creative_world.copper_sword": "Медный меч",
       "item.creative_world.composite_plate_tool_hoe": "Композитная мотыга",
       "item.creative_world.electric_motor": "Электрический мотор",
       "block.creative_world.rsinlogwithresin": "Бревно из каучукового дерева с латексом",
-      "advancements.whatisit.descr": "craft sdfghn",
       "block.creative_world.resin_fence": "Забор из каучукового дерева",
       "item.creative_world.creativium_axe": "Топор Креативиума",
       "item.creative_world.composite_plate_armor_armor_boots": "Составные ботинки",
       "item.creative_world.tin_ingot": "Слиток олова",
       "item.creative_world.ironhammer": "Железный молоток",
       "item.creative_world.copper_armor_boots": "Медные сапоги",
-      "item.creative_world.advanceddrill": "Усовершенствованная дрель",
       "item.creative_world.copper_pickaxe": "Медная кирка",
-      "block.creative_world.crusher": "Дробилка",
+      "item.creative_world.advanceddrill": "Усовершенствованная дрель",
       "item.creative_world.alargebucket": "Большое ведро",
+      "advancements.my_final_drill.descr": "Craft drill",
       "itemGroup.tabcreativeworldtools": "Creative world: инструменты",
       "item.creative_world.tin_armor_chestplate": "Оловянный нагрудник",
       "item.creative_world.creativium_armor_boots": "Креативиумные ботинки",
@@ -6225,7 +5543,6 @@
       "gamerule.allowCheatItems": "Рзазрешить читерные предметы",
       "item.creative_world.a_large_bucket_of_fluid_9": "Большое ведро с жидкостью",
       "item.creative_world.creativereel.description_0": "§cdoes not work correctly (in development)",
-      "item.creative_world.particlebinder": "Связующее для частиц",
       "item.creative_world.rubber": "Резина",
       "block.creative_world.resin_planks": "Доски из каучукового дерева",
       "item.creative_world.creativium_sword": "Меч Креативиума",
@@ -6237,29 +5554,23 @@
       "item.creative_world.tin_armor_leggings": "Оловянные поножи",
       "item.creative_world.titan_shovel": "Титановая лопата",
       "item.creative_world.accumulatium_pickaxe": "Аккумулятиумная кирка",
+      "advancements.my_second_drill.title": "Мой второй бур",
       "item.creative_world.iron_mortar": "Железная ступка",
       "item.creative_world.tin_shovel": "Жестяная лопата",
       "item.creative_world.titan_axe": "Титановый топор",
       "block.creative_world.tin_block": "Оловянный блок",
-      "block.creative_world.quantumteleporterblock": "Блок квантового телепорта",
       "block.creative_world.oil": "Нефть",
-      "block.creative_world.batteryblock": "Батарейный блок",
       "itemGroup.tabcreativeworldblocks": "Творческий мир: блоки",
       "item.creative_world.composite_plate_armor_armor_helmet": "Композитный шлем",
-      "block.creative_world.crusher.description_0": "§eимеет незавершённый функционал (в разработке)",
       "item.creative_world.accumulatium_armor_chestplate": "Аккумулятиумные нагрудник",
       "block.creative_world.creativium_block": "Блок Креативиума",
-      "advancements.whatisit.title": "Что это?",
       "item.creative_world.rawtin": "Необработанное олово",
       "item.creative_world.titan_armor_helmet": "Шлем титана",
       "item.creative_world.rawtitan": "Сырой титан",
-      "block.creative_world.stationaryparticlebinder": "Стационарный превязыватель частиц",
       "item.creative_world.tin_armor_helmet": "Оловянный шлем",
       "advancements.creativeworld.descr": "Давайте начнем!",
-      "gui.creative_world.fgfhffhghkjkkytwqa.label_energy": "\u003cenergy\u003e",
       "item.creative_world.copper_axe": "Медный топор",
       "item.creative_world.bronze_armor_leggings": "Бронзовые поножи",
-      "gui.creative_world.fdgdf.tooltip_999999_fe": "999/999 fe",
       "item.creative_world.coppernugget": "Медный самородок",
       "advancements.core.descr": "?",
       "item.creative_world.ironplate": "Железная пластина",
@@ -6275,10 +5586,8 @@
       "item.creative_world.titan_armor_boots": "Титановые сапоги",
       "item.creative_world.compositeplate": "Композитная пластина",
       "item.creative_world.electricalcircuit": "Электрическая цепь",
-      "block.creative_world.quantumteleporterblock_2": "Блок квантового телепорта 2",
       "item.creative_world.bronze_ingot": "Бронза",
       "block.creative_world.bronze_block": "Блок из бронзы",
-      "block.creative_world.infinityenergy": "Бесконечная энергия",
       "item.creative_world.creativium_ingot": "Креативиумный слиток",
       "block.creative_world.resin_stairs": "Лестница из каучукового дерева",
       "item.creative_world.composite_plate_armor_armor_leggings": "Композитные поножи",
@@ -6289,8 +5598,6 @@
       "item.creative_world.advancedelectricjetpack_chestplate": "Усовершенствованный электрический реактивный ранец",
       "block.creative_world.resin_log": "Бревно каучукового дерева",
       "item.creative_world.oil_bucket": "Ведро для масла",
-      "block.creative_world.solarpanel.description_0": "§cdoes not work correctly (in development)",
-      "block.creative_world.advencedsolarpanel": "Усовершенствованная солнечная панель",
       "item.creative_world.creative_electric_motor": "Креативный электрический мотор",
       "advancements.core.title": "Ядро?",
       "item.creative_world.crushedironore": "Дробленая железная руда",
@@ -6305,28 +5612,25 @@
       "advancements.creativeworld.title": "Творческий мир",
       "item.creative_world.bronzedust": "Бронзовая пыль",
       "item.creative_world.copper_armor_helmet": "Медный шлем",
-      "block.creative_world.bug": "БАГ",
       "advancements.bedrock.title": "Бедрок?",
       "item.creative_world.titan_sword": "Титановый меч",
       "item.creative_world.creativemod.description_0": "§eимеет незавершённый функционал (в разработке)",
       "item.creative_world.creatingcore": "Ядро создания",
       "item.creative_world.titan_pickaxe": "Титановая кирка",
+      "advancements.my_second_drill.descr": "Создайте улучшенный бур",
       "advancements.my_first_drill.descr": "Создайте дрель",
       "item.creative_world.reel": "Катушка",
       "item.creative_world.tin_armor_boots": "Жестяные сапоги",
       "block.creative_world.tin_ore": "Оловянная руда",
-      "item.creative_world.endlesswatersource": "бесконечный источник воды",
-      "block.creative_world.advencedsolarpanel.description_0": "§cdoes not work correctly (in development)",
       "item.creative_world.tin_hoe": "Оловянная мотыга",
       "block.creative_world.copper_wire": "Медный провод",
       "item.creative_world.tin_sword": "Оловянный меч",
       "item.creative_world.creativium_hoe": "Мотыга для творчества",
       "item.creative_world.creativium_armor_helmet": "Креативиумный шлем",
+      "advancements.my_final_drill.title": "My First Drill",
       "item.creative_world.copper_armor_leggings": "Медные леггинсы",
-      "item.creative_world.endlesswatersource.description_0": "бесконечность/бесконечность мВ",
       "item.creative_world.electricjetpack_chestplate": "Электрический реактивный ранец",
       "itemGroup.tabcreativeworlditems": "Creative world: предметы",
-      "block.creative_world.batteryblock.description_0": "§eимеет незавершённый функционал (в разработке)",
       "item.creative_world.keycard": "Карточка-ключ",
       "item.creative_world.bronze_armor_helmet": "Бронзовый шлем",
       "itemGroup.tabcreativeworldcombat": "Creative world: бой",
@@ -6356,7 +5660,6 @@
       "item.creative_world.battrey_1": "Battrey 1",
       "item.creative_world.battrey_2": "Battrey 2",
       "item.creative_world.battrey_3": "Battrey 3",
-      "block.creative_world.solarpanel": "Solar panel",
       "item.creative_world.washedcrushedtinore": "Washed crushed tin ore",
       "item.creative_world.reel.description_0": "§cdoes not work correctly (in development)",
       "item.creative_world.battrey_0": "Battrey 0",
@@ -6369,7 +5672,6 @@
       "block.creative_world.accumulatium_ore": "Accumulatium Ore",
       "item.creative_world.bronzeplate": "Bronze plate",
       "item.creative_world.composite_plate_tool_sword": "Composite_plate_tool Sword",
-      "block.creative_world.nuclear_reactor": "Nuclear Reactor",
       "item.creative_world.thecoreofmatter": "The core of matter",
       "item.creative_world.creativium_pickaxe": "Creativium Pickaxe",
       "block.creative_world.accumulatium_block": "Block of Accumulatium",
@@ -6396,7 +5698,6 @@
       "item.creative_world.gas_bucket": "Gas Bucket",
       "item.creative_world.bedrockbreacker.description_0": "destroy bedrock",
       "key.creative_world.electricjetpackcontrol": "Electricjetpackcontrol",
-      "gui.creative_world.fgfhffhghkjkkytwqa.label_fe": "FE",
       "item.creative_world.bronze_pickaxe": "Bronze Pickaxe",
       "item.creative_world.copper_shovel": "Copper Shovel",
       "item.creative_world.tin_axe": "Tin Axe",
@@ -6410,7 +5711,6 @@
       "item.creative_world.bronze_sword": "Bronze Sword",
       "item.creative_world.latex": "Latex",
       "item.creative_world.creativium_shovel": "Creativium Shovel",
-      "block.creative_world.coalgenerator": "Coal generator",
       "block.creative_world.advencedmachinecase": "Advenced machine case",
       "item.creative_world.creativedrill": "Creative drill",
       "item.creative_world.alargebucketofwater_9": "A large bucket of water",
@@ -6418,7 +5718,6 @@
       "item.creative_world.composite_plate_tool_hoe": "Composite_plate_tool Hoe",
       "item.creative_world.electric_motor": "Electric Motor",
       "block.creative_world.rsinlogwithresin": "Rubber tree log with rubber",
-      "advancements.whatisit.descr": "craft the core of the formation",
       "block.creative_world.resin_fence": "Rubber tree fence",
       "item.creative_world.creativium_axe": "Creativium Axe",
       "item.creative_world.composite_plate_armor_armor_boots": "Composite_plate_armor Boots",
@@ -6427,8 +5726,8 @@
       "item.creative_world.copper_armor_boots": "Copper Boots",
       "item.creative_world.advanceddrill": "Advanced drill",
       "item.creative_world.copper_pickaxe": "Copper Pickaxe",
-      "block.creative_world.crusher": "Crusher",
       "item.creative_world.alargebucket": "A large bucket",
+      "advancements.my_final_drill.descr": "Craft drill",
       "itemGroup.tabcreativeworldtools": "Creative world: tools",
       "item.creative_world.tin_armor_chestplate": "Tin Chestplate",
       "item.creative_world.creativium_armor_boots": "Creativium Boots",
@@ -6437,7 +5736,6 @@
       "gamerule.allowCheatItems": "Allow cheat items",
       "item.creative_world.a_large_bucket_of_fluid_9": "A Large Bucket Of Fluid 9",
       "item.creative_world.creativereel.description_0": "§cdoes not work correctly (in development)",
-      "item.creative_world.particlebinder": "Particle binder",
       "item.creative_world.rubber": "Rubber",
       "block.creative_world.resin_planks": "Rubber tree planks",
       "item.creative_world.creativium_sword": "Creativium Sword",
@@ -6449,29 +5747,23 @@
       "item.creative_world.tin_armor_leggings": "Tin Leggings",
       "item.creative_world.titan_shovel": "Titan Shovel",
       "item.creative_world.accumulatium_pickaxe": "Accumulatium Pickaxe",
+      "advancements.my_second_drill.title": "My Second Drill",
       "item.creative_world.iron_mortar": "Iron Mortar",
       "item.creative_world.tin_shovel": "Tin Shovel",
       "item.creative_world.titan_axe": "Titan Axe",
       "block.creative_world.tin_block": "Block of Tin",
-      "block.creative_world.quantumteleporterblock": "Quantum teleporter block",
       "block.creative_world.oil": "Oil",
-      "block.creative_world.batteryblock": "Batteryblock",
       "itemGroup.tabcreativeworldblocks": "Creative world: blocks",
       "item.creative_world.composite_plate_armor_armor_helmet": "Composite_plate_armor Helmet",
-      "block.creative_world.crusher.description_0": "§ehas incomplete functionality (in development)",
       "item.creative_world.accumulatium_armor_chestplate": "Accumulatium Chestplate",
       "block.creative_world.creativium_block": "Block of Creativium",
-      "advancements.whatisit.title": "What is it?",
       "item.creative_world.rawtin": "Raw tin",
       "item.creative_world.titan_armor_helmet": "Titan Helmet",
       "item.creative_world.rawtitan": "Rawtitan",
-      "block.creative_world.stationaryparticlebinder": "Stationary partic lebinder",
       "item.creative_world.tin_armor_helmet": "Tin Helmet",
       "advancements.creativeworld.descr": "let\u0027s start",
-      "gui.creative_world.fgfhffhghkjkkytwqa.label_energy": "\u003cenergy\u003e",
       "item.creative_world.copper_axe": "Copper Axe",
       "item.creative_world.bronze_armor_leggings": "Bronze Leggings",
-      "gui.creative_world.fdgdf.tooltip_999999_fe": "999/999 fe",
       "item.creative_world.coppernugget": "Copper nugget",
       "advancements.core.descr": "?",
       "item.creative_world.ironplate": "Iron plate",
@@ -6487,10 +5779,8 @@
       "item.creative_world.titan_armor_boots": "Titan Boots",
       "item.creative_world.compositeplate": "Composite plate",
       "item.creative_world.electricalcircuit": "Electrical circuit",
-      "block.creative_world.quantumteleporterblock_2": "Quantum teleporter block 2",
       "item.creative_world.bronze_ingot": "Bronze",
       "block.creative_world.bronze_block": "Block of Bronze",
-      "block.creative_world.infinityenergy": "Infinity energy",
       "item.creative_world.creativium_ingot": "Creativium",
       "block.creative_world.resin_stairs": "Rubber tree stairs",
       "item.creative_world.composite_plate_armor_armor_leggings": "Composite_plate_armor Leggings",
@@ -6501,8 +5791,6 @@
       "item.creative_world.advancedelectricjetpack_chestplate": "Advancedelectricjetpack Кираса",
       "block.creative_world.resin_log": "Rubber tree log",
       "item.creative_world.oil_bucket": "Oil Bucket",
-      "block.creative_world.solarpanel.description_0": "§cdoes not work correctly (in development)",
-      "block.creative_world.advencedsolarpanel": "Advencedsolarpanel",
       "item.creative_world.creative_electric_motor": "Creative Electric Motor",
       "advancements.core.title": "Core?",
       "item.creative_world.crushedironore": "Crushed iron ore",
@@ -6517,28 +5805,25 @@
       "advancements.creativeworld.title": "Creative world",
       "item.creative_world.bronzedust": "Bronz edust",
       "item.creative_world.copper_armor_helmet": "Copper Helmet",
-      "block.creative_world.bug": "BUG",
       "advancements.bedrock.title": "Bedrock?",
       "item.creative_world.titan_sword": "Titan Sword",
       "item.creative_world.creativemod.description_0": "§ehas incomplete functionality (in development)",
       "item.creative_world.creatingcore": "Creating core",
       "item.creative_world.titan_pickaxe": "Titan Pickaxe",
+      "advancements.my_second_drill.descr": "Craft drill",
       "advancements.my_first_drill.descr": "Craft drill",
       "item.creative_world.reel": "Reel",
       "item.creative_world.tin_armor_boots": "Tin Boots",
       "block.creative_world.tin_ore": "Tin Ore",
-      "item.creative_world.endlesswatersource": "endless water source",
-      "block.creative_world.advencedsolarpanel.description_0": "§cdoes not work correctly (in development)",
       "item.creative_world.tin_hoe": "Tin Hoe",
       "block.creative_world.copper_wire": "Copper Wire",
       "item.creative_world.tin_sword": "Tin Sword",
       "item.creative_world.creativium_hoe": "Creativium Hoe",
       "item.creative_world.creativium_armor_helmet": "Creativium Helmet",
+      "advancements.my_final_drill.title": "My Final Drill",
       "item.creative_world.copper_armor_leggings": "Copper Leggings",
-      "item.creative_world.endlesswatersource.description_0": "infinity/infinity mb",
       "item.creative_world.electricjetpack_chestplate": "Electric jetpack",
       "itemGroup.tabcreativeworlditems": "Creative world: items",
-      "block.creative_world.batteryblock.description_0": "§ehas incomplete functionality (in development)",
       "item.creative_world.keycard": "Key card",
       "item.creative_world.bronze_armor_helmet": "Bronze Helmet",
       "itemGroup.tabcreativeworldcombat": "Creative world: combat",
@@ -6556,10 +5841,6 @@
   "foldersRoot": {
     "name": "~",
     "children": [
-      {
-        "name": "Legacy",
-        "children": []
-      },
       {
         "name": "Creative tabs",
         "children": []
@@ -6607,27 +5888,6 @@
         "name": "Blocks",
         "children": [
           {
-            "name": "Ores",
-            "children": [
-              {
-                "name": "RawOres",
-                "children": []
-              },
-              {
-                "name": "Washed crushed ores",
-                "children": []
-              },
-              {
-                "name": "Washing of crushed ores",
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "Covers",
-            "children": []
-          },
-          {
             "name": "Mechanisms",
             "children": []
           },
@@ -6638,6 +5898,36 @@
           {
             "name": "ResinTree",
             "children": []
+          },
+          {
+            "name": "Features",
+            "children": []
+          },
+          {
+            "name": "MaterialBlocks",
+            "children": [
+              {
+                "name": "Ores",
+                "children": [
+                  {
+                    "name": "RawOres",
+                    "children": []
+                  },
+                  {
+                    "name": "Washed crushed ores",
+                    "children": []
+                  },
+                  {
+                    "name": "Washing of crushed ores",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Fluids",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -6693,11 +5983,27 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Covers",
+            "children": []
           }
         ]
       },
       {
         "name": "Gamerules",
+        "children": []
+      },
+      {
+        "name": "GUIs",
+        "children": []
+      },
+      {
+        "name": "Trades",
+        "children": []
+      },
+      {
+        "name": "Overlays",
         "children": []
       }
     ]
@@ -6705,8 +6011,8 @@
   "workspaceSettings": {
     "modid": "creative_world",
     "modName": "Creative world",
-    "version": "1.0.1_beta",
-    "description": "This is Beta!",
+    "version": "2.0.0_alpha",
+    "description": "This is Alpha!",
     "author": "300f20t, MCreator.",
     "websiteURL": "https://mcreator.net",
     "license": "MIT License",
@@ -6722,5 +6028,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.creativeworld"
   },
-  "mcreatorVersion": 202400452410
+  "mcreatorVersion": 202500113416
 }

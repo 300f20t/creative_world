@@ -17,11 +17,11 @@
       "item": "creative_world:electricalcircuit"
     },
     "d": {
-      "item": "creative_world:coalgenerator"
+      "item": "creative_world:deleted_mod_element"
     }
   },
   "result": {
-    "id": "creative_world:solarpanel",
+    "id": "creative_world:deleted_mod_element",
     "count": 1
   }
 }

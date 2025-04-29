@@ -17,31 +17,32 @@ public class EnergydetectorKoghdaNazhataPKMPoBlokuProcedure {
 		if (direction == null || entity == null)
 			return;
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(((new Object() {
-				public int getEnergyStored(LevelAccessor level, BlockPos pos) {
-					if (level instanceof ILevelExtension _ext) {
-						IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
-						if (_entityStorage != null)
-							return _entityStorage.getEnergyStored();
-					}
-					return 0;
-				}
-			}.getEnergyStored(world, BlockPos.containing(x, y, z))) + "/" + (new Object() {
-				public int getMaxEnergyStored(LevelAccessor level, BlockPos pos) {
-					if (level instanceof ILevelExtension _ext) {
-						IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
-						if (_entityStorage != null)
-							return _entityStorage.getMaxEnergyStored();
-					}
-					return 0;
-				}
-			}.getMaxEnergyStored(world, BlockPos.containing(x, y, z))) + " energy at " + direction + " fuel " + (new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "FuelPower")))), true);
+			_player.displayClientMessage(Component.literal((getEnergyStored(world, BlockPos.containing(x, y, z), direction) + "/" + getMaxEnergyStored(world, BlockPos.containing(x, y, z), direction) + " energy at " + direction + " fuel "
+					+ getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelPower"))), true);
+	}
+
+	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {
+		if (level instanceof ILevelExtension levelExtension) {
+			IEnergyStorage energyStorage = levelExtension.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
+			if (energyStorage != null)
+				return energyStorage.getEnergyStored();
+		}
+		return 0;
+	}
+
+	public static int getMaxEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {
+		if (level instanceof ILevelExtension levelExtension) {
+			IEnergyStorage energyStorage = levelExtension.getCapability(Capabilities.EnergyStorage.BLOCK, pos, direction);
+			if (energyStorage != null)
+				return energyStorage.getMaxEnergyStored();
+		}
+		return 0;
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

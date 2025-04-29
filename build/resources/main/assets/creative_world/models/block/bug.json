@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "creative_world:block/cxcvbvfv",
-    "particle": "creative_world:block/cxcvbvfv"
-  },
-  "render_type": "solid"
-}

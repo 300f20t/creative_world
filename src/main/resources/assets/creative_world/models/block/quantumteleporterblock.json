@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "creative_world:block/quantum_teleporter_block_1",
-    "particle": "creative_world:block/quantum_teleporter_block_1"
-  },
-  "render_type": "solid"
-}

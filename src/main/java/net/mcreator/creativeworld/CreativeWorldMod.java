@@ -22,12 +22,10 @@ import net.mcreator.creativeworld.world.features.StructureFeature;
 import net.mcreator.creativeworld.network.CreativeWorldModVariables;
 import net.mcreator.creativeworld.init.CreativeWorldModTabs;
 import net.mcreator.creativeworld.init.CreativeWorldModSounds;
-import net.mcreator.creativeworld.init.CreativeWorldModMenus;
 import net.mcreator.creativeworld.init.CreativeWorldModItems;
 import net.mcreator.creativeworld.init.CreativeWorldModFluids;
 import net.mcreator.creativeworld.init.CreativeWorldModFluidTypes;
 import net.mcreator.creativeworld.init.CreativeWorldModBlocks;
-import net.mcreator.creativeworld.init.CreativeWorldModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -48,15 +46,13 @@ public class CreativeWorldMod {
 		modEventBus.addListener(this::registerNetworking);
 		CreativeWorldModSounds.REGISTRY.register(modEventBus);
 		CreativeWorldModBlocks.REGISTRY.register(modEventBus);
-		CreativeWorldModBlockEntities.REGISTRY.register(modEventBus);
+
 		CreativeWorldModItems.REGISTRY.register(modEventBus);
 
 		CreativeWorldModTabs.REGISTRY.register(modEventBus);
 		CreativeWorldModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
 		StructureFeature.REGISTRY.register(modEventBus);
-
-		CreativeWorldModMenus.REGISTRY.register(modEventBus);
 
 		CreativeWorldModFluids.REGISTRY.register(modEventBus);
 		CreativeWorldModFluidTypes.REGISTRY.register(modEventBus);

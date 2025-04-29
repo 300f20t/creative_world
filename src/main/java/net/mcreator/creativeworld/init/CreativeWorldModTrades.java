@@ -18,7 +18,10 @@ public class CreativeWorldModTrades {
 	@SubscribeEvent
 	public static void registerTrades(VillagerTradesEvent event) {
 		if (event.getType() == VillagerProfession.LEATHERWORKER) {
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD), new ItemStack(CreativeWorldModItems.RUBBER.get(), 5), 10, 5, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD), new ItemStack(CreativeWorldModItems.RUBBER.get(), 2), 10, 5, 0.05f));
+		}
+		if (event.getType() == VillagerProfession.TOOLSMITH) {
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(CreativeWorldModItems.CREATIVIUM_INGOT.get()), new ItemStack(Items.EMERALD, 64), 10, 5, 0.05f));
 		}
 	}
 }

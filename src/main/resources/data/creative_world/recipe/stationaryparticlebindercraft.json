@@ -14,11 +14,11 @@
       "item": "creative_world:accumulatiumnugget"
     },
     "c": {
-      "item": "creative_world:particlebinder"
+      "item": "creative_world:deleted_mod_element"
     }
   },
   "result": {
-    "id": "creative_world:stationaryparticlebinder",
+    "id": "creative_world:deleted_mod_element",
     "count": 1
   }
 }
