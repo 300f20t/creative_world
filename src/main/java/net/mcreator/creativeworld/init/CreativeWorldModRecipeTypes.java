@@ -12,9 +12,8 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.creativeworld.jei_recipes.CrushingRecipe;
-import net.mcreator.creativeworld.CreativeWorldMod;
 
-@EventBusSubscriber(modid = CreativeWorldMod.MODID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class CreativeWorldModRecipeTypes {
 	public static final DeferredRegister<RecipeType<?>> RECIPE_TYPES = DeferredRegister.create(BuiltInRegistries.RECIPE_TYPE, "creative_world");
 	public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS = DeferredRegister.create(BuiltInRegistries.RECIPE_SERIALIZER, "creative_world");

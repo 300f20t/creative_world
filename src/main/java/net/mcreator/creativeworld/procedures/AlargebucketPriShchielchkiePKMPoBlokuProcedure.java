@@ -84,9 +84,9 @@ public class AlargebucketPriShchielchkiePKMPoBlokuProcedure {
 			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("mb") != 0) {
 				if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("mb") >= 10000) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get()).copy();
-						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+						ItemStack _setstack57 = new ItemStack(CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get()).copy();
+						_setstack57.setCount(1);
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack57);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
@@ -99,9 +99,9 @@ public class AlargebucketPriShchielchkiePKMPoBlokuProcedure {
 				if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("mb") == 9000
 						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.ALARGEBUCKETOFWATER_9.get()) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CreativeWorldModItems.ALARGEBUCKET.get()).copy();
-						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+						ItemStack _setstack64 = new ItemStack(CreativeWorldModItems.ALARGEBUCKET.get()).copy();
+						_setstack64.setCount(1);
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack64);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
@@ -126,9 +126,9 @@ public class AlargebucketPriShchielchkiePKMPoBlokuProcedure {
 			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("mb") != 0) {
 				if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("mb") >= 10000) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CreativeWorldModItems.A_LARGE_BUCKET_OF_FLUID_9.get()).copy();
-						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+						ItemStack _setstack79 = new ItemStack(CreativeWorldModItems.A_LARGE_BUCKET_OF_FLUID_9.get()).copy();
+						_setstack79.setCount(1);
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack79);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
@@ -141,9 +141,9 @@ public class AlargebucketPriShchielchkiePKMPoBlokuProcedure {
 				if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("mb") == 9000
 						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CreativeWorldModItems.A_LARGE_BUCKET_OF_FLUID_9.get()) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CreativeWorldModItems.ALARGEBUCKET.get()).copy();
-						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+						ItemStack _setstack86 = new ItemStack(CreativeWorldModItems.ALARGEBUCKET.get()).copy();
+						_setstack86.setCount(1);
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack86);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}

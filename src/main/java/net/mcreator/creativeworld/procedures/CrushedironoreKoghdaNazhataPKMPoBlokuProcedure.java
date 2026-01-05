@@ -34,9 +34,9 @@ public class CrushedironoreKoghdaNazhataPKMPoBlokuProcedure {
 					.createLegacyBlock()).getBlock() == Blocks.WATER) {
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = new ItemStack(CreativeWorldModItems.CRUSHEDIRONORE.get()).copy();
-						_setstack.setCount((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1));
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+						ItemStack _setstack11 = new ItemStack(CreativeWorldModItems.CRUSHEDIRONORE.get()).copy();
+						_setstack11.setCount((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() - 1);
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack11);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}

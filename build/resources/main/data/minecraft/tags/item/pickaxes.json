@@ -1,21 +1,21 @@
 {
   "replace": false,
   "values": [
-    "creative_world:iron_mortar",
-    "creative_world:creativedrill",
-    "creative_world:advanceddrill",
-    "creative_world:drill",
-    "creative_world:composite_plate_tool_pickaxe",
-    "creative_world:titan_pickaxe",
-    "creative_world:accumulatium_pickaxe",
     "creative_world:creativium_pickaxe",
     "creative_world:bronze_pickaxe",
-    "creative_world:tap",
+    "creative_world:ironwrench",
+    "creative_world:drill",
+    "creative_world:iron_mortar",
     "creative_world:bedrockbreacker",
+    "creative_world:titan_pickaxe",
     "creative_world:wirecutters",
     "creative_world:copper_pickaxe",
-    "creative_world:tin_pickaxe",
     "creative_world:ironhammer",
-    "creative_world:ironwrench"
+    "creative_world:composite_plate_tool_pickaxe",
+    "creative_world:accumulatium_pickaxe",
+    "creative_world:tin_pickaxe",
+    "creative_world:creativedrill",
+    "creative_world:advanceddrill",
+    "creative_world:tap"
   ]
 }

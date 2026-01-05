@@ -6,21 +6,24 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeInput;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.HolderLookup;
 
+import java.util.List;
+
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.DataResult;
 
 public class CrushingRecipe implements Recipe<RecipeInput> {
-	private final ItemStack output;
+	private final List<ItemStack> output;
 	private final NonNullList<Ingredient> recipeItems;
 
-	public CrushingRecipe(ItemStack output, NonNullList<Ingredient> recipeItems) {
+	public CrushingRecipe(List<ItemStack> output, NonNullList<Ingredient> recipeItems) {
 		this.output = output;
 		this.recipeItems = recipeItems;
 	}
@@ -40,7 +43,7 @@ public class CrushingRecipe implements Recipe<RecipeInput> {
 
 	@Override
 	public ItemStack assemble(RecipeInput input, HolderLookup.Provider holder) {
-		return output;
+		return ItemStack.EMPTY;
 	}
 
 	@Override
@@ -50,7 +53,11 @@ public class CrushingRecipe implements Recipe<RecipeInput> {
 
 	@Override
 	public ItemStack getResultItem(HolderLookup.Provider provider) {
-		return output.copy();
+		return ItemStack.EMPTY;
+	}
+
+	public List<ItemStack> getResultItems() {
+		return output;
 	}
 
 	@Override
@@ -73,7 +80,7 @@ public class CrushingRecipe implements Recipe<RecipeInput> {
 	public static class Serializer implements RecipeSerializer<CrushingRecipe> {
 		public static final Serializer INSTANCE = new Serializer();
 		private static final MapCodec<CrushingRecipe> CODEC = RecordCodecBuilder
-				.mapCodec(builder -> builder.group(ItemStack.STRICT_CODEC.fieldOf("output").forGetter(recipe -> recipe.output), Ingredient.CODEC_NONEMPTY.listOf().fieldOf("ingredients").flatXmap(ingredients -> {
+				.mapCodec(builder -> builder.group(ItemStack.OPTIONAL_CODEC.listOf().fieldOf("outputs").forGetter(recipe -> recipe.output), Ingredient.CODEC_NONEMPTY.listOf().fieldOf("ingredients").flatXmap(ingredients -> {
 					Ingredient[] aingredient = ingredients.toArray(Ingredient[]::new); // Skip the empty check and create the array.
 					if (aingredient.length == 0) {
 						return DataResult.error(() -> "No ingredients found in custom recipe");
@@ -96,15 +103,23 @@ public class CrushingRecipe implements Recipe<RecipeInput> {
 		private static CrushingRecipe fromNetwork(RegistryFriendlyByteBuf buf) {
 			NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readVarInt(), Ingredient.EMPTY);
 			inputs.replaceAll(ingredients -> Ingredient.CONTENTS_STREAM_CODEC.decode(buf));
-			return new CrushingRecipe(ItemStack.STREAM_CODEC.decode(buf), inputs);
+			List<ItemStack> outputs = NonNullList.withSize(buf.readVarInt(), ItemStack.EMPTY);
+			outputs.replaceAll(results -> ItemStack.STREAM_CODEC.decode(buf));
+			return new CrushingRecipe(outputs, inputs);
 		}
 
 		private static void toNetwork(RegistryFriendlyByteBuf buf, CrushingRecipe recipe) {
 			buf.writeVarInt(recipe.getIngredients().size());
 			for (Ingredient ing : recipe.getIngredients()) {
-				Ingredient.CONTENTS_STREAM_CODEC.encode(buf, ing);
+				if (ing.getItems()[0].getItem() == Items.AIR)
+					Ingredient.CONTENTS_STREAM_CODEC.encode(buf, Ingredient.EMPTY);
+				else
+					Ingredient.CONTENTS_STREAM_CODEC.encode(buf, ing);
 			}
-			ItemStack.STREAM_CODEC.encode(buf, recipe.getResultItem(null));
+			buf.writeVarInt(recipe.getResultItems().size());
+			for (ItemStack itemstack : recipe.getResultItems()) {
+				ItemStack.STREAM_CODEC.encode(buf, itemstack);
+			}
 		}
 	}
 }

@@ -5,8 +5,10 @@
       "item": "minecraft:raw_iron"
     }
   ],
-  "output": {
-    "id": "creative_world:crushedironore",
-    "count": 2
-  }
+  "outputs": [
+    {
+      "id": "creative_world:crushedironore",
+      "count": 2
+    }
+  ]
 }

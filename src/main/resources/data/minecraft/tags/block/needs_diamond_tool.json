@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "creative_world:titan_block",
-    "creative_world:titan_ore",
-    "creative_world:accumulatium_block",
-    "creative_world:accumulatium_ore",
     "creative_world:creativium_block",
-    "creative_world:creativium_ore"
+    "creative_world:titan_ore",
+    "creative_world:creativium_ore",
+    "creative_world:accumulatium_ore",
+    "creative_world:accumulatium_block",
+    "creative_world:titan_block"
   ]
 }

@@ -17,7 +17,7 @@ import net.mcreator.creativeworld.CreativeWorldMod;
 
 public class ResintreesaplingPriDobavlieniiRastieniiaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		CreativeWorldMod.queueServerWork((int) (Mth.nextInt(RandomSource.create(), 50, 200) * 20), () -> {
+		CreativeWorldMod.queueServerWork(Mth.nextInt(RandomSource.create(), 50, 200) * 20, () -> {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CreativeWorldModBlocks.RESINTREESAPLING.get()) {
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (1 == Mth.nextInt(RandomSource.create(), 1, 2)) {

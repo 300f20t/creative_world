@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -13,6 +12,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.creativeworld.procedures.RtyuklProcedure;
@@ -21,12 +22,17 @@ import java.util.List;
 
 public class CreativemodItem extends Item {
 	public CreativemodItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC));
+		super(new Item.Properties().rarity(Rarity.EPIC));
 	}
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
 		return UseAnim.EAT;
+	}
+
+	@Override
+	public SoundEvent getEatingSound() {
+		return SoundEvents.EMPTY;
 	}
 
 	@Override

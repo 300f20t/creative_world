@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.client.screens;
 
 import org.checkerframework.checker.units.qual.h;
@@ -23,7 +22,7 @@ import net.mcreator.creativeworld.procedures.DrillKazhdyiTikVRukieProcedure;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
 
-@EventBusSubscriber({Dist.CLIENT})
+@EventBusSubscriber(Dist.CLIENT)
 public class DrillInHandOverlay {
 	@SubscribeEvent(priority = EventPriority.NORMAL)
 	public static void eventHandler(RenderGuiEvent.Pre event) {

@@ -2,13 +2,13 @@
   "replace": false,
   "values": [
     "creative_world:composite_plate_armor_armor_chestplate",
-    "creative_world:titan_armor_chestplate",
-    "creative_world:accumulatium_armor_chestplate",
-    "creative_world:creativium_armor_chestplate",
+    "creative_world:copper_armor_chestplate",
     "creative_world:advancedelectricjetpack_chestplate",
+    "creative_world:creativium_armor_chestplate",
     "creative_world:bronze_armor_chestplate",
     "creative_world:electricjetpack_chestplate",
-    "creative_world:copper_armor_chestplate",
+    "creative_world:accumulatium_armor_chestplate",
+    "creative_world:titan_armor_chestplate",
     "creative_world:tin_armor_chestplate"
   ]
 }

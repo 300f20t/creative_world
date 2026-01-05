@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.fluid.types;
 
 import net.neoforged.neoforge.fluids.FluidType;
@@ -13,7 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.creativeworld.init.CreativeWorldModFluidTypes;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class GasFluidType extends FluidType {
 	public GasFluidType() {
 		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(0.007D).density(100).viscosity(53).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)

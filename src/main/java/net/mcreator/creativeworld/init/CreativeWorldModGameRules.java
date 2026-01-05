@@ -1,4 +1,3 @@
-
 /*
  *	MCreator note: This file will be REGENERATED on each build.
  */
@@ -10,7 +9,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.GameRules;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class CreativeWorldModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> ALLOWCREATIVEMODE;
 	public static GameRules.Key<GameRules.BooleanValue> ALLOW_CHEAT_ITEMS;

@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.item;
 
 import net.neoforged.neoforge.registries.RegisterEvent;
@@ -22,7 +21,7 @@ import net.mcreator.creativeworld.init.CreativeWorldModItems;
 import java.util.List;
 import java.util.EnumMap;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public abstract class CreativiumArmorItem extends ArmorItem {
 	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 

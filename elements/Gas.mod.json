@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "fluid",
   "definition": {
     "name": "Gas",
@@ -41,6 +41,7 @@
     "lightOpacity": 0,
     "emissiveRendering": false,
     "tickRate": 10,
+    "ignitedByLava": false,
     "flammability": 50,
     "fireSpreadSpeed": 50,
     "colorOnMap": "DEFAULT"

@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.block;
 
 import net.minecraft.world.level.material.FluidState;
@@ -16,7 +15,7 @@ import net.mcreator.creativeworld.procedures.ResinLeavesPriRazrushieniiBlokaIghr
 
 public class ResinLeavesBlock extends LeavesBlock {
 	public ResinLeavesBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(0.2f).noOcclusion().ignitedByLava().isSuffocating((bs, br, bp) -> false).isViewBlocking((bs, br, bp) -> false));
 	}
 
 	@Override

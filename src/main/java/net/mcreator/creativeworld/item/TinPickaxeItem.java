@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.item;
 
 import net.minecraft.world.level.block.Block;

@@ -4,6 +4,8 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.neoforge.event.tick.LevelTickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.common.util.INBTSerializable;
 import net.neoforged.neoforge.attachment.AttachmentType;
@@ -15,7 +17,6 @@ import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -30,17 +31,16 @@ import net.minecraft.core.HolderLookup;
 import net.mcreator.creativeworld.CreativeWorldMod;
 
 import java.util.function.Supplier;
-import java.util.List;
 import java.util.ArrayList;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class CreativeWorldModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, CreativeWorldMod.MODID);
 	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
-	public static List<Object> itemsInCrusherOutput = new ArrayList<>();
-	public static List<Object> crusherPositionX = new ArrayList<>();
-	public static List<Object> crusherPositionY = new ArrayList<>();
-	public static List<Object> crusherPositionZ = new ArrayList<>();
+	public static ArrayList<Object> itemsInCrusherOutput = new ArrayList<>();
+	public static ArrayList<Object> crusherPositionX = new ArrayList<>();
+	public static ArrayList<Object> crusherPositionY = new ArrayList<>();
+	public static ArrayList<Object> crusherPositionZ = new ArrayList<>();
 	public static double worldIndex = 0;
 
 	@SubscribeEvent
@@ -49,68 +49,90 @@ public class CreativeWorldModVariables {
 		CreativeWorldMod.addNetworkMessage(PlayerVariablesSyncMessage.TYPE, PlayerVariablesSyncMessage.STREAM_CODEC, PlayerVariablesSyncMessage::handleData);
 	}
 
-	@EventBusSubscriber
-	public static class EventBusVariableHandlers {
-		@SubscribeEvent
-		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void clonePlayer(PlayerEvent.Clone event) {
-			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
-			PlayerVariables clone = new PlayerVariables();
-			clone.QT_1 = original.QT_1;
-			clone.QT_2 = original.QT_2;
-			clone.first_QT_ID_x = original.first_QT_ID_x;
-			clone.seckond_QT_ID_x = original.seckond_QT_ID_x;
-			clone.first_QT_ID_y = original.first_QT_ID_y;
-			clone.seckond_QT_ID_y = original.seckond_QT_ID_y;
-			clone.first_QT_ID_z = original.first_QT_ID_z;
-			clone.seckond_QT_ID_z = original.seckond_QT_ID_z;
-			clone.drillMode = original.drillMode;
-			if (!event.isWasDeath()) {
+	@SubscribeEvent
+	public static void onPlayerTickUpdateSyncPlayerVariables(PlayerTickEvent.Post event) {
+		if (event.getEntity() instanceof ServerPlayer player && player.getData(PLAYER_VARIABLES)._syncDirty) {
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+			player.getData(PLAYER_VARIABLES)._syncDirty = false;
+		}
+	}
+
+	@SubscribeEvent
+	public static void clonePlayer(PlayerEvent.Clone event) {
+		PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
+		PlayerVariables clone = new PlayerVariables();
+		clone.QT_1 = original.QT_1;
+		clone.QT_2 = original.QT_2;
+		clone.first_QT_ID_x = original.first_QT_ID_x;
+		clone.seckond_QT_ID_x = original.seckond_QT_ID_x;
+		clone.first_QT_ID_y = original.first_QT_ID_y;
+		clone.seckond_QT_ID_y = original.seckond_QT_ID_y;
+		clone.first_QT_ID_z = original.first_QT_ID_z;
+		clone.seckond_QT_ID_z = original.seckond_QT_ID_z;
+		clone.drillMode = original.drillMode;
+		if (!event.isWasDeath()) {
+		}
+		event.getEntity().setData(PLAYER_VARIABLES, clone);
+	}
+
+	@SubscribeEvent
+	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player) {
+			SavedData mapdata = MapVariables.get(event.getEntity().level());
+			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			if (mapdata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
+			if (worlddata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+		}
+	}
+
+	@SubscribeEvent
+	public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player) {
+			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			if (worlddata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+		}
+	}
+
+	@SubscribeEvent
+	public static void onWorldTick(LevelTickEvent.Post event) {
+		if (event.getLevel() instanceof ServerLevel level) {
+			WorldVariables worldVariables = WorldVariables.get(level);
+			if (worldVariables._syncDirty) {
+				PacketDistributor.sendToPlayersInDimension(level, new SavedDataSyncMessage(1, worldVariables));
+				worldVariables._syncDirty = false;
 			}
-			event.getEntity().setData(PLAYER_VARIABLES, clone);
-		}
-
-		@SubscribeEvent
-		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player) {
-				SavedData mapdata = MapVariables.get(event.getEntity().level());
-				SavedData worlddata = WorldVariables.get(event.getEntity().level());
-				if (mapdata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
-				if (worlddata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
-			}
-		}
-
-		@SubscribeEvent
-		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player) {
-				SavedData worlddata = WorldVariables.get(event.getEntity().level());
-				if (worlddata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+			MapVariables mapVariables = MapVariables.get(level);
+			if (mapVariables._syncDirty) {
+				PacketDistributor.sendToAllPlayers(new SavedDataSyncMessage(0, mapVariables));
+				mapVariables._syncDirty = false;
 			}
 		}
 	}
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "creative_world_worldvars";
+		boolean _syncDirty = false;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -126,10 +148,9 @@ public class CreativeWorldModVariables {
 			return nbt;
 		}
 
-		public void syncData(LevelAccessor world) {
+		public void markSyncDirty() {
 			this.setDirty();
-			if (world instanceof ServerLevel level)
-				PacketDistributor.sendToPlayersInDimension(level, new SavedDataSyncMessage(1, this));
+			this._syncDirty = true;
 		}
 
 		static WorldVariables clientSide = new WorldVariables();
@@ -145,6 +166,7 @@ public class CreativeWorldModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "creative_world_mapvars";
+		boolean _syncDirty = false;
 		public double crusherIndex = 0.0;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
@@ -163,10 +185,9 @@ public class CreativeWorldModVariables {
 			return nbt;
 		}
 
-		public void syncData(LevelAccessor world) {
+		public void markSyncDirty() {
 			this.setDirty();
-			if (world instanceof Level && !world.isClientSide())
-				PacketDistributor.sendToAllPlayers(new SavedDataSyncMessage(0, this));
+			_syncDirty = true;
 		}
 
 		static MapVariables clientSide = new MapVariables();
@@ -221,6 +242,7 @@ public class CreativeWorldModVariables {
 	}
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
+		boolean _syncDirty = false;
 		public boolean QT_1 = false;
 		public boolean QT_2 = false;
 		public double first_QT_ID_x = 0;
@@ -259,9 +281,8 @@ public class CreativeWorldModVariables {
 			drillMode = nbt.getDouble("drillMode");
 		}
 
-		public void syncPlayerVariables(Entity entity) {
-			if (entity instanceof ServerPlayer serverPlayer)
-				PacketDistributor.sendToPlayer(serverPlayer, new PlayerVariablesSyncMessage(this));
+		public void markSyncDirty() {
+			_syncDirty = true;
 		}
 	}
 

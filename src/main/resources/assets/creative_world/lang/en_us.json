@@ -189,5 +189,7 @@
   "fluid.creative_world.oil": "Oil",
   "item.creative_world.accumulatium_armor_boots": "Accumulatium Boots",
   "item.creative_world.drill": "Drill",
-  "item.creative_world.composite_plate_tool_axe": "Composite_plate_tool Axe"
+  "item.creative_world.composite_plate_tool_axe": "Composite_plate_tool Axe",
+  "fluid_type.creative_world.oil": "Oil",
+  "fluid_type.creative_world.gas": "Gas"
 }

@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "creative_world:composite_plate_armor_armor_leggings",
-    "creative_world:titan_armor_leggings",
-    "creative_world:accumulatium_armor_leggings",
-    "creative_world:creativium_armor_leggings",
     "creative_world:bronze_armor_leggings",
+    "creative_world:composite_plate_armor_armor_leggings",
     "creative_world:copper_armor_leggings",
-    "creative_world:tin_armor_leggings"
+    "creative_world:titan_armor_leggings",
+    "creative_world:tin_armor_leggings",
+    "creative_world:accumulatium_armor_leggings",
+    "creative_world:creativium_armor_leggings"
   ]
 }

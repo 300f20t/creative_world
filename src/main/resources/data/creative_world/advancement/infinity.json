@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "creative_world:endlesswatersource"
+      "id": "creative_world:deleted_mod_element"
     },
     "title": {
       "translate": "advancements.infinity.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "creative_world:endlesswatersource"
+              "creative_world:deleted_mod_element"
             ],
             "count": {
               "min": 1,

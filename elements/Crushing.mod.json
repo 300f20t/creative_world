@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "jeirecipetype",
   "definition": {
     "textureSelector": "crushing.png",
@@ -14,6 +14,9 @@
       }
     ],
     "enableCraftingtable": true,
+    "enableIntList": false,
+    "enableStringList": false,
+    "disableJeiBorder": false,
     "title": "Crushing",
     "slotList": [
       {
@@ -28,6 +31,14 @@
         "y": 35,
         "slotid": 0
       }
-    ]
+    ],
+    "components": [],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
   }
 }

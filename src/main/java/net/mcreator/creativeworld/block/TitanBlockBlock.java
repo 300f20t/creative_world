@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.block;
 
 import net.minecraft.world.level.block.state.BlockState;

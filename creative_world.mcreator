@@ -5346,9 +5346,7 @@
       "~CUSTOM:CopperHoe",
       "~CUSTOM:TinHoe"
     ],
-    "BLOCKS:minecraft:fences": [
-      "~CUSTOM:ResinFence"
-    ],
+    "BLOCKS:minecraft:fences": [],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Creativedrill",
       "~CUSTOM:Advanceddrill",
@@ -5448,6 +5446,9 @@
       "~CUSTOM:BronzeArmor.legs",
       "~CUSTOM:CopperArmor.legs",
       "~CUSTOM:TinArmor.legs"
+    ],
+    "BLOCKS:minecraft:wooden_fences": [
+      "~CUSTOM:ResinFence"
     ]
   },
   "tab_element_order": {},
@@ -5642,7 +5643,9 @@
       "fluid.creative_world.oil": "Нефть",
       "item.creative_world.accumulatium_armor_boots": "Аккумулятиумные ботинки",
       "item.creative_world.drill": "Дрель",
-      "item.creative_world.composite_plate_tool_axe": "Композитный топор"
+      "item.creative_world.composite_plate_tool_axe": "Композитный топор",
+      "fluid_type.creative_world.oil": "Oil",
+      "fluid_type.creative_world.gas": "Gas"
     },
     "en_us": {
       "item.creative_world.creativiumnugget": "Creativium nugget",
@@ -5835,8 +5838,47 @@
       "fluid.creative_world.oil": "Oil",
       "item.creative_world.accumulatium_armor_boots": "Accumulatium Boots",
       "item.creative_world.drill": "Drill",
-      "item.creative_world.composite_plate_tool_axe": "Composite_plate_tool Axe"
+      "item.creative_world.composite_plate_tool_axe": "Composite_plate_tool Axe",
+      "fluid_type.creative_world.oil": "Oil",
+      "fluid_type.creative_world.gas": "Gas"
     }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/data/creative_world/tags/item/jei_empty_tag.json",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModRecipeTypes.java",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModJeiPlugin.java",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModFluids.java",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModFluidTypes.java",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModGameRules.java",
+      "src/main/java/net/mcreator/creativeworld/world/features/configurations/StructureFeatureConfiguration.java",
+      "src/main/java/net/mcreator/creativeworld/world/features/StructureFeature.java",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModKeyMappings.java",
+      "src/main/resources/data/neoforge/data_maps/item/compostables.json",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModFuels.java",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModBrewingRecipes.java",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModTrades.java",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModBlocks.java",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModItems.java",
+      "src/main/java/net/mcreator/creativeworld/mixin/CameraAccessor.java",
+      "src/main/java/net/mcreator/creativeworld/CreativeWorldMod.java",
+      "src/main/java/net/mcreator/creativeworld/mixin/ItemInHandLayerMixin.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/creativeworld/mixin/PlayerAnimationRendererMixin.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/creativeworld/network/CreativeWorldModVariables.java",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModTabs.java",
+      "src/main/java/net/mcreator/creativeworld/mixin/HumanoidArmorLayerMixin.java",
+      "src/main/java/net/mcreator/creativeworld/mixin/EntityRenderDispatcherMixin.java",
+      "src/main/resources/assets/creative_world/sounds.json",
+      "src/main/java/net/mcreator/creativeworld/init/CreativeWorldModSounds.java",
+      "src/main/java/net/mcreator/creativeworld/mixin/ItemInHandRendererMixin.java",
+      "src/main/java/net/mcreator/creativeworld/mixin/LevelRendererMixin.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/creativeworld/network/PlayPlayerAnimationMessage.java",
+      "src/main/java/net/mcreator/creativeworld/CreativeWorldModPlayerAnimationAPI.java",
+      "src/main/java/net/mcreator/creativeworld/mixin/PlayerAnimationMixin.java"
+    ]
   },
   "foldersRoot": {
     "name": "~",
@@ -6028,5 +6070,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.creativeworld"
   },
-  "mcreatorVersion": 202500113416
+  "mcreatorVersion": 202500345720
 }

@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.block;
 
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -12,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class ResinFenceBlock extends FenceBlock {
 	public ResinFenceBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
 	}
 
 	@Override

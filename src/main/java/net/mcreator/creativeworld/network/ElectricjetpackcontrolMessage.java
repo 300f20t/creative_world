@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.network;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -18,7 +17,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.mcreator.creativeworld.procedures.ElectricjetpackcontrolPriNazhatiiKlavishiProcedure;
 import net.mcreator.creativeworld.CreativeWorldMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record ElectricjetpackcontrolMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<ElectricjetpackcontrolMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CreativeWorldMod.MODID, "key_electricjetpackcontrol"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, ElectricjetpackcontrolMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, ElectricjetpackcontrolMessage message) -> {

@@ -1,4 +1,3 @@
-
 /*
  * MCreator note: This file will be REGENERATED on each build.
  */
@@ -28,7 +27,7 @@ public class CreativeWorldModFluids {
 	public static final DeferredHolder<Fluid, FlowingFluid> GAS = REGISTRY.register("gas", () -> new GasFluid.Source());
 	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_GAS = REGISTRY.register("flowing_gas", () -> new GasFluid.Flowing());
 
-	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	@EventBusSubscriber(Dist.CLIENT)
 	public static class FluidsClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {

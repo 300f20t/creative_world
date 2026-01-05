@@ -188,5 +188,7 @@
   "fluid.creative_world.oil": "Нефть",
   "item.creative_world.accumulatium_armor_boots": "Аккумулятиумные ботинки",
   "item.creative_world.drill": "Дрель",
-  "item.creative_world.composite_plate_tool_axe": "Композитный топор"
+  "item.creative_world.composite_plate_tool_axe": "Композитный топор",
+  "fluid_type.creative_world.oil": "Oil",
+  "fluid_type.creative_world.gas": "Gas"
 }

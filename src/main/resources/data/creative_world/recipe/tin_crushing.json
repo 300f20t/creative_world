@@ -5,8 +5,10 @@
       "item": "creative_world:rawtin"
     }
   ],
-  "output": {
-    "id": "creative_world:crushedtinore",
-    "count": 2
-  }
+  "outputs": [
+    {
+      "id": "creative_world:crushedtinore",
+      "count": 2
+    }
+  ]
 }

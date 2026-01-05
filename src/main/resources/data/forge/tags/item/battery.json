@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "creative_world:battrey_0",
-    "creative_world:battrey_1",
+    "creative_world:battrey_3",
     "creative_world:battrey_2",
-    "creative_world:battrey_3"
+    "creative_world:battrey_1",
+    "creative_world:battrey_0"
   ]
 }

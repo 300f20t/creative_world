@@ -14,7 +14,7 @@ public class DrillModeSwitchPriNazhatiiKlavishiProcedure {
 			{
 				CreativeWorldModVariables.PlayerVariables _vars = entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES);
 				_vars.drillMode = 0;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("1x1"), false);
@@ -22,7 +22,7 @@ public class DrillModeSwitchPriNazhatiiKlavishiProcedure {
 			{
 				CreativeWorldModVariables.PlayerVariables _vars = entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES);
 				_vars.drillMode = 1;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("3x3"), false);
@@ -30,7 +30,7 @@ public class DrillModeSwitchPriNazhatiiKlavishiProcedure {
 			{
 				CreativeWorldModVariables.PlayerVariables _vars = entity.getData(CreativeWorldModVariables.PLAYER_VARIABLES);
 				_vars.drillMode = 2;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("5x5"), false);

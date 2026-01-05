@@ -1,4 +1,3 @@
-
 /*
  *	MCreator note: This file will be REGENERATED on each build.
  */
@@ -19,7 +18,7 @@ import net.minecraft.client.KeyMapping;
 import net.mcreator.creativeworld.network.ElectricjetpackcontrolMessage;
 import net.mcreator.creativeworld.network.DrillModeSwitchMessage;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(Dist.CLIENT)
 public class CreativeWorldModKeyMappings {
 	public static final KeyMapping ELECTRICJETPACKCONTROL = new KeyMapping("key.creative_world.electricjetpackcontrol", GLFW.GLFW_KEY_SPACE, "key.categories.misc") {
 		private boolean isDownOld = false;
@@ -54,7 +53,7 @@ public class CreativeWorldModKeyMappings {
 		event.register(DRILL_MODE_SWITCH);
 	}
 
-	@EventBusSubscriber({Dist.CLIENT})
+	@EventBusSubscriber(Dist.CLIENT)
 	public static class KeyEventListener {
 		@SubscribeEvent
 		public static void onClientTick(ClientTickEvent.Post event) {

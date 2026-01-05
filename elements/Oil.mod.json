@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "fluid",
   "definition": {
     "name": "Oil",
@@ -41,6 +41,7 @@
     "lightOpacity": 14,
     "emissiveRendering": false,
     "tickRate": 10,
+    "ignitedByLava": false,
     "flammability": 40,
     "fireSpreadSpeed": 40,
     "colorOnMap": "DEFAULT"

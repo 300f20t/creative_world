@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.network;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -18,7 +17,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.mcreator.creativeworld.procedures.DrillModeSwitchPriNazhatiiKlavishiProcedure;
 import net.mcreator.creativeworld.CreativeWorldMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record DrillModeSwitchMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<DrillModeSwitchMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CreativeWorldMod.MODID, "key_drill_mode_switch"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, DrillModeSwitchMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, DrillModeSwitchMessage message) -> {

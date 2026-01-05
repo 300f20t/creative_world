@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.block;
 
 import net.neoforged.neoforge.common.util.TriState;
@@ -22,7 +21,7 @@ public class RsinlogwithresinBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public RsinlogwithresinBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(2f).requiresCorrectToolForDrops().ignitedByLava().instrument(NoteBlockInstrument.BASS));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

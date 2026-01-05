@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.init;
 
 import net.minecraft.world.item.crafting.RecipeManager;

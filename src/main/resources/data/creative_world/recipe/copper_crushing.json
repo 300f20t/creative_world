@@ -5,8 +5,10 @@
       "item": "minecraft:raw_copper"
     }
   ],
-  "output": {
-    "id": "creative_world:crushedcopperore",
-    "count": 2
-  }
+  "outputs": [
+    {
+      "id": "creative_world:crushedcopperore",
+      "count": 2
+    }
+  ]
 }

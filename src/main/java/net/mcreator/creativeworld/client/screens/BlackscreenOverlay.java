@@ -1,4 +1,3 @@
-
 package net.mcreator.creativeworld.client.screens;
 
 import org.checkerframework.checker.units.qual.h;
@@ -20,7 +19,7 @@ import net.mcreator.creativeworld.procedures.BlackscreenOtobrazhatOvierlieiVIghr
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
 
-@EventBusSubscriber({Dist.CLIENT})
+@EventBusSubscriber(Dist.CLIENT)
 public class BlackscreenOverlay {
 	@SubscribeEvent(priority = EventPriority.HIGHEST)
 	public static void eventHandler(RenderGuiEvent.Pre event) {
