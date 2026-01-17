@@ -1945,26 +1945,7 @@
           "src/main/resources/assets/creative_world/models/item/electricjetpack_chestplate.json"
         ]
       },
-      "path": "~/Items/Jetpacks"
-    },
-    {
-      "name": "ElectricjetpackcontrolPriNazhatiiKlavishi",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "electricjetpackcontrol_pri_nazhatii_klavishi",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/ElectricjetpackcontrolPriNazhatiiKlavishiProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Items/Jetpacks"
+      "path": "~/Items/Armors/Jetpacks"
     },
     {
       "name": "Electricjetpackcontrol",
@@ -1977,7 +1958,7 @@
           "src/main/java/net/mcreator/creativeworld/network/ElectricjetpackcontrolMessage.java"
         ]
       },
-      "path": "~/Items/Jetpacks"
+      "path": "~/Items/Armors/Jetpacks"
     },
     {
       "name": "BlackscreenOtobrazhatOvierlieiVIghrie",
@@ -2466,19 +2447,6 @@
       "path": "~/Items/Ingridients"
     },
     {
-      "name": "Solarpanelcraft",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "solarpanelcraft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/solarpanelcraft.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
       "name": "Electricalcircuitcraft",
       "type": "recipe",
       "compiles": true,
@@ -2559,7 +2527,7 @@
           "src/main/resources/assets/creative_world/models/item/advancedelectricjetpack_chestplate.json"
         ]
       },
-      "path": "~/Items/Jetpacks"
+      "path": "~/Items/Armors/Jetpacks"
     },
     {
       "name": "Aejetpackcraft",
@@ -2575,19 +2543,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Ejetpackcraft",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ejetpackcraft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/ejetpackcraft.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
       "name": "Jetpackenergylow",
       "type": "overlay",
       "compiles": true,
@@ -2598,7 +2553,7 @@
           "src/main/java/net/mcreator/creativeworld/client/screens/JetpackenergylowOverlay.java"
         ]
       },
-      "path": "~/Items/Jetpacks"
+      "path": "~/Items/Armors/Jetpacks"
     },
     {
       "name": "Hklklh",
@@ -3354,19 +3309,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Advencedsolarpanelcraft",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "advencedsolarpanelcraft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/advencedsolarpanelcraft.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
       "name": "Carbonplatecraft",
       "type": "recipe",
       "compiles": true,
@@ -3989,32 +3931,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/creative_world/recipe/particlebindercraft.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
-      "name": "Stationaryparticlebindercraft",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stationaryparticlebindercraft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/stationaryparticlebindercraft.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
-      "name": "Quantumteleporterblock2craft",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "quantumteleporterblock_2craft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/quantumteleporterblock_2craft.json"
         ]
       },
       "path": "~/Crafts"
@@ -5116,29 +5032,6 @@
       "path": "~/Achievements"
     },
     {
-      "name": "AdvancedelectricjetpackKazhdyiTikDliaNaghrudnika",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "advancedelectricjetpack_kazhdyi_tik_dlia_naghrudnika",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/AdvancedelectricjetpackKazhdyiTikDliaNaghrudnikaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Jetpacks"
-    },
-    {
       "name": "MySecondDrill",
       "type": "achievement",
       "compiles": true,
@@ -5346,7 +5239,6 @@
       "~CUSTOM:CopperHoe",
       "~CUSTOM:TinHoe"
     ],
-    "BLOCKS:minecraft:fences": [],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Creativedrill",
       "~CUSTOM:Advanceddrill",
@@ -5982,7 +5874,12 @@
           },
           {
             "name": "Armors",
-            "children": []
+            "children": [
+              {
+                "name": "Jetpacks",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Nuggets",
@@ -6000,10 +5897,6 @@
                 "children": []
               }
             ]
-          },
-          {
-            "name": "Jetpacks",
-            "children": []
           },
           {
             "name": "Dusts",

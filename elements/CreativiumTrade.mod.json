@@ -10,11 +10,11 @@
         "entries": [
           {
             "price1": {
-              "value": "CUSTOM:CreativiumIngot"
+              "value": "CUSTOM:Creativiumnugget"
             },
             "countPrice1": 1,
             "price2": {
-              "value": ""
+              "value": "CUSTOM:Accumulatiumnugget"
             },
             "countPrice2": 1,
             "offer": {
