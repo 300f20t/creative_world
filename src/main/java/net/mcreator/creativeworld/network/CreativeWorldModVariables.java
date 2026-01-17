@@ -88,6 +88,7 @@ public class CreativeWorldModVariables {
 		clone.first_QT_ID_z = original.first_QT_ID_z;
 		clone.seckond_QT_ID_z = original.seckond_QT_ID_z;
 		clone.drillMode = original.drillMode;
+		clone.playerJetpackFly = original.playerJetpackFly;
 		if (!event.isWasDeath()) {
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -252,6 +253,7 @@ public class CreativeWorldModVariables {
 		public double first_QT_ID_z = 0;
 		public double seckond_QT_ID_z = 0;
 		public double drillMode = 1.0;
+		public boolean playerJetpackFly = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -265,6 +267,7 @@ public class CreativeWorldModVariables {
 			nbt.putDouble("first_QT_ID_z", first_QT_ID_z);
 			nbt.putDouble("seckond_QT_ID_z", seckond_QT_ID_z);
 			nbt.putDouble("drillMode", drillMode);
+			nbt.putBoolean("playerJetpackFly", playerJetpackFly);
 			return nbt;
 		}
 
@@ -279,6 +282,7 @@ public class CreativeWorldModVariables {
 			first_QT_ID_z = nbt.getDouble("first_QT_ID_z");
 			seckond_QT_ID_z = nbt.getDouble("seckond_QT_ID_z");
 			drillMode = nbt.getDouble("drillMode");
+			playerJetpackFly = nbt.getBoolean("playerJetpackFly");
 		}
 
 		public void markSyncDirty() {

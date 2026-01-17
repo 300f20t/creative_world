@@ -1069,19 +1069,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Gfdfgfgfg",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gfdfgfgfg",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/gfdfgfgfg.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
       "name": "Xfdvdc",
       "type": "recipe",
       "compiles": true,
@@ -1181,7 +1168,7 @@
           }
         ]
       },
-      "path": "~/Blocks/MaterialBlocks/Ores/Washing of crushed ores"
+      "path": "~/Items/Washing of crushed ores"
     },
     {
       "name": "Infinity",
@@ -1296,7 +1283,7 @@
           }
         ]
       },
-      "path": "~/Blocks/MaterialBlocks/Ores/Washing of crushed ores"
+      "path": "~/Items/Washing of crushed ores"
     },
     {
       "name": "CrushedtinoreKoghdaNazhataPKMPoBloku",
@@ -1331,7 +1318,7 @@
           }
         ]
       },
-      "path": "~/Blocks/MaterialBlocks/Ores/Washing of crushed ores"
+      "path": "~/Items/Washing of crushed ores"
     },
     {
       "name": "Tinnugget",
@@ -1399,7 +1386,7 @@
           "src/main/java/net/mcreator/creativeworld/item/WashedcrushedironoreItem.java"
         ]
       },
-      "path": "~/Blocks/MaterialBlocks/Ores/Washed crushed ores"
+      "path": "~/Items/Washed crushed ores"
     },
     {
       "name": "Washedcrushedcopperore",
@@ -1413,7 +1400,7 @@
           "src/main/java/net/mcreator/creativeworld/item/WashedcrushedcopperoreItem.java"
         ]
       },
-      "path": "~/Blocks/MaterialBlocks/Ores/Washed crushed ores"
+      "path": "~/Items/Washed crushed ores"
     },
     {
       "name": "Washedcrushedtinore",
@@ -1427,7 +1414,7 @@
           "src/main/resources/assets/creative_world/models/item/washedcrushedtinore.json"
         ]
       },
-      "path": "~/Blocks/MaterialBlocks/Ores/Washed crushed ores"
+      "path": "~/Items/Washed crushed ores"
     },
     {
       "name": "Ghhgfd",
@@ -1821,7 +1808,7 @@
           "src/main/java/net/mcreator/creativeworld/item/RawtinItem.java"
         ]
       },
-      "path": "~/Blocks/MaterialBlocks/Ores/RawOres"
+      "path": "~/Items/RawOres"
     },
     {
       "name": "Vyapr",
@@ -1849,32 +1836,6 @@
         ]
       },
       "path": "~/Items/Dusts"
-    },
-    {
-      "name": "Qwertyuhjtcf",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "qwertyuhjtcf",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/qwertyuhjtcf.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
-      "name": "Kiepnrghsh",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kiepnrghsh",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/kiepnrghsh.json"
-        ]
-      },
-      "path": "~/Crafts"
     },
     {
       "name": "Energydetector",
@@ -2358,28 +2319,6 @@
       "path": "~/Items"
     },
     {
-      "name": "Pryvvpa",
-      "type": "itemextension",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pryvvpa",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Items"
-    },
-    {
-      "name": "Avprso",
-      "type": "itemextension",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "avprso",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Items"
-    },
-    {
       "name": "Ironwrenchcraft",
       "type": "recipe",
       "compiles": true,
@@ -2541,39 +2480,6 @@
         ]
       },
       "path": "~/Crafts"
-    },
-    {
-      "name": "Jetpackenergylow",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jetpackenergylow",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/client/screens/JetpackenergylowOverlay.java"
-        ]
-      },
-      "path": "~/Items/Armors/Jetpacks"
-    },
-    {
-      "name": "Hklklh",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hklklh",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/creativeworld/procedures/HklklhProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Items"
     },
     {
       "name": "Advencedmachinecase",
@@ -3322,33 +3228,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Thecoreofinvulnerability",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thecoreofinvulnerability",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/creative_world/models/item/thecoreofinvulnerability.json",
-          "src/main/java/net/mcreator/creativeworld/item/ThecoreofinvulnerabilityItem.java"
-        ]
-      },
-      "path": "~/Items"
-    },
-    {
-      "name": "Thecoreofinvulnerabilitycraft",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thecoreofinvulnerabilitycraft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/thecoreofinvulnerabilitycraft.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
       "name": "Bronzeplate",
       "type": "item",
       "compiles": true,
@@ -3923,32 +3802,6 @@
       "path": "~/Crafts"
     },
     {
-      "name": "Particlebindercraft",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "particlebindercraft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/particlebindercraft.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
-      "name": "Quantumteleporterblockcraft",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "quantumteleporterblockcraft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/recipe/quantumteleporterblockcraft.json"
-        ]
-      },
-      "path": "~/Crafts"
-    },
-    {
       "name": "Keycard",
       "type": "item",
       "compiles": true,
@@ -4149,7 +4002,7 @@
           "src/main/resources/assets/creative_world/models/item/rawtitan.json"
         ]
       },
-      "path": "~/Blocks/MaterialBlocks/Ores/RawOres"
+      "path": "~/Items/RawOres"
     },
     {
       "name": "TitanOreDrop",
@@ -4822,19 +4675,6 @@
       "path": "~/Items"
     },
     {
-      "name": "BecomeImmortal",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "become_immortal",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/creative_world/advancement/become_immortal.json"
-        ]
-      },
-      "path": "~/Achievements"
-    },
-    {
       "name": "ElectricMotor",
       "type": "item",
       "compiles": true,
@@ -5067,6 +4907,82 @@
         "files": []
       },
       "path": "~/Trades"
+    },
+    {
+      "name": "JetpackSystem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jetpack_system",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/JetpackSystemProcedure.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks"
+    },
+    {
+      "name": "JetpackSpcaePressEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jetpack_spcae_press_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/JetpackSpcaePressEventProcedure.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks"
+    },
+    {
+      "name": "JetpackSpcaeUnpressEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jetpack_spcae_unpress_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/JetpackSpcaeUnpressEventProcedure.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks"
+    },
+    {
+      "name": "FlyJetpackSystem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_jetpack_system",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/FlyJetpackSystemProcedure.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks"
     }
   ],
   "variable_elements": [
@@ -5159,6 +5075,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "1.0"
+    },
+    {
+      "name": "playerJetpackFly",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -5341,6 +5263,10 @@
     ],
     "BLOCKS:minecraft:wooden_fences": [
       "~CUSTOM:ResinFence"
+    ],
+    "ITEMS:mod:copper_dust": [
+      "CUSTOM:Crushedcopperore",
+      "CUSTOM:Washedcrushedcopperore"
     ]
   },
   "tab_element_order": {},
@@ -5349,7 +5275,6 @@
       "item.creative_world.creativiumnugget": "Самородок Креативиума",
       "block.creative_world.insulated_copper_wire": "Изолированный медный провод",
       "item.creative_world.titan_hoe": "Титановая мотыга",
-      "item.creative_world.thecoreofinvulnerability.description_0": "§eимеет незавершённый функционал (в разработке)",
       "item_group.creative_world.creativeworldtools": "Creative world: инструменты",
       "item.creative_world.thecoreoftheformation": "Ядро формирования",
       "item.creative_world.copper_armor_chestplate": "Медный нагрудник",
@@ -5368,7 +5293,6 @@
       "advancements.infinity.title": "Бесконечность?",
       "item.creative_world.energydetector.description_0": "§eимеет незавершённый функционал (в разработке)",
       "item.creative_world.composite_plate_tool_shovel": "Композитная лопата",
-      "advancements.become_immortal.title": "Станьте бессмертным",
       "block.creative_world.titan_block": "Титановый блок",
       "block.creative_world.accumulatium_ore": "Аккумулятивная руда",
       "item.creative_world.bronzeplate": "Бронзовая пластина",
@@ -5389,7 +5313,6 @@
       "item.creative_world.crushedcopperore": "Дробленая медная руда",
       "item.creative_world.energydetector": "Датчик энергии",
       "block.creative_world.resin_fence_gate": "Ворота забора из каучукового дерева",
-      "advancements.become_immortal.descr": "Создайте ядро неуязвимости",
       "item.creative_world.tap": "Краник",
       "item.creative_world.copperplate": "Медная пластина",
       "item.creative_world.copper_hoe": "Медная мотыга",
@@ -5432,7 +5355,6 @@
       "item.creative_world.tin_armor_chestplate": "Оловянный нагрудник",
       "item.creative_world.creativium_armor_boots": "Креативиумные ботинки",
       "block.creative_world.resintreesapling": "Сажанец каучукового дерева",
-      "item.creative_world.thecoreofinvulnerability": "Ядро неуязвимости",
       "gamerule.allowCheatItems": "Рзазрешить читерные предметы",
       "item.creative_world.a_large_bucket_of_fluid_9": "Большое ведро с жидкостью",
       "item.creative_world.creativereel.description_0": "§cdoes not work correctly (in development)",
@@ -5543,7 +5465,6 @@
       "item.creative_world.creativiumnugget": "Creativium nugget",
       "block.creative_world.insulated_copper_wire": "Insulated Copper Wire",
       "item.creative_world.titan_hoe": "Titan Hoe",
-      "item.creative_world.thecoreofinvulnerability.description_0": "§ehas incomplete functionality (in development)",
       "item_group.creative_world.creativeworldtools": "Creative world: tools",
       "item.creative_world.thecoreoftheformation": "The core of the formation",
       "item.creative_world.copper_armor_chestplate": "Copper Chestplate",
@@ -5562,7 +5483,6 @@
       "advancements.infinity.title": "Infinity?",
       "item.creative_world.energydetector.description_0": "§ehas incomplete functionality (in development)",
       "item.creative_world.composite_plate_tool_shovel": "Composite_plate_tool Shovel",
-      "advancements.become_immortal.title": "Become Immortal",
       "block.creative_world.titan_block": "Block of Titan",
       "block.creative_world.accumulatium_ore": "Accumulatium Ore",
       "item.creative_world.bronzeplate": "Bronze plate",
@@ -5583,7 +5503,6 @@
       "item.creative_world.crushedcopperore": "Crushed copper ore",
       "item.creative_world.energydetector": "Energydetector",
       "block.creative_world.resin_fence_gate": "Rubber tree fence gate",
-      "advancements.become_immortal.descr": "create The core of invulnerability",
       "item.creative_world.tap": "Tap",
       "item.creative_world.copperplate": "Copper plate",
       "item.creative_world.copper_hoe": "Copper Hoe",
@@ -5627,7 +5546,6 @@
       "item.creative_world.tin_armor_chestplate": "Tin Chestplate",
       "item.creative_world.creativium_armor_boots": "Creativium Boots",
       "block.creative_world.resintreesapling": "Resintreesapling",
-      "item.creative_world.thecoreofinvulnerability": "The core of invulnerability",
       "gamerule.allowCheatItems": "Allow cheat items",
       "item.creative_world.a_large_bucket_of_fluid_9": "A Large Bucket Of Fluid 9",
       "item.creative_world.creativereel.description_0": "§cdoes not work correctly (in development)",
@@ -5842,20 +5760,7 @@
             "children": [
               {
                 "name": "Ores",
-                "children": [
-                  {
-                    "name": "RawOres",
-                    "children": []
-                  },
-                  {
-                    "name": "Washed crushed ores",
-                    "children": []
-                  },
-                  {
-                    "name": "Washing of crushed ores",
-                    "children": []
-                  }
-                ]
+                "children": []
               },
               {
                 "name": "Fluids",
@@ -5921,6 +5826,18 @@
           },
           {
             "name": "Covers",
+            "children": []
+          },
+          {
+            "name": "RawOres",
+            "children": []
+          },
+          {
+            "name": "Washed crushed ores",
+            "children": []
+          },
+          {
+            "name": "Washing of crushed ores",
             "children": []
           }
         ]

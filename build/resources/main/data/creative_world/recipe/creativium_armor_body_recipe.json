@@ -3,12 +3,15 @@
   "category": "misc",
   "pattern": [
     "a a",
-    "aaa",
+    "aba",
     "aaa"
   ],
   "key": {
     "a": {
       "item": "creative_world:creativium_ingot"
+    },
+    "b": {
+      "item": "creative_world:advancedelectricjetpack_chestplate"
     }
   },
   "result": {

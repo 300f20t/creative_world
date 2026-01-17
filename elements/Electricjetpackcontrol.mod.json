@@ -4,9 +4,12 @@
   "definition": {
     "triggerKey": "SPACE",
     "keyBindingName": "Electricjetpackcontrol",
-    "keyBindingCategoryKey": "misc",
+    "keyBindingCategoryKey": "movement",
     "onKeyPressed": {
-      "name": "ElectricjetpackcontrolPriNazhatiiKlavishi"
+      "name": "JetpackSpcaePressEvent"
+    },
+    "onKeyReleased": {
+      "name": "JetpackSpcaeUnpressEvent"
     }
   }
 }

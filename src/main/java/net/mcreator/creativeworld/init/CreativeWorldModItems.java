@@ -124,7 +124,6 @@ public class CreativeWorldModItems {
 	public static final DeferredItem<Item> CREATIVIUMNUGGET;
 	public static final DeferredItem<Item> ACCUMULATIUMNUGGET;
 	public static final DeferredItem<Item> CARBONPLATE;
-	public static final DeferredItem<Item> THECOREOFINVULNERABILITY;
 	public static final DeferredItem<Item> BRONZEPLATE;
 	public static final DeferredItem<Item> TITAN_INGOT;
 	public static final DeferredItem<Item> TITAN_ORE;
@@ -272,7 +271,6 @@ public class CreativeWorldModItems {
 		CREATIVIUMNUGGET = REGISTRY.register("creativiumnugget", CreativiumnuggetItem::new);
 		ACCUMULATIUMNUGGET = REGISTRY.register("accumulatiumnugget", AccumulatiumnuggetItem::new);
 		CARBONPLATE = REGISTRY.register("carbonplate", CarbonplateItem::new);
-		THECOREOFINVULNERABILITY = REGISTRY.register("thecoreofinvulnerability", ThecoreofinvulnerabilityItem::new);
 		BRONZEPLATE = REGISTRY.register("bronzeplate", BronzeplateItem::new);
 		TITAN_INGOT = REGISTRY.register("titan_ingot", TitanIngotItem::new);
 		TITAN_ORE = block(CreativeWorldModBlocks.TITAN_ORE);

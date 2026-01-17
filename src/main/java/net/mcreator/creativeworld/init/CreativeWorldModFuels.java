@@ -16,9 +16,5 @@ public class CreativeWorldModFuels {
 		ItemStack itemstack = event.getItemStack();
 		if (itemstack.getItem() == CreativeWorldModItems.THECOREOFMATTER.get())
 			event.setBurnTime(1000000000);
-		else if (itemstack.getItem() == CreativeWorldModBlocks.GAS.get().asItem())
-			event.setBurnTime(128000);
-		else if (itemstack.getItem() == CreativeWorldModBlocks.OIL.get().asItem())
-			event.setBurnTime(100000);
 	}
 }

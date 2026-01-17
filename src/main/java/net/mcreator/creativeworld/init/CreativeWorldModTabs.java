@@ -50,7 +50,6 @@ public class CreativeWorldModTabs {
 				tabData.accept(CreativeWorldModItems.CREATIVIUMNUGGET.get());
 				tabData.accept(CreativeWorldModItems.ACCUMULATIUMNUGGET.get());
 				tabData.accept(CreativeWorldModItems.CARBONPLATE.get());
-				tabData.accept(CreativeWorldModItems.THECOREOFINVULNERABILITY.get());
 				tabData.accept(CreativeWorldModItems.BRONZEPLATE.get());
 				tabData.accept(CreativeWorldModItems.TITAN_INGOT.get());
 				tabData.accept(CreativeWorldModItems.TITANPLATE.get());
