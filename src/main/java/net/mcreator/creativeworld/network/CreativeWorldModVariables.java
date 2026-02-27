@@ -89,6 +89,11 @@ public class CreativeWorldModVariables {
 		clone.seckond_QT_ID_z = original.seckond_QT_ID_z;
 		clone.drillMode = original.drillMode;
 		clone.playerJetpackFly = original.playerJetpackFly;
+		clone.playerJetpackShift = original.playerJetpackShift;
+		clone.playerJetpackW = original.playerJetpackW;
+		clone.playerJetpackA = original.playerJetpackA;
+		clone.playerJetpackS = original.playerJetpackS;
+		clone.playerJetpackD = original.playerJetpackD;
 		if (!event.isWasDeath()) {
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -254,6 +259,11 @@ public class CreativeWorldModVariables {
 		public double seckond_QT_ID_z = 0;
 		public double drillMode = 1.0;
 		public boolean playerJetpackFly = false;
+		public boolean playerJetpackShift = false;
+		public boolean playerJetpackW = false;
+		public boolean playerJetpackA = false;
+		public boolean playerJetpackS = false;
+		public boolean playerJetpackD = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -268,6 +278,11 @@ public class CreativeWorldModVariables {
 			nbt.putDouble("seckond_QT_ID_z", seckond_QT_ID_z);
 			nbt.putDouble("drillMode", drillMode);
 			nbt.putBoolean("playerJetpackFly", playerJetpackFly);
+			nbt.putBoolean("playerJetpackShift", playerJetpackShift);
+			nbt.putBoolean("playerJetpackW", playerJetpackW);
+			nbt.putBoolean("playerJetpackA", playerJetpackA);
+			nbt.putBoolean("playerJetpackS", playerJetpackS);
+			nbt.putBoolean("playerJetpackD", playerJetpackD);
 			return nbt;
 		}
 
@@ -283,6 +298,11 @@ public class CreativeWorldModVariables {
 			seckond_QT_ID_z = nbt.getDouble("seckond_QT_ID_z");
 			drillMode = nbt.getDouble("drillMode");
 			playerJetpackFly = nbt.getBoolean("playerJetpackFly");
+			playerJetpackShift = nbt.getBoolean("playerJetpackShift");
+			playerJetpackW = nbt.getBoolean("playerJetpackW");
+			playerJetpackA = nbt.getBoolean("playerJetpackA");
+			playerJetpackS = nbt.getBoolean("playerJetpackS");
+			playerJetpackD = nbt.getBoolean("playerJetpackD");
 		}
 
 		public void markSyncDirty() {

@@ -1919,7 +1919,7 @@
           "src/main/java/net/mcreator/creativeworld/network/ElectricjetpackcontrolMessage.java"
         ]
       },
-      "path": "~/Items/Armors/Jetpacks"
+      "path": "~/Items/Armors/Jetpacks/Controls"
     },
     {
       "name": "BlackscreenOtobrazhatOvierlieiVIghrie",
@@ -4944,7 +4944,7 @@
           "src/main/java/net/mcreator/creativeworld/procedures/JetpackSpcaePressEventProcedure.java"
         ]
       },
-      "path": "~/Items/Armors/Jetpacks"
+      "path": "~/Items/Armors/Jetpacks/Controls"
     },
     {
       "name": "JetpackSpcaeUnpressEvent",
@@ -4963,7 +4963,7 @@
           "src/main/java/net/mcreator/creativeworld/procedures/JetpackSpcaeUnpressEventProcedure.java"
         ]
       },
-      "path": "~/Items/Armors/Jetpacks"
+      "path": "~/Items/Armors/Jetpacks/Controls"
     },
     {
       "name": "FlyJetpackSystem",
@@ -4983,6 +4983,147 @@
         ]
       },
       "path": "~/Items/Armors/Jetpacks"
+    },
+    {
+      "name": "ElectricjetpackcontrolShift",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electricjetpackcontrol_shift",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/network/ElectricjetpackcontrolShiftMessage.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks/Controls"
+    },
+    {
+      "name": "ElectricjetpackcontrolW",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electricjetpackcontrol_w",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/network/ElectricjetpackcontrolWMessage.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks/Controls"
+    },
+    {
+      "name": "ElectricjetpackcontrolA",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electricjetpackcontrol_a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/network/ElectricjetpackcontrolAMessage.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks/Controls"
+    },
+    {
+      "name": "ElectricjetpackcontrolS",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electricjetpackcontrol_s",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/network/ElectricjetpackcontrolSMessage.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks/Controls"
+    },
+    {
+      "name": "ElectricjetpackcontrolD",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electricjetpackcontrol_d",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/network/ElectricjetpackcontrolDMessage.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks/Controls"
+    },
+    {
+      "name": "ElectricjetpackcontrolShiftPriNazhatiiKlavishi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electricjetpackcontrol_shift_pri_nazhatii_klavishi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/ElectricjetpackcontrolShiftPriNazhatiiKlavishiProcedure.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks/Controls"
+    },
+    {
+      "name": "ElectricjetpackcontrolShiftPriOtpuskaniiKlavishi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electricjetpackcontrol_shift_pri_otpuskanii_klavishi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/ElectricjetpackcontrolShiftPriOtpuskaniiKlavishiProcedure.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks/Controls"
+    },
+    {
+      "name": "ElectricjetpackcontrolWPriNazhatiiKlavishi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electricjetpackcontrol_w_pri_nazhatii_klavishi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/ElectricjetpackcontrolWPriNazhatiiKlavishiProcedure.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks/Controls"
+    },
+    {
+      "name": "ElectricjetpackcontrolWPriOtpuskaniiKlavishi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electricjetpackcontrol_w_pri_otpuskanii_klavishi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/creativeworld/procedures/ElectricjetpackcontrolWPriOtpuskaniiKlavishiProcedure.java"
+        ]
+      },
+      "path": "~/Items/Armors/Jetpacks/Controls"
     }
   ],
   "variable_elements": [
@@ -5078,6 +5219,36 @@
     },
     {
       "name": "playerJetpackFly",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "playerJetpackShift",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "playerJetpackW",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "playerJetpackA",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "playerJetpackS",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "playerJetpackD",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -5459,7 +5630,12 @@
       "item.creative_world.drill": "Дрель",
       "item.creative_world.composite_plate_tool_axe": "Композитный топор",
       "fluid_type.creative_world.oil": "Oil",
-      "fluid_type.creative_world.gas": "Gas"
+      "fluid_type.creative_world.gas": "Gas",
+      "key.creative_world.electricjetpackcontrol_shift": "Electricjetpackcontrol Shift",
+      "key.creative_world.electricjetpackcontrol_w": "Electricjetpackcontrol W",
+      "key.creative_world.electricjetpackcontrol_a": "Electricjetpackcontrol A",
+      "key.creative_world.electricjetpackcontrol_s": "Electricjetpackcontrol S",
+      "key.creative_world.electricjetpackcontrol_d": "Electricjetpackcontrol D"
     },
     "en_us": {
       "item.creative_world.creativiumnugget": "Creativium nugget",
@@ -5650,7 +5826,12 @@
       "item.creative_world.drill": "Drill",
       "item.creative_world.composite_plate_tool_axe": "Composite_plate_tool Axe",
       "fluid_type.creative_world.oil": "Oil",
-      "fluid_type.creative_world.gas": "Gas"
+      "fluid_type.creative_world.gas": "Gas",
+      "key.creative_world.electricjetpackcontrol_shift": "Electricjetpackcontrol Shift",
+      "key.creative_world.electricjetpackcontrol_w": "Electricjetpackcontrol W",
+      "key.creative_world.electricjetpackcontrol_a": "Electricjetpackcontrol A",
+      "key.creative_world.electricjetpackcontrol_s": "Electricjetpackcontrol S",
+      "key.creative_world.electricjetpackcontrol_d": "Electricjetpackcontrol D"
     }
   },
   "metadata": {
@@ -5782,7 +5963,12 @@
             "children": [
               {
                 "name": "Jetpacks",
-                "children": []
+                "children": [
+                  {
+                    "name": "Controls",
+                    "children": []
+                  }
+                ]
               }
             ]
           },

@@ -1,0 +1,15 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "W",
+    "keyBindingName": "Electricjetpackcontrol W",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "ElectricjetpackcontrolWPriNazhatiiKlavishi"
+    },
+    "onKeyReleased": {
+      "name": "ElectricjetpackcontrolWPriOtpuskaniiKlavishi"
+    }
+  }
+}

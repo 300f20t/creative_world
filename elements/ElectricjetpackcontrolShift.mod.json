@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "LSHIFT",
+    "keyBindingName": "Electricjetpackcontrol Shift",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "ElectricjetpackcontrolShiftPriNazhatiiKlavishi"
+    }
+  }
+}

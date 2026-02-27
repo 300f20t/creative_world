@@ -187,5 +187,10 @@
   "item.creative_world.drill": "Drill",
   "item.creative_world.composite_plate_tool_axe": "Composite_plate_tool Axe",
   "fluid_type.creative_world.oil": "Oil",
-  "fluid_type.creative_world.gas": "Gas"
+  "fluid_type.creative_world.gas": "Gas",
+  "key.creative_world.electricjetpackcontrol_shift": "Electricjetpackcontrol Shift",
+  "key.creative_world.electricjetpackcontrol_w": "Electricjetpackcontrol W",
+  "key.creative_world.electricjetpackcontrol_a": "Electricjetpackcontrol A",
+  "key.creative_world.electricjetpackcontrol_s": "Electricjetpackcontrol S",
+  "key.creative_world.electricjetpackcontrol_d": "Electricjetpackcontrol D"
 }

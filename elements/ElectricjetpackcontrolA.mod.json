@@ -1,0 +1,9 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "A",
+    "keyBindingName": "Electricjetpackcontrol A",
+    "keyBindingCategoryKey": "movement"
+  }
+}
